@@ -480,8 +480,7 @@ h1 em { color: #4a9eff; font-style: normal; }
 }
 #help-start:hover { background: #38e8ff; }
 
-/* hint overlay */
-#hint { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; font-family: monospace; font-size: 0.65rem; color: #1e2e40; pointer-events: none; line-height: 2.2; letter-spacing: 0.04em; }
+/* (hint overlay entfernt — war verwirrend und unleserlich) */
 </style>
 </head>
 <body>
@@ -600,7 +599,6 @@ h1 em { color: #4a9eff; font-style: normal; }
 </div>
 
 <button id="zoom-fit">⊡ Zoom zurücksetzen</button>
-<div id="hint">Klicke einen Knoten<br>um Verbindungen zu sehen<br><br>Für Kausalkette:<br>"⇢ Kette" + zwei Knoten klicken</div>
 
 <script>
 // ╔══════════════════════════════════════════════════════════════╗
@@ -661,16 +659,37 @@ links.forEach(l => {
   if(radj[t]) radj[t].push({to: s, link: l});
 });
 
-// Alle Knoten die von id aus über Kausalketten erreichbar sind (beide Richtungen)
+// Alle Knoten zu denen es einen ECHTEN gerichteten Kausalpfad gibt — entweder
+// als Nachkommen (A → ... → X) oder als Vorfahren (X → ... → A).
+// Geschwister-Knoten (B, die mit A einen gemeinsamen Effekt teilen) sind NICHT
+// reachable — weil keine kausale Kette zwischen ihnen existiert.
 function reachableFrom(id) {
-  const visited = new Set([id]);
-  const queue = [id];
+  const result = new Set([id]);
+
+  // Nachkommen: vorwärts via adj
+  let queue = [id];
   while(queue.length) {
     const cur = queue.shift();
-    for(const nb of adj[cur])  if(!visited.has(nb.to)) { visited.add(nb.to); queue.push(nb.to); }
-    for(const nb of radj[cur]) if(!visited.has(nb.to)) { visited.add(nb.to); queue.push(nb.to); }
+    for(const nb of adj[cur]) {
+      if(!result.has(nb.to)) { result.add(nb.to); queue.push(nb.to); }
+    }
   }
-  return visited;
+
+  // Vorfahren: rückwärts via radj
+  queue = [id];
+  const seenBack = new Set([id]);
+  while(queue.length) {
+    const cur = queue.shift();
+    for(const nb of radj[cur]) {
+      if(!seenBack.has(nb.to)) {
+        seenBack.add(nb.to);
+        result.add(nb.to);
+        queue.push(nb.to);
+      }
+    }
+  }
+
+  return result;
 }
 
 // ── STATE ──
@@ -752,7 +771,6 @@ sim.on("tick", () => {
 let pathReachableSet = null;  // Knoten die von pathStart aus erreichbar sind
 
 function handleNodeClick(e, d) {
-  document.getElementById("hint").style.display = "none";
 
   if(pathMode) {
     if(!pathStart) {
@@ -870,9 +888,10 @@ function showPath(startNode, endNode) {
   const path = bfs(startNode.id, endNode.id);
 
   if(!path) {
-    // No path found
-    renderPanelMessage(`Keine direkte Kausalkette von <strong>${startNode.short}</strong> zu <strong>${endNode.short}</strong> gefunden.`);
-    document.getElementById("panel").classList.add("open");
+    // Sollte mit dem strikten reachableFrom eigentlich nie passieren —
+    // aber falls doch: saubere Nachricht, kein kaputtes Panel.
+    renderPanelMessage(`<div style="font-weight:700;color:#e8f0fc;margin-bottom:0.6rem">Keine Kausalkette gefunden</div>
+      <div>Zwischen <strong style="color:#c8d4e4">${startNode.short}</strong> und <strong style="color:#c8d4e4">${endNode.short}</strong> gibt es keine bekannte kausale Verbindung in dieser Richtung.</div>`);
     resetVisuals();
     return;
   }
