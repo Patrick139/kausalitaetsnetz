@@ -585,8 +585,8 @@
     },
     {
       "id": "cambridge_analytica",
-      "yr": 2018,
-      "end_yr": null,
+      "yr": 2014,
+      "end_yr": 2018,
       "r": "usa",
       "imp": 3,
       "short": {
@@ -1829,15 +1829,6 @@
     },
     {
       "source": "zoll_2025",
-      "target": "inflation_2022",
-      "type": "beschleunigt",
-      "why": {
-        "de": "Zölle 2025 drohten neue Inflationswelle — Lieferketten-Reorganisation verteuert Importe strukturell."
-      },
-      "certainty": "plausibel"
-    },
-    {
-      "source": "zoll_2025",
       "target": "trump_xi_2026",
       "type": "direkt",
       "why": {
@@ -1945,8 +1936,8 @@
       "certainty": "plausibel"
     },
     {
-      "source": "draghi_2012",
-      "target": "eurokrise_2010",
+      "source": "eurokrise_2010",
+      "target": "draghi_2012",
       "type": "direkt",
       "why": {
         "de": "'Whatever it takes' war die direkte Antwort auf den Höhepunkt der Eurokrise — beendete die akute Panik an den Anleihemärkten."
@@ -2134,8 +2125,8 @@
       "certainty": "plausibel"
     },
     {
-      "source": "ibiza_2019",
-      "target": "kurz_2017",
+      "source": "kurz_2017",
+      "target": "ibiza_2019",
       "type": "direkt",
       "why": {
         "de": "Straches Ibiza-Video beendete nicht nur die Koalition — es zwang Kurz zu Neuwahlen die er gewann, bis sein eigenes Skandal-Ende 2021 kam."
