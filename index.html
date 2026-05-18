@@ -394,12 +394,17 @@ h1 em { color: #4a9eff; font-style: normal; }
 #zoom-fit:hover { color: #c8d4e4; border-color: #3a4a60; }
 
 /* ── DROPDOWN ── */
-.dropdown { position: relative; }
+.dropdown { position: relative; display: flex; flex-direction: column; gap: 2px; }
+.dd-label {
+  font-family: monospace; font-size: 0.5rem;
+  color: #3a5070; letter-spacing: 0.12em;
+  padding-left: 0.25rem;
+}
 .dropdown-menu {
   display: none; position: absolute; top: 100%; left: 0;
   margin-top: 3px; background: #0d1219;
   border: 1px solid #1c2535; border-radius: 3px;
-  z-index: 200; min-width: 160px; padding: 0.25rem 0;
+  z-index: 200; min-width: 180px; padding: 0.25rem 0;
 }
 .dropdown.open .dropdown-menu { display: block; }
 .dd-item {
@@ -522,9 +527,10 @@ h1 em { color: #4a9eff; font-style: normal; }
     <div class="sep-v"></div>
     <!-- Region dropdown -->
     <div class="dropdown" id="region-dropdown">
-      <button class="fb active" id="region-btn">🌐 Alle Regionen ▾</button>
+      <div class="dd-label">BEREICH</div>
+      <button class="fb active" id="region-btn">Alle Bereiche ▾</button>
       <div class="dropdown-menu" id="region-menu">
-        <div class="dd-item active" data-r="alle">Alle Regionen</div>
+        <div class="dd-item active" data-r="alle">Alle Bereiche</div>
         <div class="dd-item" data-r="usa">🇺🇸 USA</div>
         <div class="dd-item" data-r="europa">🇪🇺 Europa</div>
         <div class="dd-item" data-r="russland">🇷🇺 Russland</div>
@@ -539,7 +545,8 @@ h1 em { color: #4a9eff; font-style: normal; }
     <div class="sep-v"></div>
     <!-- Importance dropdown -->
     <div class="dropdown" id="imp-dropdown">
-      <button class="fb active" id="imp-btn">★ Alle Wichtigkeiten ▾</button>
+      <div class="dd-label">WICHTIGKEIT</div>
+      <button class="fb active" id="imp-btn">Alle Stufen ▾</button>
       <div class="dropdown-menu" id="imp-menu">
         <div class="dd-item active" data-imp="alle">★ Alle</div>
         <div class="dd-item" data-imp="2">★★ Wichtig + Historisch</div>
@@ -776,6 +783,10 @@ const gN = svg.select("#g-nodes");
 const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
   gL.attr("transform", e.transform);
   gN.attr("transform", e.transform);
+  // LOD: imp:1 Labels nur beim Reinzoomen sichtbar
+  const k = e.transform.k;
+  const opacity = k > 1.4 ? Math.min(1, (k - 1.4) / 0.4) : 0;
+  d3.selectAll(".node-label-imp1").style("opacity", opacity);
 });
 svg.call(zoom);
 
@@ -812,16 +823,30 @@ const nodeEls = gN.selectAll(".node").data(nodes).join("g")
   )
   .on("click", (e, d) => { e.stopPropagation(); handleNodeClick(e, d); });
 
+// Native browser tooltip — funktioniert auf SVG via <title>
+nodeEls.append("title").text(d => `${d.short} (${d.yr})`);
+
 nodeEls.append("circle")
   .attr("r", d => IRAD[d.imp])
   .attr("fill", d => (RCOL[d.r]||"#4a6080") + "1a")
   .attr("stroke", d => RCOL[d.r]||"#4a6080");
 
+// Labels für imp >= 2 — immer sichtbar
 nodeEls.filter(d => d.imp >= 2).append("text")
+  .attr("class", "node-label")
   .attr("dy", d => IRAD[d.imp] + 13)
   .attr("text-anchor", "middle")
   .text(d => d.short)
   .style("font-size", d => d.imp===3 ? "10px" : "9px");
+
+// Labels für imp:1 — nur beim Reinzoomen sichtbar (LOD)
+nodeEls.filter(d => d.imp === 1).append("text")
+  .attr("class", "node-label-imp1")
+  .attr("dy", d => IRAD[d.imp] + 10)
+  .attr("text-anchor", "middle")
+  .text(d => d.short)
+  .style("font-size", "7.5px")
+  .style("opacity", 0);  // versteckt bis Zoom > Schwelle
 
 nodeEls.filter(d => d.imp >= 2).append("text")
   .attr("dy", "0.35em").attr("text-anchor", "middle")
@@ -1239,7 +1264,7 @@ document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
     document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
     item.classList.add("active");
     filterImp = item.dataset.imp;
-    impBtn.textContent = item.dataset.imp === "alle" ? "★ Alle Wichtigkeiten ▾" : item.textContent + " ▾";
+    impBtn.textContent = item.dataset.imp === "alle" ? "Alle Stufen ▾" : item.textContent + " ▾";
     impBtn.classList.toggle("active", item.dataset.imp === "alle");
     applyImpFilter();
     impDropdown.classList.remove("open");
@@ -1260,7 +1285,7 @@ document.querySelectorAll("#region-menu .dd-item").forEach(item => {
     document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
     item.classList.add("active");
     filterRegion = item.dataset.r;
-    regionBtn.textContent = item.dataset.r === "alle" ? "🌐 Alle Regionen ▾" : item.textContent + " ▾";
+    regionBtn.textContent = item.dataset.r === "alle" ? "Alle Bereiche ▾" : item.textContent + " ▾";
     regionBtn.classList.toggle("active", item.dataset.r === "alle");
     resetVisuals();
     applyRegionFilter();
@@ -1309,12 +1334,12 @@ document.getElementById("btn-reset").addEventListener("click", () => {
   document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
   document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
   filterRegion = "alle";
-  regionBtn.textContent = "🌐 Alle Regionen ▾";
+  regionBtn.textContent = "Alle Bereiche ▾";
   // Reset imp dropdown
   document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
   document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
   filterImp = "alle";
-  impBtn.textContent = "★ Alle Wichtigkeiten ▾";
+  impBtn.textContent = "Alle Stufen ▾";
   applyImpFilter();
   applyRegionFilter();
 });
