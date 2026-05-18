@@ -530,16 +530,7 @@ h1 em { color: #4a9eff; font-style: normal; }
       <div class="dd-label">BEREICH</div>
       <button class="fb active" id="region-btn">Alle Bereiche ▾</button>
       <div class="dropdown-menu" id="region-menu">
-        <div class="dd-item active" data-r="alle">Alle Bereiche</div>
-        <div class="dd-item" data-r="usa">🇺🇸 USA</div>
-        <div class="dd-item" data-r="europa">🇪🇺 Europa</div>
-        <div class="dd-item" data-r="russland">🇷🇺 Russland</div>
-        <div class="dd-item" data-r="china">🇨🇳 China</div>
-        <div class="dd-item" data-r="nahost">🌍 Naher Osten</div>
-        <div class="dd-item" data-r="welt">🌐 Global</div>
-        <div class="dd-item" data-r="tech">💻 Technologie</div>
-        <div class="dd-item" data-r="klima">🌱 Klima</div>
-        <div class="dd-item" data-r="oesterreich">🇦🇹 Österreich</div>
+        <!-- dynamisch befüllt aus den Daten -->
       </div>
     </div>
     <div class="sep-v"></div>
@@ -669,16 +660,38 @@ async function init() {
 
 
 const RCOL = {
-  usa:"#4a9eff", europa:"#3dd68c", russland:"#ff8c4a",
-  china:"#ff4a6e", nahost:"#c084fc", welt:"#f0c040",
-  oesterreich:"#a78bfa", tech:"#22d3ee", klima:"#86efac"
+  // Bestehende
+  usa:"#4a9eff", eu:"#3dd68c", russland:"#ff8c4a",
+  china:"#ff4a6e", mittelost:"#c084fc", global:"#f0c040",
+  oesterreich:"#a78bfa",
+  // Neue
+  uk:"#7dd3fc", japan:"#fb7185", taiwan:"#fb923c",
+  iran:"#a3e635", israel:"#60a5fa", saudi:"#facc15",
+  afghanistan:"#94a3b8", brasilien:"#34d399",
+  australien:"#fbbf24", syrien:"#f472b6",
+  südostasien:"#c4b5fd",
+  // Default
+  _default:"#4a6080"
 };
 const RNAME = {
-  usa:"USA", europa:"Europa", russland:"Russland",
-  china:"China", nahost:"Naher Osten", welt:"Global",
-  oesterreich:"Österreich", tech:"Technologie", klima:"Klima"
+  usa:"USA", eu:"EU", russland:"Russland",
+  china:"China", mittelost:"Naher Osten", global:"Global",
+  oesterreich:"Österreich",
+  uk:"UK", japan:"Japan", taiwan:"Taiwan",
+  iran:"Iran", israel:"Israel", saudi:"Saudi-Arabien",
+  afghanistan:"Afghanistan", brasilien:"Brasilien",
+  australien:"Australien", syrien:"Syrien",
+  südostasien:"Südostasien"
 };
 const IRAD = {3:22, 2:13, 1:7};
+
+// ── SPRACHE & MULTILINGUAL-HELPER ──
+let LANG = 'de';
+function tx(obj) {
+  if(obj == null) return '';
+  if(typeof obj === 'string') return obj;       // Rückwärtskompatibilität
+  return obj[LANG] || obj.de || obj.en || Object.values(obj)[0] || '';
+}
 
 const W = window.innerWidth, H = window.innerHeight;
 const HDR_H = 70; // approximate header height
@@ -824,7 +837,7 @@ const nodeEls = gN.selectAll(".node").data(nodes).join("g")
   .on("click", (e, d) => { e.stopPropagation(); handleNodeClick(e, d); });
 
 // Native browser tooltip — funktioniert auf SVG via <title>
-nodeEls.append("title").text(d => `${d.short} (${d.yr})`);
+nodeEls.append("title").text(d => `${tx(d.short)} (${d.yr})`);
 
 nodeEls.append("circle")
   .attr("r", d => IRAD[d.imp])
@@ -836,7 +849,7 @@ nodeEls.filter(d => d.imp >= 2).append("text")
   .attr("class", "node-label")
   .attr("dy", d => IRAD[d.imp] + 13)
   .attr("text-anchor", "middle")
-  .text(d => d.short)
+  .text(d => tx(d.short))
   .style("font-size", d => d.imp===3 ? "10px" : "9px");
 
 // Labels für imp:1 — nur beim Reinzoomen sichtbar (LOD)
@@ -844,7 +857,7 @@ nodeEls.filter(d => d.imp === 1).append("text")
   .attr("class", "node-label-imp1")
   .attr("dy", d => IRAD[d.imp] + 10)
   .attr("text-anchor", "middle")
-  .text(d => d.short)
+  .text(d => tx(d.short))
   .style("font-size", "7.5px")
   .style("opacity", 0);  // versteckt bis Zoom > Schwelle
 
@@ -995,7 +1008,7 @@ function showPath(startNode, endNode) {
     // Sollte mit dem strikten reachableFrom eigentlich nie passieren —
     // aber falls doch: saubere Nachricht, kein kaputtes Panel.
     renderPanelMessage(`<div style="font-weight:700;color:#e8f0fc;margin-bottom:0.6rem">Keine Kausalkette gefunden</div>
-      <div>Zwischen <strong style="color:#c8d4e4">${startNode.short}</strong> und <strong style="color:#c8d4e4">${endNode.short}</strong> gibt es keine bekannte kausale Verbindung in dieser Richtung.</div>`);
+      <div>Zwischen <strong style="color:#c8d4e4">${tx(startNode.short)}</strong> und <strong style="color:#c8d4e4">${tx(endNode.short)}</strong> gibt es keine bekannte kausale Verbindung in dieser Richtung.</div>`);
     resetVisuals();
     return;
   }
@@ -1025,8 +1038,8 @@ function showPath(startNode, endNode) {
   let html = `
     <div class="p-yr" style="font-size:1rem;margin-bottom:0.75rem;">Kausalkette</div>
     <div style="font-size:0.78rem;color:#8a9ab0;margin-bottom:1.2rem;">
-      Von <strong style="color:#e8f0fc">${startNode.short}</strong>
-      nach <strong style="color:#22d3ee">${endNode.short}</strong>
+      Von <strong style="color:#e8f0fc">${tx(startNode.short)}</strong>
+      nach <strong style="color:#22d3ee">${tx(endNode.short)}</strong>
     </div>
     <div class="p-sec">PFAD (${path.length} Schritte)</div>
   `;
@@ -1038,10 +1051,10 @@ function showPath(startNode, endNode) {
     html += `<div style="display:flex;gap:0.5rem;align-items:flex-start;padding:0.4rem 0.55rem;margin-bottom:0.2rem;background:#0d1219;border-radius:3px;border-left:2px solid ${col}40;cursor:pointer" onclick="selectById('${n.id}')">
       <div style="font-family:monospace;font-size:0.55rem;color:#4a6080;padding-top:0.1rem;min-width:2rem">${n.yr}</div>
       <div>
-        <div style="font-size:0.75rem;color:#c8d4e4">${n.short}</div>
+        <div style="font-size:0.75rem;color:#c8d4e4">${tx(n.short)}</div>
         ${i < path.length-1 ? (() => {
           const nextLink = [...pathLinkSet].find(l => (l.source.id||l.source)===path[i] && (l.target.id||l.target)===path[i+1]);
-          return nextLink ? `<div style="font-size:0.68rem;color:#5a7090;font-style:italic;margin-top:0.1rem">↓ ${nextLink.why}</div>` : '';
+          return nextLink ? `<div style="font-size:0.68rem;color:#5a7090;font-style:italic;margin-top:0.1rem">↓ ${tx(nextLink.why)}</div>` : '';
         })() : ''}
       </div>
     </div>`;
@@ -1102,8 +1115,8 @@ function renderPanel(d, causes, effects) {
   let html = `
     <div class="p-yr">${d.yr}</div>
     <div class="p-region" style="background:${col}22;color:${col}">${(RNAME[d.r]||d.r).toUpperCase()}</div>
-    <div class="p-title">${d.short}</div>
-    <div class="p-detail">${d.detail}</div>
+    <div class="p-title">${tx(d.short)}</div>
+    <div class="p-detail">${tx(d.detail)}</div>
     ${d.src ? `<a class="p-src" href="${d.src}" target="_blank" rel="noopener">↗ Quelle</a>` : ''}
   `;
 
@@ -1177,8 +1190,8 @@ function connCard(n, l, arr, depth = 1) {
     <span class="conn-arr">${arr}</span>
     <div class="conn-body">
       <div class="conn-yr">${n.yr}</div>
-      <div class="conn-short">${n.short}</div>
-      ${depth === 1 ? `<div class="conn-why">${l.why||""}</div>
+      <div class="conn-short">${tx(n.short)}</div>
+      ${depth === 1 ? `<div class="conn-why">${tx(l.why)||""}</div>
       <div class="conn-type type-${l.type}">${typeLabel}</div>
       ${srcLink}` : ''}
     </div>
@@ -1272,6 +1285,29 @@ document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
 });
 
 // ── REGION DROPDOWN ──
+// ── REGION DROPDOWN: dynamisch aus den Daten generieren ──
+const REGION_ICONS = {
+  usa:"🇺🇸", eu:"🇪🇺", russland:"🇷🇺", china:"🇨🇳",
+  oesterreich:"🇦🇹", uk:"🇬🇧", japan:"🇯🇵", taiwan:"🇹🇼",
+  iran:"🇮🇷", israel:"🇮🇱", saudi:"🇸🇦", afghanistan:"🇦🇫",
+  brasilien:"🇧🇷", australien:"🇦🇺", syrien:"🇸🇾",
+  mittelost:"🌍", global:"🌐", südostasien:"🌏"
+};
+(function buildRegionMenu() {
+  const menu = document.getElementById("region-menu");
+  // "Alle" zuerst
+  menu.innerHTML = `<div class="dd-item active" data-r="alle">Alle Bereiche</div>`;
+  // Alle Regionen aus Daten sammeln und sortiert nach Häufigkeit
+  const counts = {};
+  nodes.forEach(n => counts[n.r] = (counts[n.r]||0)+1);
+  const regions = Object.keys(counts).sort((a,b) => counts[b] - counts[a]);
+  for(const r of regions) {
+    const icon = REGION_ICONS[r] || "•";
+    const name = RNAME[r] || r;
+    menu.innerHTML += `<div class="dd-item" data-r="${r}">${icon} ${name}</div>`;
+  }
+})();
+
 const regionBtn = document.getElementById("region-btn");
 const regionDropdown = document.getElementById("region-dropdown");
 regionBtn.addEventListener("click", e => {
@@ -1390,8 +1426,8 @@ searchIn.addEventListener("input", () => {
   if(q.length < 2) return;
 
   const matches = nodes.filter(n =>
-    n.short.toLowerCase().includes(q) ||
-    n.detail.toLowerCase().includes(q) ||
+    tx(n.short).toLowerCase().includes(q) ||
+    tx(n.detail).toLowerCase().includes(q) ||
     String(n.yr).includes(q) ||
     n.r.includes(q)
   ).slice(0, 7);
@@ -1400,7 +1436,7 @@ searchIn.addEventListener("input", () => {
     const col = RCOL[n.r]||"#4a6080";
     const el = document.createElement("div");
     el.className = "sr";
-    el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${n.short}</span>`;
+    el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${tx(n.short)}</span>`;
     el.addEventListener("click", () => {
       searchRes.innerHTML = ""; searchIn.value = "";
       // Wenn der gesuchte Knoten durch imp-Filter ausgeblendet ist, Filter zurücksetzen
