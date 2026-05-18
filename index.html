@@ -537,10 +537,15 @@ h1 em { color: #4a9eff; font-style: normal; }
       </div>
     </div>
     <div class="sep-v"></div>
-    <!-- Importance filter -->
-    <button class="fb active" data-imp="alle">★ Alle</button>
-    <button class="fb" data-imp="3">★★★ Historisch</button>
-    <button class="fb" data-imp="2">★★ Wichtig</button>
+    <!-- Importance dropdown -->
+    <div class="dropdown" id="imp-dropdown">
+      <button class="fb active" id="imp-btn">★ Alle Wichtigkeiten ▾</button>
+      <div class="dropdown-menu" id="imp-menu">
+        <div class="dd-item active" data-imp="alle">★ Alle</div>
+        <div class="dd-item" data-imp="2">★★ Wichtig + Historisch</div>
+        <div class="dd-item" data-imp="3">★★★ Nur Historisch</div>
+      </div>
+    </div>
     <div class="sep-v"></div>
     <!-- Tools -->
     <button class="icon-btn" id="btn-path">⇢ Kette</button>
@@ -1218,12 +1223,26 @@ document.getElementById("help-close").addEventListener("click", () => {
   document.getElementById("help-overlay").style.display = "none";
 });
 
-document.querySelectorAll("[data-imp]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll("[data-imp]").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    filterImp = btn.dataset.imp;
+// ── IMP DROPDOWN ──
+const impBtn = document.getElementById("imp-btn");
+const impDropdown = document.getElementById("imp-dropdown");
+impBtn.addEventListener("click", e => {
+  e.stopPropagation();
+  // Andere Dropdowns schließen
+  regionDropdown.classList.remove("open");
+  impDropdown.classList.toggle("open");
+});
+document.addEventListener("click", () => impDropdown.classList.remove("open"));
+
+document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
+    filterImp = item.dataset.imp;
+    impBtn.textContent = item.dataset.imp === "alle" ? "★ Alle Wichtigkeiten ▾" : item.textContent + " ▾";
+    impBtn.classList.toggle("active", item.dataset.imp === "alle");
     applyImpFilter();
+    impDropdown.classList.remove("open");
   });
 });
 
@@ -1232,6 +1251,7 @@ const regionBtn = document.getElementById("region-btn");
 const regionDropdown = document.getElementById("region-dropdown");
 regionBtn.addEventListener("click", e => {
   e.stopPropagation();
+  impDropdown.classList.remove("open");
   regionDropdown.classList.toggle("open");
 });
 document.addEventListener("click", () => regionDropdown.classList.remove("open"));
@@ -1286,14 +1306,15 @@ document.getElementById("btn-reset").addEventListener("click", () => {
   document.getElementById("panel").classList.remove("open");
   resetVisuals();
   // Reset region dropdown
-  document.querySelectorAll(".dd-item").forEach(i => i.classList.remove("active"));
-  document.querySelector(".dd-item[data-r='alle']").classList.add("active");
+  document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
+  document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
   filterRegion = "alle";
   regionBtn.textContent = "🌐 Alle Regionen ▾";
-  // Reset imp filter
-  document.querySelectorAll("[data-imp]").forEach(b => b.classList.remove("active"));
-  document.querySelector("[data-imp='alle']").classList.add("active");
+  // Reset imp dropdown
+  document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
+  document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
   filterImp = "alle";
+  impBtn.textContent = "★ Alle Wichtigkeiten ▾";
   applyImpFilter();
   applyRegionFilter();
 });
