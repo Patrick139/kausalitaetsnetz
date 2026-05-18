@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<!--
+╔═══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║   KAUSALITÄTSNETZ — WELTGESCHICHTE 2000–2026                        ║
+║   Version 5 | Erstellt: Mai 2026                                    ║
+║   Autoren: Patrick Valda + Claude (Anthropic)                       ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   VISION & ZIEL                                                      ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║   Geschichte wird meistens falsch präsentiert: chronologisch,        ║
+║   vollständig, neutral, trocken. Schule. Lehrbuch. Wikipedia.        ║
+║   Das ist das falsche Format für das falsche Medium.                 ║
+║                                                                      ║
+║   Dieses Tool zeigt Geschichte als das was sie ist: ein Netz         ║
+║   von Ursachen und Folgen. Kein Ereignis existiert isoliert.         ║
+║   Der Irak-Krieg 2003 und Trump 2016 hängen zusammen.               ║
+║   Die Finanzkrise 2008 und der Brexit 2016 hängen zusammen.         ║
+║   Das soll man hier sehen, verstehen, nachverfolgen können.          ║
+║                                                                      ║
+║   Langfristiges Ziel: ein offenes, kuratiertes Gemeinschaftsprojekt  ║
+║   im Stil von Wikipedia — frei zugänglich, mehrsprachig,             ║
+║   erweiterbar. Kein akademischer Ton. Direkt. Einordnend.            ║
+║   Für jeden der verstehen will wie die Welt funktioniert.            ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   WAS ES BEREITS GIBT — UND WARUM ES NICHT REICHT                   ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║   Kumu.io        — bezahlt, komplex, nicht kuratiert                 ║
+║   Gephi          — Desktop, akademisch, hässlich                     ║
+║   Wikipedia      — Lexikon, kein visuelles Kausalitätsnetz           ║
+║   Journalismus-  — Einmalprojekte, nicht erweiterbar,                ║
+║   projekte         nicht offen                                       ║
+║                                                                      ║
+║   Ein offenes, sauberes, kuratiertes Kausalitätsnetz für             ║
+║   globale Geschichte existiert nicht. Das ist die Lücke.             ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   ARCHITEKTUR — STRIKT ZWEITEILIG                                    ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║                                                                      ║
+║   Das File besteht aus zwei klar getrennten Blöcken:                ║
+║                                                                      ║
+║   ┌─────────────────────────────────────────────────────────────┐   ║
+║   │  DATA BLOCK  (═══ DATA START ═══ bis ═══ DATA END ═══)     │   ║
+║   │  → Enthält NUR Daten: NODES[] und LINKS[]                  │   ║
+║   │  → Hier werden Ereignisse und Kausalitäten gepflegt        │   ║
+║   │  → Niemals Engine-Logik hier einfügen                      │   ║
+║   └─────────────────────────────────────────────────────────────┘   ║
+║                                                                      ║
+║   ┌─────────────────────────────────────────────────────────────┐   ║
+║   │  ENGINE BLOCK  (═══ ENGINE START ═══ bis ═══ ENGINE END ═══)│   ║
+║   │  → Enthält NUR Rendering, Filter, Interaktion (D3.js)      │   ║
+║   │  → Liest NODES[] und LINKS[] aus dem DATA BLOCK            │   ║
+║   │  → Niemals Daten hier eintragen                            │   ║
+║   └─────────────────────────────────────────────────────────────┘   ║
+║                                                                      ║
+║   Warum diese Trennung?                                              ║
+║   - Daten und Engine können unabhängig voneinander erweitert         ║
+║     oder korrigiert werden                                           ║
+║   - Bei langen Gesprächen mit Claude: nur den relevanten             ║
+║     Block schicken spart Token und verhindert Fehler                 ║
+║   - Neue Jahrzehnte (2027-2046 etc.) → nur DATA-Block anfassen      ║
+║   - UI/UX-Verbesserungen → nur ENGINE-Block anfassen                 ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   DATENFORMAT                                                        ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║                                                                      ║
+║   NODES — ein Eintrag pro historischem Ereignis:                    ║
+║   {                                                                  ║
+║     id:     "irak_2003",        ← snake_case, eindeutig             ║
+║     yr:     2003,               ← Jahr als Zahl (NICHT y — D3!)    ║
+║     r:      "welt",             ← Region (siehe unten)             ║
+║     imp:    3,                  ← Wichtigkeit: 3/2/1               ║
+║     short:  "Irak-Invasion",    ← max. 5-6 Wörter, Knotenlabel     ║
+║     detail: "Zwei Sätze...",    ← 2-3 Sätze für das Panel          ║
+║     src:    "https://..."       ← OPTIONAL: Quellenlink (BBC/      ║
+║                                    Reuters/Wikipedia). Zeigt        ║
+║                                    "→ Quelle"-Button im Panel.      ║
+║   }                                                                  ║
+║                                                                      ║
+║   LINKS — eine Verbindung zwischen zwei Ereignissen:                ║
+║   {                                                                  ║
+║     source: "irak_2003",        ← id des auslösenden Knotens       ║
+║     target: "isis_2014",        ← id des ausgelösten Knotens       ║
+║     type:   "direkt",           ← direkt / indirekt / beschleunigt ║
+║     why:    "IS entstand aus..."← 1 Satz: WARUM ist das kausal?    ║
+║     src:    "https://..."       ← OPTIONAL: Quellenlink für den    ║
+║                                    kausalen Zusammenhang selbst.    ║
+║   }                                                                  ║
+║                                                                      ║
+║   WICHTIGKEIT (imp):                                                 ║
+║     3 = Historisch (großer Kreis, roter Rand im Panel)              ║
+║     2 = Wichtig    (mittlerer Kreis)                                 ║
+║     1 = Relevant   (kleiner Kreis)                                  ║
+║                                                                      ║
+║   LINK-TYPEN:                                                        ║
+║     direkt       = A hat B unmittelbar ausgelöst (rot)              ║
+║     indirekt     = A hat zu B beigetragen, mit Zwischenschritten    ║
+║                    (gelb)                                            ║
+║     beschleunigt = B hätte ohne A länger gebraucht oder wäre        ║
+║                    anders verlaufen (blau)                           ║
+║                                                                      ║
+║   REGIONEN (r):                                                      ║
+║     usa, europa, russland, china, nahost,                           ║
+║     welt, oesterreich, tech, klima                                  ║
+║     (neue Regionen: auch in RCOL im ENGINE-Block ergänzen)          ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   ANWEISUNGEN FÜR CLAUDE                                             ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║                                                                      ║
+║   Wenn dieses File übergeben wird, zuerst diesen Kommentar lesen.   ║
+║                                                                      ║
+║   A) NUR DATEN ERGÄNZEN (neue Ereignisse, neue Links):              ║
+║      → Nur zwischen DATA START und DATA END arbeiten                ║
+║      → Neue NODES[] und LINKS[] einfügen                           ║
+║      → why-Feld bei jedem neuen Link nicht vergessen               ║
+║      → Engine niemals anfassen                                      ║
+║                                                                      ║
+║   B) NUR ENGINE VERBESSERN (UI, Filter, neue Features):             ║
+║      → Nur zwischen ENGINE START und ENGINE END arbeiten            ║
+║      → NODES[] und LINKS[] niemals anfassen                         ║
+║      → D3.js v7 (cdnjs) ist die verwendete Library                 ║
+║      → WICHTIG: D3 überschreibt d.x und d.y intern als             ║
+║        Koordinaten — deshalb heißt das Jahr-Feld d.yr, nicht d.y   ║
+║                                                                      ║
+║   C) NEUE JAHRZEHNTE HINZUFÜGEN (z.B. 2027-2046):                  ║
+║      → Nur DATA BLOCK, neue Objekte an NODES[] anhängen            ║
+║      → Jahr-Achse und Selects bauen sich automatisch aus Daten      ║
+║      → Links zu bestehenden Knoten erlaubt und erwünscht            ║
+║                                                                      ║
+║   D) NEUE REGION HINZUFÜGEN:                                        ║
+║      → DATA: r-Feld mit neuem Namen verwenden                       ║
+║      → ENGINE: RCOL-Objekt um neue Farbe ergänzen                  ║
+║      → Header-Buttons manuell ergänzen                              ║
+║                                                                      ║
+║   E) TOKEN-EFFIZIENZ bei langen Sessions:                           ║
+║      → Nur den relevanten Block schicken                            ║
+║      → DATA allein reicht für Datenkorrekturen                      ║
+║      → ENGINE allein reicht für UI-Änderungen                       ║
+║      → Bei Strukturänderungen (neues Feld): beide Blöcke            ║
+║        koordiniert anpassen                                          ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   FEATURES (aktuell implementiert)                                   ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║   ✓ Interaktives Kraftnetz (D3 force simulation)                    ║
+║   ✓ Klick auf Knoten → Panel mit Verbindungen + why-Text           ║
+║   ✓ Kausalkette: zwei Knoten → kürzester Pfad (BFS)                ║
+║   ✓ Region-Filter (Flaggen-Buttons)                                 ║
+║   ✓ Link-Typ-Filter (direkt/indirekt/beschleunigt)                  ║
+║   ✓ Volltextsuche mit Pan-to-Node                                   ║
+║   ✓ Zoom + Pan + Drag                                               ║
+║   ✓ Zoom-to-fit Button                                              ║
+║   ✓ Shift+Klick für schnelle Kettenansicht                          ║
+║                                                                      ║
+║   GEPLANT / NÄCHSTE SCHRITTE                                         ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║   ○ Mobile-Optimierung                                              ║
+║   ○ Quellenlinks pro Ereignis und pro Link                          ║
+║   ○ Mehrsprachigkeit (DE/EN)                                        ║
+║   ○ GitHub Pages Hosting                                            ║
+║   ○ Community-Einreichsystem                                        ║
+║   ○ Vollständige Datenbasis (100+ Knoten, 150+ Links)               ║
+║   ○ Import/Export der Datenbasis als JSON                           ║
+║   ○ Zeitachsen-Ansicht als Alternative zum Netz                     ║
+║                                                                      ║
+╚═══════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kausalitätsnetz 2000–2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #07090d; color: #c8d4e4; font-family: 'Segoe UI', system-ui, sans-serif; overflow: hidden; height: 100vh; }
+
+#canvas { width: 100vw; height: 100vh; cursor: grab; }
+#canvas:active { cursor: grabbing; }
+
+.node circle { stroke-width: 1.5; cursor: pointer; transition: stroke-width 0.12s; }
+.node circle:hover { stroke-width: 3; }
+.node.selected circle { stroke-width: 3; stroke: #fff !important; }
+.node.path-node circle { stroke-width: 3; stroke: #22d3ee !important; }
+.node.faded { opacity: 0.08; }
+.node text { font-size: 10px; fill: #c8d4e4; pointer-events: none; }
+.node.selected text, .node.path-node text { fill: #fff; font-weight: 700; }
+
+.link { stroke-opacity: 0.3; fill: none; }
+.link.direkt       { stroke: #ff4a6e; }
+.link.indirekt     { stroke: #f0c040; }
+.link.beschleunigt { stroke: #4a9eff; }
+.link.highlighted  { stroke-opacity: 0.9 !important; stroke-width: 2.5 !important; }
+.link.path-link    { stroke: #22d3ee !important; stroke-opacity: 1 !important; stroke-width: 3 !important; }
+.link.faded        { stroke-opacity: 0.03 !important; }
+
+/* ── HEADER ── */
+#hdr {
+  position: fixed; top: 0; left: 0; right: 0;
+  padding: 0.7rem 1.2rem;
+  background: rgba(7,9,13,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1c2535;
+  z-index: 200;
+  display: flex; flex-direction: column; gap: 0.45rem;
+}
+
+.hdr-row { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+
+h1 { font-size: 1rem; font-weight: 800; letter-spacing: -0.03em; margin-right: 0.5rem; white-space: nowrap; }
+h1 em { color: #4a9eff; font-style: normal; }
+
+.fb {
+  font-family: monospace; font-size: 0.56rem;
+  padding: 0.2rem 0.5rem; border-radius: 2px;
+  border: 1px solid #1c2535; background: transparent;
+  color: #4a6080; cursor: pointer;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  transition: all 0.1s; white-space: nowrap;
+}
+.fb:hover { color: #c8d4e4; border-color: #3a4a60; }
+.fb.active { color: #000 !important; font-weight: 700; }
+.fb[data-r="alle"].active    { background: #c8d4e4; border-color: #c8d4e4; }
+.fb[data-r="usa"].active     { background: #4a9eff; border-color: #4a9eff; }
+.fb[data-r="europa"].active  { background: #3dd68c; border-color: #3dd68c; }
+.fb[data-r="russland"].active{ background: #ff8c4a; border-color: #ff8c4a; }
+.fb[data-r="china"].active   { background: #ff4a6e; border-color: #ff4a6e; }
+.fb[data-r="nahost"].active  { background: #c084fc; border-color: #c084fc; }
+.fb[data-r="welt"].active    { background: #f0c040; border-color: #f0c040; }
+.fb[data-r="tech"].active    { background: #22d3ee; border-color: #22d3ee; }
+.fb[data-r="klima"].active   { background: #86efac; border-color: #86efac; }
+.fb[data-lt="alle"].active   { background: #c8d4e4; border-color: #c8d4e4; }
+.fb[data-lt="direkt"].active     { background: #ff4a6e; border-color: #ff4a6e; }
+.fb[data-lt="indirekt"].active   { background: #f0c040; border-color: #f0c040; }
+.fb[data-lt="beschleunigt"].active { background: #4a9eff; border-color: #4a9eff; }
+
+.sep-v { width: 1px; height: 14px; background: #1c2535; margin: 0 0.2rem; flex-shrink: 0; }
+
+#search-wrap { position: relative; }
+#search-in {
+  font-family: monospace; font-size: 0.65rem;
+  background: #0c1018; border: 1px solid #1c2535;
+  color: #c8d4e4; padding: 0.22rem 0.6rem;
+  border-radius: 2px; outline: none; width: 200px;
+}
+#search-in:focus { border-color: #3a4a60; }
+#search-res {
+  position: absolute; top: calc(100% + 4px); left: 0;
+  width: 100%; z-index: 300;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.sr {
+  background: rgba(12,16,24,0.98); border: 1px solid #1c2535;
+  padding: 0.3rem 0.6rem; border-radius: 2px;
+  font-size: 0.7rem; cursor: pointer;
+  display: flex; gap: 0.4rem; align-items: center;
+}
+.sr:hover { border-color: #3a4a60; }
+.sr-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.sr-yr { font-family: monospace; font-size: 0.58rem; color: #4a6080; flex-shrink: 0; }
+
+/* path mode hint */
+#path-hint {
+  font-family: monospace; font-size: 0.6rem; color: #22d3ee;
+  padding: 0.2rem 0.5rem; background: rgba(34,211,238,0.08);
+  border: 1px solid rgba(34,211,238,0.2); border-radius: 2px;
+  display: none;
+}
+
+.icon-btn {
+  font-size: 0.65rem; padding: 0.2rem 0.55rem;
+  border-radius: 2px; border: 1px solid #1c2535;
+  background: transparent; color: #4a6080;
+  cursor: pointer; transition: all 0.1s;
+  white-space: nowrap;
+}
+.icon-btn:hover { color: #c8d4e4; border-color: #3a4a60; }
+.icon-btn.active { background: rgba(34,211,238,0.1); border-color: #22d3ee; color: #22d3ee; }
+
+/* ── PANEL ── */
+#panel {
+  position: fixed; top: 0; right: 0;
+  width: 320px; height: 100vh;
+  background: rgba(10,14,20,0.98);
+  border-left: 1px solid #1c2535;
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.2s ease;
+  overflow-y: auto; z-index: 100;
+}
+#panel.open { transform: translateX(0); }
+#close-btn {
+  position: absolute; top: 0.75rem; right: 0.75rem;
+  background: none; border: 1px solid #1c2535;
+  color: #4a6080; cursor: pointer;
+  font-size: 0.6rem; padding: 0.18rem 0.45rem; border-radius: 2px;
+}
+#close-btn:hover { color: #c8d4e4; }
+
+.p-yr { font-family: monospace; font-size: 1.8rem; font-weight: 700; color: #4a6080; line-height: 1; margin-bottom: 0.25rem; }
+.p-region { font-family: monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.12rem 0.35rem; border-radius: 2px; display: inline-block; margin-bottom: 0.75rem; }
+.p-title { font-size: 1rem; font-weight: 700; color: #e8f0fc; line-height: 1.3; margin-bottom: 0.6rem; }
+.p-detail { font-size: 0.8rem; line-height: 1.6; color: #8a9ab0; margin-bottom: 0.8rem; }
+.p-src {
+  display: inline-block; margin-bottom: 1.2rem;
+  font-family: monospace; font-size: 0.58rem; letter-spacing: 0.05em;
+  color: #4a9eff; border: 1px solid rgba(74,158,255,0.3);
+  padding: 0.18rem 0.5rem; border-radius: 2px;
+  text-decoration: none; transition: all 0.1s;
+}
+.p-src:hover { background: rgba(74,158,255,0.08); border-color: #4a9eff; }
+.conn-src {
+  font-family: monospace; font-size: 0.5rem; color: #3a5a80;
+  text-decoration: none; margin-top: 0.15rem; display: inline-block;
+  letter-spacing: 0.04em;
+}
+.conn-src:hover { color: #4a9eff; }
+
+.p-sec { font-family: monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: #4a6080; margin-bottom: 0.4rem; }
+
+.conn {
+  display: flex; gap: 0.4rem; align-items: flex-start;
+  padding: 0.45rem 0.55rem; margin-bottom: 0.2rem;
+  background: #0d1219; border-radius: 3px;
+  cursor: pointer; border-left: 2px solid transparent;
+  transition: border-color 0.1s;
+}
+.conn:hover { border-left-color: #3a4a60; }
+.conn.direkt     { border-left-color: rgba(255,74,110,0.4); }
+.conn.indirekt   { border-left-color: rgba(240,192,64,0.4); }
+.conn.beschleunigt { border-left-color: rgba(74,158,255,0.4); }
+.conn-arr { font-size: 0.65rem; color: #4a6080; padding-top: 0.05rem; flex-shrink: 0; }
+.conn-body { flex: 1; min-width: 0; }
+.conn-yr  { font-family: monospace; font-size: 0.55rem; color: #4a6080; }
+.conn-short { font-size: 0.75rem; margin: 0.05rem 0; }
+.conn-why { font-size: 0.7rem; color: #5a7090; line-height: 1.4; margin-top: 0.15rem; font-style: italic; }
+.conn-type { font-family: monospace; font-size: 0.5rem; letter-spacing: 0.06em; margin-top: 0.1rem; }
+.type-direkt     { color: #ff4a6e; }
+.type-indirekt   { color: #f0c040; }
+.type-beschleunigt { color: #4a9eff; }
+
+/* ── LEGEND ── */
+#legend {
+  position: fixed; bottom: 1.2rem; left: 1.2rem;
+  font-family: monospace; font-size: 0.58rem; color: #4a6080;
+  z-index: 50; line-height: 1.8;
+}
+.leg { display: flex; align-items: center; gap: 0.45rem; }
+.ll { width: 20px; height: 2px; }
+.lc { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid; }
+
+/* ── ZOOM BTN ── */
+#zoom-fit {
+  position: fixed; bottom: 1.2rem; right: 1.2rem;
+  font-family: monospace; font-size: 0.6rem;
+  background: rgba(12,16,24,0.9); border: 1px solid #1c2535;
+  color: #4a6080; cursor: pointer; padding: 0.35rem 0.65rem;
+  border-radius: 2px; z-index: 50;
+}
+#zoom-fit:hover { color: #c8d4e4; border-color: #3a4a60; }
+
+/* imp:3 glow */
+@keyframes glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 3px currentColor); opacity: 1; }
+  50%       { filter: drop-shadow(0 0 8px currentColor); opacity: 0.85; }
+}
+.node.imp3 > circle { animation: glow-pulse 3.5s ease-in-out infinite; }
+
+/* ── HILFE OVERLAY ── */
+#help-overlay {
+  position: fixed; inset: 0; z-index: 500;
+  background: rgba(4,8,14,0.85);
+  display: flex; align-items: center; justify-content: center;
+}
+#help-box {
+  background: #0d1219; border: 1px solid #1c2535;
+  border-radius: 4px; padding: 1.5rem 1.8rem;
+  max-width: 520px; width: 90%; max-height: 85vh;
+  overflow-y: auto; position: relative;
+  font-family: monospace; font-size: 0.72rem; color: #8a9ab0;
+}
+#help-close {
+  position: absolute; top: 0.75rem; right: 0.75rem;
+  background: none; border: 1px solid #1c2535;
+  color: #4a6080; cursor: pointer; font-size: 0.6rem;
+  padding: 0.18rem 0.45rem; border-radius: 2px;
+}
+#help-close:hover { color: #c8d4e4; }
+.help-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem; font-weight: 700;
+  color: #e8f0fc; margin-bottom: 1.2rem;
+}
+.help-title em { color: #22d3ee; font-style: normal; }
+.help-section {
+  font-size: 0.52rem; letter-spacing: 0.1em;
+  color: #4a6080; margin: 1rem 0 0.4rem;
+  border-bottom: 1px solid #1c2535; padding-bottom: 0.2rem;
+}
+.help-text { font-size: 0.72rem; line-height: 1.6; margin-bottom: 0.4rem; }
+.help-row {
+  display: flex; gap: 0.8rem; align-items: baseline;
+  padding: 0.2rem 0; font-size: 0.7rem;
+}
+.help-key {
+  color: #c8d4e4; white-space: nowrap;
+  min-width: 110px; flex-shrink: 0;
+}
+#help-start {
+  margin-top: 1.4rem; width: 100%;
+  background: #22d3ee; color: #000;
+  border: none; border-radius: 2px;
+  font-family: monospace; font-size: 0.72rem;
+  font-weight: 700; letter-spacing: 0.05em;
+  padding: 0.6rem; cursor: pointer;
+}
+#help-start:hover { background: #38e8ff; }
+
+/* hint overlay */
+#hint { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; font-family: monospace; font-size: 0.65rem; color: #1e2e40; pointer-events: none; line-height: 2.2; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<div id="hdr">
+  <div class="hdr-row">
+    <h1>Kausal<em>netz</em> 2000–2026</h1>
+    <div class="sep-v"></div>
+    <!-- Region filter -->
+    <button class="fb active" data-r="alle">Alle</button>
+    <button class="fb" data-r="usa">🇺🇸</button>
+    <button class="fb" data-r="europa">🇪🇺</button>
+    <button class="fb" data-r="russland">🇷🇺</button>
+    <button class="fb" data-r="china">🇨🇳</button>
+    <button class="fb" data-r="nahost">🌍</button>
+    <button class="fb" data-r="welt">🌐</button>
+    <button class="fb" data-r="tech">💻</button>
+    <button class="fb" data-r="klima">🌱</button>
+    <button class="fb" data-r="oesterreich">🇦🇹</button>
+    <div class="sep-v"></div>
+    <!-- Link type filter -->
+    <button class="fb active" data-lt="alle">Links: Alle</button>
+    <button class="fb" data-lt="direkt">■ Direkt</button>
+    <button class="fb" data-lt="indirekt">■ Indirekt</button>
+    <button class="fb" data-lt="beschleunigt">■ Beschleunigt</button>
+    <div class="sep-v"></div>
+    <!-- Importance filter -->
+    <button class="fb active" data-imp="alle">★ Alle</button>
+    <button class="fb" data-imp="3">★★★ Historisch</button>
+    <button class="fb" data-imp="2">★★ Wichtig</button>
+    <div class="sep-v"></div>
+    <!-- Tools -->
+    <button class="icon-btn" id="btn-path">⇢ Kette</button>
+    <button class="icon-btn" id="btn-help">? Hilfe</button>
+    <button class="icon-btn" id="btn-reset">✕ Reset</button>
+    <div class="sep-v"></div>
+    <div id="search-wrap">
+      <input id="search-in" type="text" placeholder="Suche...">
+      <div id="search-res"></div>
+    </div>
+    <div id="path-hint" id="path-hint">Shift+Klick auf zweiten Knoten</div>
+  </div>
+</div>
+
+<!-- HILFE OVERLAY -->
+<div id="help-overlay">
+  <div id="help-box">
+    <button id="help-close">✕</button>
+    <div class="help-title">Kausal<em>netz</em> — Bedienung</div>
+
+    <div class="help-section">GRUNDPRINZIP</div>
+    <div class="help-text">Jeder Knoten ist ein historisches Ereignis. Jede Linie ist eine Kausalverbindung — nicht nur "es passierte danach", sondern "es hat das ausgelöst". Klick auf einen Knoten um zu sehen was dazu geführt hat und was es ausgelöst hat.</div>
+
+    <div class="help-section">NAVIGATION</div>
+    <div class="help-row"><span class="help-key">Klick</span><span>Knoten auswählen — zeigt Ursachen und Folgen</span></div>
+    <div class="help-row"><span class="help-key">Drag</span><span>Knoten verschieben</span></div>
+    <div class="help-row"><span class="help-key">Scroll</span><span>Rein-/Rauszoomen</span></div>
+    <div class="help-row"><span class="help-key">Drag Hintergrund</span><span>Netz verschieben</span></div>
+    <div class="help-row"><span class="help-key">Klick Hintergrund</span><span>Auswahl aufheben</span></div>
+
+    <div class="help-section">KAUSALKETTE</div>
+    <div class="help-text">Mit <strong>⇢ Kette</strong> aktivieren, dann zwei Knoten nacheinander anklicken — das Tool findet den kürzesten Kausalweg zwischen ihnen. Beispiel: 9/11 → Trump 2016 in 3 Schritten.</div>
+
+    <div class="help-section">FILTER</div>
+    <div class="help-row"><span class="help-key">Flaggen</span><span>Nach Region filtern</span></div>
+    <div class="help-row"><span class="help-key">Links</span><span>Nur direkte / indirekte / beschleunigte Verbindungen</span></div>
+    <div class="help-row"><span class="help-key">★★★ Historisch</span><span>Nur die wichtigsten ~30 Ereignisse — guter Einstieg</span></div>
+    <div class="help-row"><span class="help-key">★★ Wichtig</span><span>Wichtige + historische Ereignisse</span></div>
+    <div class="help-row"><span class="help-key">Alle</span><span>Alle Ereignisse inkl. relevantem Kontext</span></div>
+
+    <div class="help-section">LINIEN-FARBEN</div>
+    <div class="help-row"><span class="help-key" style="color:#ff4a6e">Rot</span><span>Direkte Ursache — A hat B ausgelöst</span></div>
+    <div class="help-row"><span class="help-key" style="color:#f0c040">Gelb</span><span>Indirekte Folge — A hat zu B beigetragen</span></div>
+    <div class="help-row"><span class="help-key" style="color:#4a9eff">Blau</span><span>Beschleunigt — A hat B schneller/stärker gemacht</span></div>
+
+    <div class="help-section">KNOTEN-GRÖSSE</div>
+    <div class="help-row"><span class="help-key">Groß (glühend)</span><span>Historisch — epochales Ereignis</span></div>
+    <div class="help-row"><span class="help-key">Mittel</span><span>Wichtig — bedeutendes Ereignis</span></div>
+    <div class="help-row"><span class="help-key">Klein</span><span>Relevant — Kontext und Hintergrund</span></div>
+
+    <button id="help-start" onclick="document.getElementById('help-overlay').style.display='none'">Verstanden — loslegen</button>
+  </div>
+</div>
+
+<svg id="canvas">
+  <defs>
+    <marker id="arr-direkt"      markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#ff4a6e" opacity="0.7"/></marker>
+    <marker id="arr-indirekt"    markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#f0c040" opacity="0.7"/></marker>
+    <marker id="arr-beschleunigt"markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#4a9eff" opacity="0.7"/></marker>
+    <marker id="arr-path"        markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#22d3ee"/></marker>
+  </defs>
+  <g id="g-links"></g>
+  <g id="g-nodes"></g>
+</svg>
+
+<div id="panel">
+  <button id="close-btn">✕</button>
+  <div id="panel-content"></div>
+</div>
+
+<div id="legend">
+  <div class="leg"><div class="ll" style="background:#ff4a6e"></div>direkte Ursache</div>
+  <div class="leg"><div class="ll" style="background:#f0c040"></div>indirekte Folge</div>
+  <div class="leg"><div class="ll" style="background:#4a9eff"></div>beschleunigt</div>
+  <div class="leg" style="margin-top:0.3rem"><div class="ll" style="background:#22d3ee"></div>Kette (Shift+Klick)</div>
+  <div class="leg" style="margin-top:0.3rem"><div class="lc" style="border-color:#ff4a6e;width:12px;height:12px"></div>historisch</div>
+  <div class="leg"><div class="lc" style="border-color:#f0c040"></div>wichtig</div>
+  <div class="leg"><div class="lc" style="border-color:#3a4a60"></div>relevant</div>
+</div>
+
+<button id="zoom-fit">⊡ Zoom zurücksetzen</button>
+<div id="hint">Klicke einen Knoten<br>um Verbindungen zu sehen<br><br>Shift+Klick auf zwei Knoten<br>um die Kausalkette zu sehen</div>
+
+<script>
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  DATEN LEBEN JETZT IN: kausalitaetsnetz.json               ║
+// ║  Dieses File nur noch für Engine-Änderungen                ║
+// ╚══════════════════════════════════════════════════════════════╝
+
+async function init() {
+  let NODES, LINKS;
+  try {
+    const res = await fetch('kausalitaetsnetz.json');
+    const data = await res.json();
+    NODES = data.nodes;
+    LINKS = data.links;
+  } catch(e) {
+    document.body.innerHTML += `<div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:#ff4a6e;font-family:monospace;font-size:0.8rem;text-align:center">
+      Konnte kausalitaetsnetz.json nicht laden.<br>
+      Beim lokalen Öffnen: einen lokalen Server starten<br>
+      <code style="font-size:0.65rem;color:#4a6080">python3 -m http.server 8000</code>
+    </div>`;
+    return;
+  }
+
+// ═══ ENGINE START ═══ (Daten kommen jetzt aus JSON)
+
+
+const RCOL = {
+  usa:"#4a9eff", europa:"#3dd68c", russland:"#ff8c4a",
+  china:"#ff4a6e", nahost:"#c084fc", welt:"#f0c040",
+  oesterreich:"#a78bfa", tech:"#22d3ee", klima:"#86efac"
+};
+const IRAD = {3:22, 2:13, 1:7};
+
+const W = window.innerWidth, H = window.innerHeight;
+const HDR_H = 70; // approximate header height
+
+// Deep-copy nodes so D3 can mutate
+const nodes = NODES.map(d => ({...d}));
+const links = LINKS.map(d => ({...d}));
+
+// Lookup
+const byId = {};
+nodes.forEach(n => byId[n.id] = n);
+
+// Build adjacency for path finding
+const adj = {}; // id → [{to, link}]
+nodes.forEach(n => adj[n.id] = []);
+links.forEach(l => {
+  const s = typeof l.source === 'object' ? l.source.id : l.source;
+  const t = typeof l.target === 'object' ? l.target.id : l.target;
+  if(adj[s]) adj[s].push({to: t, link: l});
+});
+
+// ── STATE ──
+let filterRegion = "alle";
+let filterLinkType = "alle";
+let filterImp = "alle";
+let pathMode = false;
+let pathStart = null;
+let selectedNode = null;
+
+// ── SVG ──
+const svg = d3.select("#canvas");
+const gL = svg.select("#g-links");
+const gN = svg.select("#g-nodes");
+
+const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
+  gL.attr("transform", e.transform);
+  gN.attr("transform", e.transform);
+});
+svg.call(zoom);
+
+// ── SIMULATION ──
+const sim = d3.forceSimulation(nodes)
+  .force("link", d3.forceLink(links).id(d => d.id)
+    .distance(d => {
+      const s = byId[d.source.id||d.source], t = byId[d.target.id||d.target];
+      if(!s||!t) return 120;
+      return 70 + Math.abs(s.yr - t.yr) * 0.5;
+    }).strength(0.25))
+  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -520 : d.imp === 2 ? -320 : -180))
+  .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
+  .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
+  .force("x", d3.forceX(d => {
+    const mn=1998, mx=2026;
+    return 100 + ((d.yr-mn)/(mx-mn)) * (W-200);
+  }).strength(0.12))
+  .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.04));
+
+// ── DRAW LINKS ──
+const linkEls = gL.selectAll(".link").data(links).join("line")
+  .attr("class", d => `link ${d.type}`)
+  .attr("stroke-width", 1.5)
+  .attr("marker-end", d => `url(#arr-${d.type})`);
+
+// ── DRAW NODES ──
+const nodeEls = gN.selectAll(".node").data(nodes).join("g")
+  .attr("class", d => `node imp${d.imp}`)
+  .call(d3.drag()
+    .on("start", (e,d) => { if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+    .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+    .on("end",   (e,d) => { if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
+  )
+  .on("click", (e, d) => { e.stopPropagation(); handleNodeClick(e, d); });
+
+nodeEls.append("circle")
+  .attr("r", d => IRAD[d.imp])
+  .attr("fill", d => (RCOL[d.r]||"#4a6080") + "1a")
+  .attr("stroke", d => RCOL[d.r]||"#4a6080");
+
+nodeEls.filter(d => d.imp >= 2).append("text")
+  .attr("dy", d => IRAD[d.imp] + 13)
+  .attr("text-anchor", "middle")
+  .text(d => d.short)
+  .style("font-size", d => d.imp===3 ? "10px" : "9px");
+
+nodeEls.filter(d => d.imp >= 2).append("text")
+  .attr("dy", "0.35em").attr("text-anchor", "middle")
+  .style("font-size", "8px").style("font-family", "monospace")
+  .style("fill", d => RCOL[d.r]||"#4a6080")
+  .text(d => String(d.yr));
+
+// ── TICK ──
+sim.on("tick", () => {
+  linkEls.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
+         .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
+  nodeEls.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// ── NODE CLICK ──
+function handleNodeClick(e, d) {
+  document.getElementById("hint").style.display = "none";
+
+  if(pathMode) {
+    if(!pathStart) {
+      pathStart = d;
+      nodeEls.filter(n => n.id === d.id).classed("selected", true);
+      document.getElementById("path-hint").style.display = "block";
+    } else if(d.id !== pathStart.id) {
+      showPath(pathStart, d);
+      pathStart = null;
+      document.getElementById("path-hint").style.display = "none";
+    }
+    return;
+  }
+
+  if(e.shiftKey) {
+    // Quick path mode via shift-click
+    if(!pathStart) {
+      pathStart = d;
+      nodeEls.filter(n => n.id === d.id).classed("selected", true);
+      document.getElementById("path-hint").style.display = "block";
+    } else if(d.id !== pathStart.id) {
+      showPath(pathStart, d);
+      pathStart = null;
+      document.getElementById("path-hint").style.display = "none";
+    }
+    return;
+  }
+
+  selectNode(d);
+}
+
+// ── SELECT NODE ──
+function selectNode(d) {
+  selectedNode = d;
+  const connLinks = links.filter(l =>
+    (l.source.id||l.source) === d.id || (l.target.id||l.target) === d.id
+  );
+  const connIds = new Set(connLinks.flatMap(l => [l.source.id||l.source, l.target.id||l.target]));
+
+  // Apply filter
+  applyVisualFilter(connIds, connLinks, null);
+  nodeEls.classed("selected", n => n.id === d.id).classed("path-node", false);
+  linkEls.classed("path-link", false);
+
+  renderPanel(d, connLinks);
+}
+
+// ── PATH FINDING (BFS) ──
+function bfs(startId, endId) {
+  const queue = [[startId]];
+  const visited = new Set([startId]);
+  while(queue.length) {
+    const path = queue.shift();
+    const cur = path[path.length-1];
+    if(cur === endId) return path;
+    for(const nb of (adj[cur]||[])) {
+      if(!visited.has(nb.to)) {
+        visited.add(nb.to);
+        queue.push([...path, nb.to]);
+      }
+    }
+  }
+  return null;
+}
+
+function showPath(startNode, endNode) {
+  const path = bfs(startNode.id, endNode.id);
+
+  if(!path) {
+    // No path found
+    renderPanelMessage(`Keine direkte Kausalkette von <strong>${startNode.short}</strong> zu <strong>${endNode.short}</strong> gefunden.`);
+    document.getElementById("panel").classList.add("open");
+    resetVisuals();
+    return;
+  }
+
+  const pathSet = new Set(path);
+  const pathLinkSet = new Set();
+
+  for(let i=0; i < path.length-1; i++) {
+    const s=path[i], t=path[i+1];
+    links.forEach(l => {
+      if((l.source.id||l.source)===s && (l.target.id||l.target)===t) pathLinkSet.add(l);
+    });
+  }
+
+  // Visuals
+  nodeEls
+    .classed("selected", false)
+    .classed("path-node", n => pathSet.has(n.id))
+    .classed("faded", n => !pathSet.has(n.id));
+
+  linkEls
+    .classed("highlighted", false)
+    .classed("path-link", l => pathLinkSet.has(l))
+    .classed("faded", l => !pathLinkSet.has(l));
+
+  // Panel: show path
+  let html = `
+    <div class="p-yr" style="font-size:1rem;margin-bottom:0.75rem;">Kausalkette</div>
+    <div style="font-size:0.78rem;color:#8a9ab0;margin-bottom:1.2rem;">
+      Von <strong style="color:#e8f0fc">${startNode.short}</strong>
+      nach <strong style="color:#22d3ee">${endNode.short}</strong>
+    </div>
+    <div class="p-sec">PFAD (${path.length} Schritte)</div>
+  `;
+
+  for(let i=0; i < path.length; i++) {
+    const n = byId[path[i]];
+    if(!n) continue;
+    const col = RCOL[n.r]||"#4a6080";
+    html += `<div style="display:flex;gap:0.5rem;align-items:flex-start;padding:0.4rem 0.55rem;margin-bottom:0.2rem;background:#0d1219;border-radius:3px;border-left:2px solid ${col}40;cursor:pointer" onclick="selectById('${n.id}')">
+      <div style="font-family:monospace;font-size:0.55rem;color:#4a6080;padding-top:0.1rem;min-width:2rem">${n.yr}</div>
+      <div>
+        <div style="font-size:0.75rem;color:#c8d4e4">${n.short}</div>
+        ${i < path.length-1 ? (() => {
+          const nextLink = [...pathLinkSet].find(l => (l.source.id||l.source)===path[i] && (l.target.id||l.target)===path[i+1]);
+          return nextLink ? `<div style="font-size:0.68rem;color:#5a7090;font-style:italic;margin-top:0.1rem">↓ ${nextLink.why}</div>` : '';
+        })() : ''}
+      </div>
+    </div>`;
+  }
+
+  document.getElementById("panel-content").innerHTML = html;
+  document.getElementById("panel").classList.add("open");
+}
+
+// ── VISUAL FILTER ──
+function applyVisualFilter(connIds, connLinks, pathLinkSet) {
+  nodeEls
+    .classed("faded", n => connIds && !connIds.has(n.id))
+    .classed("path-node", false);
+
+  linkEls
+    .classed("faded", l => {
+      const s=l.source.id||l.source, t=l.target.id||l.target;
+      if(connIds && !connIds.has(s) && !connIds.has(t)) return true;
+      return false;
+    })
+    .classed("highlighted", l => connLinks && connLinks.includes(l))
+    .style("stroke-opacity", l => {
+      const s=l.source.id||l.source, t=l.target.id||l.target;
+      if(connIds && connIds.has(s) && connIds.has(t)) {
+        return connLinks && connLinks.includes(l) ? 0.9 : 0.3;
+      }
+      return 0.04;
+    });
+}
+
+function resetVisuals() {
+  selectedNode = null;
+  nodeEls.classed("selected", false).classed("faded", false).classed("path-node", false);
+  linkEls.classed("highlighted", false).classed("faded", false).classed("path-link", false)
+    .style("stroke-opacity", 0.3);
+}
+
+// ── PANEL ──
+function renderPanel(d, connLinks) {
+  const col = RCOL[d.r]||"#4a6080";
+
+  const causes = connLinks.filter(l => (l.target.id||l.target)===d.id)
+    .map(l => ({n: byId[l.source.id||l.source], l}));
+  const effects = connLinks.filter(l => (l.source.id||l.source)===d.id)
+    .map(l => ({n: byId[l.target.id||l.target], l}));
+
+  let html = `
+    <div class="p-yr">${d.yr}</div>
+    <div class="p-region" style="background:${col}22;color:${col}">${d.r.toUpperCase()}</div>
+    <div class="p-title">${d.short}</div>
+    <div class="p-detail">${d.detail}</div>
+    ${d.src ? `<a class="p-src" href="${d.src}" target="_blank" rel="noopener">↗ Quelle</a>` : ''}
+  `;
+
+  if(causes.length) {
+    html += `<div class="p-sec" style="margin-bottom:0.5rem">← WURDE AUSGELÖST DURCH</div>`;
+    causes.forEach(({n, l}) => {
+      if(!n) return;
+      html += connCard(n, l, "←");
+    });
+  }
+  if(effects.length) {
+    html += `<div class="p-sec" style="margin-top:1rem;margin-bottom:0.5rem">→ HAT AUSGELÖST / BEEINFLUSST</div>`;
+    effects.forEach(({n, l}) => {
+      if(!n) return;
+      html += connCard(n, l, "→");
+    });
+  }
+
+  document.getElementById("panel-content").innerHTML = html;
+  document.getElementById("panel").classList.add("open");
+}
+
+function connCard(n, l, arr) {
+  const typeLabel = {direkt:"direkte Ursache", indirekt:"indirekte Folge", beschleunigt:"beschleunigt"}[l.type]||l.type;
+  const srcLink = l.src ? `<a class="conn-src" href="${l.src}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗ Quelle</a>` : '';
+  return `<div class="conn ${l.type}" onclick="selectById('${n.id}')">
+    <span class="conn-arr">${arr}</span>
+    <div class="conn-body">
+      <div class="conn-yr">${n.yr}</div>
+      <div class="conn-short">${n.short}</div>
+      <div class="conn-why">${l.why||""}</div>
+      <div class="conn-type type-${l.type}">${typeLabel}</div>
+      ${srcLink}
+    </div>
+  </div>`;
+}
+
+function renderPanelMessage(msg) {
+  document.getElementById("panel-content").innerHTML = `<div style="font-size:0.8rem;color:#8a9ab0;line-height:1.6;margin-top:1rem">${msg}</div>`;
+  document.getElementById("panel").classList.add("open");
+}
+
+// ── REGION FILTER ──
+function applyRegionFilter() {
+  const active = filterRegion;
+  nodeEls.classed("faded", d => active !== "alle" && d.r !== active);
+  linkEls.classed("faded", l => {
+    if(active === "alle") return false;
+    const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
+    return !(sn && sn.r === active) && !(tn && tn.r === active);
+  });
+}
+
+// ── LINK TYPE FILTER ──
+function applyLinkTypeFilter() {
+  const active = filterLinkType;
+  linkEls.style("display", l => active === "alle" || l.type === active ? null : "none");
+}
+
+// ── IMP FILTER ──
+function applyImpFilter() {
+  const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+  nodeEls.style("display", d => d.imp >= minImp ? null : "none");
+  linkEls.style("opacity", l => {
+    const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
+    if(!sn || !tn) return 0;
+    return (sn.imp >= minImp && tn.imp >= minImp) ? null : 0;
+  });
+}
+
+// ── AUTO ZOOM TO FIT on simulation settle ──
+sim.on("end", () => {
+  const xs = nodes.map(n=>n.x), ys = nodes.map(n=>n.y);
+  const x0=Math.min(...xs), x1=Math.max(...xs);
+  const y0=Math.min(...ys), y1=Math.max(...ys);
+  const pad = 60;
+  const scaleX = (W-pad*2)/(x1-x0||1);
+  const scaleY = (H-HDR_H-pad*2)/(y1-y0||1);
+  const k = Math.min(scaleX, scaleY, 1.5);
+  const tx = W/2 - k*(x0+x1)/2;
+  const ty = H/2 - k*(y0+y1)/2 + HDR_H/2;
+  svg.transition().duration(800).call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
+});
+
+// ── CONTROLS ──
+document.getElementById("btn-help").addEventListener("click", () => {
+  document.getElementById("help-overlay").style.display = "flex";
+});
+document.getElementById("help-close").addEventListener("click", () => {
+  document.getElementById("help-overlay").style.display = "none";
+});
+
+document.querySelectorAll("[data-imp]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-imp]").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    filterImp = btn.dataset.imp;
+    applyImpFilter();
+  });
+});
+
+document.querySelectorAll("[data-r]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-r]").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    filterRegion = btn.dataset.r;
+    resetVisuals();
+    applyRegionFilter();
+  });
+});
+
+document.querySelectorAll("[data-lt]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-lt]").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    filterLinkType = btn.dataset.lt;
+    applyLinkTypeFilter();
+  });
+});
+
+document.getElementById("btn-path").addEventListener("click", () => {
+  pathMode = !pathMode;
+  pathStart = null;
+  document.getElementById("btn-path").classList.toggle("active", pathMode);
+  document.getElementById("path-hint").style.display = pathMode ? "block" : "none";
+  if(!pathMode) resetVisuals();
+});
+
+document.getElementById("btn-reset").addEventListener("click", () => {
+  pathMode = false; pathStart = null;
+  document.getElementById("btn-path").classList.remove("active");
+  document.getElementById("path-hint").style.display = "none";
+  document.getElementById("panel").classList.remove("open");
+  resetVisuals();
+  document.querySelectorAll("[data-r]")[0].click();
+  document.querySelectorAll("[data-lt]")[0].click();
+  document.querySelectorAll("[data-imp]")[0].click();
+});
+
+document.getElementById("close-btn").addEventListener("click", () => {
+  document.getElementById("panel").classList.remove("open");
+  resetVisuals();
+});
+
+svg.on("click", () => {
+  if(!pathMode) {
+    document.getElementById("panel").classList.remove("open");
+    resetVisuals();
+  }
+});
+
+// ── ZOOM TO FIT ──
+document.getElementById("zoom-fit").addEventListener("click", () => {
+  svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(0, HDR_H/2).scale(1));
+});
+
+// ── SEARCH ──
+const searchIn = document.getElementById("search-in");
+const searchRes = document.getElementById("search-res");
+
+searchIn.addEventListener("input", () => {
+  const q = searchIn.value.trim().toLowerCase();
+  searchRes.innerHTML = "";
+  if(q.length < 2) return;
+
+  const matches = nodes.filter(n =>
+    n.short.toLowerCase().includes(q) ||
+    n.detail.toLowerCase().includes(q) ||
+    String(n.yr).includes(q) ||
+    n.r.includes(q)
+  ).slice(0, 7);
+
+  matches.forEach(n => {
+    const col = RCOL[n.r]||"#4a6080";
+    const el = document.createElement("div");
+    el.className = "sr";
+    el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${n.short}</span>`;
+    el.addEventListener("click", () => {
+      searchRes.innerHTML = ""; searchIn.value = "";
+      selectNode(n);
+      zoomToNode(n);
+    });
+    searchRes.appendChild(el);
+  });
+});
+
+document.addEventListener("click", e => {
+  if(!document.getElementById("search-wrap").contains(e.target)) searchRes.innerHTML = "";
+});
+
+function zoomToNode(n) {
+  const k = d3.zoomTransform(svg.node()).k; // preserve current scale
+  const panelOpen = document.getElementById("panel").classList.contains("open");
+  const cx = (W - (panelOpen ? 320 : 0)) / 2;
+  const cy = H / 2;
+  const tx = cx - n.x * k;
+  const ty = cy - n.y * k;
+  svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+}
+
+window.selectById = id => {
+  const n = nodes.find(d => d.id === id);
+  if(n) { selectNode(n); zoomToNode(n); }
+};
+// ═══ ENGINE END ═══
+
+} // end init()
+init();
+</script>
+</body>
+</html>

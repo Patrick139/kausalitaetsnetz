@@ -1,0 +1,2122 @@
+{
+  "nodes": [
+    {
+      "id": "finanzkrise_1998",
+      "epoch": "post_cold_war",
+      "sub_epoch": null,
+      "yr": 1998,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Asienkrise / LTCM",
+      "detail": "Asienkrise und Kollaps des Hedgefonds LTCM zeigen: globale Finanzmärkte sind systemisch vernetzt. Erster Vorgeschmack auf 2008.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "putin_2000",
+      "epoch": "post_cold_war",
+      "sub_epoch": null,
+      "yr": 2000,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Putin wird Präsident",
+      "detail": "KGB-Offizier übernimmt Russland nach Jelzins Rücktritt. Zentralisierung beginnt sofort. Medien und Oligarchen entmachtet. Tschetschenien-Krieg eskaliert.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "dotcom_2000",
+      "epoch": "post_cold_war",
+      "sub_epoch": null,
+      "yr": 2000,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Dot-Com-Blase platzt",
+      "detail": "NASDAQ verliert 78% bis 2002. Billionen vernichtet. Ende des ersten Internet-Booms — aber die Infrastruktur bleibt.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "9_11",
+      "epoch": "war_on_terror",
+      "sub_epoch": "afghanistan",
+      "yr": 2001,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "11. September 2001",
+      "detail": "Al-Qaeda tötet fast 3.000 Menschen. Fundamentale Wende in Weltpolitik, Sicherheit und Bürgerrechten. Nichts ist danach wie vorher.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "patriot_act",
+      "epoch": "war_on_terror",
+      "sub_epoch": "afghanistan",
+      "yr": 2001,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": "PATRIOT Act",
+      "detail": "Massenüberwachung legalisiert. Beginn des globalen 'War on Terror'. Bürgerrechte dauerhaft eingeschränkt.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "afghanistan_2001",
+      "epoch": "war_on_terror",
+      "sub_epoch": "afghanistan",
+      "yr": 2001,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Afghanistan-Invasion",
+      "detail": "NATO marschiert nach 9/11 ein. Dauert 20 Jahre — eine Billion Dollar — für nichts. Taliban übernehmen 2021 in Tagen.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "china_wto",
+      "epoch": "war_on_terror",
+      "sub_epoch": "afghanistan",
+      "yr": 2001,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": "China tritt WTO bei",
+      "detail": "Historischer Wendepunkt der Globalisierung. China wird Weltexportmacht. BIP-Wachstum über 8% jährlich für ein Jahrzehnt.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "irak_2003",
+      "epoch": "war_on_terror",
+      "sub_epoch": "iraq",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Irak-Invasion ohne Mandat",
+      "detail": "USA und UK ohne UN-Mandat. Keine Massenvernichtungswaffen. Folge: IS, Millionen Tote, Destabilisierung einer ganzen Region für Jahrzehnte.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "eu_osterweiterung",
+      "epoch": "war_on_terror",
+      "sub_epoch": "iraq",
+      "yr": 2004,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "EU-Osterweiterung",
+      "detail": "10 neue Mitglieder. Historische Überwindung des Eisernen Vorhangs — schafft aber neue Spannungen über Migration und Demokratie.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "facebook_2004",
+      "epoch": "war_on_terror",
+      "sub_epoch": "iraq",
+      "yr": 2004,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 2,
+      "short": "Facebook gegründet",
+      "detail": "Zuckerberg startet in Harvard. Wird die globale Desinformations- und Überwachungsmaschine — und politisches Instrument.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "iphone_2007",
+      "epoch": "war_on_terror",
+      "sub_epoch": null,
+      "yr": 2007,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 3,
+      "short": "iPhone — Smartphone-Ära",
+      "detail": "Apple verändert Kommunikation, politische Mobilisierung und Überwachung fundamental. Soziale Medien erst jetzt wirklich mobil und global.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "putin_muenchen_2007",
+      "epoch": "war_on_terror",
+      "sub_epoch": null,
+      "yr": 2007,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Putin: Münchner Rede",
+      "detail": "Putin erklärt westliche Ordnung für gescheitert. 'Unipolare Welt ist inakzeptabel.' Rückblickend: Kriegsankündigung auf Raten.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "finanzkrise_2008",
+      "epoch": "financial_crisis",
+      "sub_epoch": "lehman",
+      "yr": 2008,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Globale Finanzkrise",
+      "detail": "Lehman kollabiert. Schlimmste Krise seit 1929. Banken gerettet, Mittelschicht zahlt. Nährboden für Populismus in ganz Europa und den USA.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "georgien_2008",
+      "epoch": "financial_crisis",
+      "sub_epoch": "lehman",
+      "yr": 2008,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Russland greift Georgien an",
+      "detail": "Erster russischer Angriffskrieg in Europa. NATO reagiert nicht. Putin testet westliche Entschlossenheit — und findet sie mangelhaft.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "arabischer_fruehling",
+      "epoch": "financial_crisis",
+      "sub_epoch": "austerity",
+      "yr": 2010,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 3,
+      "short": "Arabischer Frühling",
+      "detail": "Bouazizi verbrennt sich in Tunesien. Dominoeffekt: Ägypten, Libyen, Syrien. Hoffnung endet meist in Chaos oder neuer Autokratie.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "eurokrise_2010",
+      "epoch": "financial_crisis",
+      "sub_epoch": "austerity",
+      "yr": 2010,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Eurokrise / Griechenland",
+      "detail": "Griechenland meldet Haushaltsbetrug. Troika übernimmt faktisch Kontrolle. Austerität zerstört Vertrauen in EU-Institutionen.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "syrien_krieg",
+      "epoch": "rise_of_populism",
+      "sub_epoch": null,
+      "yr": 2012,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 3,
+      "short": "Syrien-Bürgerkrieg",
+      "detail": "Assad setzt Chemiewaffen ein. Obama zieht rote Linie — hält sie nicht. Russland und Iran übernehmen. IS entsteht im Chaos.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "xi_2012",
+      "epoch": "rise_of_populism",
+      "sub_epoch": null,
+      "yr": 2012,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": "Xi Jinping übernimmt",
+      "detail": "Beginn einer neuen, noch zentralisierteren Ära. Amtszeitbeschränkung wird später aufgehoben. China auf Konfrontationskurs mit dem Westen.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "snowden_2013",
+      "epoch": "rise_of_populism",
+      "sub_epoch": null,
+      "yr": 2013,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Snowden-Enthüllungen",
+      "detail": "NSA überwacht weltweit — Merkels Handy, Millionen EU-Bürger. Vertrauen in US-Tech und westliche Institutionen dauerhaft beschädigt.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "krim_2014",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "ukraine_crimea",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Russland annektiert Krim",
+      "detail": "Erste Annexion europäischen Territoriums seit 1945. Westliche Sanktionen bleiben begrenzt. Putin zieht Schluss: der Westen handelt nicht.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "isis_2014",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "ukraine_crimea",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 3,
+      "short": "ISIS ruft Kalifat aus",
+      "detail": "Nimmt Mossul. Massaker und Genozid an Jesiden. Globale Schockwelle. Entstanden direkt aus dem Machtvakuum des Irak 2003.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "flucht_2015",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "refugee_crisis",
+      "yr": 2015,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Flüchtlingskrise Europa",
+      "detail": "Über 1 Million Menschen über das Mittelmeer. Ausgelöst durch Syrien-Krieg und IS. Folge: Rechtsruck in ganz Europa.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "paris_klima",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "refugee_crisis",
+      "yr": 2015,
+      "end_yr": null,
+      "r": "klima",
+      "imp": 3,
+      "short": "Pariser Klimaabkommen",
+      "detail": "196 Länder einigen sich auf 1,5°C-Ziel. Historisch — ohne Durchsetzungsmechanismus. Trump kündigt 2017 aus.",
+      "src": null,
+      "tags": [
+        "umwelt"
+      ]
+    },
+    {
+      "id": "trump_2016",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "brexit_trump",
+      "yr": 2016,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Trump gewinnt Präsidentschaft",
+      "detail": "Russland-Einmischung, Facebook-Desinformation, Populismus nach Finanzkrise. Schock für liberales Establishment. Beginn einer neuen Ära.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "brexit_2016",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "brexit_trump",
+      "yr": 2016,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Brexit-Referendum",
+      "detail": "52% für Austritt. Ausgelöst durch Migrationsdebatte und EU-Verdrossenheit. Drei Jahre Chaos. Schwächung Europas global.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "russland_wahl_2016",
+      "epoch": "rise_of_populism",
+      "sub_epoch": "brexit_trump",
+      "yr": 2016,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Russland mischt US-Wahl ein",
+      "detail": "Facebook-Kampagnen, DNC-Hacking, Wikileaks. Mueller bestätigt Einmischung. Erste dokumentierte Wahl-Cyberkrieg-Operation.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "ukraine_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Russland invadiert Ukraine",
+      "detail": "Größter Angriffskrieg in Europa seit 1945. Kiew hält. NATO-Allianz hält. Russlands strategischer Fehler — aber Krieg dauert an.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "energiekrise_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Energiekrise Europa",
+      "detail": "Europa zu 40% von russischem Gas abhängig. Preisexplosion. Teuerungswelle trifft Mittelschicht. Populismus profitiert.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "chatgpt_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 3,
+      "short": "ChatGPT / KI-Revolution",
+      "detail": "OpenAI verändert in Monaten die Welt. KI-Wettlauf beginnt. Fundamentale Disruption am Arbeitsmarkt — und in der Demokratie.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "hamas_2023",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 3,
+      "short": "Hamas-Angriff 7. Oktober",
+      "detail": "1.200 Tote, 250 Geiseln. Israel antwortet mit Gaza-Offensive. Über 40.000 Tote. Westliche Unterstützung für Israel erodiert.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "trump_2024",
+      "epoch": "war_returns",
+      "sub_epoch": null,
+      "yr": 2024,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Trump gewinnt erneut",
+      "detail": "Musk investiert $250 Mio. Republikanische Mehrheit überall. DOGE. Demokratische Institutionen unter Druck.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "musk_europa",
+      "epoch": "trump_2",
+      "sub_epoch": "doge",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Musk mischt sich in EU ein",
+      "detail": "AfD, Tommy Robinson, Reform UK. Vier Regierungschefs verurteilen ihn an einem Tag. Privatmann mit mehr politischem Einfluss als manche Regierung.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "orban_abgewaehlt",
+      "epoch": "trump_2",
+      "sub_epoch": "iran_crisis",
+      "yr": 2026,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Orbán nach 16 Jahren weg",
+      "detail": "Magyar/Tisza gewinnt mit Zweidrittelmehrheit bei 78% Wahlbeteiligung. Beweis: autoritäre Systeme können demokratisch gebrochen werden.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "covid_2020",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "COVID-19 Pandemie",
+      "detail": "SARS-CoV-2 tötet offiziell 7 Millionen, real weit mehr. Globaler Lockdown, Wirtschaftseinbruch, Staatsverschuldung auf Rekordhoch. Größte gesellschaftliche Zäsur seit dem Zweiten Weltkrieg.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "covid_schulden",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Billionen Staatsschulden",
+      "detail": "Staaten pumpen über 16 Billionen Dollar in die Wirtschaft. Inflationsdruck aufgebaut. Grundstein für die Teuerungswelle 2022–2023 gelegt.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "mrna_impfstoff",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 2,
+      "short": "mRNA-Impfstoff in Rekordzeit",
+      "detail": "BioNTech/Pfizer entwickeln in 11 Monaten einen Impfstoff — normalerweise dauert das ein Jahrzehnt. Triumph der modernen Biotechnologie. Impfskepsis entsteht parallel als politisches Massenphänomen.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "covid_arbeit",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 1,
+      "short": "Homeoffice verändert Städte",
+      "detail": "Remote Work normalisiert sich dauerhaft. Innenstädte verlieren Pendler, Vorstädte boomen. Digitale Infrastruktur wird strategische Priorität weltweit.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "cambridge_analytica",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2018,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 3,
+      "short": "Cambridge Analytica Skandal",
+      "detail": "87 Millionen Facebook-Profile ohne Wissen der Nutzer für politische Manipulation geerntet. Trump, Brexit, Bolsonaro — alle Spuren führen zu diesem Datenmissbrauch. Facebook-Chef Zuckerberg vor US-Kongress.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "gdpr_2018",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2018,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 2,
+      "short": "DSGVO: Europa reguliert Daten",
+      "detail": "Europa reagiert auf Snowden und Cambridge Analytica mit der schärfsten Datenschutzregulierung der Welt. US-Tech-Konzerne zur Rechenschaft gezogen. DSGVO wird globaler Exportstandard.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "tiktok_2019",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2019,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 2,
+      "short": "TikTok: geopolitische Waffe",
+      "detail": "Chinesischer Algorithmus dominiert westliche Jugendmedien. USA stufen Plattform als nationales Sicherheitsrisiko ein. Erste Tech-Plattform im Kreuzfeuer des geopolitischen Systemkonflikts.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "eu_ai_act",
+      "epoch": "war_returns",
+      "sub_epoch": null,
+      "yr": 2024,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 2,
+      "short": "EU AI Act: KI-Regulierung",
+      "detail": "Europa reguliert als erste Region weltweit KI gesetzlich. Hochrisiko-Anwendungen eingeschränkt, Gesichtserkennung teilweise verboten. Gegenentwurf zum amerikanischen Laissez-faire und zum chinesischen Staatsmodell.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "nvidia_monopol",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "tech",
+      "imp": 2,
+      "short": "NVIDIA: Chip-Monopol der KI",
+      "detail": "NVIDIA-GPU wird zur kritischen Infrastruktur der globalen KI-Revolution. Marktkapitalisierung überholt kurzzeitig Apple. Wer die Chips kontrolliert, kontrolliert die KI — geopolitische Dimension erkannt.",
+      "src": null,
+      "tags": [
+        "technologie"
+      ]
+    },
+    {
+      "id": "australien_feuer",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "klima",
+      "imp": 2,
+      "short": "Australien: Megafeuer",
+      "detail": "46 Millionen Hektar verbrennen, drei Milliarden Tiere sterben. Erste Klimakatastrophe die global als solche wahrgenommen wird. Australisches Öl-Lobby-System gerät unter Druck.",
+      "src": null,
+      "tags": [
+        "umwelt"
+      ]
+    },
+    {
+      "id": "ipcc_rot",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "klima",
+      "imp": 2,
+      "short": "IPCC: Code Red for Humanity",
+      "detail": "UN-Klimabericht 2021 erstmals mit eindeutiger Sprache: 1,5°C-Grenze kaum noch haltbar. Wissenschaft ist geschlossen — politisches Handeln bleibt weit dahinter. Letzter Warnschuss vor dem Abgrund.",
+      "src": null,
+      "tags": [
+        "umwelt"
+      ]
+    },
+    {
+      "id": "hitzewelle_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "klima",
+      "imp": 2,
+      "short": "Europa: Rekordhitze 2022",
+      "detail": "40°C+ in London, 47°C in Portugal. Über 20.000 Hitzetote in Europa. Erster Sommer in dem Klimawandel für die breite Bevölkerung physisch spürbar und unbestreitbar wird.",
+      "src": null,
+      "tags": [
+        "umwelt"
+      ]
+    },
+    {
+      "id": "fpoe_2000",
+      "epoch": "post_cold_war",
+      "sub_epoch": null,
+      "yr": 2000,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 2,
+      "short": "Haider FPÖ in Regierung",
+      "detail": "Haiders FPÖ tritt in österreichische Bundesregierung ein. EU verhängt diplomatische Sanktionen — die scheitern und peinlich enden. Erste rechtspopulistische Regierungsbeteiligung in Westeuropa nach 1945.",
+      "src": null,
+      "tags": [
+        "politik",
+        "österreich"
+      ]
+    },
+    {
+      "id": "fpoe_2024",
+      "epoch": "war_returns",
+      "sub_epoch": null,
+      "yr": 2024,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 3,
+      "short": "FPÖ stärkste Partei Österreichs",
+      "detail": "Kickls FPÖ gewinnt Nationalratswahl mit 29% — stärkstes Ergebnis einer rechten Partei in Österreich je. Koalition ohne FPÖ erzwungen. Europäisches Signal: Rechtspopulismus ist neue Normalität.",
+      "src": null,
+      "tags": [
+        "politik",
+        "österreich"
+      ]
+    },
+    {
+      "id": "taiwan_blockade_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": "China blockiert Taiwan",
+      "detail": "Nach Nancy Pelosis Besuch in Taipeh umzingelt China Taiwan mit den größten Militärmanövern der Geschichte. Erster echter Blockade-Test. USA schicken Trägergruppen — greifen nicht ein.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "taiwan_wahl_2024",
+      "epoch": "war_returns",
+      "sub_epoch": null,
+      "yr": 2024,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": "Taiwan wählt Unabhängigkeit",
+      "detail": "Lai Ching-te gewinnt trotz massivem chinesischem Druck. Klares demokratisches Votum für Eigenständigkeit. Peking droht — und tut nichts. Innenpolitik setzt Xi Grenzen.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "iran_usa_2026",
+      "epoch": "trump_2",
+      "sub_epoch": "iran_crisis",
+      "yr": 2026,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 3,
+      "short": "Iran–USA: Hormuz-Konflikt",
+      "detail": "USA bombardieren iranische Atomanlagen (Februar 2026). Iran blockiert die Straße von Hormuz — 20% der globalen Ölversorgung. Ölpreisschock, China unter Druck. Sechswöchige Krise mit globaler Reichweite.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "iran_waffenstillstand",
+      "epoch": "trump_2",
+      "sub_epoch": "iran_crisis",
+      "yr": 2026,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 2,
+      "short": "Waffenstillstand April 2026",
+      "detail": "Nach internationalem Druck — vor allem aus Peking — einigen sich USA und Iran auf Waffenstillstand (April 7, verlängert 21. April). Hormuz wieder offen. Nuklearprogramm wird Verhandlungssache.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "zoll_2025",
+      "epoch": "trump_2",
+      "sub_epoch": "doge",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Trump-Zölle: Liberation Day",
+      "detail": "145% Zölle auf China, 20% auf EU — 'Liberation Day' April 2025. Globale Lieferketten werden neu geordnet. Inflationsdruck kehrt zurück. WTO-Weltordnung strukturell beschädigt.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "doge_2025",
+      "epoch": "trump_2",
+      "sub_epoch": "doge",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": "DOGE: Institutionen-Abriss",
+      "detail": "Musk/Trump demontieren systematisch US-Bundesbehörden: USAID, CFPB, Federal Reserve-Unabhängigkeit angegriffen. Institutioneller Schaden schwer reversibel. Präzedenz für autoritäre Staatsreform.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "xi_putin_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Xi-Putin: Freundschaft ohne Grenzen",
+      "detail": "Drei Wochen vor der Ukraine-Invasion erklären Xi und Putin eine Partnerschaft 'ohne Grenzen'. China liefert keine Waffen — gibt aber wirtschaftlichen Rückhalt der westliche Sanktionen abpuffert.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "trump_xi_2026",
+      "epoch": "trump_2",
+      "sub_epoch": "iran_crisis",
+      "yr": 2026,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Trump-Xi Gipfel Mai 2026",
+      "detail": "Handelsdeal-Verhandlungen nach Zoll-Eskalation — 90-Tage Pause vereinbart. Strukturelle Spannungen ungelöst, Taiwan-Frage vertagt. Erste direkte Machtdemonstration des neuen bipolaren Systems.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "bolsonaro_2018",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2018,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Bolsonaro: Trumpismus exportiert",
+      "detail": "Trump-Imitat gewinnt in Brasilien mit Fake News und Militär-Nostalgie. Regenwald-Abholzung explodiert. Erster Beweis: rechtsautoritärer Populismus ist globales Exportprodukt, kein US-Spezialfall.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "khashoggi_2018",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2018,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 2,
+      "short": "Khashoggi: Mord ohne Konsequenz",
+      "detail": "Saudi-Kronprinz MBS lässt Journalisten im Konsulat ermorden. CIA belegt MBS-Befehl. Trump schützt Saudi-Arabien um Waffendeals zu retten. Straflosigkeit für Autokraten wird normalisiert.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "saudi_iran_china",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "nahost",
+      "imp": 2,
+      "short": "China vermittelt Saudi–Iran",
+      "detail": "China vermittelt überraschend Normalisierung zwischen Erzfeinden Saudi-Arabien und Iran. Erste große diplomatische Niederlage der USA im Mittleren Osten. Xi als alternativer Weltordnungs-Makler etabliert.",
+      "src": null,
+      "tags": [
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "inflation_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Inflationswelle: 40-Jahres-Hoch",
+      "detail": "Energiekrise plus COVID-Geldflut plus Lieferkettenchaos: Inflation auf 40-Jahres-Hoch. EZB und Fed erhöhen Zinsen aggressiv. Mittelschicht-Kaufkraft erodiert. Immobilienmärkte global eingefroren.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "ukraine_gegenoffensive",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": "Ukraine-Gegenoffensive scheitert",
+      "detail": "Westlich ausgerüstete Gegenoffensive bricht gegen russische Verteidigungslinien ein. Ernüchterung im Westen. Kriegserschöpfung wächst — politisch ausgenutzt von Trump und europäischen Populisten.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "obama_2008",
+      "epoch": "financial_crisis",
+      "sub_epoch": "lehman",
+      "yr": 2008,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Obama: Erster schwarzer Präsident",
+      "detail": "Historischer Moment — Nachfahre von Sklaven wird US-Präsident. Hoffnung auf Systemwechsel. Scheitert an parteiübergreifendem Stillstand, Tea Party-Reaktion und Wall-Street-Schonung nach 2008.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "fukushima_2011",
+      "epoch": "financial_crisis",
+      "sub_epoch": "austerity",
+      "yr": 2011,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Fukushima: Atomkatastrophe",
+      "detail": "Erdbeben und Tsunami zerstören japanisches AKW. Drei Kernschmelzen. Deutschland beschließt Atomausstieg in Wochen. Energiepolitik global neu verhandelt — mit direkter Linie zur Abhängigkeit von russischem Gas.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "draghi_2012",
+      "epoch": "rise_of_populism",
+      "sub_epoch": null,
+      "yr": 2012,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Draghi: 'Whatever it takes'",
+      "detail": "EZB-Chef rettet den Euro mit drei Worten. Märkte kapitulieren sofort — kein einziger Cent wird ausgegeben. Zeigt: Zentralbanken können politisches Versagen überbrücken. Aber nur auf Zeit.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "belt_road_2013",
+      "epoch": "rise_of_populism",
+      "sub_epoch": null,
+      "yr": 2013,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": "Xi: Neue Seidenstraße",
+      "detail": "China investiert Billionen in Infrastruktur in 150 Ländern. Häfen, Eisenbahnen, Schulden. Geopolitische Abhängigkeiten als Strategie. Direkter Gegenentwurf zur westlichen Weltordnung.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "hongkong_2019",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2019,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": "Hongkong: Demokratie-Proteste",
+      "detail": "Millionen gehen auf die Straße gegen Auslieferungsgesetz. Xi wartet — dann zerschlägt er 2020 mit Sicherheitsgesetz die Bewegung vollständig. Hongkong als freie Stadt ist Geschichte.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "ibiza_2019",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2019,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 3,
+      "short": "Ibiza-Affäre",
+      "detail": "Heimlich gefilmtes Video zeigt FPÖ-Chef Strache, der staatliche Aufträge gegen Wahlkampfspenden anbietet. Regierung bricht zusammen. Strache tritt zurück. Größter österreichischer Politskandal seit Jahrzehnten.",
+      "src": null,
+      "tags": [
+        "politik",
+        "österreich"
+      ]
+    },
+    {
+      "id": "george_floyd_2020",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "George Floyd & BLM-Bewegung",
+      "detail": "Polizist tötet unbewaffneten Schwarzen auf Video. Größte Protestwelle in US-Geschichte — 26 Millionen auf der Straße. Globale Auseinandersetzung mit Rassismus und Polizeigewalt. Trump nutzt Unruhen politisch.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "j6_kapitol_2021",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": "Kapitol-Sturm 6. Jänner",
+      "detail": "Trump-Anhänger stürmen auf Trumps Betreiben das US-Kapitol. Erste gewaltsame Unterbrechung der Machtübergabe in US-Geschichte. 140 Verletzte. Trump wird impeacht — aber freigesprochen. Normalisierung von Gewalt gegen Institutionen.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "afghanistan_exit",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 3,
+      "short": "Afghanistan: Westliches Desaster",
+      "detail": "US-Abzug nach 20 Jahren endet in chaotischer Flucht vom Kabul-Flughafen. Taliban übernehmen in Tagen. 2.400 US-Soldaten, eine Billion Dollar, 20 Jahre — für nichts. Westen verliert Glaubwürdigkeit als Ordnungsmacht.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "navalny_2021",
+      "epoch": "covid_era",
+      "sub_epoch": "pandemic",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": "Navalny verhaftet und vergiftet",
+      "detail": "Überlebt Novichok-Vergiftung in Deutschland — fliegt freiwillig zurück nach Russland, wird sofort verhaftet. Organisationen verboten. 2024 stirbt er in Haft. Putin eliminiert letzten glaubwürdigen Oppositionsführer.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "zeitenwende_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 3,
+      "short": "Scholz: Zeitenwende",
+      "detail": "Deutschlands Kanzler erklärt historischen Bruch: 100-Milliarden-Sondervermögen für Bundeswehr. NATO-Ziel 2% wird plötzlich real. Europa begreift: 30 Jahre Friedensillusion sind vorbei.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "kurz_2017",
+      "epoch": "new_disorder",
+      "sub_epoch": null,
+      "yr": 2017,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 2,
+      "short": "Kurz: ÖVP-FPÖ Koalition",
+      "detail": "Sebastian Kurz macht ÖVP mit 31 Jahren zum Chef, schlägt FPÖ-Strategie-Buch auf und bildet Koalition. Rechtspopulismus wird regierungsfähig verpackt — Modell für europäische Mitte-Rechts-Parteien.",
+      "src": null,
+      "tags": [
+        "politik",
+        "österreich"
+      ]
+    },
+    {
+      "id": "sars_2003",
+      "epoch": "war_on_terror",
+      "sub_epoch": "iraq",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "SARS: erster globaler Virustest",
+      "detail": "Erster Ausbruch eines neuartigen Coronavirus. China verzögert Informationen. WHO kämpft mit nationalen Egoismen. Trockenlauf für COVID — Warnungen werden nicht gehört.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "tsunami_2004",
+      "epoch": "war_on_terror",
+      "sub_epoch": "iraq",
+      "yr": 2004,
+      "end_yr": null,
+      "r": "welt",
+      "imp": 2,
+      "short": "Tsunami: 230.000 Tote",
+      "detail": "Stärkste Erdbebenkatastrophe der modernen Geschichte. 14 Länder betroffen, 230.000 Tote. Erste globale Sofort-Katastrophenhilfe via Internet. Frühwarnsysteme global ausgebaut.",
+      "src": null,
+      "tags": [
+        "global"
+      ]
+    },
+    {
+      "id": "roe_wade_2022",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": "Roe v. Wade: Abtreibungsrecht weg",
+      "detail": "Supreme Court kippt 50 Jahre Präzedenz. Abtreibung in der Hälfte der US-Bundesstaaten verboten. Von konservativen Trump-Richtern durchgesetzt. Mobilisiert Demokraten — rettet Midterms 2022.",
+      "src": null,
+      "tags": [
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "prigozhin_2023",
+      "epoch": "war_returns",
+      "sub_epoch": "ukraine_war",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": "Prigozhin-Aufstand gegen Putin",
+      "detail": "Wagner-Chef marschiert auf Moskau — und stoppt nach 24 Stunden. Erster bewaffnete Herausforderung Putins von innen. Zwei Monate später stirbt Prigozhin im Flugzeugabsturz. Putin demonstriert: Verrat hat einen Preis.",
+      "src": null,
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "eu_wahl_2024",
+      "epoch": "war_returns",
+      "sub_epoch": null,
+      "yr": 2024,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 2,
+      "short": "EU-Wahl: historischer Rechtsruck",
+      "detail": "Rechtspopulisten legen massiv zu. Le Pen, Meloni, AfD — alle gestärkt. Macron löst Parlament auf, verliert. Von der Leyen bleibt — aber Europa regiert mit einem Bein im rechten Lager.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "dreierkoalition_2025",
+      "epoch": "trump_2",
+      "sub_epoch": "doge",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 2,
+      "short": "ÖVP-SPÖ-NEOS Koalition",
+      "detail": "Nach gescheiterten Koalitionsverhandlungen mit FPÖ bildet Österreich historische Dreierkoalition unter Stocker. Erste Mal SPÖ und ÖVP ohne dritte Alternative. Strukturell fragil, aber funktional.",
+      "src": null,
+      "tags": [
+        "politik",
+        "österreich"
+      ]
+    },
+    {
+      "id": "europa_ruestung",
+      "epoch": "trump_2",
+      "sub_epoch": "doge",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "europa",
+      "imp": 2,
+      "short": "Europa rüstet massiv auf",
+      "detail": "Nach Ukraine-Invasion und Trump-Wahlsieg erhöhen alle EU-Staaten Verteidigungsbudgets. Deutschland bricht Schuldenbremse. Europäische Rüstungsindustrie boomt. Strategische Autonomie wird erstmals ernstgemeint.",
+      "src": null,
+      "tags": [
+        "politik"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "9_11",
+      "target": "patriot_act",
+      "type": "direkt",
+      "why": "9/11 lieferte die politische Legitimation für Massenüberwachung — PATRIOT Act wurde in 45 Tagen durchgepaukt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "9_11",
+      "target": "afghanistan_2001",
+      "type": "direkt",
+      "why": "NATO Article 5 wurde erstmals aktiviert — direkter kausaler Auslöser der Invasion.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "9_11",
+      "target": "irak_2003",
+      "type": "beschleunigt",
+      "why": "9/11 schuf die politische Atmosphäre ('War on Terror') die Bush/Cheney für den Irak-Krieg nutzten — obwohl kein Zusammenhang belegt war.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "irak_2003",
+      "target": "isis_2014",
+      "type": "direkt",
+      "why": "IS entstand direkt aus dem Machtvakuum nach dem Irak-Krieg: Ba'ath-Offiziere + al-Qaeda-Häftlinge aus Camp Bucca bildeten ISIS-Führung.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "irak_2003",
+      "target": "syrien_krieg",
+      "type": "indirekt",
+      "why": "Irak destabilisierte die gesamte Region, stärkte Iran und schuf Präzedenz für externe Einmischung in arabische Konflikte.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "isis_2014",
+      "target": "flucht_2015",
+      "type": "direkt",
+      "why": "IS-Terrormiliz vertrieb Millionen — allein aus Mossul 500.000 Menschen in Stunden. Direkter Auslöser der Flüchtlingswelle 2015.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "syrien_krieg",
+      "target": "flucht_2015",
+      "type": "direkt",
+      "why": "Syrien-Krieg trieb 5,5 Millionen Menschen ins Ausland — größte Flüchtlingsbewegung aus einem einzelnen Land seit Jahrzehnten.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "arabischer_fruehling",
+      "target": "syrien_krieg",
+      "type": "direkt",
+      "why": "Arabischer Frühling löste Proteste in Syrien aus (März 2011) — Assad schlug sie mit Gewalt nieder, was den Bürgerkrieg startete.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "flucht_2015",
+      "target": "trump_2016",
+      "type": "beschleunigt",
+      "why": "Die Migrationsdebatte 2015/16 stärkte Trumps Anti-Einwanderungs-Narrative und mobilisierte seine Basis entscheidend.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "flucht_2015",
+      "target": "brexit_2016",
+      "type": "beschleunigt",
+      "why": "'Leave'-Kampagne nutzte Flüchtlingskrise intensiv — UKIP-Poster mit Migranten-Schlangen war zentrales Wahlkampfmittel.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "eurokrise_2010",
+      "type": "direkt",
+      "why": "Globale Finanzkrise legte Schwächen der Euro-Architektur offen — Griechenland, Irland, Portugal gerieten direkt in Schieflage.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": "Finanzkrise zerstörte Vertrauen in Eliten und Institutionen — frustrierte Mittelklasse wurde Trumps Kernwählerschaft.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "brexit_2016",
+      "type": "indirekt",
+      "why": "Austeritätspolitik nach 2008 traf britische Regionen hart — Abstimmungsverhalten korreliert stark mit wirtschaftlicher Abgehängtheit.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "eurokrise_2010",
+      "target": "brexit_2016",
+      "type": "beschleunigt",
+      "why": "Eurokrise verstärkte britische Skepsis gegenüber EU-Institutionen und deren Krisenmanagement erheblich.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "putin_2000",
+      "target": "georgien_2008",
+      "type": "direkt",
+      "why": "Putin baute 8 Jahre lang Militär und Nationalismus auf — Georgien war erster Test ob der Westen reagiert. Er reagierte nicht.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "putin_muenchen_2007",
+      "target": "krim_2014",
+      "type": "direkt",
+      "why": "Münchner Rede war strategische Ankündigung: Putin signalisierte offen, die westliche Ordnung nicht zu akzeptieren.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "georgien_2008",
+      "target": "krim_2014",
+      "type": "direkt",
+      "why": "Ausbleibende Konsequenzen nach Georgien 2008 lehrten Putin: territoriale Aggression bleibt ungestraft.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "krim_2014",
+      "target": "ukraine_2022",
+      "type": "direkt",
+      "why": "Krim-Annexion war Generalprobe — Putin testete westliche Reaktion, Sanktionen blieben begrenzt, Strategie wurde als erfolgreich bewertet.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ukraine_2022",
+      "target": "energiekrise_2022",
+      "type": "direkt",
+      "why": "Westliche Sanktionen + russischer Gas-Stopp als Gegenmaßnahme führten direkt zur Energiekrise in Europa.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "russland_wahl_2016",
+      "target": "trump_2016",
+      "type": "beschleunigt",
+      "why": "Mueller-Bericht bestätigt: russische Einmischung half Trump — gezielte Facebook-Kampagnen in Swing States, DNC-Hacking schadete Clinton.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2016",
+      "target": "musk_europa",
+      "type": "indirekt",
+      "why": "Trump-Erfolg zeigte global: Rechtspopulismus mit Tech-Milliardär-Unterstützung funktioniert — Musk adaptierte das Modell für Europa.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2016",
+      "target": "trump_2024",
+      "type": "direkt",
+      "why": "Trump 2016 legte Fundament: MAGA-Bewegung, institutionelle Erosion, Normalisierung von Extremen — 2024 mit stärkerem Mandat wiederholt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "facebook_2004",
+      "target": "russland_wahl_2016",
+      "type": "beschleunigt",
+      "why": "Facebook war das Hauptinstrument der russischen Einmischung: Internet Research Agency schaltete 80.000+ Posts, erreichte 126 Millionen Amerikaner.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iphone_2007",
+      "target": "arabischer_fruehling",
+      "type": "beschleunigt",
+      "why": "Smartphones ermöglichten Echtzeit-Koordination und Verbreitung von Protesten — Twitter und Facebook wurden Organisationstools.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iphone_2007",
+      "target": "russland_wahl_2016",
+      "type": "beschleunigt",
+      "why": "Mobile Social Media machte gezielte Desinformationskampagnen erst in diesem Ausmaß möglich.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "snowden_2013",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": "Snowden-Enthüllungen beschädigten Vertrauen in Institutionen — 'Establishment' wurde zum Schimpfwort, das Populisten nutzten.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "chatgpt_2022",
+      "target": "musk_europa",
+      "type": "beschleunigt",
+      "why": "KI-Tools ermöglichen Desinformationskampagnen in neuem Ausmaß — Musk nutzt KI (Grok) direkt als politisches Instrument.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "china_wto",
+      "target": "finanzkrise_2008",
+      "type": "indirekt",
+      "why": "Chinas Exportboom flutete globale Finanzmärkte mit Kapital, das in US-Immobilienpapiere floss — Mitursache der Subprime-Krise.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "xi_2012",
+      "target": "ukraine_2022",
+      "type": "indirekt",
+      "why": "Chinas autoritäre Wende unter Xi gab Putin Rückhalt — Xi-Putin 'Freundschaft ohne Grenzen' Februar 2022, drei Wochen vor der Invasion.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "syrien_krieg",
+      "target": "isis_2014",
+      "type": "direkt",
+      "why": "Syrien-Chaos gab ISIS Rückzugsraum und Rekrutierungsmöglichkeiten — Raqqa wurde ISIS-Hauptstadt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "isis_2014",
+      "target": "hamas_2023",
+      "type": "indirekt",
+      "why": "ISIS-Niedergang trieb radikalisierte Kämpfer und Taktiken in andere Konfliktzonen — Hamas adaptierte Guerilla-Methoden.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "eurokrise_2010",
+      "target": "orban_abgewaehlt",
+      "type": "indirekt",
+      "why": "Orbáns Aufstieg nutzte wirtschaftliche Frustration nach 2008/2010 — seine Abwahl zeigt dass dieselbe Frustration sich auch gegen ihn wendet.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "flucht_2015",
+      "target": "orban_abgewaehlt",
+      "type": "indirekt",
+      "why": "Orbán instrumentalisierte Flüchtlingskrise maximal — langfristig wurden seine Politik und Korruption wichtiger als Migrationspolitik.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "covid_schulden",
+      "type": "direkt",
+      "why": "Lockdowns zwangen Staaten zu historischen Hilfspaketen — ohne COVID keine Schuldenexplosion dieser Dimension.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_schulden",
+      "target": "inflation_2022",
+      "type": "direkt",
+      "why": "Billionen neu gedrucktes Geld traf auf verkürzte Lieferketten — klassische Inflation: zu viel Geld jagt zu wenige Güter.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "mrna_impfstoff",
+      "type": "direkt",
+      "why": "Pandemie erzwang Tempo: Regulierungsbehörden genehmigten mRNA-Technologie in Monaten statt Jahren.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "covid_arbeit",
+      "type": "direkt",
+      "why": "Lockdowns machten Homeoffice zur erzwungenen Notlösung — danach wollten Millionen nicht mehr zurück.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "chatgpt_2022",
+      "type": "beschleunigt",
+      "why": "COVID-Lockdowns trieben Digitalisierungsschub und KI-Investitionen massiv an — zwei verlorene Jahre wurden zu KI-Boostjahren.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "facebook_2004",
+      "target": "cambridge_analytica",
+      "type": "direkt",
+      "why": "Facebooks Geschäftsmodell — Daten verkaufen — ermöglichte Cambridge Analytica erst: die Plattform war das Werkzeug.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "cambridge_analytica",
+      "target": "gdpr_2018",
+      "type": "direkt",
+      "why": "Der Skandal erzwang politisches Handeln: DSGVO wurde als direkte Reaktion auf Cambridge Analytica beschleunigt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "cambridge_analytica",
+      "target": "trump_2016",
+      "type": "beschleunigt",
+      "why": "CA arbeitete für das Trump-Lager: gezielte Mikro-Targeting-Kampagnen in entscheidenden Swing States.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "cambridge_analytica",
+      "target": "brexit_2016",
+      "type": "beschleunigt",
+      "why": "CA war auch für die Leave-Kampagne tätig: dieselben Methoden, dieselben Daten, anderer Zielmarkt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "tiktok_2019",
+      "target": "eu_ai_act",
+      "type": "beschleunigt",
+      "why": "TikTok als chinesische Einflussplattform beschleunigte europäische Dringlichkeit bei Tech-Regulierung.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "chatgpt_2022",
+      "target": "nvidia_monopol",
+      "type": "direkt",
+      "why": "KI-Boom machte NVIDIA-GPUs zur kritischen Infrastruktur — Nachfrage überstieg Angebot um Monate.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "chatgpt_2022",
+      "target": "eu_ai_act",
+      "type": "direkt",
+      "why": "ChatGPT-Schock zwang EU zur schnellen Verabschiedung des AI Act — plötzlich war KI-Regulierung politisch dringend.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "nvidia_monopol",
+      "target": "zoll_2025",
+      "type": "beschleunigt",
+      "why": "Chip-Abhängigkeit machte Halbleiter zum geopolitischen Spieleinsatz — Trump nutzte Export-Controls als Druckmittel gegen China.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "paris_klima",
+      "target": "australien_feuer",
+      "type": "indirekt",
+      "why": "Unzureichende Klimapolitik nach Paris ließ Emissionen weiter steigen — Australien war Frühwarnsignal der physischen Konsequenzen.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "australien_feuer",
+      "target": "ipcc_rot",
+      "type": "beschleunigt",
+      "why": "Megafeuer 2020 erhöhten politischen Druck auf IPCC und machten das Alarmierende des 2021-Berichts unbestreitbar.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ipcc_rot",
+      "target": "hitzewelle_2022",
+      "type": "indirekt",
+      "why": "Der Bericht sagte genau das vorher was 2022 eintrat — und wurde trotzdem nicht als Handlungsauftrag genommen.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ukraine_2022",
+      "target": "hitzewelle_2022",
+      "type": "indirekt",
+      "why": "Energiekrise durch Ukraine-Krieg trieb kurzfristig Kohle-Rückkehr an — das verschärfte Klima-Druck zusätzlich.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "fpoe_2024",
+      "type": "indirekt",
+      "why": "Wirtschaftlicher Abstieg der Mittelschicht nach 2008 nährte Systemverdrossenheit — Kickl erntet was 2008 gesät wurde.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "flucht_2015",
+      "target": "fpoe_2024",
+      "type": "beschleunigt",
+      "why": "FPÖ machte Migration seit 2015 zu ihrem Kernthema — Dauerfeuer über 9 Jahre baute Wählerpotenzial auf.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fpoe_2000",
+      "target": "fpoe_2024",
+      "type": "indirekt",
+      "why": "Haider normalisierte Rechtspopulismus in Österreich salonfähig — Kickl baut auf diesem kulturellen Fundament.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fpoe_2024",
+      "target": "orban_abgewaehlt",
+      "type": "indirekt",
+      "why": "Ungarns Demonstration dass autoritäre Populisten gestürzt werden können war Rückenwind für österreichische Anti-FPÖ-Mobilisierung.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "xi_2012",
+      "target": "taiwan_blockade_2022",
+      "type": "direkt",
+      "why": "Xi machte Taiwan-Wiedervereinigung zur persönlichen historischen Mission — Manöver 2022 waren direkte Umsetzung.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "taiwan_blockade_2022",
+      "target": "taiwan_wahl_2024",
+      "type": "indirekt",
+      "why": "Chinas Machtdemonstration stärkte paradoxerweise den pro-Unabhängigkeits-Kandidaten — Drohungen mobilisierten taiwanische Wähler.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "taiwan_wahl_2024",
+      "type": "indirekt",
+      "why": "Unsicherheit über US-Schutzversprechen unter Trump mobilisierte Taiwan zur Selbstbestimmungs-Demonstration.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "taiwan_wahl_2024",
+      "target": "trump_xi_2026",
+      "type": "indirekt",
+      "why": "Taiwans klares demokratisches Mandat komplizierte Trumps Deal-making mit Xi — Taiwan wurde zum Verhandlungschip.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "hamas_2023",
+      "target": "iran_usa_2026",
+      "type": "beschleunigt",
+      "why": "Hamas-Angriff verschärfte iranisch-israelischen Konflikt — Israel und USA identifizierten Iran als Hauptsponsor und eskaliertem.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iran_usa_2026",
+      "target": "iran_waffenstillstand",
+      "type": "direkt",
+      "why": "Sechs Wochen Hormuz-Krise und Ölpreisschock zwangen beide Seiten an den Verhandlungstisch — China vermittelte.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "saudi_iran_china",
+      "target": "iran_usa_2026",
+      "type": "indirekt",
+      "why": "Chinas Rolle als Vermittler 2023 gab Peking diplomatisches Kapital das es 2026 zur Waffenstillstands-Vermittlung nutzte.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iran_waffenstillstand",
+      "target": "orban_abgewaehlt",
+      "type": "indirekt",
+      "why": "De-Eskalation im Nahost reduzierten Energiepreisdruck — wirtschaftliche Entspannung schwächte Orbáns Krisenrhetorik.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "zoll_2025",
+      "type": "direkt",
+      "why": "Wahlversprechen eingelöst: 'Liberation Day'-Zölle waren zentrales Wahlkampfthema und wurden Wochen nach Amtsantritt umgesetzt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "doge_2025",
+      "type": "direkt",
+      "why": "Musk war Trumps größter Einzelspender ($250M) — DOGE war die vereinbarte Gegenleistung für Regierungs-Zugang.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zoll_2025",
+      "target": "inflation_2022",
+      "type": "beschleunigt",
+      "why": "Zölle 2025 drohten neue Inflationswelle — Lieferketten-Reorganisation verteuert Importe strukturell.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zoll_2025",
+      "target": "trump_xi_2026",
+      "type": "direkt",
+      "why": "Zoll-Eskalation erzwang Gipfel: beide Seiten brauchten Deeskalation nach globaler Marktpanik.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "doge_2025",
+      "target": "musk_europa",
+      "type": "beschleunigt",
+      "why": "DOGE-Erfahrung — staatliche Strukturen mit Tech-Methodik brechen — wurde Musks Exportmodell für Europa.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "xi_putin_2022",
+      "target": "ukraine_2022",
+      "type": "beschleunigt",
+      "why": "Chinas explizite Rückendeckung war Putins strategischer Rückhalt — ohne Xi hätte Russland die Isolation riskiert.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ukraine_gegenoffensive",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": "Scheiternde Gegenoffensive stärkte Trumps 'Ich beende den Krieg in 24 Stunden'-Narrativ — Kriegsmüdigkeit war sein Rückenwind.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "khashoggi_2018",
+      "target": "saudi_iran_china",
+      "type": "indirekt",
+      "why": "US-Schutz für MBS trotz Mord zeigte Grenzen amerikanischer Wertepolitik — schuf Raum für China als glaubwürdigerer Broker.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "bolsonaro_2018",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": "Bolsonaros Playbook — Fake News, Institutionen-Angriff, Wahlergebnis-Leugnung — wurde von Trump 2024 direkt übernommen.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "saudi_iran_china",
+      "target": "iran_usa_2026",
+      "type": "indirekt",
+      "why": "Chinas Vermittlungsrolle 2023 machte Peking zum natürlichen Kanal für Deeskalation — beide Parteien nutzten diesen Kanal 2026.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "inflation_2022",
+      "target": "fpoe_2024",
+      "type": "beschleunigt",
+      "why": "Teuerungswelle 2022–2024 destabilisierte österreichische Mittelschicht — Kickl-FPÖ profitierte direkt von wirtschaftlichem Frust.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "inflation_2022",
+      "target": "trump_2024",
+      "type": "beschleunigt",
+      "why": "Bidens Inflationsproblem war Trumps größtes Wahlkampfgeschenk — wirtschaftliche Unzufriedenheit trieb Swing Voters ins Trump-Lager.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "obama_2008",
+      "type": "direkt",
+      "why": "Finanzkrise machte Bushs Erbe untragbar — Obama gewann weil er das Gegenteil von allem verkörperte was 2008 kollabiert war.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "obama_2008",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": "Obamas Präsidentschaft löste weiße Reaktion aus — Tea Party, Birther-Bewegung, dann Trump. Backlash gegen symbolischen Wandel.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fukushima_2011",
+      "target": "energiekrise_2022",
+      "type": "indirekt",
+      "why": "Deutschlands Atomausstieg nach Fukushima machte Europa strukturell abhängiger von russischem Gas — direkte Mitursache der Energiekrise 2022.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "draghi_2012",
+      "target": "eurokrise_2010",
+      "type": "direkt",
+      "why": "'Whatever it takes' war die direkte Antwort auf den Höhepunkt der Eurokrise — beendete die akute Panik an den Anleihemärkten.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "xi_2012",
+      "target": "belt_road_2013",
+      "type": "direkt",
+      "why": "Belt and Road war Xis erste große geopolitische Initiative — direkt nach Machtantritt als Gegenentwurf zur westlichen Ordnung formuliert.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "belt_road_2013",
+      "target": "taiwan_blockade_2022",
+      "type": "indirekt",
+      "why": "Chinas globaler Infrastruktur-Einfluss durch BRI gab Xi das geopolitische Selbstvertrauen für härteres Vorgehen gegenüber Taiwan.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "hongkong_2019",
+      "target": "taiwan_wahl_2024",
+      "type": "direkt",
+      "why": "Hongkongs Zerstörung als freie Stadt war Taiwans brutalste Lektion: 'One Country, Two Systems' ist eine Falle. Wähler zogen Konsequenzen.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ibiza_2019",
+      "target": "fpoe_2024",
+      "type": "indirekt",
+      "why": "Ibiza-Desaster kostete FPÖ kurzfristig Stimmen — mittelfristig baute Kickl auf Empörung über 'Systemparteien' die daraus folgte.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "kurz_2017",
+      "target": "ibiza_2019",
+      "type": "direkt",
+      "why": "Kurz holte FPÖ in die Regierung — Straches Selbstüberschätzung und das verdeckte Kamerasystem der Ibiza-Falle entstanden in diesem Kontext.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fpoe_2000",
+      "target": "kurz_2017",
+      "type": "indirekt",
+      "why": "Haider normalisierte FPÖ als Koalitionspartner — Kurz nahm dieses Playbook und modernisierte es mit Türkis statt Blau als Leitfarbe.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "george_floyd_2020",
+      "target": "j6_kapitol_2021",
+      "type": "indirekt",
+      "why": "BLM-Proteste und kulturelle Polarisierung trieben Trumps Basis in Richtung Gewalt — 'Law and Order' gegen 'revolutionären' Feind.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2016",
+      "target": "j6_kapitol_2021",
+      "type": "direkt",
+      "why": "Trumps Rhetorik über 'gestohlene Wahlen' lief vier Jahre — der Kapitol-Sturm war die logische Konsequenz, kein Ausrutscher.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "j6_kapitol_2021",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": "Impeachment scheiterte, strafrechtliche Verfolgung wurde verzögert — Trump wurde nicht gestoppt und kandidierte stärker denn je.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "afghanistan_exit",
+      "target": "ukraine_2022",
+      "type": "beschleunigt",
+      "why": "Putins Timing war kein Zufall: Afghanistan-Desaster signalisierte westliche Entschlossenheitsschwäche — grünes Licht für Ukraine-Kalkulation.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "afghanistan_2001",
+      "target": "afghanistan_exit",
+      "type": "direkt",
+      "why": "20 Jahre Besatzung endeten wo sie begannen: Taliban an der Macht. Die Invasion von 2001 machte das Desaster von 2021 unvermeidlich.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "navalny_2021",
+      "target": "ukraine_2022",
+      "type": "indirekt",
+      "why": "Navalnys Ausschaltung 2021 zeigte Putins innenpolitische Handlungsfreiheit — keine Opposition, kein Gegengewicht zur Ukraine-Entscheidung.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ukraine_2022",
+      "target": "zeitenwende_2022",
+      "type": "direkt",
+      "why": "Die Invasion war der Schock der Deutschlands 30-jährige Friedensdividenden-Politik über Nacht beendete.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zeitenwende_2022",
+      "target": "europa_ruestung",
+      "type": "direkt",
+      "why": "Scholz' Zeitenwende setzte Dominoeffekt frei — alle EU-Staaten erhöhten Verteidigungsbudgets, die Rüstungsindustrie explodierte.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "europa_ruestung",
+      "type": "beschleunigt",
+      "why": "Trumps 'NATO zahlen oder wir schützen euch nicht' machte europäische Aufrüstung zur Überlebensfrage.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "roe_wade_2022",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": "Roe v. Wade mobilisierte demokratische Frauen massiv für Midterms — Demokraten übertrafen Erwartungen, aber 2024 reichte es nicht mehr.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "prigozhin_2023",
+      "target": "ukraine_gegenoffensive",
+      "type": "indirekt",
+      "why": "Wagner-Aufstand destabilisierte russische Frontkommandos kurzzeitig — wurde aber von Putin schnell eingehegt ohne Vorteil für Ukraine.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "eu_wahl_2024",
+      "target": "orban_abgewaehlt",
+      "type": "indirekt",
+      "why": "Rechtsruck in der EU paradoxerweise Weckruf: Magyar/Tisza zeigte, dass pro-europäische Mobilisierung gegen Orbán möglich ist.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "eu_wahl_2024",
+      "target": "europa_ruestung",
+      "type": "indirekt",
+      "why": "Rechtsruck erhöhte Druck auf Regierungen: Wähler wollen Stärke — Aufrüstung wurde zur seltenen Übereinstimmung quer durch Lager.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fpoe_2024",
+      "target": "dreierkoalition_2025",
+      "type": "direkt",
+      "why": "FPÖ gewann — aber ÖVP, SPÖ und NEOS einigten sich lieber auf Dreierkoalition als Kickl zum Kanzler zu machen.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ibiza_2019",
+      "target": "kurz_2017",
+      "type": "direkt",
+      "why": "Straches Ibiza-Video beendete nicht nur die Koalition — es zwang Kurz zu Neuwahlen die er gewann, bis sein eigenes Skandal-Ende 2021 kam.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "sars_2003",
+      "target": "covid_2020",
+      "type": "indirekt",
+      "why": "SARS war Generalprobe — WHO-Strukturen, Meldepflichten, Pandemiepläne wurden alle aufgebaut und dann 2020 trotzdem überrollt.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    },
+    {
+      "source": "obama_2008",
+      "target": "finanzkrise_2008",
+      "type": "indirekt",
+      "why": "Obama übernahm die explodierte Wirtschaft — sein Stimulus rettete sie, aber die politischen Kosten zahlten die Demokraten jahrelang.",
+      "yr": null,
+      "src": null,
+      "certainty": "plausibel"
+    }
+  ]
+}
