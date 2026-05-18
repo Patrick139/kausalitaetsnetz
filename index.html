@@ -495,12 +495,12 @@ h1 em { color: #4a9eff; font-style: normal; }
       <input id="search-in" type="text" placeholder="Suche...">
       <div id="search-res"></div>
     </div>
-    <div id="path-hint" id="path-hint">Shift+Klick auf zweiten Knoten</div>
+    <div id="path-hint">Klicke zwei Knoten nacheinander</div>
   </div>
 </div>
 
 <!-- HILFE OVERLAY -->
-<div id="help-overlay">
+<div id="help-overlay" style="display:none">
   <div id="help-box">
     <button id="help-close">✕</button>
     <div class="help-title">Kausal<em>netz</em></div>
@@ -574,7 +574,7 @@ h1 em { color: #4a9eff; font-style: normal; }
 </div>
 
 <button id="zoom-fit">⊡ Zoom zurücksetzen</button>
-<div id="hint">Klicke einen Knoten<br>um Verbindungen zu sehen<br><br>Shift+Klick auf zwei Knoten<br>um die Kausalkette zu sehen</div>
+<div id="hint">Klicke einen Knoten<br>um Verbindungen zu sehen<br><br>Für Kausalkette:<br>"⇢ Kette" + zwei Knoten klicken</div>
 
 <script>
 // ╔══════════════════════════════════════════════════════════════╗
@@ -606,6 +606,11 @@ const RCOL = {
   china:"#ff4a6e", nahost:"#c084fc", welt:"#f0c040",
   oesterreich:"#a78bfa", tech:"#22d3ee", klima:"#86efac"
 };
+const RNAME = {
+  usa:"USA", europa:"Europa", russland:"Russland",
+  china:"China", nahost:"Naher Osten", welt:"Global",
+  oesterreich:"Österreich", tech:"Technologie", klima:"Klima"
+};
 const IRAD = {3:22, 2:13, 1:7};
 
 const W = window.innerWidth, H = window.innerHeight;
@@ -630,7 +635,6 @@ links.forEach(l => {
 
 // ── STATE ──
 let filterRegion = "alle";
-let filterLinkType = "alle";
 let filterImp = "alle";
 let pathMode = false;
 let pathStart = null;
@@ -732,6 +736,13 @@ function handleNodeClick(e, d) {
       pathStart = null;
       document.getElementById("path-hint").style.display = "none";
     }
+    return;
+  }
+
+  // Klick auf bereits selektierten Knoten → deselektieren
+  if(selectedNode && selectedNode.id === d.id) {
+    document.getElementById("panel").classList.remove("open");
+    resetVisuals();
     return;
   }
 
@@ -874,7 +885,7 @@ function renderPanel(d, connLinks) {
 
   let html = `
     <div class="p-yr">${d.yr}</div>
-    <div class="p-region" style="background:${col}22;color:${col}">${d.r.toUpperCase()}</div>
+    <div class="p-region" style="background:${col}22;color:${col}">${(RNAME[d.r]||d.r).toUpperCase()}</div>
     <div class="p-title">${d.short}</div>
     <div class="p-detail">${d.detail}</div>
     ${d.src ? `<a class="p-src" href="${d.src}" target="_blank" rel="noopener">↗ Quelle</a>` : ''}
@@ -942,12 +953,6 @@ function applyRegionFilter() {
   });
 }
 
-// ── LINK TYPE FILTER ──
-function applyLinkTypeFilter() {
-  const active = filterLinkType;
-  linkEls.style("display", l => active === "alle" || l.type === active ? null : "none");
-}
-
 // ── IMP FILTER ──
 function applyImpFilter() {
   const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
@@ -959,8 +964,11 @@ function applyImpFilter() {
   });
 }
 
-// ── AUTO ZOOM TO FIT on simulation settle ──
+// ── AUTO ZOOM TO FIT — nur einmal beim ersten Laden ──
+let initialZoomDone = false;
 sim.on("end", () => {
+  if(initialZoomDone) return;
+  initialZoomDone = true;
   const xs = nodes.map(n=>n.x), ys = nodes.map(n=>n.y);
   const x0=Math.min(...xs), x1=Math.max(...xs);
   const y0=Math.min(...ys), y1=Math.max(...ys);
@@ -974,6 +982,17 @@ sim.on("end", () => {
 });
 
 // ── CONTROLS ──
+// ── HILFE: Bei ersten Besuch automatisch zeigen ──
+try {
+  if(!localStorage.getItem("kausalnetz_seen_help")) {
+    document.getElementById("help-overlay").style.display = "flex";
+    localStorage.setItem("kausalnetz_seen_help", "1");
+  }
+} catch(e) {
+  // localStorage nicht verfügbar (privater Modus etc.) → trotzdem zeigen
+  document.getElementById("help-overlay").style.display = "flex";
+}
+
 document.getElementById("btn-help").addEventListener("click", () => {
   document.getElementById("help-overlay").style.display = "flex";
 });
@@ -1065,10 +1084,29 @@ svg.on("click", () => {
   }
 });
 
-// ── ZOOM TO FIT ──
-document.getElementById("zoom-fit").addEventListener("click", () => {
-  svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(0, HDR_H/2).scale(1));
-});
+// ── ZOOM TO FIT (Button) ──
+function zoomToFitVisible() {
+  const visible = nodes.filter(n => {
+    const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+    return n.imp >= minImp;
+  });
+  if(!visible.length) return;
+  const xs = visible.map(n=>n.x), ys = visible.map(n=>n.y);
+  const x0=Math.min(...xs), x1=Math.max(...xs);
+  const y0=Math.min(...ys), y1=Math.max(...ys);
+  const pad = 80;
+  const panelOpen = document.getElementById("panel").classList.contains("open");
+  const availW = window.innerWidth - (panelOpen ? 320 : 0);
+  const availH = window.innerHeight - HDR_H;
+  const scaleX = (availW-pad*2)/(x1-x0||1);
+  const scaleY = (availH-pad*2)/(y1-y0||1);
+  const k = Math.min(scaleX, scaleY, 1.5);
+  const tx = availW/2 - k*(x0+x1)/2;
+  const ty = availH/2 - k*(y0+y1)/2 + HDR_H;
+  svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
+}
+
+document.getElementById("zoom-fit").addEventListener("click", zoomToFitVisible);
 
 // ── SEARCH ──
 const searchIn = document.getElementById("search-in");
@@ -1093,6 +1131,14 @@ searchIn.addEventListener("input", () => {
     el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${n.short}</span>`;
     el.addEventListener("click", () => {
       searchRes.innerHTML = ""; searchIn.value = "";
+      // Wenn der gesuchte Knoten durch imp-Filter ausgeblendet ist, Filter zurücksetzen
+      const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+      if(n.imp < minImp) {
+        document.querySelectorAll("[data-imp]").forEach(b => b.classList.remove("active"));
+        document.querySelector("[data-imp='alle']").classList.add("active");
+        filterImp = "alle";
+        applyImpFilter();
+      }
       selectNode(n);
       zoomToNode(n);
     });
@@ -1118,6 +1164,22 @@ window.selectById = id => {
   const n = nodes.find(d => d.id === id);
   if(n) { selectNode(n); zoomToNode(n); }
 };
+
+// ── RESIZE HANDLER ──
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    const newW = window.innerWidth, newH = window.innerHeight;
+    sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
+    sim.force("x", d3.forceX(d => {
+      const mn=1998, mx=2026;
+      return 100 + ((d.yr-mn)/(mx-mn)) * (newW-200);
+    }).strength(0.12));
+    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.04));
+    sim.alpha(0.3).restart();
+  }, 200);
+});
 // ═══ ENGINE END ═══
 
 } // end init()
