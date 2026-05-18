@@ -27,6 +27,19 @@
 ║                                                                      ║
 ╠═══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
+║   GRUNDPRINZIP — KOMPROMISSLOS FRUSTFREI                            ║
+║   ─────────────────────────────────────────────────────────────────  ║
+║   Dies ist ein Lern- und Kausalitätsnetz das so unterhaltsam sein    ║
+║   soll, dass Menschen freiwillig Geschichte und Zusammenhänge        ║
+║   lernen. Null Frust ist das Designziel — keine Sackgassen, keine    ║
+║   ins Leere klickenden Buttons, keine "geht nicht"-Erlebnisse.       ║
+║                                                                      ║
+║   Wenn ein Feature den User frustriert, wird es umgebaut oder        ║
+║   entfernt. Wenn ein Klick kein hilfreiches Ergebnis liefert,        ║
+║   ist der Klick falsch designed. Kompromisslos.                      ║
+║                                                                      ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
 ║   WAS ES BEREITS GIBT — UND WARUM ES NICHT REICHT                   ║
 ║   ─────────────────────────────────────────────────────────────────  ║
 ║   Kumu.io        — bezahlt, komplex, nicht kuratiert                 ║
@@ -397,6 +410,19 @@ h1 em { color: #4a9eff; font-style: normal; }
 .dd-item:hover { background: #1c2535; color: #c8d4e4; }
 .dd-item.active { color: #22d3ee; }
 
+/* ── KETTE-MODUS: nicht erreichbare Knoten ausgrauen ── */
+.node.path-faded { opacity: 0.12; pointer-events: auto; }
+.node.path-faded > circle { animation: none !important; }
+.link.path-faded { stroke-opacity: 0.04 !important; }
+
+/* Shake-Feedback bei Klick auf nicht erreichbaren Knoten */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  20%, 60% { transform: translate(-3px, 0); }
+  40%, 80% { transform: translate(3px, 0); }
+}
+.node.shake > circle { animation: shake 0.35s ease-in-out; stroke: #ff4a6e !important; }
+
 /* imp:3 glow */
 @keyframes glow-pulse {
   0%, 100% { filter: drop-shadow(0 0 3px currentColor); opacity: 1; }
@@ -625,13 +651,27 @@ const byId = {};
 nodes.forEach(n => byId[n.id] = n);
 
 // Build adjacency for path finding
-const adj = {}; // id → [{to, link}]
-nodes.forEach(n => adj[n.id] = []);
+const adj = {};  // id → [{to, link}]  (forward: Ursache → Folge)
+const radj = {}; // id → [{to, link}]  (reverse: Folge → Ursache)
+nodes.forEach(n => { adj[n.id] = []; radj[n.id] = []; });
 links.forEach(l => {
   const s = typeof l.source === 'object' ? l.source.id : l.source;
   const t = typeof l.target === 'object' ? l.target.id : l.target;
-  if(adj[s]) adj[s].push({to: t, link: l});
+  if(adj[s])  adj[s].push({to: t, link: l});
+  if(radj[t]) radj[t].push({to: s, link: l});
 });
+
+// Alle Knoten die von id aus über Kausalketten erreichbar sind (beide Richtungen)
+function reachableFrom(id) {
+  const visited = new Set([id]);
+  const queue = [id];
+  while(queue.length) {
+    const cur = queue.shift();
+    for(const nb of adj[cur])  if(!visited.has(nb.to)) { visited.add(nb.to); queue.push(nb.to); }
+    for(const nb of radj[cur]) if(!visited.has(nb.to)) { visited.add(nb.to); queue.push(nb.to); }
+  }
+  return visited;
+}
 
 // ── STATE ──
 let filterRegion = "alle";
@@ -709,17 +749,41 @@ sim.on("tick", () => {
 });
 
 // ── NODE CLICK ──
+let pathReachableSet = null;  // Knoten die von pathStart aus erreichbar sind
+
 function handleNodeClick(e, d) {
   document.getElementById("hint").style.display = "none";
 
   if(pathMode) {
     if(!pathStart) {
+      // Erster Klick: pathStart setzen + alle erreichbaren Knoten hervorheben
       pathStart = d;
-      nodeEls.filter(n => n.id === d.id).classed("selected", true);
+      pathReachableSet = reachableFrom(d.id);
+      nodeEls
+        .classed("selected", n => n.id === d.id)
+        .classed("path-faded", n => !pathReachableSet.has(n.id));
+      linkEls.classed("path-faded", l => {
+        const s = l.source.id||l.source, t = l.target.id||l.target;
+        return !pathReachableSet.has(s) || !pathReachableSet.has(t);
+      });
+      document.getElementById("path-hint").innerHTML = `Jetzt einen <strong>hellen</strong> Knoten klicken — die anderen sind nicht verbunden`;
       document.getElementById("path-hint").style.display = "block";
-    } else if(d.id !== pathStart.id) {
+    } else if(d.id === pathStart.id) {
+      // Erneuter Klick auf Start-Knoten → abbrechen
+      pathStart = null;
+      pathReachableSet = null;
+      resetVisuals();
+      document.getElementById("path-hint").style.display = "none";
+    } else if(!pathReachableSet || !pathReachableSet.has(d.id)) {
+      // Nicht erreichbar — visuelles Feedback, aber Modus aktiv lassen
+      const targetEl = nodeEls.filter(n => n.id === d.id);
+      targetEl.classed("shake", true);
+      setTimeout(() => targetEl.classed("shake", false), 500);
+    } else {
+      // Zweiter Klick auf erreichbaren Knoten → Pfad zeigen
       showPath(pathStart, d);
       pathStart = null;
+      pathReachableSet = null;
       document.getElementById("path-hint").style.display = "none";
     }
     return;
@@ -729,11 +793,21 @@ function handleNodeClick(e, d) {
     // Quick path mode via shift-click
     if(!pathStart) {
       pathStart = d;
-      nodeEls.filter(n => n.id === d.id).classed("selected", true);
+      pathReachableSet = reachableFrom(d.id);
+      nodeEls
+        .classed("selected", n => n.id === d.id)
+        .classed("path-faded", n => !pathReachableSet.has(n.id));
+      linkEls.classed("path-faded", l => {
+        const s = l.source.id||l.source, t = l.target.id||l.target;
+        return !pathReachableSet.has(s) || !pathReachableSet.has(t);
+      });
       document.getElementById("path-hint").style.display = "block";
     } else if(d.id !== pathStart.id) {
-      showPath(pathStart, d);
+      if(pathReachableSet && pathReachableSet.has(d.id)) {
+        showPath(pathStart, d);
+      }
       pathStart = null;
+      pathReachableSet = null;
       document.getElementById("path-hint").style.display = "none";
     }
     return;
@@ -767,19 +841,28 @@ function selectNode(d) {
 
 // ── PATH FINDING (BFS) ──
 function bfs(startId, endId) {
-  const queue = [[startId]];
-  const visited = new Set([startId]);
-  while(queue.length) {
-    const path = queue.shift();
-    const cur = path[path.length-1];
-    if(cur === endId) return path;
-    for(const nb of (adj[cur]||[])) {
-      if(!visited.has(nb.to)) {
-        visited.add(nb.to);
-        queue.push([...path, nb.to]);
+  // Versucht zuerst vorwärts (Ursache → Folge), dann rückwärts.
+  // Liefert immer einen Pfad in kausaler Richtung (Ursache → Folge).
+  const tryDir = (sId, eId) => {
+    const queue = [[sId]];
+    const visited = new Set([sId]);
+    while(queue.length) {
+      const path = queue.shift();
+      const cur = path[path.length-1];
+      if(cur === eId) return path;
+      for(const nb of (adj[cur]||[])) {
+        if(!visited.has(nb.to)) {
+          visited.add(nb.to);
+          queue.push([...path, nb.to]);
+        }
       }
     }
-  }
+    return null;
+  };
+  const fwd = tryDir(startId, endId);
+  if(fwd) return fwd;
+  const bwd = tryDir(endId, startId);
+  if(bwd) return bwd; // Pfad bleibt in kausaler Richtung
   return null;
 }
 
@@ -869,8 +952,8 @@ function applyVisualFilter(connIds, connLinks, pathLinkSet) {
 
 function resetVisuals() {
   selectedNode = null;
-  nodeEls.classed("selected", false).classed("faded", false).classed("path-node", false);
-  linkEls.classed("highlighted", false).classed("faded", false).classed("path-link", false)
+  nodeEls.classed("selected", false).classed("faded", false).classed("path-node", false).classed("path-faded", false);
+  linkEls.classed("highlighted", false).classed("faded", false).classed("path-link", false).classed("path-faded", false)
     .style("stroke-opacity", 0.3);
 }
 
@@ -1048,9 +1131,16 @@ document.getElementById("panel-content").addEventListener("click", e => {
 document.getElementById("btn-path").addEventListener("click", () => {
   pathMode = !pathMode;
   pathStart = null;
+  pathReachableSet = null;
   document.getElementById("btn-path").classList.toggle("active", pathMode);
-  document.getElementById("path-hint").style.display = pathMode ? "block" : "none";
-  if(!pathMode) resetVisuals();
+  const hint = document.getElementById("path-hint");
+  if(pathMode) {
+    hint.textContent = "Klicke einen Knoten — alle verbundenen werden hervorgehoben";
+    hint.style.display = "block";
+  } else {
+    hint.style.display = "none";
+    resetVisuals();
+  }
 });
 
 document.getElementById("btn-reset").addEventListener("click", () => {
