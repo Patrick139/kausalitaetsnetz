@@ -1255,9 +1255,9 @@ regionBtn.addEventListener("click", e => {
   regionDropdown.classList.toggle("open");
 });
 document.addEventListener("click", () => regionDropdown.classList.remove("open"));
-document.querySelectorAll(".dd-item").forEach(item => {
+document.querySelectorAll("#region-menu .dd-item").forEach(item => {
   item.addEventListener("click", () => {
-    document.querySelectorAll(".dd-item").forEach(i => i.classList.remove("active"));
+    document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
     item.classList.add("active");
     filterRegion = item.dataset.r;
     regionBtn.textContent = item.dataset.r === "alle" ? "🌐 Alle Regionen ▾" : item.textContent + " ▾";
