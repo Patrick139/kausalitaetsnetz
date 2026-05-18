@@ -410,6 +410,37 @@ h1 em { color: #4a9eff; font-style: normal; }
 .dd-item:hover { background: #1c2535; color: #c8d4e4; }
 .dd-item.active { color: #22d3ee; }
 
+/* ── TIEFE-STEUERUNG IM PANEL ── */
+.depth-ctrl {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin: 0.6rem 0 0.2rem;
+  padding: 0.35rem 0.5rem;
+  background: #0d1219; border-radius: 3px;
+  font-family: monospace; font-size: 0.6rem;
+}
+.depth-label { color: #4a6080; letter-spacing: 0.05em; flex: 1; }
+.depth-btn {
+  background: none; border: 1px solid #1c2535;
+  color: #8a9ab0; cursor: pointer;
+  width: 22px; height: 22px; border-radius: 2px;
+  font-size: 0.7rem; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.1s;
+}
+.depth-btn:hover:not(:disabled) { border-color: #4a9eff; color: #4a9eff; }
+.depth-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+.depth-val {
+  color: #c8d4e4; min-width: 50px; text-align: center;
+  font-size: 0.62rem; letter-spacing: 0.03em;
+}
+
+/* Indirekte Verbindungs-Cards (Tiefe > 1) — kompakter, schwächer */
+.conn-indirect { opacity: 0.65; padding: 0.35rem 0.55rem; }
+.conn-indirect:hover { opacity: 1; }
+.conn-indirect .conn-arr { opacity: 0.4; }
+.conn-indirect .conn-yr { font-size: 0.52rem; }
+.conn-indirect .conn-short { font-size: 0.72rem; }
+
 /* ── KETTE-MODUS: nicht erreichbare Knoten ausgrauen ── */
 .node.path-faded { opacity: 0.12; pointer-events: auto; }
 .node.path-faded > circle { animation: none !important; }
@@ -698,6 +729,39 @@ let filterImp = "alle";
 let pathMode = false;
 let pathStart = null;
 let selectedNode = null;
+let causeDepth = 1;   // Tiefe der angezeigten Ursachen (1 = nur direkt)
+let effectDepth = 1;  // Tiefe der angezeigten Folgen (1 = nur direkt)
+const MAX_DEPTH = 5;
+
+// BFS bis Tiefe maxDepth, Richtung wird durch adjMap bestimmt.
+// Liefert Map<id, depth> wobei depth=0 der Start-Knoten ist.
+function bfsDepthLimited(startId, adjMap, maxDepth) {
+  const result = new Map();
+  result.set(startId, 0);
+  let frontier = [startId];
+  for(let d = 1; d <= maxDepth; d++) {
+    const next = [];
+    for(const cur of frontier) {
+      for(const nb of (adjMap[cur]||[])) {
+        if(!result.has(nb.to)) {
+          result.set(nb.to, d);
+          next.push(nb.to);
+        }
+      }
+    }
+    frontier = next;
+    if(!frontier.length) break;
+  }
+  return result;
+}
+
+// Maximale Tiefe in einer Richtung — wird gebraucht um Buttons zu deaktivieren
+function maxReachDepth(startId, adjMap) {
+  const m = bfsDepthLimited(startId, adjMap, 50);
+  let max = 0;
+  for(const d of m.values()) if(d > max) max = d;
+  return max;
+}
 
 // ── SVG ──
 const svg = d3.select("#canvas");
@@ -842,19 +906,29 @@ function handleNodeClick(e, d) {
 }
 
 // ── SELECT NODE ──
-function selectNode(d) {
+function selectNode(d, resetDepth = true) {
   selectedNode = d;
-  const connLinks = links.filter(l =>
-    (l.source.id||l.source) === d.id || (l.target.id||l.target) === d.id
-  );
-  const connIds = new Set(connLinks.flatMap(l => [l.source.id||l.source, l.target.id||l.target]));
+  if(resetDepth) { causeDepth = 1; effectDepth = 1; }
 
-  // Apply filter
-  applyVisualFilter(connIds, connLinks, null);
+  // Tiefen-begrenzte Vorfahren und Nachkommen
+  const causes  = bfsDepthLimited(d.id, radj, causeDepth);   // Map<id, depth>
+  const effects = bfsDepthLimited(d.id, adj,  effectDepth);  // Map<id, depth>
+
+  // Vereinigung aller hervorgehobenen Knoten (inkl. d.id selbst)
+  const highlightIds = new Set([...causes.keys(), ...effects.keys()]);
+
+  // Alle Links zwischen hervorgehobenen Knoten
+  const highlightLinks = links.filter(l => {
+    const s = l.source.id||l.source, t = l.target.id||l.target;
+    return highlightIds.has(s) && highlightIds.has(t);
+  });
+
+  // Visualisierung
+  applyVisualFilter(highlightIds, highlightLinks, null);
   nodeEls.classed("selected", n => n.id === d.id).classed("path-node", false);
   linkEls.classed("path-link", false);
 
-  renderPanel(d, connLinks);
+  renderPanel(d, causes, effects);
 }
 
 // ── PATH FINDING (BFS) ──
@@ -977,13 +1051,23 @@ function resetVisuals() {
 }
 
 // ── PANEL ──
-function renderPanel(d, connLinks) {
+function renderPanel(d, causes, effects) {
   const col = RCOL[d.r]||"#4a6080";
 
-  const causes = connLinks.filter(l => (l.target.id||l.target)===d.id)
-    .map(l => ({n: byId[l.source.id||l.source], l}));
-  const effects = connLinks.filter(l => (l.source.id||l.source)===d.id)
-    .map(l => ({n: byId[l.target.id||l.target], l}));
+  // Maximal mögliche Tiefe (für Button-Deaktivierung)
+  const maxCauseDepth  = maxReachDepth(d.id, radj);
+  const maxEffectDepth = maxReachDepth(d.id, adj);
+
+  // Knoten nach Tiefe gruppieren (Tiefe 0 ist der Knoten selbst)
+  const causesByDepth  = {};
+  const effectsByDepth = {};
+  for(const [id, depth] of causes)  if(depth > 0) (causesByDepth[depth]  = causesByDepth[depth]  || []).push(id);
+  for(const [id, depth] of effects) if(depth > 0) (effectsByDepth[depth] = effectsByDepth[depth] || []).push(id);
+
+  // Link für ein Knoten-Paar finden (für Card-Anzeige)
+  function findLink(fromId, toId) {
+    return links.find(l => (l.source.id||l.source) === fromId && (l.target.id||l.target) === toId);
+  }
 
   let html = `
     <div class="p-yr">${d.yr}</div>
@@ -993,48 +1077,80 @@ function renderPanel(d, connLinks) {
     ${d.src ? `<a class="p-src" href="${d.src}" target="_blank" rel="noopener">↗ Quelle</a>` : ''}
   `;
 
-  if(causes.length || effects.length) {
-    html += `
-      <div class="p-sec" style="margin-top:1.2rem;margin-bottom:0.5rem">VERBINDUNGEN FILTERN</div>
-      <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.8rem">
-        <button class="pf-btn active" data-pf="alle">Alle</button>
-        <button class="pf-btn" data-pf="direkt" style="border-color:#ff4a6e40;color:#ff4a6e">■ Direkt</button>
-        <button class="pf-btn" data-pf="indirekt" style="border-color:#f0c04040;color:#f0c040">■ Indirekt</button>
-        <button class="pf-btn" data-pf="beschleunigt" style="border-color:#4a9eff40;color:#4a9eff">■ Beschleunigt</button>
-      </div>
-    `;
+  // ── URSACHEN ──
+  if(maxCauseDepth > 0) {
+    html += `<div class="depth-ctrl">
+      <span class="depth-label">← Ursachen-Tiefe</span>
+      <button class="depth-btn" data-dir="cause" data-act="dec" ${causeDepth<=1?'disabled':''}>◀</button>
+      <span class="depth-val">${causeDepth === maxCauseDepth ? `${causeDepth} (alle)` : causeDepth}</span>
+      <button class="depth-btn" data-dir="cause" data-act="inc" ${causeDepth>=maxCauseDepth?'disabled':''}>▶</button>
+    </div>`;
+
+    for(let depth = 1; depth <= causeDepth; depth++) {
+      const ids = causesByDepth[depth] || [];
+      if(!ids.length) continue;
+      const label = depth === 1 ? "WURDE AUSGELÖST DURCH" : `ÜBER ${depth} SCHRITTE`;
+      html += `<div class="p-sec" style="margin-top:${depth===1?'0.4rem':'0.9rem'};margin-bottom:0.5rem;opacity:${depth===1?1:0.7}">← ${label}</div>`;
+      ids.forEach(id => {
+        const n = byId[id]; if(!n) return;
+        // Für Tiefe 1: direkter Link zu d. Für tiefer: irgendein Link auf dem Pfad
+        let lnk;
+        if(depth === 1) lnk = findLink(id, d.id);
+        else {
+          // Finde einen Link von diesem Knoten zu einem Knoten der eine Stufe näher dran ist
+          for(const nb of adj[id]) {
+            if(causes.has(nb.to) && causes.get(nb.to) === depth - 1) { lnk = nb.link; break; }
+          }
+        }
+        if(lnk) html += connCard(n, lnk, "←", depth);
+      });
+    }
   }
 
-  if(causes.length) {
-    html += `<div class="p-sec conn-section" data-section="causes" style="margin-bottom:0.5rem">← WURDE AUSGELÖST DURCH</div>`;
-    causes.forEach(({n, l}) => {
-      if(!n) return;
-      html += connCard(n, l, "←");
-    });
-  }
-  if(effects.length) {
-    html += `<div class="p-sec conn-section" data-section="effects" style="margin-top:1rem;margin-bottom:0.5rem">→ HAT AUSGELÖST / BEEINFLUSST</div>`;
-    effects.forEach(({n, l}) => {
-      if(!n) return;
-      html += connCard(n, l, "→");
-    });
+  // ── FOLGEN ──
+  if(maxEffectDepth > 0) {
+    html += `<div class="depth-ctrl" style="margin-top:1.4rem">
+      <span class="depth-label">→ Folgen-Tiefe</span>
+      <button class="depth-btn" data-dir="effect" data-act="dec" ${effectDepth<=1?'disabled':''}>◀</button>
+      <span class="depth-val">${effectDepth === maxEffectDepth ? `${effectDepth} (alle)` : effectDepth}</span>
+      <button class="depth-btn" data-dir="effect" data-act="inc" ${effectDepth>=maxEffectDepth?'disabled':''}>▶</button>
+    </div>`;
+
+    for(let depth = 1; depth <= effectDepth; depth++) {
+      const ids = effectsByDepth[depth] || [];
+      if(!ids.length) continue;
+      const label = depth === 1 ? "HAT AUSGELÖST / BEEINFLUSST" : `ÜBER ${depth} SCHRITTE`;
+      html += `<div class="p-sec" style="margin-top:${depth===1?'0.4rem':'0.9rem'};margin-bottom:0.5rem;opacity:${depth===1?1:0.7}">→ ${label}</div>`;
+      ids.forEach(id => {
+        const n = byId[id]; if(!n) return;
+        let lnk;
+        if(depth === 1) lnk = findLink(d.id, id);
+        else {
+          for(const nb of radj[id]) {
+            if(effects.has(nb.to) && effects.get(nb.to) === depth - 1) { lnk = nb.link; break; }
+          }
+        }
+        if(lnk) html += connCard(n, lnk, "→", depth);
+      });
+    }
   }
 
   document.getElementById("panel-content").innerHTML = html;
   document.getElementById("panel").classList.add("open");
 }
 
-function connCard(n, l, arr) {
+function connCard(n, l, arr, depth = 1) {
   const typeLabel = {direkt:"direkte Ursache", indirekt:"indirekte Folge", beschleunigt:"beschleunigt"}[l.type]||l.type;
   const srcLink = l.src ? `<a class="conn-src" href="${l.src}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗ Quelle</a>` : '';
-  return `<div class="conn ${l.type}" onclick="selectById('${n.id}')">
+  const indirect = depth > 1 ? ' conn-indirect' : '';
+  return `<div class="conn ${l.type}${indirect}" onclick="selectById('${n.id}')">
     <span class="conn-arr">${arr}</span>
     <div class="conn-body">
       <div class="conn-yr">${n.yr}</div>
       <div class="conn-short">${n.short}</div>
-      <div class="conn-why">${l.why||""}</div>
+      ${depth === 1 ? `<div class="conn-why">${l.why||""}</div>
       <div class="conn-type type-${l.type}">${typeLabel}</div>
-      ${srcLink}
+      ${srcLink}` : ''}
     </div>
   </div>`;
 }
@@ -1132,19 +1248,20 @@ document.querySelectorAll(".dd-item").forEach(item => {
   });
 });
 
-// ── PANEL LINK-TYPE FILTER (event delegation) ──
+// ── PANEL LINK-TYPE FILTER + DEPTH CONTROLS (event delegation) ──
 document.getElementById("panel-content").addEventListener("click", e => {
-  const btn = e.target.closest(".pf-btn");
-  if(!btn) return;
-  e.stopPropagation();
-  document.querySelectorAll(".pf-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-  const pf = btn.dataset.pf;
-  document.querySelectorAll("#panel-content .conn").forEach(card => {
-    const type = card.classList.contains("direkt") ? "direkt"
-               : card.classList.contains("indirekt") ? "indirekt" : "beschleunigt";
-    card.dataset.typeHidden = (pf !== "alle" && type !== pf) ? "true" : "false";
-  });
+  const depthBtn = e.target.closest(".depth-btn");
+  if(depthBtn && !depthBtn.disabled) {
+    e.stopPropagation();
+    const dir = depthBtn.dataset.dir;
+    const act = depthBtn.dataset.act;
+    if(dir === "cause")  causeDepth  += (act === "inc" ? 1 : -1);
+    if(dir === "effect") effectDepth += (act === "inc" ? 1 : -1);
+    causeDepth  = Math.max(1, Math.min(MAX_DEPTH, causeDepth));
+    effectDepth = Math.max(1, Math.min(MAX_DEPTH, effectDepth));
+    if(selectedNode) selectNode(selectedNode, false);  // re-render mit gleicher Tiefe-Auswahl
+    return;
+  }
 });
 
 document.getElementById("btn-path").addEventListener("click", () => {
@@ -1271,7 +1388,7 @@ function zoomToNode(n) {
 
 window.selectById = id => {
   const n = nodes.find(d => d.id === id);
-  if(n) { selectNode(n); zoomToNode(n); }
+  if(n) { selectNode(n, true); zoomToNode(n); }
 };
 
 // ── RESIZE HANDLER ──
