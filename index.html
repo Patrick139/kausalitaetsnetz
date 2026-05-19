@@ -212,9 +212,9 @@ body { background: #07090d; color: #c8d4e4; font-family: 'Segoe UI', system-ui, 
 
 /* Zeitachse — nur sichtbar bei niedrigem Zoom */
 #g-axis { pointer-events: none; opacity: 0; }
-.axis-line { stroke: #4a5d7a; stroke-width: 1.5; }
-.axis-tick { stroke: #4a5d7a; stroke-width: 1; }
-.axis-label { fill: #8da3c2; font-family: monospace; font-size: 13px; font-weight: 700; text-anchor: middle; pointer-events: none; }
+.axis-line { stroke: #4a5d7a; stroke-width: 2; }
+.axis-tick { stroke: #4a5d7a; stroke-width: 1.5; }
+.axis-label { fill: #8da3c2; font-family: monospace; font-size: 22px; font-weight: 700; text-anchor: middle; pointer-events: none; }
 
 /* Cluster-Labels — nur sichtbar bei niedrigem Zoom */
 #g-clusters { pointer-events: none; }
@@ -841,10 +841,10 @@ function drawAxis(width) {
     const isMajor = y % 10 === 0;
     gA.append("line").attr("class", "axis-tick")
       .attr("x1", x).attr("x2", x)
-      .attr("y1", yBase - (isMajor ? 10 : 5)).attr("y2", yBase + (isMajor ? 10 : 5));
+      .attr("y1", yBase - (isMajor ? 16 : 8)).attr("y2", yBase + (isMajor ? 16 : 8));
     if(isMajor) {
       gA.append("text").attr("class", "axis-label")
-        .attr("x", x).attr("y", yBase + 28).text(y);
+        .attr("x", x).attr("y", yBase + 44).text(y);
     }
   }
 }
@@ -904,14 +904,13 @@ const sim = d3.forceSimulation(nodes)
     .distance(d => {
       const s = byId[d.source.id||d.source], t = byId[d.target.id||d.target];
       if(!s||!t) return 120;
-      // Jahresdifferenz spürbar in Distanz übersetzen — verstärkt die horizontale Zeitordnung
       return 40 + Math.abs(s.yr - t.yr) * 2.5;
-    }).strength(0.25))
-  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -380 : d.imp === 2 ? -220 : -120))
+    }).strength(0.15))
+  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -250 : d.imp === 2 ? -160 : -100))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
-  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.5))
-  .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.15));
+  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.6))
+  .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.35));
 
 // ── DRAW LINKS ──
 const linkEls = gL.selectAll(".link").data(links).join("line")
@@ -1569,8 +1568,8 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => {
     const newW = window.innerWidth, newH = window.innerHeight;
     sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
-    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.5));
-    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.15));
+    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.6));
+    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.35));
     drawAxis(newW);
     sim.alpha(0.3).restart();
   }, 200);
