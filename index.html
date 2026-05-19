@@ -806,12 +806,18 @@ const RCOL = {
   usa:"#4a9eff", eu:"#3dd68c", russland:"#ff8c4a",
   china:"#ff4a6e", mittelost:"#c084fc", global:"#f0c040",
   oesterreich:"#a78bfa",
-  // Neue
   uk:"#7dd3fc", japan:"#fb7185", taiwan:"#fb923c",
   iran:"#a3e635", israel:"#60a5fa", saudi:"#facc15",
   afghanistan:"#94a3b8", brasilien:"#34d399",
   australien:"#fbbf24", syrien:"#f472b6",
   südostasien:"#c4b5fd",
+  // Asien (1980-99 Charge)
+  südkorea:"#fda4af", indien:"#fb923c", indonesien:"#bef264",
+  vietnam:"#67e8f9", philippinen:"#fcd34d",
+  thailand:"#f9a8d4", pakistan:"#86efac", malaysia:"#a78bfa",
+  // Lateinamerika
+  argentinien:"#bae6fd", venezuela:"#fde047", chile:"#fda4af",
+  kolumbien:"#fdba74", mexiko:"#86efac",
   // Default
   _default:"#4a6080"
 };
@@ -827,7 +833,9 @@ const RNAME = {
   südostasien:"Südostasien",
   indien:"Indien", indonesien:"Indonesien",
   vietnam:"Vietnam", philippinen:"Philippinen",
-  thailand:"Thailand", pakistan:"Pakistan", malaysia:"Malaysia"
+  thailand:"Thailand", pakistan:"Pakistan", malaysia:"Malaysia",
+  argentinien:"Argentinien", venezuela:"Venezuela",
+  chile:"Chile", kolumbien:"Kolumbien", mexiko:"Mexiko"
 };
 const IRAD = {3:22, 2:13, 1:7};
 
@@ -1494,7 +1502,9 @@ const REGION_ICONS = {
   oesterreich:"🇦🇹", uk:"🇬🇧", japan:"🇯🇵", taiwan:"🇹🇼",
   iran:"🇮🇷", israel:"🇮🇱", saudi:"🇸🇦", afghanistan:"🇦🇫",
   brasilien:"🇧🇷", australien:"🇦🇺", syrien:"🇸🇾",
-  mittelost:"🌍", global:"🌐", südostasien:"🌏"
+  mittelost:"🌍", global:"🌐", südostasien:"🌏",
+  argentinien:"🇦🇷", venezuela:"🇻🇪", chile:"🇨🇱",
+  kolumbien:"🇨🇴", mexiko:"🇲🇽"
 };
 (function buildRegionMenu() {
   const menu = document.getElementById("region-menu");

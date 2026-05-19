@@ -3597,6 +3597,321 @@
         "wahl",
         "krieg"
       ]
+    },
+    {
+      "id": "lula_praesidentschaft_2003",
+      "yr": 2003,
+      "end_yr": 2010,
+      "r": "brasilien",
+      "imp": 3,
+      "short": {
+        "de": "Lulas erste Präsidentschaft"
+      },
+      "detail": {
+        "de": "Luiz Inácio Lula da Silva regiert Brasilien 2003-2010. 29 Millionen Brasilianer aus Armut befreit, Mittelschicht wächst auf 51% der Bevölkerung. BIP wächst 4,1% pro Jahr im Durchschnitt, IWF-Schulden vollständig abbezahlt, Arbeitslosigkeit von 10,5% auf 5,7%. Verlässt das Amt mit 87% Zustimmung — höchste je in Brasilien. Pink-Tide-Vorreiter und globales Modell für sozialdemokratische Entwicklungspolitik mit Marktwirtschaft."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "mexikanischer_drogenkrieg_2006",
+      "yr": 2006,
+      "end_yr": null,
+      "r": "mexiko",
+      "imp": 2,
+      "short": {
+        "de": "Mexiko: Militärischer Drogenkrieg startet"
+      },
+      "detail": {
+        "de": "Präsident Felipe Calderón startet im Dezember 2006 eine umfassende Militäroperation gegen die Drogenkartelle. Resultat: massive Eskalation statt Befriedung. Über 400.000 Tote, über 100.000 Verschwundene bis 2025. Kartelle fragmentieren und brutalisieren sich. Macht Mexiko zur Hauptlieferquelle für die US-Opioid-Epidemie der 2010er und Fentanyl-Krise der 2020er."
+      },
+      "tags": [
+        "krieg",
+        "politik",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "kolumbien_friedensprozess_2012",
+      "yr": 2012,
+      "end_yr": 2016,
+      "r": "kolumbien",
+      "imp": 2,
+      "short": {
+        "de": "Kolumbianischer Friedensprozess"
+      },
+      "detail": {
+        "de": "Regierung Santos beginnt im Oktober 2012 Friedensverhandlungen mit der FARC-Guerilla in Havanna. Vertrag im November 2016 unterzeichnet — Ende von 52 Jahren Bürgerkrieg mit etwa 220.000 Toten und 8 Millionen Vertriebenen. Santos erhält den Friedensnobelpreis. Implementierung bleibt schwierig, viele Demobilisierte werden später ermordet, FARC-Splittergruppen kämpfen weiter. Stagnation befeuert spätere Petro-Wahl."
+      },
+      "tags": [
+        "vertrag",
+        "krieg",
+        "politik"
+      ]
+    },
+    {
+      "id": "chavez_tod_2013",
+      "yr": 2013,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 2,
+      "short": {
+        "de": "Hugo Chávez stirbt — Maduro folgt"
+      },
+      "detail": {
+        "de": "Hugo Chávez stirbt am 5. März 2013 nach langer Krebskrankheit. 14 Jahre 'Bolivarianische Revolution' enden. Nicolás Maduro gewinnt die folgende April-Wahl knapp mit 50,6%. Beginn des wirtschaftlichen Niedergangs: Hyperinflation außer Kontrolle, 8 Millionen Auswanderer bis 2025, politische Repression eskaliert. Maduro hält sich durch Wahlmanipulation, Militärkontrolle und Russland-China-Iran-Allianz an der Macht."
+      },
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "lava_jato_2014",
+      "yr": 2014,
+      "end_yr": 2018,
+      "r": "brasilien",
+      "imp": 3,
+      "short": {
+        "de": "Lava-Jato-Korruptionsskandal"
+      },
+      "detail": {
+        "de": "Im März 2014 startet die Bundespolizei die 'Lava Jato' (Autowäsche) Operation. Aufgedeckt: Petrobras-Manager und Politiker akzeptierten Milliarden-Bestechung von Bauriesen wie Odebrecht — 3% jedes Auftrags wurden zwischen Politikern und Managern aufgeteilt. 8 Mrd. USD durch kriminelles Netzwerk durch mehrere Länder gewaschen. Über 200 Politiker und Manager angeklagt, darunter Ex-Präsident Lula. Richter Sergio Moro (später Bolsonaros Justizminister) wird wegen parteiischer Verfahrensführung kritisiert — Urteile gegen Lula werden 2021 vom Obersten Gericht aufgehoben."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft",
+        "konzern"
+      ]
+    },
+    {
+      "id": "ayotzinapa_mexiko_2014",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "mexiko",
+      "imp": 1,
+      "short": {
+        "de": "43 Studenten in Ayotzinapa verschwunden"
+      },
+      "detail": {
+        "de": "In der Nacht zum 27. September 2014 verschwinden 43 Lehramts-Studenten der Ayotzinapa-Hochschule in Iguala, Guerrero. Beteiligt: lokale Polizei, Drogenkartell Guerreros Unidos, und teilweise auch Militär. Bis 2025 wurden nur Teilreste von drei Studenten identifiziert. Internationaler Schock, Symbol für mexikanische Verschwundenen-Krise (über 100.000 dokumentierte Fälle seit 2006). Niemand höher als Lokalpolizei verurteilt."
+      },
+      "tags": [
+        "terror",
+        "gesellschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "dilma_impeachment_2016",
+      "yr": 2016,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 2,
+      "short": {
+        "de": "Dilma Rousseff abgesetzt"
+      },
+      "detail": {
+        "de": "Brasiliens Präsidentin Dilma Rousseff wird am 31. August 2016 vom Senat des Amtes enthoben — formaler Vorwurf: 'pedaladas', Haushaltsmanipulation zur Verschleierung von Defiziten. Lava-Jato-Kontext, aber keine direkten Beweise gegen Dilma selbst. Linke und viele internationale Beobachter sprechen vom 'parlamentarischen Putsch'. Vize Michel Temer übernimmt, dreht Politik scharf nach rechts. Setting für Bolsonaro 2018."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "amlo_mexiko_2018",
+      "yr": 2018,
+      "end_yr": null,
+      "r": "mexiko",
+      "imp": 3,
+      "short": {
+        "de": "AMLO gewinnt Mexikos Wahl"
+      },
+      "detail": {
+        "de": "Andrés Manuel López Obrador gewinnt am 1. Juli 2018 die mexikanische Präsidentschaftswahl mit 53% — historische Niederlage der PRI, die Mexiko 70 der vergangenen 90 Jahre regiert hatte. AMLO gründete MORENA als Anti-System-Bewegung. Startet die zweite Pink-Tide-Welle in Lateinamerika. Regiert sechs Jahre bis 2024, übergibt an Sheinbaum mit MORENA-Supermehrheit."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "bewegung"
+      ]
+    },
+    {
+      "id": "bolsonaro_brasilien_2018",
+      "yr": 2018,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 3,
+      "short": {
+        "de": "Bolsonaro gewinnt Brasilien-Wahl"
+      },
+      "detail": {
+        "de": "Jair Bolsonaro gewinnt am 28. Oktober 2018 die brasilianische Stichwahl mit 55%. Ex-Militär, Trump-artiger Populist, lobt offen die Militärdiktatur (1964-85). Profitiert direkt von Lulas Verhaftung (PT-Kandidat Haddad ersetzt Lula erst Wochen vor der Wahl). Als Präsident: beschleunigt Amazonas-Abholzung, ignoriert COVID-19, untergräbt Wahlinstitutionen. Anhänger stürmen am 8. Januar 2023 Regierungsgebäude in Brasília — Kopie des 6.-Jänner-2021 in USA."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "chile_proteste_2019",
+      "yr": 2019,
+      "end_yr": null,
+      "r": "chile",
+      "imp": 2,
+      "short": {
+        "de": "Chilenische Massenproteste"
+      },
+      "detail": {
+        "de": "Im Oktober 2019 eskalieren Studenten-Proteste gegen eine U-Bahn-Tarif-Erhöhung von 30 Pesos zu einer landesweiten Massenbewegung. Parole: 'Es sind nicht 30 Pesos, es sind 30 Jahre' — Wut über das Pinochet-Erbe in der Verfassung, soziale Ungleichheit, neoliberales Modell. 1,2 Millionen Menschen auf der Plaza Italia in Santiago. Führt zum Verfassungsprozess (zwei gescheiterte Referenden 2022/23) und zur Boric-Wahl 2021."
+      },
+      "tags": [
+        "protest",
+        "politik",
+        "bewegung"
+      ]
+    },
+    {
+      "id": "boric_chile_2021",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "chile",
+      "imp": 2,
+      "short": {
+        "de": "Boric: Jüngster Präsident Chiles"
+      },
+      "detail": {
+        "de": "Gabriel Boric gewinnt am 19. Dezember 2021 die chilenische Stichwahl mit 55,9% gegen den Pinochet-Apologeten Kast — wird mit 35 Jahren jüngster Präsident der Geschichte Chiles. Stammt aus der Studentenbewegung 2011 und den Protesten 2019. Versucht Verfassungsreform — scheitert 2022 und 2023 in zwei Referenden. Zweite Pink-Tide-Welle gipfelt hier; Boric verliert 2025-Wahl an Hardright Kast."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "petro_kolumbien_2022",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "kolumbien",
+      "imp": 2,
+      "short": {
+        "de": "Petro: Erster linker Präsident Kolumbiens"
+      },
+      "detail": {
+        "de": "Gustavo Petro gewinnt am 19. Juni 2022 die kolumbianische Stichwahl — erster linker Präsident in der 212-jährigen Republikgeschichte. Vize Francia Márquez wird erste schwarze Vize-Präsidentin. Ex-Guerillero (M-19), später Bürgermeister Bogotás. Bricht 200-jährige konservative Tradition. Friedensprozess-Vertiefung, Drogenpolitik-Wende. Trump sanktioniert ihn 2025 als 'illegalen Drogendealer' nach Kritik an US-Karibik-Schlägen."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "lula_rueckkehr_2022",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 3,
+      "short": {
+        "de": "Lulas Rückkehr nach Stichwahl gegen Bolsonaro"
+      },
+      "detail": {
+        "de": "Lula da Silva gewinnt am 30. Oktober 2022 die Stichwahl gegen Bolsonaro mit 50,9% zu 49,1% — knappster Sieg der modernen brasilianischen Geschichte. Comeback nach Gefängnis (2018-2019) und Aufhebung der Lava-Jato-Urteile (2021). Am 8. Januar 2023 stürmen Bolsonaro-Anhänger Kongress, Präsidentenpalast und Oberstes Gericht in Brasília — Kopie des US-6.-Januar. Lula sichert Demokratie, treibt Klima-Politik, Sozialpolitik, BRICS-Erweiterung."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "milei_argentinien_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "argentinien",
+      "imp": 3,
+      "short": {
+        "de": "Milei: Anarcho-Kapitalist gewinnt Argentinien"
+      },
+      "detail": {
+        "de": "Javier Milei gewinnt am 19. November 2023 die argentinische Stichwahl mit 56% — Ökonom und Selbstbeschreibung 'Anarcho-Kapitalist'. Wahlkampf mit Kettensäge als Symbol für radikalen Staatsabbau. Programm: Dollarisierung, Zentralbank abschaffen, Ministerien halbieren, alle Subventionen streichen. Erste Resultate: Inflation halbiert sich 2024-25 von 211% auf ~80%, Armut steigt erst stark, fällt dann. Ideologische Allianz mit Trump. Bricht mit lateinamerikanischer politischer Tradition."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft",
+        "wahl"
+      ]
+    },
+    {
+      "id": "venezuela_wahlfaelschung_2024",
+      "yr": 2024,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 2,
+      "short": {
+        "de": "Maduro fälscht Venezuela-Wahl"
+      },
+      "detail": {
+        "de": "Bei der Präsidentschaftswahl am 28. Juli 2024 proklamiert sich Maduro zum Sieger, obwohl unabhängige Wahltabellen und Exit Polls einen klaren Sieg des Oppositionskandidaten Edmundo González (über 60%) zeigen. Operation 'Tun Tun' folgt: über 2.000 Festnahmen, 22 Tote in Protesten. USA, EU, Lateinamerika (Brasilien, Mexiko, Kolumbien, Chile) erkennen Wahl nicht an. Russland, China, Iran, Kuba unterstützen Maduro. María Corina Machado wurde von Wahl ausgeschlossen, bleibt im Untergrund."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "staat"
+      ]
+    },
+    {
+      "id": "sheinbaum_mexiko_2024",
+      "yr": 2024,
+      "end_yr": null,
+      "r": "mexiko",
+      "imp": 2,
+      "short": {
+        "de": "Sheinbaum: Erste Präsidentin Mexikos"
+      },
+      "detail": {
+        "de": "Claudia Sheinbaum gewinnt am 2. Juni 2024 die mexikanische Wahl mit 59% — erste Frau und erste jüdische Präsidentin Mexikos. Setzt AMLOs MORENA-Programm fort. Klima-Wissenschaftlerin, ehemalige Bürgermeisterin Mexico-Stadt. Erweist sich als geschickte Trump-Gegenspielerin: verspottet 'Gulf of America'-Umbenennung mit 'América Mexicana'-Vorschlag, navigiert Tarif-Konflikte. MORENA hält Supermehrheit im Kongress."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "kast_chile_2025",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "chile",
+      "imp": 2,
+      "short": {
+        "de": "Kast gewinnt Chile-Stichwahl"
+      },
+      "detail": {
+        "de": "Der Hardright-Konservative José Antonio Kast gewinnt am 14. Dezember 2025 die chilenische Stichwahl. Pinochet-Sympathisant, Sohn deutscher Migranten der NS-Zeit. Amtsantritt März 2026. Ende der vierjährigen progressiven Boric-Regierung. Teil der 'konservativen Welle' 2024-26 in Lateinamerika: Milei (Argentinien), Trump (USA), Paz (Bolivien), erwarteter Rechtsruck in Kolumbien (Mai 2026) und Brasilien (Oktober 2026)."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "maduro_us_capture_2026",
+      "yr": 2026,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 2,
+      "short": {
+        "de": "USA nehmen Maduro fest"
+      },
+      "detail": {
+        "de": "Im Januar 2026 nimmt die Trump-Administration nach US-Militäroperation in der Karibik Venezuelas Präsident Maduro gefangen. Anklage in New York wegen Drogenhandel. Übergangs-Präsidentin wird Maduros Vize Delcy Rodríguez — Trump arbeitet mit ihr statt mit der Opposition, die 2024 die Wahl gewonnen hatte. Russland und China verurteilen scharf, Frankreich spricht von Bruch des Völkerrechts. Argentinien (Milei), Ecuador (Noboa), El Salvador (Bukele) unterstützen Operation. Bricht regionale Souveränitätsnormen."
+      },
+      "tags": [
+        "geopolitik",
+        "krieg",
+        "politik"
+      ]
     }
   ],
   "links": [
@@ -5903,6 +6218,204 @@
         "de": "Iran-Geiselsache (Libanon-Geiseln) und Waffenbedarf Irans im Krieg gegen Saddam — beides war die Geschäftsgrundlage für die illegalen Waffenverkäufe."
       },
       "certainty": "belegt"
+    },
+    {
+      "source": "lula_praesidentschaft_2003",
+      "target": "amlo_mexiko_2018",
+      "type": "indirekt",
+      "why": {
+        "de": "Lulas Erfolg mit Armutsbekämpfung und Wachstum lieferte das politische Modell der 2010er-Linke in Lateinamerika."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "lula_praesidentschaft_2003",
+      "target": "lava_jato_2014",
+      "type": "indirekt",
+      "why": {
+        "de": "Korruptionsnetzwerk im Petrobras-System entstand und reifte über mehr als ein Jahrzehnt unter PT-Regierungen, wurde 2014 strafrechtlich aufgedeckt."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "lava_jato_2014",
+      "target": "dilma_impeachment_2016",
+      "type": "direkt",
+      "why": {
+        "de": "Lava-Jato-Welle erschütterte PT-Macht und schuf parlamentarische Dynamik, die Dilma stürzte — auch ohne direkte Beweise gegen sie."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "lava_jato_2014",
+      "target": "bolsonaro_brasilien_2018",
+      "type": "direkt",
+      "why": {
+        "de": "Korruptions-Frust trieb Anti-System-Wähler zu Bolsonaro — Lula wurde durch Lava-Jato-Urteile von der Kandidatur ausgeschlossen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "dilma_impeachment_2016",
+      "target": "bolsonaro_brasilien_2018",
+      "type": "direkt",
+      "why": {
+        "de": "Temer-Regierung 2016-18 desavouierte Mitte-Rechts ideologisch — radikaler Rechts-Außenseiter Bolsonaro profitierte."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "bolsonaro_brasilien_2018",
+      "target": "lula_rueckkehr_2022",
+      "type": "direkt",
+      "why": {
+        "de": "Vier Jahre Bolsonaro-Verwüstung (COVID, Amazonas, Demokratie-Erosion) mobilisierten breite Anti-Bolsonaro-Koalition für Lulas knappen Sieg."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "j6_kapitol_2021",
+      "target": "lula_rueckkehr_2022",
+      "type": "indirekt",
+      "why": {
+        "de": "Trumps 6.-Jänner-Putschversuch wurde zur Vorlage für Bolsonaro-Anhänger 8. Januar 2023 in Brasília — Lulas Regierungsantritt wurde so getestet."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "amlo_mexiko_2018",
+      "target": "boric_chile_2021",
+      "type": "indirekt",
+      "why": {
+        "de": "AMLO-Sieg in Mexikos größtem hispanoamerikanischem Land startete die zweite Pink-Tide-Welle — Boric Teil dieser Dynamik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "amlo_mexiko_2018",
+      "target": "petro_kolumbien_2022",
+      "type": "indirekt",
+      "why": {
+        "de": "Linke Welle in der Region machte Petros historischen Sieg als ersten Linken Kolumbiens politisch denkbar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "amlo_mexiko_2018",
+      "target": "lula_rueckkehr_2022",
+      "type": "indirekt",
+      "why": {
+        "de": "Linke regionale Dynamik gab Lula politischen Rückenwind nach Haftaufhebung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "amlo_mexiko_2018",
+      "target": "sheinbaum_mexiko_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Sheinbaum war AMLOs gewählte Nachfolgerin und MORENA-Co-Architektin — direkte Kontinuität."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chile_proteste_2019",
+      "target": "boric_chile_2021",
+      "type": "direkt",
+      "why": {
+        "de": "Boric stammt direkt aus der Protestbewegung 2019, kandidierte als ihr politischer Ausdruck."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "boric_chile_2021",
+      "target": "kast_chile_2025",
+      "type": "direkt",
+      "why": {
+        "de": "Gescheiterte Verfassungsreferenden und politische Polarisierung unter Boric ermöglichten den Rechtsruck zu Kast."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "kolumbien_friedensprozess_2012",
+      "target": "petro_kolumbien_2022",
+      "type": "indirekt",
+      "why": {
+        "de": "Unvollendete Friedensimplementierung und Frustration mit konservativen Nachfolgern machten Petros linke Korrekturkandidatur möglich."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "chavez_tod_2013",
+      "target": "venezuela_wahlfaelschung_2024",
+      "type": "indirekt",
+      "why": {
+        "de": "Maduro übernahm Chávez-Erbe ohne dessen Legitimität — wirtschaftlicher Niedergang und politische Repression eskalierten über 11 Jahre bis zur Wahlfälschung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "venezuela_wahlfaelschung_2024",
+      "target": "maduro_us_capture_2026",
+      "type": "direkt",
+      "why": {
+        "de": "Wahlbetrug 2024 entzog Maduro auch die letzte internationale Legitimität — Trump nutzte Drogenhandel-Anklage als Rechtfertigung für US-Operation."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "trump_2016",
+      "target": "milei_argentinien_2023",
+      "type": "indirekt",
+      "why": {
+        "de": "Trump-Welle zeigte: rechtspopulistischer Außenseiter kann das Etablierte stürzen — Milei kopierte Stil und Anti-System-Marke."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "milei_argentinien_2023",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": {
+        "de": "Mileis Sieg gab der globalen Rechtspopulisten-Welle 2023-24 Momentum — er war Trump-Erstgratulant und ideologische Schwesterfigur."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "milei_argentinien_2023",
+      "target": "kast_chile_2025",
+      "type": "indirekt",
+      "why": {
+        "de": "Mileis Erfolg machte radikale rechte Programme in Nachbarn wieder wählbar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "maduro_us_capture_2026",
+      "type": "direkt",
+      "why": {
+        "de": "Trumps Wiederwahl ermöglichte aggressive Militärinterventionen gegen Lateinamerika-Linke, die Biden nicht durchgeführt hätte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mexikanischer_drogenkrieg_2006",
+      "target": "ayotzinapa_mexiko_2014",
+      "type": "direkt",
+      "why": {
+        "de": "Verflechtung von Lokalpolitik, Polizei, Militär und Kartellen — Frucht der Militarisierung — machte Ayotzinapa-Verbrechen möglich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mexikanischer_drogenkrieg_2006",
+      "target": "amlo_mexiko_2018",
+      "type": "indirekt",
+      "why": {
+        "de": "Frustration über 12 Jahre erfolglosen Drogenkrieg und Sicherheitskrise trieb mexikanische Wähler zur Anti-System-Wahl."
+      },
+      "certainty": "plausibel"
     }
   ]
 }
