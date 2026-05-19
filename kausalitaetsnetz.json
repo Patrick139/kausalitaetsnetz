@@ -35,20 +35,6 @@
       ]
     },
     {
-      "id": "dotcom_2000",
-      "yr": 2000,
-      "end_yr": null,
-      "r": "usa",
-      "imp": 2,
-      "short": {
-        "de": "Dot-Com-Blase platzt"
-      },
-      "detail": {
-        "de": "NASDAQ verliert 78% bis 2002. Billionen vernichtet. Ende des ersten Internet-Booms — aber die Infrastruktur bleibt."
-      },
-      "tags": []
-    },
-    {
       "id": "9_11",
       "yr": 2001,
       "end_yr": null,
@@ -872,20 +858,6 @@
       },
       "detail": {
         "de": "Handelsdeal-Verhandlungen nach Zoll-Eskalation — 90-Tage Pause vereinbart. Strukturelle Spannungen ungelöst, Taiwan-Frage vertagt. Erste direkte Machtdemonstration des neuen bipolaren Systems."
-      },
-      "tags": []
-    },
-    {
-      "id": "bolsonaro_2018",
-      "yr": 2018,
-      "end_yr": null,
-      "r": "brasilien",
-      "imp": 2,
-      "short": {
-        "de": "Bolsonaro: Trumpismus exportiert"
-      },
-      "detail": {
-        "de": "Trump-Imitat gewinnt in Brasilien mit Fake News und Militär-Nostalgie. Regenwald-Abholzung explodiert. Erster Beweis: rechtsautoritärer Populismus ist globales Exportprodukt, kein US-Spezialfall."
       },
       "tags": []
     },
@@ -3030,7 +3002,7 @@
         "de": "Clinton gewinnt mit 'It's the economy, stupid'"
       },
       "detail": {
-        "de": "Bill Clinton gewinnt gegen George H. W. Bush. Ross Perot (19%) als Drittkandidat sprengt das Zweiparteien-System. 'New Democrats' — Clinton übernimmt neoliberalen Rahmen, modernisiert Sozialpolitik. Parallel zu Blair in UK ('Dritter Weg'). Demokraten akzeptieren Reagan-Ökonomie strukturell und verteidigen sie."
+        "de": "Bill Clinton gewinnt gegen George H. W. Bush. Ross Perot (19%) als Drittkandidat sprengt das Zweiparteien-System. 'New Democrats' — Clinton übernimmt neoliberalen Rahmen, modernisiert Sozialpolitik. Parallel zu Blair in UK ('Dritter Weg'). Demokraten akzeptieren Reagan-Ökonomie strukturell und verteidigen sie. Setzt unter anderem die Welfare-Reform 1996 durch — Ende der föderalen Sozialhilfe-Garantie nach 60 Jahren, Workfare-Modell."
       },
       "tags": [
         "politik",
@@ -3052,41 +3024,6 @@
       "tags": [
         "gesetz",
         "konzern",
-        "gesellschaft"
-      ]
-    },
-    {
-      "id": "welfare_reform_1996",
-      "yr": 1996,
-      "end_yr": null,
-      "r": "usa",
-      "imp": 1,
-      "short": {
-        "de": "Welfare Reform: Ende der Sozialhilfe-Ära"
-      },
-      "detail": {
-        "de": "Clinton unterzeichnet 'Personal Responsibility and Work Opportunity Act'. Beendet 'welfare as we know it'. Sozialhilfe wird zeitlich begrenzt (max. 5 Jahre Lebenslang) und arbeitsbedingt. Tiefer Einschnitt in den US-Sozialstaat. Verstärkt Armut bei Alleinerziehenden in den 2000ern und 2010ern."
-      },
-      "tags": [
-        "politik",
-        "gesetz",
-        "gesellschaft"
-      ]
-    },
-    {
-      "id": "lewinsky_impeachment_1998",
-      "yr": 1998,
-      "end_yr": 1999,
-      "r": "usa",
-      "imp": 1,
-      "short": {
-        "de": "Lewinsky-Affäre und Impeachment"
-      },
-      "detail": {
-        "de": "Clintons Affäre mit Praktikantin Monica Lewinsky wird publik. Republikaner-Mehrheit im Repräsentantenhaus klagt Clinton wegen Meineid an. Senat spricht 1999 frei. Erste politische Skandalisierung der Moderne als Dauerwaffe — Lehre für beide Lager, das Personal des politischen Gegners zu zerstören. Vorlage für Polarisierung der 2000er."
-      },
-      "tags": [
-        "politik",
         "gesellschaft"
       ]
     },
@@ -3233,12 +3170,12 @@
     },
     {
       "id": "dotcom_blase_1999",
-      "yr": 1995,
-      "end_yr": 2001,
+      "yr": 2000,
+      "end_yr": 2002,
       "r": "usa",
       "imp": 2,
       "short": {
-        "de": "Dotcom-Blase"
+        "de": "Dotcom-Blase platzt"
       },
       "detail": {
         "de": "Massive Spekulation in Internet-Aktien zwischen 1995 und 2000. Nasdaq verfünffacht sich, platzt im März 2000 — 78% Verlust bis 2002. Viele Firmen verschwinden, aber das Tech-Ökosystem (Amazon, eBay, Google) überlebt. Schule für Risikokapital-Boom in San Francisco. Erste wirklich amerikanische Spekulationsblase nach den 1920ern in dem Ausmaß."
@@ -3265,23 +3202,6 @@
         "gesellschaft",
         "politik",
         "gesetz"
-      ]
-    },
-    {
-      "id": "oklahoma_city_1995",
-      "yr": 1995,
-      "end_yr": null,
-      "r": "usa",
-      "imp": 1,
-      "short": {
-        "de": "Oklahoma-City-Bombenanschlag"
-      },
-      "detail": {
-        "de": "Am 19. April 1995 sprengt Timothy McVeigh das Murrah Federal Building in Oklahoma City — 168 Tote inkl. 19 Kinder, 680 Verletzte. Größter inländischer Terror-Anschlag der USA bis 9/11. McVeigh rechtsextrem, anti-government, vom FBI-Vorgehen in Waco 1993 radikalisiert. Vorbote der späteren Radikalisierung der amerikanischen Rechten."
-      },
-      "tags": [
-        "terror",
-        "gesellschaft"
       ]
     },
     {
@@ -5274,20 +5194,11 @@
       "certainty": "plausibel"
     },
     {
-      "source": "bolsonaro_2018",
+      "source": "bolsonaro_brasilien_2018",
       "target": "trump_2024",
       "type": "indirekt",
       "why": {
         "de": "Bolsonaros Playbook — Fake News, Institutionen-Angriff, Wahlergebnis-Leugnung — wurde von Trump 2024 direkt übernommen."
-      },
-      "certainty": "plausibel"
-    },
-    {
-      "source": "saudi_iran_china",
-      "target": "iran_usa_2026",
-      "type": "indirekt",
-      "why": {
-        "de": "Chinas Vermittlungsrolle 2023 machte Peking zum natürlichen Kanal für Deeskalation — beide Parteien nutzten diesen Kanal 2026."
       },
       "certainty": "plausibel"
     },
@@ -5522,15 +5433,6 @@
       "type": "direkt",
       "why": {
         "de": "FPÖ gewann — aber ÖVP, SPÖ und NEOS einigten sich lieber auf Dreierkoalition als Kickl zum Kanzler zu machen."
-      },
-      "certainty": "plausibel"
-    },
-    {
-      "source": "kurz_2017",
-      "target": "ibiza_2019",
-      "type": "direkt",
-      "why": {
-        "de": "Straches Ibiza-Video beendete nicht nur die Koalition — es zwang Kurz zu Neuwahlen die er gewann, bis sein eigenes Skandal-Ende 2021 kam."
       },
       "certainty": "plausibel"
     },
@@ -6544,15 +6446,6 @@
     },
     {
       "source": "clinton_wahl_1992",
-      "target": "welfare_reform_1996",
-      "type": "direkt",
-      "why": {
-        "de": "'End welfare as we know it' war Clintons explizites Wahlversprechen 1992."
-      },
-      "certainty": "belegt"
-    },
-    {
-      "source": "clinton_wahl_1992",
       "target": "glass_steagall_aufhebung_1999",
       "type": "direkt",
       "why": {
@@ -6676,24 +6569,6 @@
         "de": "Montreal-Erfolg war direktes Vorbild und Verhandlungsmodell für Kyoto — 'globale Umweltprobleme sind verhandelbar'."
       },
       "certainty": "belegt"
-    },
-    {
-      "source": "oklahoma_city_1995",
-      "target": "j6_kapitol_2021",
-      "type": "indirekt",
-      "why": {
-        "de": "Anti-Government-Milieu (Militias, Sovereign Citizens), das McVeigh radikalisierte, bestand fort — radikalisierte sich unter Trump weiter und mobilisierte 6. Januar."
-      },
-      "certainty": "plausibel"
-    },
-    {
-      "source": "lewinsky_impeachment_1998",
-      "target": "trump_2016",
-      "type": "indirekt",
-      "why": {
-        "de": "Politische Skandalisierung als Dauerwaffe seit Lewinsky — beide Parteien zerstören gegenseitig Personal, schafft Verachtung für 'Establishment'."
-      },
-      "certainty": "plausibel"
     },
     {
       "source": "iranische_revolution_1979",
@@ -7416,15 +7291,6 @@
       "certainty": "belegt"
     },
     {
-      "source": "arabischer_fruehling",
-      "target": "syrien_krieg",
-      "type": "direkt",
-      "why": {
-        "de": "Syrische Proteste März 2011 folgten direkt dem regionalen Protest-Repertoire — Assad antwortet mit Gewalt."
-      },
-      "certainty": "belegt"
-    },
-    {
       "source": "gaddafi_sturz_2011",
       "target": "mali_putsch_2020",
       "type": "indirekt",
@@ -7630,6 +7496,312 @@
         "de": "Erst die Trump-Administration konnte direkte Sanktionen gegen russische Ölgiganten verhängen — Biden hatte das vermieden, um Energiepreise stabil zu halten."
       },
       "certainty": "belegt"
+    },
+    {
+      "source": "kyoto_protokoll_1997",
+      "target": "paris_klima",
+      "type": "direkt",
+      "why": {
+        "de": "Paris-Abkommen war die direkte Nachfolge-Konstruktion zu Kyoto — gleicher institutioneller Rahmen (UNFCCC), aber mit nationalen Beiträgen statt Top-Down-Zielen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "patriot_act",
+      "target": "snowden_2013",
+      "type": "direkt",
+      "why": {
+        "de": "Snowden enthüllte explizit die NSA-Programme, die unter dem PATRIOT Act ausgebaut wurden — ohne PATRIOT Act keine PRISM/XKeyscore-Infrastruktur."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "trump_2016",
+      "target": "bolsonaro_brasilien_2018",
+      "type": "direkt",
+      "why": {
+        "de": "Trump-Sieg lieferte Methode und Selbstvertrauen für rechtsautoritäre Populisten weltweit — Bolsonaro kopierte Stil, Personal (Steve Bannon beriet) und Fake-News-Strategie."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "usa_china_anerkennung_1979",
+      "target": "china_wto",
+      "type": "direkt",
+      "why": {
+        "de": "Diplomatische Anerkennung 1979 war strukturelle Vorbedingung für Chinas WTO-Beitritt 22 Jahre später — ohne sie keine Handels-Normalisierung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "china_wto",
+      "target": "xi_2012",
+      "type": "indirekt",
+      "why": {
+        "de": "Wirtschaftsboom nach WTO-Beitritt schuf nationales Selbstbewusstsein, das Xis stärkere autoritäre Linie ermöglichte — Reichtum erlaubte härtere Politik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "xi_2012",
+      "target": "tiktok_2019",
+      "type": "indirekt",
+      "why": {
+        "de": "Xis 'Made in China 2025' und Tech-Strategie förderten globale chinesische Tech-Champions — ByteDance/TikTok als Ergebnis dieser Industriepolitik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "krim_2014",
+      "target": "xi_putin_2022",
+      "type": "indirekt",
+      "why": {
+        "de": "Krim-Annexion und folgende Sanktionen zwangen Russland in die Arme Chinas — Annäherung wurde strategische Notwendigkeit, gipfelt in 'Freundschaft ohne Grenzen' kurz vor Ukraine-Invasion."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "eu_osterweiterung_beschluss_1997",
+      "target": "eu_osterweiterung",
+      "type": "direkt",
+      "why": {
+        "de": "Beschluss von 1997 löste den Beitrittsverhandlungs-Prozess aus, der 2004 mit der Osterweiterung um zehn Länder gipfelte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "eu_erweiterung_1995",
+      "target": "eu_osterweiterung",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfolgreiche Aufnahme von Österreich, Schweden, Finnland 1995 baute institutionelle Erfahrung für die viel größere Osterweiterung 2004 auf."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "eu_osterweiterung",
+      "target": "brexit_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Osteuropäische Arbeitsmigration nach Großbritannien (besonders Polen) wurde zentrales Brexit-Argument — Cameron-Verhandlungen 2016 versuchten erfolglos, Freizügigkeit einzuschränken."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "karfreitagsabkommen_1998",
+      "target": "brexit_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Karfreitagsabkommen machte offene Grenze in Irland zur Vorbedingung für nordirischen Frieden — wurde zum schwierigsten Brexit-Problem (Backstop, Nordirland-Protokoll)."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "erster_tschetschenien_krieg_1994",
+      "type": "direkt",
+      "why": {
+        "de": "Zerfall der Sowjetunion ermutigte Tschetscheniens Unabhängigkeitsforderungen — Russland antwortete mit Gewalt um weiteren Zerfall zu stoppen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crack_epidemie_1985",
+      "target": "mexikanischer_drogenkrieg_2006",
+      "type": "indirekt",
+      "why": {
+        "de": "US-Drogen-Nachfrage seit den 1980ern (Crack/Kokain) trieb mexikanische Kartelle als Hauptlieferanten — Calderón-Militärkampagne war Antwort auf eskalierte Kartell-Macht."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "nafta_1994",
+      "target": "mexikanischer_drogenkrieg_2006",
+      "type": "indirekt",
+      "why": {
+        "de": "NAFTA ruinierte mexikanische Kleinbauern durch billigen US-Mais-Import — Cannabis-Anbau und Kartell-Dienste wurden alternative Einkommensquellen, Kartelle wuchsen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "crack_epidemie_1985",
+      "target": "clinton_wahl_1992",
+      "type": "indirekt",
+      "why": {
+        "de": "Crack-Krise prägte 1980er-Kriminalitäts-Politik, Clintons 1994-Crime-Bill (mit Bidens Mitarbeit) war direkte Antwort — Wahlkampf 1992 nutzte 'tough on crime' als demokratische Strategie."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "boko_haram_2014",
+      "target": "mali_putsch_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Boko-Haram-Aktivität in Lake-Chad-Region trieb regionale Sicherheitskrise und Migration nach Westen — Mali-Erosion war Teil dieser umfassenderen Sahel-Destabilisierung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "pinochet_referendum_1988",
+      "target": "chile_proteste_2019",
+      "type": "indirekt",
+      "why": {
+        "de": "Pinochet-Verfassung von 1980 blieb auch nach 1988 in Kraft — strukturierte 30 Jahre Ungleichheit, deren Frust 2019 explodierte ('30 Jahre, nicht 30 Pesos')."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "dotcom_blase_1999",
+      "target": "finanzkrise_2008",
+      "type": "indirekt",
+      "why": {
+        "de": "Greenspans Niedrigzins-Reaktion auf Dotcom-Crash (2001-2003) speiste den Immobilien-Bubble — direkte Vorgeschichte der Subprime-Krise."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "trump_2016",
+      "target": "roe_wade_2022",
+      "type": "direkt",
+      "why": {
+        "de": "Drei von Trump ernannte Supreme-Court-Richter (Gorsuch, Kavanaugh, Barrett) bildeten die Mehrheit, die Roe v. Wade in Dobbs v. Jackson 2022 kippte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ukraine_2022",
+      "target": "prigozhin_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Prigozhin-Aufstand war direkte Folge der gescheiterten Wagner-Strategie in der Ukraine — Konflikt mit dem Verteidigungsministerium um Munition und Kontrolle eskalierte zum Marsch auf Moskau."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "facebook_2004",
+      "type": "indirekt",
+      "why": {
+        "de": "Netscape-IPO startete das Risikokapital-Modell für Konsumenten-Internet — Facebook war die zweite Welle dieser Kapitalisierungsdynamik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "dotcom_blase_1999",
+      "target": "facebook_2004",
+      "type": "indirekt",
+      "why": {
+        "de": "Nach dem Dotcom-Crash entstand Web 2.0 mit anderem Geschäftsmodell — Facebook profitierte von erfahrenen Investoren und billigen Infrastruktur-Resten."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "telecommunications_act_1996",
+      "target": "iphone_2007",
+      "type": "indirekt",
+      "why": {
+        "de": "Deregulierung des Telekommarktes 1996 schuf die Voraussetzung für mobile Datendienste und private Netzbetreiber, auf denen das iPhone aufsetzte."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "dotcom_blase_1999",
+      "target": "iphone_2007",
+      "type": "indirekt",
+      "why": {
+        "de": "Apple überlebte den Dotcom-Crash und nutzte die Phase ruhiger Konkurrenz für die Vorbereitung der mobilen Plattform."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "microsoft_kartell_1998",
+      "target": "google_gruendung_1998",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Microsoft musste Browser-Bündelung lockern — gab Konkurrenten wie Google Atemluft im Web-Suche-Geschäft."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "reaganomics_1981",
+      "target": "savings_loan_krise_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Reagans Deregulierung der Spar- und Darlehenskassen (Garn-St.-Germain-Gesetz 1982) ermöglichte riskante Spekulation — Krise war direkte Folge."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "reaganomics_1981",
+      "target": "crack_epidemie_1985",
+      "type": "indirekt",
+      "why": {
+        "de": "Sozialkürzungen in Städten verschärften Armut in afroamerikanischen Vierteln — Crack-Boom traf strukturell geschwächte Communities besonders hart."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "crack_epidemie_1985",
+      "target": "george_floyd_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Crack-Era prägte militarisierte Polizei und Mass Incarceration mit rassistischer Schlagseite — strukturelle Vorgeschichte der BLM-Bewegung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "obama_2008",
+      "target": "george_floyd_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Obama-Hoffnung auf 'post-rassische Gesellschaft' wurde durch fortbestehende Polizeigewalt enttäuscht — BLM begann 2013 mit Trayvon Martin, kulminierte 2020."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "george_floyd_2020",
+      "target": "trump_2024",
+      "type": "indirekt",
+      "why": {
+        "de": "BLM-Proteste und Anti-Polizei-Forderungen ('defund') wurden zum Mobilisierungs-Thema der Rechten — Trump nutzte Law-and-Order-Wahlkampf 2024."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "covid_afrika_2020",
+      "type": "direkt",
+      "why": {
+        "de": "Globale COVID-19-Pandemie traf auch Afrika — Impfstoff-Apartheid war eine spezifisch ungerechte Bewältigung dieser Pandemie."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "covid_2020",
+      "target": "nigeria_endsars_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "COVID-Lockdowns verschärften wirtschaftliche Not und Polizeigewalt in Nigeria — EndSARS-Wut entlud sich im Oktober 2020 im Pandemie-Kontext."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "kobe_erdbeben_1995",
+      "target": "fukushima_2011",
+      "type": "indirekt",
+      "why": {
+        "de": "Kobe-Erdbeben enthüllte Mängel in Japans Katastrophenvorsorge — strukturelle Probleme blieben bis Fukushima, bei dem AKW-Sicherheitsstandards unzureichend waren."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "paris_klima",
+      "target": "mosambik_zyklon_idai_2019",
+      "type": "indirekt",
+      "why": {
+        "de": "Pariser Klimaabkommen brachte Klimawandel-Diskurs in den Vordergrund — Idai wurde im Rahmen dieses Diskurses als Klimakatastrophe interpretiert (kausal: Klimawandel verstärkt Tropensturm-Intensität)."
+      },
+      "certainty": "plausibel"
     }
   ]
 }

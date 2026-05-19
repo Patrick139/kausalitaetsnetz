@@ -1448,6 +1448,9 @@ function applyRegionFilter() { applyAllFilters(); }
 function applyImpFilter() { applyAllFilters(); }
 function applyTagFilter() { applyAllFilters(); }
 
+// Default-Filter beim Laden anwenden (filterImp ist auf "2" voreingestellt)
+applyAllFilters();
+
 // ── AUTO ZOOM TO FIT — entfernt, nervte beim Start (kam Sekunden später)
 // Nutzer kann jederzeit über den "⊡ Zoom zurücksetzen"-Button neu zentrieren
 sim.on("end", () => {
