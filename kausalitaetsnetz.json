@@ -2282,6 +2282,504 @@
         "wirtschaft",
         "politik"
       ]
+    },
+    {
+      "id": "solidarnosc_1980",
+      "yr": 1980,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Solidarność gegründet in Polen"
+      },
+      "detail": {
+        "de": "Streik in der Lenin-Werft Danzig führt zur Gründung der unabhängigen Gewerkschaft Solidarność unter Lech Wałęsa. Erste autonome Massenbewegung im Ostblock. 1981 verhängt General Jaruzelski Kriegsrecht, Solidarność wird verboten — überlebt aber im Untergrund. Vorbild und Keimzelle aller späteren Ostblock-Bewegungen."
+      },
+      "tags": [
+        "politik",
+        "bewegung",
+        "protest"
+      ]
+    },
+    {
+      "id": "gorbatschow_1985",
+      "yr": 1985,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": {
+        "de": "Gorbatschow wird Generalsekretär"
+      },
+      "detail": {
+        "de": "Michail Gorbatschow wird mit 54 Jahren jüngster Generalsekretär der KPdSU. Leitet Perestroika (Umbau der Wirtschaft) und Glasnost (Offenheit) ein. Sucht Verständigung mit dem Westen, beendet faktisch das Wettrüsten. Unterschätzt aber die zentrifugalen Kräfte, die seine Reformen freisetzen — am Ende verliert er Land und Amt."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "tschernobyl_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": {
+        "de": "Tschernobyl-Reaktorkatastrophe"
+      },
+      "detail": {
+        "de": "Am 26. April 1986 explodiert Reaktorblock 4 in Tschernobyl (Ukrainische SSR). Sowjetregierung verschweigt das Ausmaß tagelang — erst westliche Messstationen in Schweden schlagen Alarm. Radioaktive Wolke über halb Europa. Zerstört das Vertrauen in das Sowjetsystem von innen, beschleunigt Glasnost. Gorbatschow nannte es später den eigentlichen Auslöser der Sowjet-Auflösung."
+      },
+      "tags": [
+        "katastrophe",
+        "technologie",
+        "umwelt"
+      ]
+    },
+    {
+      "id": "runder_tisch_polen_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Runder Tisch in Polen — Erste freie Teilwahl"
+      },
+      "detail": {
+        "de": "Februar bis April 1989: Verhandlungen zwischen Regierung und Solidarność. Erste teilweise freie Wahl im Ostblock am 4. Juni 1989 — am gleichen Tag wie Tiananmen. Solidarność gewinnt überwältigend. Tadeusz Mazowiecki wird erster nicht-kommunistischer Premier eines Ostblock-Staates. Modellfall für die Revolutionen in Ungarn, DDR, Tschechoslowakei."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "mauerfall_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "Fall der Berliner Mauer"
+      },
+      "detail": {
+        "de": "Am Abend des 9. November 1989 öffnet die DDR ihre Grenze nach West-Berlin — nach Schabowskis missverständlicher Pressekonferenz und Druck von zehntausenden Ostberlinern an den Grenzübergängen. 28 Jahre Teilung enden. Symbol für das Ende des Kalten Krieges. Auslöser für die Beschleunigung der deutschen Wiedervereinigung."
+      },
+      "tags": [
+        "politik",
+        "revolution"
+      ]
+    },
+    {
+      "id": "samtene_revolution_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Revolutionen in Mittelosteuropa"
+      },
+      "detail": {
+        "de": "Innerhalb weniger Wochen Ende 1989: Samtene Revolution in der Tschechoslowakei (Václav Havel), Massenflucht und Friedliche Revolution in Ungarn, blutiger Sturz Ceaușescus in Rumänien. Bulgarien und Albanien folgen. Die kommunistischen Regime des Warschauer Pakts kollabieren binnen sechs Monaten. Gorbatschows Sinatra-Doktrin: 'lass sie ihren eigenen Weg gehen' macht es möglich."
+      },
+      "tags": [
+        "politik",
+        "revolution"
+      ]
+    },
+    {
+      "id": "wiedervereinigung_1990",
+      "yr": 1990,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "Deutsche Wiedervereinigung"
+      },
+      "detail": {
+        "de": "Am 3. Oktober 1990 tritt die DDR der Bundesrepublik bei. Vorausgegangen: Währungsunion Juli, 2+4-Vertrag September (Frankreich, UK, USA, UdSSR akzeptieren). Kohl versprach Gorbatschow eine NATO ohne Osterweiterung — mündliche Zusage, nicht im Vertrag. Spätere Quelle russischer Verbitterung."
+      },
+      "tags": [
+        "politik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "sowjetunion_zerfall_1991",
+      "yr": 1991,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 3,
+      "short": {
+        "de": "Auflösung der Sowjetunion"
+      },
+      "detail": {
+        "de": "August 1991: Putschversuch konservativer KPdSU-Hardliner gegen Gorbatschow scheitert nach drei Tagen — Jelzin auf dem Panzer wird Held. Baltische Staaten erklären Unabhängigkeit. Im Dezember vereinbaren Jelzin, Krawtschuk und Schuschkewitsch in Beloweschskaja Puschtscha die Auflösung der UdSSR. Am 25. Dezember tritt Gorbatschow zurück. Ende einer Weltmacht — 70 Jahre nach ihrer Gründung."
+      },
+      "tags": [
+        "politik",
+        "katastrophe",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "milosevic_aufstieg_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Milošević nutzt Kosovo-Frage zur Macht"
+      },
+      "detail": {
+        "de": "Slobodan Milošević nutzt 1987 die Kosovo-Frage und serbischen Nationalismus zur Übernahme der serbischen KP. 1989 Amselfeld-Rede vor 1 Million Serben zum 600. Jahrestag der verlorenen Schlacht. Hebt Autonomie des Kosovo auf. Setting für die Eskalation in den nächsten zehn Jahren."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "slowenien_kroatien_1991",
+      "yr": 1991,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Slowenien und Kroatien werden unabhängig"
+      },
+      "detail": {
+        "de": "Am 25. Juni 1991 erklären Slowenien und Kroatien Unabhängigkeit. Jugoslawische Volksarmee greift Slowenien an, zieht aber nach 10 Tagen ab (Slowenien ist ethnisch homogen). In Kroatien beginnt ein vierjähriger Krieg. Beginn der Jugoslawien-Auflösung."
+      },
+      "tags": [
+        "politik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "bosnienkrieg_1992",
+      "yr": 1992,
+      "end_yr": 1995,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "Bosnienkrieg und Genozid in Srebrenica"
+      },
+      "detail": {
+        "de": "Nach Unabhängigkeitserklärung im März 1992 greifen serbische Truppen Bosnien an. Belagerung von Sarajevo dauert fast vier Jahre. Juli 1995: Srebrenica-Massaker — bosnisch-serbische Truppen ermorden über 8.000 muslimische Männer und Jungen unter den Augen niederländischer UN-Blauhelme. Schlimmstes Massaker in Europa seit 1945. Insgesamt rund 100.000 Tote. Dayton-Vertrag beendet den Krieg im Dezember 1995."
+      },
+      "tags": [
+        "krieg",
+        "katastrophe",
+        "religion"
+      ]
+    },
+    {
+      "id": "kosovokrieg_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "NATO bombardiert Serbien wegen Kosovo"
+      },
+      "detail": {
+        "de": "März bis Juni 1999: NATO führt 78 Tage lang Luftangriffe gegen Serbien — ohne UN-Mandat, gegen serbische Repression im Kosovo. Erste 'humanitäre Intervention' der NATO gegen ein UN-Mitglied. Russland und China verurteilen scharf. Wird später Präzedenzfall, auf den Putin sich bei Krim und Ukraine beruft."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "maastricht_1992",
+      "yr": 1992,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "Maastricht-Vertrag: EU und Euro-Vorbereitung"
+      },
+      "detail": {
+        "de": "Am 7. Februar 1992 unterzeichnet — schafft die Europäische Union, definiert Konvergenzkriterien für die Gemeinschaftswährung. Voraussetzung: Verschuldung unter 60% BIP, Defizit unter 3%. Politisch der Preis für die deutsche Wiedervereinigung — Frankreich wollte die D-Mark in eine europäische Währung einbinden."
+      },
+      "tags": [
+        "vertrag",
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "schengen_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Schengen-Abkommen tritt in Kraft"
+      },
+      "detail": {
+        "de": "Am 26. März 1995 fallen Grenzkontrollen zwischen Deutschland, Frankreich, Belgien, Niederlande, Luxemburg, Portugal, Spanien. Freier Personenverkehr wird Alltag. Eine der spürbarsten Errungenschaften der EU für Bürger. Setting für die Migrationsdebatten der 2010er, wenn das Außengrenz-System unter Druck gerät."
+      },
+      "tags": [
+        "vertrag",
+        "migration"
+      ]
+    },
+    {
+      "id": "eu_erweiterung_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Österreich, Schweden, Finnland treten EU bei"
+      },
+      "detail": {
+        "de": "Drei vormals neutrale Staaten werden EU-Mitglieder. Ende des Kalten Krieges machte die Neutralität strategisch obsolet. Norwegen lehnt per Referendum ab. Erste Erweiterung nach dem Mauerfall, bereitet die große Osterweiterung 2004 vor."
+      },
+      "tags": [
+        "vertrag",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "eu_osterweiterung_beschluss_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 1,
+      "short": {
+        "de": "EU beschließt Beitrittsverhandlungen mit Osteuropa"
+      },
+      "detail": {
+        "de": "Auf dem Luxemburg-Gipfel beschließt die EU Beitrittsverhandlungen mit Polen, Tschechien, Ungarn, Slowenien, Estland und Zypern. Später erweitert auf 10 Staaten. Beitritt 2004. Wirtschaftliche und politische Integration als Versprechen der Friedensordnung — wird später unter Druck geraten."
+      },
+      "tags": [
+        "vertrag",
+        "politik"
+      ]
+    },
+    {
+      "id": "euro_einfuehrung_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "Euro als Buchgeld eingeführt"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1999 wird der Euro als Buchgeld für 11 EU-Staaten eingeführt — fester Wechselkurs ohne Wechselkurs-Schwankungen. Banknoten und Münzen ab 2002. Größtes Währungsexperiment der Geschichte. Strukturelle Schwäche: gemeinsame Geldpolitik ohne gemeinsame Fiskalpolitik — wird in der Eurokrise sichtbar."
+      },
+      "tags": [
+        "wirtschaft",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "thatcher_1979",
+      "yr": 1979,
+      "end_yr": 1990,
+      "r": "uk",
+      "imp": 3,
+      "short": {
+        "de": "Thatcher: Britische neoliberale Wende"
+      },
+      "detail": {
+        "de": "Margaret Thatcher wird 1979 Premierministerin. Bricht die Macht der Gewerkschaften (Bergarbeiterstreik 1984/85). Privatisiert Staatsbetriebe, deregulierte Finanzmärkte (Big Bang 1986). Falklandkrieg 1982 sichert Wiederwahl. Setzt das Modell, das Reagan parallel in USA und später Blair in modifizierter Form fortführt. Sturz 1990 durch eigene Partei wegen Poll Tax."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "blair_new_labour_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "uk",
+      "imp": 2,
+      "short": {
+        "de": "Blair und New Labour gewinnen Erdrutsch"
+      },
+      "detail": {
+        "de": "Tony Blair gewinnt am 1. Mai 1997 mit 'New Labour' und 418 Sitzen — größter Labour-Sieg der Geschichte. 'Dritter Weg' zwischen Sozialdemokratie und Markt. Thatchers Wirtschaftspolitik wird beibehalten, Sozialpolitik modernisiert. Hält bis 2007. Vorbild für Schröder in Deutschland."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "karfreitagsabkommen_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "uk",
+      "imp": 2,
+      "short": {
+        "de": "Karfreitagsabkommen beendet Nordirland-Konflikt"
+      },
+      "detail": {
+        "de": "Am 10. April 1998 unterzeichnetes Friedensabkommen beendet 30 Jahre 'Troubles' in Nordirland — über 3.500 Tote. Erlaubt nordirische Identität als britisch oder irisch, schafft Machtteilung zwischen Unionisten und Republikanern. Vermittlung durch George Mitchell (USA), Bertie Ahern (Irland) und Tony Blair. Modell für andere Konflikte."
+      },
+      "tags": [
+        "vertrag",
+        "krieg"
+      ]
+    },
+    {
+      "id": "kohl_zehn_punkte_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 1,
+      "short": {
+        "de": "Kohls Zehn-Punkte-Plan zur deutschen Einheit"
+      },
+      "detail": {
+        "de": "Drei Wochen nach dem Mauerfall, am 28. November 1989, verkündet Helmut Kohl im Bundestag einen Zehn-Punkte-Plan zur deutschen Konföderation und langfristigen Einheit. Setzt damit die internationale Diplomatie unter Zugzwang — Mitterrand, Thatcher und Gorbatschow waren nicht informiert. Beschleunigt den Prozess massiv."
+      },
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "treuhand_1990",
+      "yr": 1990,
+      "end_yr": 1994,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Treuhand privatisiert DDR-Wirtschaft"
+      },
+      "detail": {
+        "de": "Die Treuhandanstalt übernimmt nach der Wiedervereinigung 8.500 DDR-Betriebe mit 4 Millionen Beschäftigten. Privatisiert, schließt oder restrukturiert sie binnen vier Jahren. Resultat: Massive Deindustrialisierung Ostdeutschlands, hohe Arbeitslosigkeit, kollektives Trauma. Wesentlicher Faktor für späteres ostdeutsches Misstrauen gegen das politische System — schlägt sich später in AfD-Wahlerfolgen nieder."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "mitterrand_1981",
+      "yr": 1981,
+      "end_yr": 1995,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Mitterrand: erste sozialistische Präsidentschaft"
+      },
+      "detail": {
+        "de": "François Mitterrand wird 1981 erster sozialistischer Präsident der Fünften Republik. Verstaatlichungen in den ersten Jahren scheitern an Realität — 1983 'Wende zur Sparpolitik'. Treibt europäische Integration voran (Maastricht), pflegt enge Achse mit Kohl. Symbol für die Wende der europäischen Linken zur sozialen Marktwirtschaft."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "spanien_eg_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 1,
+      "short": {
+        "de": "Spanien und Portugal treten der EG bei"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1986 treten Spanien und Portugal der Europäischen Gemeinschaft bei — beide elf Jahre nach Ende ihrer Diktaturen (Franco 1975, Caetano 1974). EG-Mitgliedschaft konsolidiert die jungen Demokratien. Spätere Vorlage für die Osterweiterung: Wirtschaftshilfe und Mitgliedschaft als Anker für Reformen."
+      },
+      "tags": [
+        "vertrag",
+        "politik"
+      ]
+    },
+    {
+      "id": "waldheim_affaere_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 1,
+      "short": {
+        "de": "Waldheim-Affäre"
+      },
+      "detail": {
+        "de": "Kurt Waldheim wird 1986 trotz verschwiegener Wehrmachts-Vergangenheit zum Bundespräsidenten gewählt. Internationale Empörung, US-Einreiseverbot. Österreichs 'Opferdoktrin' (Hitlers erstes Opfer) wird international und intern in Frage gestellt. Beginn einer ehrlicheren Auseinandersetzung mit der NS-Zeit."
+      },
+      "tags": [
+        "politik",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "haider_fpoe_uebernahme_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 2,
+      "short": {
+        "de": "Haider übernimmt FPÖ"
+      },
+      "detail": {
+        "de": "Beim Parteitag in Innsbruck stürzt Jörg Haider den liberalen Parteichef Steger. Transformiert die FPÖ von liberal-national zu rechtspopulistisch. Bricht die rot-blaue Koalition unter Sinowatz. Setting für die FPÖ-Erfolge der 1990er und 2000er — Vorlage für rechtspopulistische Bewegungen in ganz Europa."
+      },
+      "tags": [
+        "politik",
+        "bewegung"
+      ]
+    },
+    {
+      "id": "oesterreich_eu_beitritt_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "oesterreich",
+      "imp": 2,
+      "short": {
+        "de": "Österreich tritt der EU bei"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1995 tritt Österreich der EU bei. Beitritts-Referendum 1994: 66,6% Ja. Ende der außenpolitischen Sonderstellung zwischen den Blöcken. Wirtschaft profitiert massiv vom Binnenmarkt, Neutralität wird zunehmend symbolisch."
+      },
+      "tags": [
+        "vertrag",
+        "politik"
+      ]
+    },
+    {
+      "id": "nato_osterweiterung_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Erste NATO-Osterweiterung"
+      },
+      "detail": {
+        "de": "Am 12. März 1999 werden Polen, Tschechien und Ungarn NATO-Mitglieder. Gegen mündliche Zusicherungen, die Baker und Genscher 1990 Gorbatschow gegeben hatten ('not one inch eastward'). Russland protestiert, ist aber zu schwach für Reaktion. Putin zitiert diese Erweiterung später als Kernursache des russischen Misstrauens."
+      },
+      "tags": [
+        "vertrag",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "goldene_jahre_1990er",
+      "yr": 1992,
+      "end_yr": 2001,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Das 'Goldene Jahrzehnt' des Westens"
+      },
+      "detail": {
+        "de": "Zwischen Sowjet-Auflösung 1991 und 9/11 erlebt der Westen ein Jahrzehnt ohne ernsten geopolitischen Gegner. Friedensdividende, Globalisierung, Tech-Boom, Wirtschaftswachstum. Francis Fukuyama: 'Ende der Geschichte' (1992). Westliches Modell scheint alternativlos. Vorbedingung für die Selbstüberschätzung, die in die Krisen nach 2001 mündet."
+      },
+      "tags": [
+        "gesellschaft",
+        "geopolitik",
+        "wirtschaft"
+      ]
     }
   ],
   "links": [
@@ -3724,6 +4222,312 @@
         "de": "Diplomatische Öffnung Vietnams machte ASEAN-Beitritt im selben Jahr möglich."
       },
       "certainty": "belegt"
+    },
+    {
+      "source": "gorbatschow_1985",
+      "target": "tschernobyl_1986",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Glasnost-Beginn zwang nach Tschernobyl zu mehr Offenheit — Vertuschung wurde unhaltbar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "solidarnosc_1980",
+      "target": "runder_tisch_polen_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Acht Jahre Untergrund-Organisation der Solidarność war Voraussetzung für die verhandelte Machtteilung 1989."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "gorbatschow_1985",
+      "target": "runder_tisch_polen_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Sinatra-Doktrin (jeder Ostblockstaat darf seinen Weg gehen) ermöglichte Polen-Verhandlungen ohne sowjetische Intervention."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "runder_tisch_polen_1989",
+      "target": "mauerfall_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Polnischer Erfolg signalisierte: friedlicher Systemwechsel ist möglich. Ungarn öffnete im Sommer 89 die Grenze, DDR-Bürger flohen massenhaft, Druck auf die DDR-Führung wurde unaushaltbar."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mauerfall_1989",
+      "target": "samtene_revolution_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Berliner Mauer-Sturz löste innerhalb weniger Wochen den Sturz aller Ostblock-Regime aus — Domino-Effekt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mauerfall_1989",
+      "target": "kohl_zehn_punkte_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Mauerfall öffnete das Zeitfenster für Kohls Vorstoß zur deutschen Einheit drei Wochen später."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "kohl_zehn_punkte_1989",
+      "target": "wiedervereinigung_1990",
+      "type": "direkt",
+      "why": {
+        "de": "Kohls Plan setzte den diplomatischen Rahmen, der 2+4-Vertrag und schließlich die Vereinigung ermöglichte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "wiedervereinigung_1990",
+      "target": "maastricht_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Frankreich akzeptierte die deutsche Einheit unter der Bedingung, die D-Mark in eine europäische Währung zu integrieren — Maastricht war der Preis."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "wiedervereinigung_1990",
+      "target": "treuhand_1990",
+      "type": "direkt",
+      "why": {
+        "de": "Mit der Vereinigung übernahm die Bundesrepublik die Aufgabe, die DDR-Planwirtschaft in eine Marktwirtschaft zu überführen — die Treuhand wurde dafür geschaffen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "samtene_revolution_1989",
+      "target": "sowjetunion_zerfall_1991",
+      "type": "direkt",
+      "why": {
+        "de": "Verlust des gesamten Ostblocks innerhalb von Monaten unterminierte die innenpolitische Position Gorbatschows — die UdSSR selbst wurde ungebremst von zentrifugalen Kräften erfasst."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "gorbatschow_1985",
+      "target": "sowjetunion_zerfall_1991",
+      "type": "indirekt",
+      "why": {
+        "de": "Perestroika setzte Kräfte frei, die das System nicht reformierten sondern zerbrachen — Gorbatschow unterschätzte die ökonomische und nationale Dynamik."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "slowenien_kroatien_1991",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Selbstbestimmung wurde 1991 zum europäischen Leitmotiv — beschleunigte die Sezessionen in Jugoslawien, die Belgrad militärisch zu verhindern suchte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "milosevic_aufstieg_1987",
+      "target": "slowenien_kroatien_1991",
+      "type": "direkt",
+      "why": {
+        "de": "Serbischer Nationalismus unter Milošević machte das Zusammenleben in Jugoslawien für Nichtserben unmöglich — Sezession wurde zur Verteidigungshandlung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "slowenien_kroatien_1991",
+      "target": "bosnienkrieg_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Erfolgreiche Sezessionen ermutigten Bosnien, im März 1992 nachzuziehen — bosnisch-serbische Truppen reagierten mit Krieg."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "milosevic_aufstieg_1987",
+      "target": "bosnienkrieg_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Großserbisches Programm trieb die ethnischen Säuberungen in Bosnien — die Hauptverantwortung lag bei Belgrad."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "milosevic_aufstieg_1987",
+      "target": "kosovokrieg_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Aufhebung der Kosovo-Autonomie 1989 und jahrelange Unterdrückung der Albaner trieben die UÇK zum bewaffneten Kampf — und die NATO zur Intervention."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "bosnienkrieg_1992",
+      "target": "kosovokrieg_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Westliche Lehre aus Bosnien: nicht wieder zuschauen wie 1992-95 in Srebrenica. NATO handelte 1999 schneller und ohne UN-Mandat."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "maastricht_1992",
+      "target": "euro_einfuehrung_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Maastricht definierte die Konvergenzkriterien und den Zeitplan für die gemeinsame Währung — Euro 1999 war die Umsetzung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "maastricht_1992",
+      "target": "schengen_1995",
+      "type": "direkt",
+      "why": {
+        "de": "EU-Vertrag erweiterte die Schengen-Logik (1985 bilateral begonnen) zum gemeinsamen Personenverkehrsraum."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "eu_erweiterung_1995",
+      "type": "direkt",
+      "why": {
+        "de": "Ende des Kalten Krieges machte Neutralität für Österreich, Schweden und Finnland strategisch obsolet — EU-Beitritt wurde möglich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "samtene_revolution_1989",
+      "target": "eu_osterweiterung_beschluss_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Demokratisierung Mittelosteuropas schuf die Voraussetzung — EU sah Beitritt als Garantie der neuen Demokratien."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "thatcher_1979",
+      "target": "blair_new_labour_1997",
+      "type": "indirekt",
+      "why": {
+        "de": "Thatchers neoliberale Reformen waren so tief, dass Labour erst nach Akzeptanz dieses Rahmens wieder gewinnen konnte — 'Dritter Weg' als Anpassung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "blair_new_labour_1997",
+      "target": "karfreitagsabkommen_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Blair stellte die Machtressourcen seiner neuen Regierung in den Dienst der Friedensverhandlungen — entscheidender Vermittler."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "waldheim_affaere_1986",
+      "target": "haider_fpoe_uebernahme_1986",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Internationale Isolation Österreichs schuf 'Trotz-Stimmung' — Haider nutzte sie politisch im selben Jahr."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "haider_fpoe_uebernahme_1986",
+      "target": "fpoe_2000",
+      "type": "direkt",
+      "why": {
+        "de": "14 Jahre Aufbau der FPÖ als rechtspopulistische Massenpartei führten zur Regierungsbeteiligung 2000."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "oesterreich_eu_beitritt_1995",
+      "type": "direkt",
+      "why": {
+        "de": "Ohne Kalten Krieg verlor Österreichs Neutralität die strategische Begründung — EU-Beitritt wurde geopolitisch möglich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "wiedervereinigung_1990",
+      "target": "nato_osterweiterung_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Mündliche Zusicherungen 1990 (NATO ohne Osterweiterung) wurden 1999 gebrochen — Vertrauensbruch aus russischer Sicht."
+      },
+      "certainty": "umstritten"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "nato_osterweiterung_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Schwache, post-sowjetische Russland konnte die NATO-Erweiterung nicht verhindern — Demütigung wird Jahre später unter Putin politisch produktiv."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "goldene_jahre_1990er",
+      "type": "direkt",
+      "why": {
+        "de": "Ohne ideologischen Gegner schien der Westen ohne Alternative — 'Ende der Geschichte' These."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "goldene_jahre_1990er",
+      "target": "9_11",
+      "type": "indirekt",
+      "why": {
+        "de": "Selbstüberschätzung und nachlassende Wachsamkeit des Westens ließen die Bedrohung durch Al-Qaida unterschätzen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "people_power_1986",
+      "target": "mauerfall_1989",
+      "type": "indirekt",
+      "why": {
+        "de": "Erste 'friedliche Revolution' der Moderne zeigte: autoritäre Regime fallen ohne Gewalt, wenn die Masse mitmacht. Vorbild für die DDR-Bewegung 1989."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "deng_suedreise_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Sowjet-Kollaps zeigte Deng: politische Liberalisierung führt zum Untergang. Antwort: wirtschaftliche Reform vertiefen, politisch eisern bleiben."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mitterrand_1981",
+      "target": "maastricht_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Mitterrand war treibende Kraft hinter der europäischen Integration und Achse mit Kohl — Maastricht war wesentlich sein Werk."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "spanien_eg_1986",
+      "target": "eu_osterweiterung_beschluss_1997",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfolgreiche Demokratie-Konsolidierung in Spanien wurde zum Modell für Osterweiterung — EU als Anker für junge Demokratien."
+      },
+      "certainty": "plausibel"
     }
   ]
 }

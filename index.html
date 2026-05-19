@@ -1124,8 +1124,8 @@ function renderPanel(d, causes, effects) {
   if(maxCauseDepth > 0) {
     html += `<div class="depth-ctrl">
       <span class="depth-label">← Ursachen-Tiefe</span>
-      <button class="depth-btn" data-dir="cause" data-act="dec" ${causeDepth<=1?'disabled':''}>◀</button>
-      <span class="depth-val">${causeDepth === maxCauseDepth ? `${causeDepth} (alle)` : causeDepth}</span>
+      <button class="depth-btn" data-dir="cause" data-act="dec" ${causeDepth<=0?'disabled':''}>◀</button>
+      <span class="depth-val">${causeDepth === 0 ? '0 (aus)' : (causeDepth >= maxCauseDepth ? `${maxCauseDepth} (alle)` : causeDepth)}</span>
       <button class="depth-btn" data-dir="cause" data-act="inc" ${causeDepth>=maxCauseDepth?'disabled':''}>▶</button>
     </div>`;
 
@@ -1154,8 +1154,8 @@ function renderPanel(d, causes, effects) {
   if(maxEffectDepth > 0) {
     html += `<div class="depth-ctrl" style="margin-top:1.4rem">
       <span class="depth-label">→ Folgen-Tiefe</span>
-      <button class="depth-btn" data-dir="effect" data-act="dec" ${effectDepth<=1?'disabled':''}>◀</button>
-      <span class="depth-val">${effectDepth === maxEffectDepth ? `${effectDepth} (alle)` : effectDepth}</span>
+      <button class="depth-btn" data-dir="effect" data-act="dec" ${effectDepth<=0?'disabled':''}>◀</button>
+      <span class="depth-val">${effectDepth === 0 ? '0 (aus)' : (effectDepth >= maxEffectDepth ? `${maxEffectDepth} (alle)` : effectDepth)}</span>
       <button class="depth-btn" data-dir="effect" data-act="inc" ${effectDepth>=maxEffectDepth?'disabled':''}>▶</button>
     </div>`;
 
@@ -1338,8 +1338,8 @@ document.getElementById("panel-content").addEventListener("click", e => {
     const act = depthBtn.dataset.act;
     if(dir === "cause")  causeDepth  += (act === "inc" ? 1 : -1);
     if(dir === "effect") effectDepth += (act === "inc" ? 1 : -1);
-    causeDepth  = Math.max(1, Math.min(MAX_DEPTH, causeDepth));
-    effectDepth = Math.max(1, Math.min(MAX_DEPTH, effectDepth));
+    causeDepth  = Math.max(0, Math.min(MAX_DEPTH, causeDepth));
+    effectDepth = Math.max(0, Math.min(MAX_DEPTH, effectDepth));
     if(selectedNode) selectNode(selectedNode, false);  // re-render mit gleicher Tiefe-Auswahl
     return;
   }
