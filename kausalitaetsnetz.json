@@ -2780,6 +2780,509 @@
         "geopolitik",
         "wirtschaft"
       ]
+    },
+    {
+      "id": "volcker_zinsschock_1979",
+      "yr": 1979,
+      "end_yr": 1982,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Volcker bricht Inflation mit Zinsschock"
+      },
+      "detail": {
+        "de": "Fed-Chef Paul Volcker hebt den Leitzins auf bis zu 20% an, um die zweistellige Inflation der späten 1970er zu brechen. Folge: schwere Rezession 1981/82, Arbeitslosigkeit über 10%, Schwellenländer-Schuldenkrise weltweit. Aber Inflation halbiert sich. Legt den Grundstein für 40 Jahre Preisstabilität — und für jahrzehntelange Niedrigzins-Architektur."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "reagan_wahl_1980",
+      "yr": 1980,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Reagan gewinnt Präsidentschaftswahl"
+      },
+      "detail": {
+        "de": "Ronald Reagan gewinnt mit 489 zu 49 Wahlmännerstimmen gegen Jimmy Carter. Konservative Wende, Ende der New-Deal-Ära in der US-Politik. 'Government is not the solution, government is the problem.' Setting für zwei Jahrzehnte Republikaner-Dominanz im wirtschaftspolitischen Diskurs — auch unter Clinton."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "reaganomics_1981",
+      "yr": 1981,
+      "end_yr": 1989,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Reaganomics: Supply-Side-Wende"
+      },
+      "detail": {
+        "de": "Massive Steuersenkungen — Spitzensteuersatz von 70% auf 28%. Militärausgaben hoch, Sozialausgaben gekürzt. Theorie: niedrige Steuern für Reiche kurbeln Wachstum für alle an ('trickle-down'). Resultat: Verdreifachung der Staatsschulden von 994 Mrd. auf 2,9 Bio. USD. Ungleichheit wächst stark. Schafft die ökonomische Architektur, in der die USA bis heute leben."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "patco_streik_1981",
+      "yr": 1981,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Reagan zerschlägt Fluglotsen-Streik"
+      },
+      "detail": {
+        "de": "Am 3. August 1981 streiken 13.000 Fluglotsen für höhere Löhne und bessere Bedingungen. Reagan gibt 48 Stunden Frist, entlässt dann 11.000 — lebenslanges Berufsverbot. Sendet Signal an US-Gewerkschaften: Macht der Arbeiterbewegung ist gebrochen. Beginn des jahrzehntelangen Niedergangs gewerkschaftlicher Organisation in den USA."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "aids_epidemie_1981",
+      "yr": 1981,
+      "end_yr": 1996,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "AIDS-Epidemie beginnt"
+      },
+      "detail": {
+        "de": "Erste AIDS-Fälle in den USA 1981 dokumentiert — zunächst hauptsächlich bei homosexuellen Männern. Reagan-Administration ignoriert die Epidemie jahrelang öffentlich, erste Erwähnung erst 1987 als bereits 36.000 Amerikaner diagnostiziert sind. Bis 1989 etwa 60.000 US-Tote. Transformiert die Schwulen-Bewegung, befeuert Aktivismus (ACT-UP). 1996 ermöglichen Protease-Inhibitoren erstmals Behandlung."
+      },
+      "tags": [
+        "gesundheit",
+        "gesellschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "beirut_anschlag_1983",
+      "yr": 1983,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 1,
+      "short": {
+        "de": "Selbstmordanschlag auf US-Marines in Beirut"
+      },
+      "detail": {
+        "de": "Am 23. Oktober 1983 sprengt ein Lastwagen-Selbstmordattentäter die US-Marines-Kaserne in Beirut — 241 Tote. Gleichzeitig Anschlag auf französische Kaserne (58 Tote). Hisbollah-nahe Gruppe verantwortlich, finanziert von Iran. Reagan zieht US-Truppen aus Libanon ab. Wird zur Vorlage für asymmetrische Kriegsführung — Al-Qaida studiert die Lehren."
+      },
+      "tags": [
+        "terror",
+        "krieg"
+      ]
+    },
+    {
+      "id": "iran_contra_1986",
+      "yr": 1986,
+      "end_yr": 1987,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Iran-Contra-Affäre"
+      },
+      "detail": {
+        "de": "Reagan-Administration verkauft 1985/86 heimlich Waffen an Iran (trotz Embargo) und nutzt Erlöse, um illegal die Contra-Rebellen in Nicaragua gegen die Sandinisten zu finanzieren. Doppelter Gesetzesbruch. Tower-Kommission untersucht, Reagan akzeptiert Verantwortung, übersteht aber das Verfahren. Mehrere Mitarbeiter verurteilt, später von Bush sen. begnadigt."
+      },
+      "tags": [
+        "politik",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "ozonloch_montreal_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Montreal-Protokoll gegen Ozonloch"
+      },
+      "detail": {
+        "de": "Nach Entdeckung des Ozonlochs über der Antarktis 1985 unterzeichnen 46 Staaten 1987 das Montreal-Protokoll — schrittweises FCKW-Verbot weltweit. Erfolgreichstes globales Umweltabkommen der Geschichte: Ozonschicht erholt sich seit den 2010ern messbar. Beweist: koordinierte globale Umweltpolitik ist möglich — bittere Kontrast-Folie zur späteren Klimadiplomatie."
+      },
+      "tags": [
+        "umwelt",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "inf_vertrag_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "INF-Vertrag: Abrüstung Mittelstreckenraketen"
+      },
+      "detail": {
+        "de": "Reagan und Gorbatschow unterzeichnen am 8. Dezember 1987 den INF-Vertrag — erste echte nukleare Abrüstung der Geschichte. Mittelstreckenraketen 500-5.500 km Reichweite verboten. Wendepunkt im Kalten Krieg. Trump kündigt 2019, danach weder USA noch Russland gebunden — Wettrüsten startet neu."
+      },
+      "tags": [
+        "vertrag",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "black_monday_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "Black Monday: Börsen-Crash"
+      },
+      "detail": {
+        "de": "Am 19. Oktober 1987 stürzt der Dow Jones um 22,6% an einem Tag — größter prozentualer Tagessturz der Geschichte. Auslöser: computergesteuerte Verkaufsprogramme (Portfolio-Insurance), die sich gegenseitig hochschaukelten. Greenspan (gerade Fed-Chef geworden) flutet System mit Liquidität, Erholung schnell. Setzt Vorlage für Krisenintervention: Fed rettet immer."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "greenspan_fed_1987",
+      "yr": 1987,
+      "end_yr": 2006,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Greenspan wird Fed-Chef"
+      },
+      "detail": {
+        "de": "Alan Greenspan übernimmt die Federal Reserve. Ideologischer Verfechter der Deregulierung (Ayn-Rand-Schüler). 'Greenspan Put': Fed greift bei Krisen mit billigem Geld ein, schafft Anreize für Spekulation und Verschuldung. Niedrigzinspolitik unter ihm bereitet 2008 vor. 2008 gestand er ein, sein Marktmodell sei 'flawed'."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "savings_loan_krise_1989",
+      "yr": 1986,
+      "end_yr": 1995,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Spar- und Darlehenskassen-Krise"
+      },
+      "detail": {
+        "de": "Nach Deregulierung Anfang der 80er übernehmen sich rund 1.000 Spar- und Darlehenskassen mit riskanten Investments. Ab 1986 Massen-Insolvenzen. Rettung kostet Steuerzahler etwa 500 Mrd. USD (heutige Kaufkraft: über 1 Bio.). Erste große Finanzkrise nach Deregulierung — die Lehre wurde nicht gezogen, Wiederholung 2008."
+      },
+      "tags": [
+        "wirtschaft",
+        "konzern"
+      ]
+    },
+    {
+      "id": "nafta_1994",
+      "yr": 1994,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "NAFTA-Freihandelsabkommen"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1994 tritt das North American Free Trade Agreement zwischen USA, Kanada und Mexiko in Kraft. Zollabbau über 15 Jahre. Industriejobs wandern nach Mexiko, später nach China. US-Industriestaaten (Rust Belt) verarmen schrittweise über zwei Jahrzehnte. Schafft die ökonomischen Bedingungen für späteren Trump-Populismus und Rust-Belt-Wende 2016."
+      },
+      "tags": [
+        "wirtschaft",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "glass_steagall_aufhebung_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Glass-Steagall-Aufhebung"
+      },
+      "detail": {
+        "de": "Gramm-Leach-Bliley Act hebt 1999 das Glass-Steagall-Gesetz von 1933 auf — Trennung von Geschäftsbanken und Investmentbanken. Banken dürfen wieder beliebig spekulieren. Clinton unterzeichnet. Citigroup, JP Morgan und andere Mega-Banken entstehen. Direkte Vorbedingung für die Risiken, die 2008 zur Finanzkrise führen."
+      },
+      "tags": [
+        "wirtschaft",
+        "gesetz"
+      ]
+    },
+    {
+      "id": "clinton_wahl_1992",
+      "yr": 1992,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Clinton gewinnt mit 'It's the economy, stupid'"
+      },
+      "detail": {
+        "de": "Bill Clinton gewinnt gegen George H. W. Bush. Ross Perot (19%) als Drittkandidat sprengt das Zweiparteien-System. 'New Democrats' — Clinton übernimmt neoliberalen Rahmen, modernisiert Sozialpolitik. Parallel zu Blair in UK ('Dritter Weg'). Demokraten akzeptieren Reagan-Ökonomie strukturell und verteidigen sie."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "telecommunications_act_1996",
+      "yr": 1996,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Telecommunications Act 1996"
+      },
+      "detail": {
+        "de": "Größte Telekom-Deregulierung seit 1934. Eigentums-Beschränkungen für Radio- und Fernsehkonzerne fallen weitgehend. Vorher max. 40 Radio-Stationen pro Konzern erlaubt, danach unbegrenzt. Clear Channel/iHeart wächst auf 858 Stationen. Vorlage für mediale Konzentration und Polarisierung — Fox News, Sinclair-Konsolidierung, Talk-Radio-Imperien."
+      },
+      "tags": [
+        "gesetz",
+        "konzern",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "welfare_reform_1996",
+      "yr": 1996,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Welfare Reform: Ende der Sozialhilfe-Ära"
+      },
+      "detail": {
+        "de": "Clinton unterzeichnet 'Personal Responsibility and Work Opportunity Act'. Beendet 'welfare as we know it'. Sozialhilfe wird zeitlich begrenzt (max. 5 Jahre Lebenslang) und arbeitsbedingt. Tiefer Einschnitt in den US-Sozialstaat. Verstärkt Armut bei Alleinerziehenden in den 2000ern und 2010ern."
+      },
+      "tags": [
+        "politik",
+        "gesetz",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "lewinsky_impeachment_1998",
+      "yr": 1998,
+      "end_yr": 1999,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Lewinsky-Affäre und Impeachment"
+      },
+      "detail": {
+        "de": "Clintons Affäre mit Praktikantin Monica Lewinsky wird publik. Republikaner-Mehrheit im Repräsentantenhaus klagt Clinton wegen Meineid an. Senat spricht 1999 frei. Erste politische Skandalisierung der Moderne als Dauerwaffe — Lehre für beide Lager, das Personal des politischen Gegners zu zerstören. Vorlage für Polarisierung der 2000er."
+      },
+      "tags": [
+        "politik",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "kyoto_protokoll_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Kyoto-Protokoll Klimaschutz"
+      },
+      "detail": {
+        "de": "Erstes verbindliches internationales Klimaschutzabkommen. Industriestaaten verpflichten sich zu Emissionssenkungen 5,2% gegenüber 1990. USA unterzeichnen, ratifizieren aber nie (Senat 95-0 dagegen). China und Indien als Schwellenländer ausgenommen. Symbolisch wichtig — praktisch wirkungslos. Lehre für Pariser Abkommen 2015: bindende Ziele scheitern, freiwillige funktionieren auch nicht wirklich."
+      },
+      "tags": [
+        "umwelt",
+        "vertrag",
+        "klima"
+      ]
+    },
+    {
+      "id": "golfkrieg_1991",
+      "yr": 1991,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "Erster Golfkrieg gegen Saddam"
+      },
+      "detail": {
+        "de": "Nach Saddams Invasion in Kuwait (August 1990) führt USA-geführte Koalition mit UN-Mandat einen 42-tägigen Krieg. Saddam aus Kuwait vertrieben, bleibt aber im Amt. US-Truppen werden in Saudi-Arabien stationiert — Anwesenheit der 'Ungläubigen' in der Nähe der heiligen Stätten wird Hauptbeschwerde Osama bin Ladens und Hauptmotiv für 9/11. 'Guter Krieg' Vorlage für spätere Interventionen."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "somalia_1993",
+      "yr": 1993,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Black Hawk Down in Mogadischu"
+      },
+      "detail": {
+        "de": "Am 3./4. Oktober 1993 verlieren US-Special-Forces im Versuch, somalische Warlords zu fangen, 18 Soldaten in Mogadischu. Bilder von US-Leichen durch die Stadt geschleift schockieren. Clinton zieht Truppen ab. Lehre: keine US-Bodentruppen ohne klares Interesse. Direkter Grund für US-Nicht-Intervention in Ruanda 1994."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "ruanda_voelkermord_1994",
+      "yr": 1994,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Völkermord in Ruanda"
+      },
+      "detail": {
+        "de": "Zwischen April und Juli 1994 ermorden Hutu-Milizen rund 800.000 Tutsi und gemäßigte Hutu — etwa 11% der Bevölkerung in 100 Tagen. UN-Truppe vor Ort zieht ab, USA und Westen schauen weg, vermeiden bewusst das Wort 'Völkermord' um nicht intervenieren zu müssen. Schlimmster Genozid seit Holocaust. Versagen prägt spätere humanitäre Interventionslogik — Bosnien, Kosovo, später Responsibility to Protect."
+      },
+      "tags": [
+        "krieg",
+        "katastrophe",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "oslo_abkommen_1993",
+      "yr": 1993,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "Oslo-Abkommen Israel-PLO"
+      },
+      "detail": {
+        "de": "Friedensabkommen zwischen Israel und PLO unter US-Vermittlung. Handschlag Rabin-Arafat auf dem Weißen-Haus-Rasen am 13. September 1993. PLO erkennt Israels Existenzrecht an, Israel die PLO als Vertretung der Palästinenser. Erster konkreter Schritt zur Zwei-Staaten-Lösung. Rabin 1995 von rechtsextremem Israeli ermordet, Prozess kollabiert in den 2000ern. Bleibt der nähestmögliche Punkt am Frieden."
+      },
+      "tags": [
+        "vertrag",
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "netscape_ipo_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Netscape-IPO startet Internet-Goldrausch"
+      },
+      "detail": {
+        "de": "Am 9. August 1995 geht Netscape an die Börse. Aktie verdreifacht sich am ersten Tag von 28 auf 75 USD. Beginn der Dotcom-Blase. Browser-Krieg gegen Microsoft beginnt. Signal: Internet wird Massenmarkt. Investoren stürzen sich auf alles mit '.com'."
+      },
+      "tags": [
+        "technologie",
+        "wirtschaft",
+        "konzern"
+      ]
+    },
+    {
+      "id": "microsoft_kartell_1998",
+      "yr": 1998,
+      "end_yr": 2001,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Microsoft-Kartellverfahren"
+      },
+      "detail": {
+        "de": "US-Justizministerium klagt Microsoft wegen Monopolmissbrauch im Browser-Markt — Internet Explorer wurde in Windows integriert, verdrängte Netscape. 2000 Aufteilung in zwei Konzerne angeordnet, 2001 unter Bush-Administration aufgehoben — Vergleich statt Zerschlag. Setzt aber Schranken für aggressive Plattform-Strategien, die Big Tech in den 2010ern wieder ausreizt."
+      },
+      "tags": [
+        "konzern",
+        "gesetz",
+        "technologie"
+      ]
+    },
+    {
+      "id": "google_gruendung_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Google gegründet"
+      },
+      "detail": {
+        "de": "Larry Page und Sergey Brin gründen Google am 4. September 1998. PageRank-Algorithmus revolutioniert Web-Suche. Beginn des Google-Imperiums. Symbol für die Verschiebung der digitalen Macht von Software zu Suche, Werbung und Daten. Bis Mitte der 2010er der wertvollste Konzern der Welt."
+      },
+      "tags": [
+        "technologie",
+        "konzern"
+      ]
+    },
+    {
+      "id": "dotcom_blase_1999",
+      "yr": 1995,
+      "end_yr": 2001,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Dotcom-Blase"
+      },
+      "detail": {
+        "de": "Massive Spekulation in Internet-Aktien zwischen 1995 und 2000. Nasdaq verfünffacht sich, platzt im März 2000 — 78% Verlust bis 2002. Viele Firmen verschwinden, aber das Tech-Ökosystem (Amazon, eBay, Google) überlebt. Schule für Risikokapital-Boom in San Francisco. Erste wirklich amerikanische Spekulationsblase nach den 1920ern in dem Ausmaß."
+      },
+      "tags": [
+        "wirtschaft",
+        "technologie",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "crack_epidemie_1985",
+      "yr": 1985,
+      "end_yr": 1995,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Crack-Epidemie und War on Drugs"
+      },
+      "detail": {
+        "de": "Crack-Kokain überflutet ab Mitte 80er die schwarzen US-Großstadtviertel — billiger, hochsuchtanfälliger als Kokain. Gewaltexplosion (Mordrate verdoppelt sich in NYC, LA). Reagan-Bush 'War on Drugs' mit drastischen Strafgesetzen (1986, 1988). Crime Bill 1994 von Clinton mit Biden als Senatsführer. Resultat: Masseninhaftierung schwarzer Männer — USA wird Inhaftierungs-Weltmeister."
+      },
+      "tags": [
+        "gesellschaft",
+        "politik",
+        "gesetz"
+      ]
+    },
+    {
+      "id": "oklahoma_city_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Oklahoma-City-Bombenanschlag"
+      },
+      "detail": {
+        "de": "Am 19. April 1995 sprengt Timothy McVeigh das Murrah Federal Building in Oklahoma City — 168 Tote inkl. 19 Kinder, 680 Verletzte. Größter inländischer Terror-Anschlag der USA bis 9/11. McVeigh rechtsextrem, anti-government, vom FBI-Vorgehen in Waco 1993 radikalisiert. Vorbote der späteren Radikalisierung der amerikanischen Rechten."
+      },
+      "tags": [
+        "terror",
+        "gesellschaft"
+      ]
     }
   ],
   "links": [
@@ -4526,6 +5029,303 @@
       "type": "indirekt",
       "why": {
         "de": "Erfolgreiche Demokratie-Konsolidierung in Spanien wurde zum Modell für Osterweiterung — EU als Anker für junge Demokratien."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "reagan_wahl_1980",
+      "target": "reaganomics_1981",
+      "type": "direkt",
+      "why": {
+        "de": "Reagan setzte sein Wahlversprechen direkt um — Steuersenkungen, Deregulierung, Militärausgaben hoch."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "reagan_wahl_1980",
+      "target": "patco_streik_1981",
+      "type": "direkt",
+      "why": {
+        "de": "Reagans Anti-Gewerkschafts-Haltung war Kampagnenversprechen — PATCO war die erste große Konfrontation."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "volcker_zinsschock_1979",
+      "target": "reaganomics_1981",
+      "type": "indirekt",
+      "why": {
+        "de": "Volcker-Rezession 1981/82 setzte Reagan unter Druck, Steuersenkungen schnell durchzusetzen — als angeblicher Wachstumsimpuls."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "patco_streik_1981",
+      "target": "reaganomics_1981",
+      "type": "indirekt",
+      "why": {
+        "de": "Demontage gewerkschaftlicher Macht war Voraussetzung für Lohndruck nach unten und steigende Unternehmensprofite — Kern von Reaganomics."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "reagan_wahl_1980",
+      "target": "iran_contra_1986",
+      "type": "indirekt",
+      "why": {
+        "de": "Reagans antikommunistische Doktrin (Contra-Unterstützung gegen Sandinisten) führte zur illegalen Umgehung des Kongressverbots."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "beirut_anschlag_1983",
+      "target": "iran_contra_1986",
+      "type": "indirekt",
+      "why": {
+        "de": "US-Geiseln im Libanon (Hisbollah-nahe Entführer mit Iran-Verbindung) waren Hauptmotiv für die geheimen Waffenverkäufe an Iran."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "reaganomics_1981",
+      "target": "gorbatschow_1985",
+      "type": "indirekt",
+      "why": {
+        "de": "Massives US-Rüstungsbudget zwang Sowjetunion in Rüstungswettlauf, den sie nicht durchhalten konnte — verstärkte den Reformdruck unter Gorbatschow."
+      },
+      "certainty": "umstritten"
+    },
+    {
+      "source": "inf_vertrag_1987",
+      "target": "mauerfall_1989",
+      "type": "indirekt",
+      "why": {
+        "de": "INF-Vertrag schuf Vertrauensbasis zwischen Reagan/Bush und Gorbatschow — Voraussetzung für sowjetische Nicht-Intervention 1989."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "gorbatschow_1985",
+      "target": "inf_vertrag_1987",
+      "type": "direkt",
+      "why": {
+        "de": "Gorbatschows Reformkurs und Wunsch nach Westannäherung machten Abrüstung erstmals möglich — Reagan akzeptierte den Verhandlungspartner."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "black_monday_1987",
+      "target": "greenspan_fed_1987",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Greenspans erste Bewährungsprobe — sein Liquiditäts-Eingriff prägte die spätere 'Greenspan Put'-Doktrin: Fed rettet immer."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "savings_loan_krise_1989",
+      "target": "glass_steagall_aufhebung_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Lehren aus S&L wurden NICHT gezogen — stattdessen weitere Deregulierung in den 90ern. Glass-Steagall-Aufhebung war der nächste Schritt."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "reaganomics_1981",
+      "target": "glass_steagall_aufhebung_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Deregulierungs-Ideologie der 80er prägte beide Parteien — Clinton-Demokraten setzten Reagan-Linie konsequent fort."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "greenspan_fed_1987",
+      "target": "dotcom_blase_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Greenspans 'irrationaler Überschwang'-Rede 1996 — aber Niedrigzinsen befeuerten die Blase trotzdem weiter. Fed griff erst 2000 ein."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "glass_steagall_aufhebung_1999",
+      "target": "finanzkrise_2008",
+      "type": "direkt",
+      "why": {
+        "de": "Geschäfts- und Investmentbanken konnten sich vermischen, Risiken anhäufen. Ohne Glass-Steagall-Trennung war Lehman-Größe und Verflechtung erst möglich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "clinton_wahl_1992",
+      "target": "nafta_1994",
+      "type": "direkt",
+      "why": {
+        "de": "Clinton trieb NAFTA gegen Widerstände in der eigenen Partei durch — neoliberales Kernprogramm der New Democrats."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "clinton_wahl_1992",
+      "target": "telecommunications_act_1996",
+      "type": "direkt",
+      "why": {
+        "de": "Deregulierungslogik der Clinton-Administration, parteiübergreifend mit Republikanern getragen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "clinton_wahl_1992",
+      "target": "welfare_reform_1996",
+      "type": "direkt",
+      "why": {
+        "de": "'End welfare as we know it' war Clintons explizites Wahlversprechen 1992."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "clinton_wahl_1992",
+      "target": "glass_steagall_aufhebung_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Clinton-Administration trieb Deregulierung aktiv voran — Treasury Secretary Rubin und Summers waren Hauptarchitekten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "nafta_1994",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Industriearbeitsplatz-Verluste durch NAFTA über zwei Jahrzehnte schufen das Rust-Belt-Misstrauen, das Trump 2016 in Michigan, Pennsylvania, Wisconsin gewann."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "telecommunications_act_1996",
+      "type": "indirekt",
+      "why": {
+        "de": "Internet-Boom nach Netscape-IPO erzeugte Druck auf Kongress, das veraltete Telekom-Recht von 1934 zu modernisieren."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "dotcom_blase_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Netscape-Erfolg löste die Goldgräberstimmung aus — jeder wollte das nächste Netscape sein."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "microsoft_kartell_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Microsoft reagierte mit aggressivem Bundling des Internet Explorer in Windows — verdrängte Netscape, löste Kartellverfahren aus."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "google_gruendung_1998",
+      "type": "indirekt",
+      "why": {
+        "de": "Internet-Boom schuf die Marktbedingungen, in denen Page und Brin ihre Such-Idee als Startup gründen konnten — VC-Geld war reichlich verfügbar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "golfkrieg_1991",
+      "target": "9_11",
+      "type": "direkt",
+      "why": {
+        "de": "US-Truppenstationierung in Saudi-Arabien nach dem Golfkrieg war Hauptbeschwerde bin Ladens — explizites Motiv für 9/11 in seinen Erklärungen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "somalia_1993",
+      "target": "ruanda_voelkermord_1994",
+      "type": "direkt",
+      "why": {
+        "de": "Mogadischu-Trauma machte Clinton-Administration unwillig, in Ruanda zu intervenieren — bewusste Vermeidung des Wortes 'Völkermord' um Eingreifpflicht zu umgehen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ruanda_voelkermord_1994",
+      "target": "kosovokrieg_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Westliches Schweigen zu Ruanda erzeugte massiven Schuld-Druck — 1999 wollte die NATO 'nie wieder' zuschauen, daher Intervention ohne UN-Mandat."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjetunion_zerfall_1991",
+      "target": "oslo_abkommen_1993",
+      "type": "indirekt",
+      "why": {
+        "de": "Ohne Sowjetunion als PLO-Unterstützer wurde Arafat verhandlungsbereit — und USA konnte als alleiniger Vermittler auftreten."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "golfkrieg_1991",
+      "target": "oslo_abkommen_1993",
+      "type": "indirekt",
+      "why": {
+        "de": "PLO hatte Saddam unterstützt — danach diplomatisch isoliert, Arafat zu Konzessionen gezwungen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "volcker_zinsschock_1979",
+      "target": "indien_liberalisierung_1991",
+      "type": "indirekt",
+      "why": {
+        "de": "Volcker-Zinsschock löste die Schwellenländer-Schuldenkrise aus (Lateinamerika ab 1982, später Asien) — Indiens Zahlungsbilanzkrise 1991 stand in dieser Tradition."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "thatcher_1979",
+      "target": "reagan_wahl_1980",
+      "type": "indirekt",
+      "why": {
+        "de": "Thatcher-Sieg 1979 zeigte: konservative Wende ist möglich — direkte Inspiration für Reagan-Kampagne."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ozonloch_montreal_1987",
+      "target": "kyoto_protokoll_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Montreal-Erfolg war direktes Vorbild und Verhandlungsmodell für Kyoto — 'globale Umweltprobleme sind verhandelbar'."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "oklahoma_city_1995",
+      "target": "j6_kapitol_2021",
+      "type": "indirekt",
+      "why": {
+        "de": "Anti-Government-Milieu (Militias, Sovereign Citizens), das McVeigh radikalisierte, bestand fort — radikalisierte sich unter Trump weiter und mobilisierte 6. Januar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "lewinsky_impeachment_1998",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Politische Skandalisierung als Dauerwaffe seit Lewinsky — beide Parteien zerstören gegenseitig Personal, schafft Verachtung für 'Establishment'."
       },
       "certainty": "plausibel"
     }
