@@ -596,27 +596,19 @@ h1 em { color: #4a9eff; font-style: normal; }
     background: #4a6080; border-radius: 3px;
     cursor: pointer;
   }
-  /* Minimize-Button: Panel zu, Auswahl bleibt */
+  /* "Panel zu"-Button: schließt Panel, Selektion und Kausalkette bleiben sichtbar.
+     ✕-Reset ist auf Mobile überflüssig — wer alles zurück will, klickt aufs Netz */
   #minimize-btn {
     display: block !important;
-    position: absolute; top: 0.7rem; left: 0.7rem;
+    position: absolute; top: 0.7rem; right: 0.7rem;
     background: #1c2535; border: 1px solid #3a4a60;
     color: #c8d4e4; cursor: pointer;
     font-family: monospace; font-size: 0.7rem; font-weight: 700;
     padding: 0.4rem 0.7rem; border-radius: 4px;
     min-height: 36px;
   }
-  /* Reset-Button: schließt + deselektiert */
-  #close-btn {
-    font-size: 0.9rem !important;
-    padding: 0.4rem 0.7rem !important;
-    top: 0.7rem !important;
-    right: 0.7rem !important;
-    background: #1c2535 !important;
-    color: #c8d4e4 !important;
-    border-color: #3a4a60 !important;
-    min-height: 36px;
-  }
+  /* ✕-Reset auf Mobile ausblenden — Doppelung mit "Panel zu" verwirrt */
+  #close-btn { display: none !important; }
 
   /* Zeitachse auf Mobile ausblenden — zu eng bei vertikaler Stauchung */
   #g-axis { display: none; }
@@ -675,10 +667,10 @@ h1 em { color: #4a9eff; font-style: normal; }
     <!-- Importance dropdown -->
     <div class="dropdown" id="imp-dropdown">
       <div class="dd-label">WICHTIGKEIT</div>
-      <button class="fb active" id="imp-btn">Alle Stufen ▾</button>
+      <button class="fb active" id="imp-btn">★★ Wichtig + Historisch ▾</button>
       <div class="dropdown-menu" id="imp-menu">
-        <div class="dd-item active" data-imp="alle">★ Alle</div>
-        <div class="dd-item" data-imp="2">★★ Wichtig + Historisch</div>
+        <div class="dd-item" data-imp="alle">★ Alle</div>
+        <div class="dd-item active" data-imp="2">★★ Wichtig + Historisch</div>
         <div class="dd-item" data-imp="3">★★★ Nur Historisch</div>
       </div>
     </div>
@@ -910,7 +902,7 @@ function reachableFrom(id) {
 
 // ── STATE ──
 let filterRegion = "alle";
-let filterImp = "alle";
+let filterImp = "2";  // Default: Wichtig + Historisch — bei 200+ Knoten ist "alle" zu viel beim Erstkontakt
 let pathMode = false;
 let pathStart = null;
 let selectedNode = null;
