@@ -326,6 +326,8 @@ h1 em { color: #4a9eff; font-style: normal; }
   font-size: 0.6rem; padding: 0.18rem 0.45rem; border-radius: 2px;
 }
 #close-btn:hover { color: #c8d4e4; }
+/* Minimize-Button nur auf Mobile sichtbar (Bottom-Sheet-Logik) */
+#minimize-btn { display: none; }
 
 .pf-btn {
   font-family: monospace; font-size: 0.58rem;
@@ -573,37 +575,51 @@ h1 em { color: #4a9eff; font-style: normal; }
   /* Panel: Bottom-Sheet auf Mobile (kommt von unten, lässt Netz oben sichtbar) */
   #panel {
     width: 100vw; max-width: 100vw;
-    height: 75vh;          /* nur 3/4 der Höhe — oben bleibt Netz sichtbar */
-    top: auto;             /* statt top:0 */
+    height: 55vh;          /* Hälfte — obere Hälfte zeigt Netz mit Kausalkette */
+    top: auto;
     bottom: 0;
     border-left: none;
     border-top: 2px solid #2a3a52;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    padding: 1rem 0.85rem;
-    transform: translateY(100%);  /* von unten reinschieben statt von rechts */
+    padding: 2.2rem 0.85rem 1rem;  /* mehr top-padding wegen Buttons + Handle */
+    transform: translateY(100%);
+    touch-action: pan-y;   /* Swipe-Gesten erkennen */
   }
   #panel.open { transform: translateY(0); }
-  /* Drag-Handle: visueller Bottom-Sheet-Indikator oben am Panel */
+  /* Drag-Handle als Schließen-Gesten-Indikator — klickbar */
   #panel-handle {
     display: block;
     position: absolute; top: 0.4rem; left: 50%;
     transform: translateX(-50%);
-    width: 36px; height: 4px;
-    background: #3a4a60; border-radius: 2px;
+    width: 50px; height: 5px;
+    background: #4a6080; border-radius: 3px;
+    cursor: pointer;
   }
-  /* Großer prominenter Close-Button — touch-freundlich */
+  /* Minimize-Button: Panel zu, Auswahl bleibt */
+  #minimize-btn {
+    display: block !important;
+    position: absolute; top: 0.7rem; left: 0.7rem;
+    background: #1c2535; border: 1px solid #3a4a60;
+    color: #c8d4e4; cursor: pointer;
+    font-family: monospace; font-size: 0.7rem; font-weight: 700;
+    padding: 0.4rem 0.7rem; border-radius: 4px;
+    min-height: 36px;
+  }
+  /* Reset-Button: schließt + deselektiert */
   #close-btn {
-    font-size: 1.1rem !important;
-    padding: 0.5rem 0.85rem !important;
-    top: 0.5rem !important;
-    right: 0.5rem !important;
+    font-size: 0.9rem !important;
+    padding: 0.4rem 0.7rem !important;
+    top: 0.7rem !important;
+    right: 0.7rem !important;
     background: #1c2535 !important;
     color: #c8d4e4 !important;
     border-color: #3a4a60 !important;
-    min-width: 44px;     /* iOS touch-target Mindestmaß */
-    min-height: 44px;
+    min-height: 36px;
   }
+
+  /* Zeitachse auf Mobile ausblenden — zu eng bei vertikaler Stauchung */
+  #g-axis { display: none; }
 
   /* Hilfe-Overlay scrollbar */
   #help-box {
@@ -742,6 +758,7 @@ h1 em { color: #4a9eff; font-style: normal; }
 
 <div id="panel">
   <div id="panel-handle"></div>
+  <button id="minimize-btn" title="Panel ausblenden, Auswahl behalten">▼ Panel zu</button>
   <button id="close-btn">✕</button>
   <div id="panel-content"></div>
 </div>
@@ -1580,6 +1597,39 @@ document.getElementById("close-btn").addEventListener("click", () => {
   document.getElementById("panel").classList.remove("open");
   resetVisuals();
 });
+
+// Minimize: Panel zu, aber Selektion und Kausalkette bleiben sichtbar
+document.getElementById("minimize-btn").addEventListener("click", () => {
+  document.getElementById("panel").classList.remove("open");
+});
+
+// Tippen auf Drag-Handle minimiert (Panel zu, Selektion bleibt)
+document.getElementById("panel-handle").addEventListener("click", () => {
+  document.getElementById("panel").classList.remove("open");
+});
+
+// Swipe nach unten auf Panel minimiert (Selektion bleibt)
+(function setupSwipeDown() {
+  const panel = document.getElementById("panel");
+  let startY = null;
+  panel.addEventListener("touchstart", e => {
+    // Nur am oberen Rand des Panels — innerhalb der ersten 60px (Handle-Bereich)
+    const rect = panel.getBoundingClientRect();
+    if(e.touches[0].clientY - rect.top < 60) {
+      startY = e.touches[0].clientY;
+    } else {
+      startY = null;
+    }
+  });
+  panel.addEventListener("touchmove", e => {
+    if(startY === null) return;
+    const deltaY = e.touches[0].clientY - startY;
+    if(deltaY > 80) {  // 80px nach unten = schließen
+      panel.classList.remove("open");
+      startY = null;
+    }
+  });
+})();
 
 svg.on("click", () => {
   if(!pathMode) {

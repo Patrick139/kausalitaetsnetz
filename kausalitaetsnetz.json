@@ -3283,6 +3283,320 @@
         "terror",
         "gesellschaft"
       ]
+    },
+    {
+      "id": "iranische_revolution_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 3,
+      "short": {
+        "de": "Iranische Revolution"
+      },
+      "detail": {
+        "de": "Schah Reza Pahlavi wird im Januar 1979 nach Monaten von Massenprotesten gestürzt. Ayatollah Ruhollah Khomeini kehrt aus Pariser Exil zurück und proklamiert am 1. April die Islamische Republik. Ende des wichtigsten US-Verbündeten in der Region. Erste schiitisch-theokratische Republik der Geschichte. Vorbild und Schreckgespenst für die ganze Region — sunnitische Monarchien fühlen sich existentiell bedroht."
+      },
+      "tags": [
+        "politik",
+        "revolution",
+        "religion"
+      ]
+    },
+    {
+      "id": "us_geiselkrise_1979",
+      "yr": 1979,
+      "end_yr": 1981,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "US-Botschaftsgeiselnahme in Teheran"
+      },
+      "detail": {
+        "de": "Am 4. November 1979 stürmen iranische Studenten die US-Botschaft in Teheran und nehmen 52 US-Diplomaten als Geiseln. Forderung: Auslieferung des Schahs. Carter versucht im April 1980 die Rettungsoperation 'Eagle Claw', die in einem Hubschrauberunglück endet (8 Tote). Geiseln werden am 20. Januar 1981 freigelassen — am Tag von Reagans Amtsantritt. Bricht US-Iran-Beziehungen bis heute."
+      },
+      "tags": [
+        "geopolitik",
+        "terror"
+      ]
+    },
+    {
+      "id": "saddam_macht_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "Saddam Hussein übernimmt Irak"
+      },
+      "detail": {
+        "de": "Saddam zwingt am 16. Juli 1979 Präsident al-Bakr zum Rücktritt und übernimmt die Macht. Tage später inszeniert er beim Ba'ath-Parteitag eine öffentliche Säuberung — 68 angebliche Verschwörer werden vor laufender Kamera verlesen und weggeführt, 22 hingerichtet. Beginn brutaler Personenherrschaft. Saddam regiert 24 Jahre bis zur US-Invasion 2003."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "iran_irak_krieg_1980",
+      "yr": 1980,
+      "end_yr": 1988,
+      "r": "mittelost",
+      "imp": 3,
+      "short": {
+        "de": "Iran-Irak-Krieg"
+      },
+      "detail": {
+        "de": "Saddam greift am 22. September 1980 das post-revolutionäre Iran an, hofft auf schnellen Sieg im Chaos. Iran wehrt sich, der Krieg wird zum 8-jährigen Stellungskrieg mit Schützengräben, Giftgas und Kinder-Welleangriffen. Etwa 1 Million Tote. Saddam wird von USA, UdSSR, Saudi-Arabien, Kuwait, Frankreich, BRD finanziert und mit Waffen versorgt — gegen Khomeini. Iran isoliert mit nur Syrien und Libyen als Verbündete. Endet 1988 ohne Sieger. Saddams Größenwahn (→ Kuwait-Invasion) und Iran-Trauma datieren von hier."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "halabja_1988",
+      "yr": 1988,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "Giftgasangriff auf Halabja"
+      },
+      "detail": {
+        "de": "Am 16. März 1988 wirft die irakische Luftwaffe Senfgas, Sarin, Tabun und VX auf die kurdische Stadt Halabja. Etwa 5.000 Tote, mehrheitlich Zivilisten. Teil der Anfal-Kampagne gegen die irakischen Kurden (1986-89, ~100.000 Tote insgesamt). Westen reagiert kaum — Saddam war noch Verbündeter gegen Iran. Wird später zentrale moralische Rechtfertigung für die US-Invasion 2003."
+      },
+      "tags": [
+        "krieg",
+        "katastrophe",
+        "terror"
+      ]
+    },
+    {
+      "id": "sowjet_afghanistan_1979",
+      "yr": 1979,
+      "end_yr": 1989,
+      "r": "afghanistan",
+      "imp": 3,
+      "short": {
+        "de": "Sowjet-Invasion in Afghanistan"
+      },
+      "detail": {
+        "de": "Am 24. Dezember 1979 marschiert die Rote Armee in Afghanistan ein, um die wankende kommunistische Regierung zu stützen. Plan: schnelle Stabilisierung. Realität: 9-jähriger Bürgerkrieg gegen Mujahedin-Widerstand. Brzezinski (Carters Sicherheitsberater) lockt UdSSR mit voraussehbarer CIA-Unterstützung der Mujahedin in die 'sowjetische Vietnam-Falle'. Wird zum entscheidenden Faktor für sowjetischen Bankrott und Zerfall."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "mujahedin_cia_1980er",
+      "yr": 1980,
+      "end_yr": 1989,
+      "r": "afghanistan",
+      "imp": 2,
+      "short": {
+        "de": "CIA finanziert Mujahedin (Operation Cyclone)"
+      },
+      "detail": {
+        "de": "CIA-Programm Operation Cyclone: mehr als 3 Mrd. USD an die afghanischen Widerstandsgruppen. Saudi-Arabien matcht jeden CIA-Dollar. Pakistans Geheimdienst ISI verteilt die Mittel — bevorzugt an die radikalsten Islamisten. Ab 1986 Stinger-Flugabwehrraketen, die sowjetische Hubschrauber niederholen. Arabische Freiwillige strömen nach Pakistan, darunter Osama bin Laden. Setting für al-Qaida und Taliban."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "al_qaida_gruendung_1988",
+      "yr": 1988,
+      "end_yr": null,
+      "r": "afghanistan",
+      "imp": 3,
+      "short": {
+        "de": "Al-Qaida gegründet"
+      },
+      "detail": {
+        "de": "Am 11. August 1988 gründen Osama bin Laden und Ayman al-Zawahiri in Peschawar (Pakistan) al-Qaida ('die Basis'). Ursprünglich Datenbank für arabische Mujahedin-Kämpfer im Afghanistan-Einsatz. Nach Sowjet-Abzug 1989 wandelt sich die Organisation: globaler Jihad gegen 'fernen Feind' USA und Saudi-Arabien (wegen US-Truppen auf saudischem Boden ab 1990)."
+      },
+      "tags": [
+        "terror",
+        "bewegung",
+        "religion"
+      ]
+    },
+    {
+      "id": "sowjet_rueckzug_afghanistan_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "afghanistan",
+      "imp": 2,
+      "short": {
+        "de": "Sowjetischer Rückzug aus Afghanistan"
+      },
+      "detail": {
+        "de": "Am 15. Februar 1989 verlässt der letzte sowjetische Soldat Afghanistan. 9 Jahre Krieg, ~15.000 sowjetische und über 1 Million afghanische Tote. Niederlage der zweiten Supermacht — Demonstration: 'Supermächte sind besiegbar'. Trägt direkt zur Erosion der sowjetischen Autorität und zum Zerfall 1991 bei. Mujahedin feiern Sieg — bis sie sich gegenseitig zerfleischen."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "afghanistan_buergerkrieg_1992",
+      "yr": 1992,
+      "end_yr": 1996,
+      "r": "afghanistan",
+      "imp": 1,
+      "short": {
+        "de": "Mujahedin-Bürgerkrieg in Afghanistan"
+      },
+      "detail": {
+        "de": "Nach Sturz des kommunistischen Regimes 1992 zerfallen die Mujahedin in ethnisch-politische Fraktionen — Pashtunen gegen Tadschiken, Hekmatyar gegen Massud. Kabul wird durch Raketenbeschuss zerstört. ~50.000 zivile Tote. Vakuum macht den späteren Taliban-Aufstieg möglich."
+      },
+      "tags": [
+        "krieg"
+      ]
+    },
+    {
+      "id": "taliban_macht_1996",
+      "yr": 1996,
+      "end_yr": null,
+      "r": "afghanistan",
+      "imp": 2,
+      "short": {
+        "de": "Taliban erobern Kabul"
+      },
+      "detail": {
+        "de": "Am 27. September 1996 erobern die Taliban ('Studenten' der pakistanischen Koranschulen) Kabul. Ex-Präsident Najibullah wird aus dem UN-Gelände entführt und an Verkehrsschild aufgehängt. Saudi-finanzierte Wahhabismus-Doktrin. Strikte Scharia, Frauen aus Schulen und Berufen verbannt. Bieten al-Qaida 1996 Zuflucht. Setting für 9/11 und die US-Invasion 2001."
+      },
+      "tags": [
+        "politik",
+        "religion",
+        "staat"
+      ]
+    },
+    {
+      "id": "israel_libanon_1982",
+      "yr": 1982,
+      "end_yr": null,
+      "r": "israel",
+      "imp": 2,
+      "short": {
+        "de": "Israel marschiert in Libanon ein"
+      },
+      "detail": {
+        "de": "Am 6. Juni 1982 marschiert Israel unter Verteidigungsminister Ariel Sharon in den Libanon ein. Erklärtes Ziel: PLO aus Beirut vertreiben. Belagerung Beiruts mit 7.000+ zivilen Toten. PLO zieht im August unter US-Vermittlung nach Tunesien ab. Israel hält den Süd-Libanon bis 2000 besetzt. Größter strategischer Fehlschlag der israelischen Geschichte: schafft die Hisbollah als langfristigen Feind."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "sabra_shatila_1982",
+      "yr": 1982,
+      "end_yr": null,
+      "r": "israel",
+      "imp": 1,
+      "short": {
+        "de": "Sabra-und-Schatila-Massaker"
+      },
+      "detail": {
+        "de": "Vom 16. bis 18. September 1982 ermordet die christlich-libanesische Falange-Miliz palästinensische Zivilisten in den Beiruter Flüchtlingslagern Sabra und Schatila. Israelische Armee unter Sharon hat das Gebiet umstellt, lässt Miliz hinein, beleuchtet das Lager nachts mit Leuchtraketen. 800 bis 3.500 Tote. Israelische Kahan-Kommission 1983 stellt Sharons 'persönliche Verantwortung' fest — er muss als Verteidigungsminister zurücktreten. Wird 2001 trotzdem Premier."
+      },
+      "tags": [
+        "krieg",
+        "katastrophe",
+        "terror"
+      ]
+    },
+    {
+      "id": "hisbollah_gruendung_1982",
+      "yr": 1982,
+      "end_yr": null,
+      "r": "mittelost",
+      "imp": 2,
+      "short": {
+        "de": "Hisbollah gegründet im Libanon"
+      },
+      "detail": {
+        "de": "Iranische Revolutionsgarden bauen mit syrischer Hilfe im Libanon eine schiitische Miliz auf: Hisbollah ('Partei Gottes'). Antwort auf israelische Invasion und Schutzlücke für Schiiten. Erste und wichtigste Iran-Proxy außerhalb Irans. Übernimmt den Anti-Israel-Kampf, organisiert Selbstmordattentate (Beirut 1983, Buenos Aires 1992/94). Dauerhafte Iran-Israel-Konfliktlinie im Libanon, bis heute."
+      },
+      "tags": [
+        "politik",
+        "religion",
+        "krieg"
+      ]
+    },
+    {
+      "id": "erste_intifada_1987",
+      "yr": 1987,
+      "end_yr": 1993,
+      "r": "israel",
+      "imp": 2,
+      "short": {
+        "de": "Erste Intifada"
+      },
+      "detail": {
+        "de": "Im Dezember 1987 löst ein Verkehrsunfall im Gazastreifen (israelischer LKW tötet vier Palästinenser) den palästinensischen Aufstand aus. Steinwürfe und Demonstrationen gegen israelische Besatzung. ~1.200 palästinensische und ~160 israelische Tote bis 1993. Erste palästinensische Massenbewegung im Fernsehen — verändert internationale Wahrnehmung. Bereitet politische Anerkennung der PLO und Oslo-Prozess vor."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "krieg"
+      ]
+    },
+    {
+      "id": "rabin_ermordung_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "israel",
+      "imp": 2,
+      "short": {
+        "de": "Rabin von Rechtsextremem ermordet"
+      },
+      "detail": {
+        "de": "Am 4. November 1995 erschießt der rechtsextreme Israeli Yigal Amir den Ministerpräsidenten Yitzhak Rabin nach einer Friedensdemonstration in Tel Aviv. Mord aus Hass gegen Oslo-Abkommen. Friedensprozess kollabiert: Netanyahu gewinnt 1996 Wahlen, Siedlungsbau beschleunigt. Letzter realistischer Moment für Zwei-Staaten-Lösung — danach erstickt die Dynamik. Ohne den Mord vermutlich anderer Verlauf der Region."
+      },
+      "tags": [
+        "politik",
+        "terror"
+      ]
+    },
+    {
+      "id": "mekka_geiselnahme_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "saudi",
+      "imp": 1,
+      "short": {
+        "de": "Geiselnahme in der Großen Moschee Mekka"
+      },
+      "detail": {
+        "de": "Am 20. November 1979 besetzen Juhayman al-Otaibi und 200-500 bewaffnete Anhänger die Große Moschee von Mekka — das heiligste Heiligtum des Islam. Forderung: Sturz der als korrupt empfundenen Saud-Familie. Zwei Wochen Belagerung, französische GIGN-Anti-Terror-Einheit hilft saudischem Militär. 244 Tote. Saud-Familie reagiert mit verschärfter religiöser Strenge im Inland und massivem Wahhabismus-Export ins Ausland (Koranschulen weltweit) — als Legitimations-Ersatz. Kausaler Ursprung der saudischen Religionspolitik der nächsten 40 Jahre."
+      },
+      "tags": [
+        "terror",
+        "religion",
+        "politik"
+      ]
+    },
+    {
+      "id": "fis_algerien_1991",
+      "yr": 1991,
+      "end_yr": 2002,
+      "r": "mittelost",
+      "imp": 1,
+      "short": {
+        "de": "Algerischer Bürgerkrieg"
+      },
+      "detail": {
+        "de": "Islamische Heilsfront (FIS) gewinnt im Dezember 1991 erste Runde der Parlamentswahlen mit klarer Mehrheit. Militär annulliert die Wahlen Anfang 1992. 10-jähriger Bürgerkrieg, 150.000-200.000 Tote, brutale Massaker an Zivilisten. Westen akzeptiert weitgehend den Militärputsch. Lehrstück für die Region: 'Demokratie führt zu Islamisten' wird zur Begründung autoritärer Regime — auch beim westlichen Umgang mit Mubarak, Ben Ali, Assad bis 2011."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "krieg"
+      ]
     }
   ],
   "links": [
@@ -5328,6 +5642,267 @@
         "de": "Politische Skandalisierung als Dauerwaffe seit Lewinsky — beide Parteien zerstören gegenseitig Personal, schafft Verachtung für 'Establishment'."
       },
       "certainty": "plausibel"
+    },
+    {
+      "source": "iranische_revolution_1979",
+      "target": "us_geiselkrise_1979",
+      "type": "direkt",
+      "why": {
+        "de": "Revolutionäre Studenten sahen US-Botschaft als Symbol der Schah-Allianz — Sturm folgte der Logik der Revolution."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "iranische_revolution_1979",
+      "target": "iran_irak_krieg_1980",
+      "type": "direkt",
+      "why": {
+        "de": "Saddam witterte im post-revolutionären Chaos die Chance — und fürchtete Khomeinis Aufrufe zum schiitischen Aufstand im eigenen Land."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "us_geiselkrise_1979",
+      "target": "reagan_wahl_1980",
+      "type": "indirekt",
+      "why": {
+        "de": "Carters Hilflosigkeit bei der Geiselbefreiung schadete ihm massiv im Wahlkampf — Reagan profitierte von dem Eindruck der Schwäche."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "iranische_revolution_1979",
+      "target": "mekka_geiselnahme_1979",
+      "type": "indirekt",
+      "why": {
+        "de": "Schiitische Revolution stärkte sunnitische Radikale, die ihre eigenen Monarchien als 'korrupt' angreifen wollten — Otaibis Aktion war eine Antwort im selben Jahr."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "saddam_macht_1979",
+      "target": "iran_irak_krieg_1980",
+      "type": "direkt",
+      "why": {
+        "de": "Saddams Personenherrschaft und Großmachtsambitionen ermöglichten den Alleingang in den Krieg — ohne ihn keine Invasion."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "iran_irak_krieg_1980",
+      "target": "halabja_1988",
+      "type": "direkt",
+      "why": {
+        "de": "Anfal-Kampagne gegen Kurden war Teil der Kriegsführung — Saddam beschuldigte sie der Iran-Kollaboration."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "iran_irak_krieg_1980",
+      "target": "golfkrieg_1991",
+      "type": "direkt",
+      "why": {
+        "de": "Saddam verschuldete sich massiv für den 8-Jahre-Krieg — Kuwait-Invasion sollte Schulden und Ölmarkt 'lösen'."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjet_afghanistan_1979",
+      "target": "mujahedin_cia_1980er",
+      "type": "direkt",
+      "why": {
+        "de": "US-Reaktion auf Invasion: Mujahedin-Bewaffnung als Stellvertreterkrieg gegen UdSSR."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mujahedin_cia_1980er",
+      "target": "al_qaida_gruendung_1988",
+      "type": "direkt",
+      "why": {
+        "de": "CIA und Saudi-Geld zogen tausende arabische Kämpfer nach Pakistan — Netzwerk wurde 1988 institutionalisiert als al-Qaida."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjet_afghanistan_1979",
+      "target": "sowjet_rueckzug_afghanistan_1989",
+      "type": "direkt",
+      "why": {
+        "de": "9 Jahre Krieg, hohe Verluste, wachsende innere Erschöpfung — Rückzug war die einzige Option."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjet_rueckzug_afghanistan_1989",
+      "target": "sowjetunion_zerfall_1991",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Niederlage demonstrierte Schwäche der Supermacht und kostete enorme Ressourcen — beschleunigte sowjetische Erosion."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "sowjet_rueckzug_afghanistan_1989",
+      "target": "afghanistan_buergerkrieg_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Ohne sowjetischen Druck zerfielen die Mujahedin-Fraktionen — Allianz von 1989 zerfiel in Fraktionskämpfe."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "afghanistan_buergerkrieg_1992",
+      "target": "taliban_macht_1996",
+      "type": "direkt",
+      "why": {
+        "de": "Kriegsmüde Bevölkerung sah in den Taliban Ordnungsmacht gegen Warlord-Anarchie."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "al_qaida_gruendung_1988",
+      "target": "9_11",
+      "type": "direkt",
+      "why": {
+        "de": "9/11 war von al-Qaida geplant und durchgeführt — direkte kausale Linie von Gründung zu Anschlag."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "taliban_macht_1996",
+      "target": "9_11",
+      "type": "direkt",
+      "why": {
+        "de": "Taliban gewährten al-Qaida Zuflucht in Afghanistan ab 1996 — ermöglichte Planung und Vorbereitung der Anschläge."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "taliban_macht_1996",
+      "target": "afghanistan_2001",
+      "type": "direkt",
+      "why": {
+        "de": "Taliban-Schutz für al-Qaida war Hauptbegründung für US-Invasion nach 9/11."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mujahedin_cia_1980er",
+      "target": "taliban_macht_1996",
+      "type": "indirekt",
+      "why": {
+        "de": "Pakistanischer ISI bevorzugte radikal-islamistische Fraktionen in der Mujahedin-Verteilung — schuf das Milieu, aus dem die Taliban hervorgingen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "israel_libanon_1982",
+      "target": "hisbollah_gruendung_1982",
+      "type": "direkt",
+      "why": {
+        "de": "Iran und Syrien antworteten auf israelische Invasion mit Aufbau einer schiitischen Stellvertreter-Miliz."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "iranische_revolution_1979",
+      "target": "hisbollah_gruendung_1982",
+      "type": "direkt",
+      "why": {
+        "de": "Iranische Revolutionsgarden waren das Organisations- und Finanzierungs-Rückgrat — ohne theokratischen Iran keine Hisbollah."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "israel_libanon_1982",
+      "target": "sabra_shatila_1982",
+      "type": "direkt",
+      "why": {
+        "de": "Israelische Armee unter Sharon ermöglichte den Falange-Milizen Zugang zu den Lagern — direkter Tatzusammenhang."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "hisbollah_gruendung_1982",
+      "target": "beirut_anschlag_1983",
+      "type": "direkt",
+      "why": {
+        "de": "Anschlag auf US-Marines wurde Hisbollah-nahen Gruppen zugeschrieben — Iran-finanzierte Operation."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "israel_libanon_1982",
+      "target": "erste_intifada_1987",
+      "type": "indirekt",
+      "why": {
+        "de": "Israelisches Gewaltrepertoire und Vertreibung der PLO ließen die palästinensische Frustration in den besetzten Gebieten anwachsen — kulminierte 1987."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "erste_intifada_1987",
+      "target": "oslo_abkommen_1993",
+      "type": "direkt",
+      "why": {
+        "de": "Intifada zwang Israel zur Anerkennung des palästinensischen Akteurs — Oslo war der politische Ausdruck dieser Lernkurve."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "oslo_abkommen_1993",
+      "target": "rabin_ermordung_1995",
+      "type": "direkt",
+      "why": {
+        "de": "Rechtsextreme Hetze gegen Oslo radikalisierte das Attentäter-Milieu — Mord war direkte Eskalation der Anti-Oslo-Bewegung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mekka_geiselnahme_1979",
+      "target": "mujahedin_cia_1980er",
+      "type": "indirekt",
+      "why": {
+        "de": "Saudi-Wahhabismus-Export nach Mekka-Schock führte zur Finanzierung der Afghanistan-Kämpfer und der Koranschulen, aus denen Taliban hervorgingen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "mekka_geiselnahme_1979",
+      "target": "al_qaida_gruendung_1988",
+      "type": "indirekt",
+      "why": {
+        "de": "Verschärfte saudische Religionsförderung schuf weltweit ein islamistisches Milieu, in dem bin Ladens Bewegung Anhänger fand."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "fis_algerien_1991",
+      "target": "arabischer_fruehling",
+      "type": "indirekt",
+      "why": {
+        "de": "Westliche Akzeptanz des algerischen Militärputsches prägte 20 Jahre Umgang mit arabischen Autokratien — Frust entlud sich 2010/11."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iranische_revolution_1979",
+      "target": "sowjet_afghanistan_1979",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Verlust Irans als US-Verbündeten alarmierte Moskau wegen islamischer Ausstrahlung auf zentralasiatische Sowjetrepubliken — Afghanistan-Invasion war auch ein Sicherheitsreflex."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "iran_irak_krieg_1980",
+      "target": "iran_contra_1986",
+      "type": "direkt",
+      "why": {
+        "de": "Iran-Geiselsache (Libanon-Geiseln) und Waffenbedarf Irans im Krieg gegen Saddam — beides war die Geschäftsgrundlage für die illegalen Waffenverkäufe."
+      },
+      "certainty": "belegt"
     }
   ]
 }
