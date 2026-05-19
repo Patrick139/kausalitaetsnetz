@@ -1025,13 +1025,10 @@ const linkEls = gL.selectAll(".link").data(links).join("line")
   .attr("marker-end", d => `url(#arr-${d.type})`);
 
 // ── DRAW NODES ──
+// (Drag-Funktion entfernt: störte auf Mobile (jeder Touch = Drag → ganzes Netz vibriert),
+// auf Desktop ohne echten Nutzen, da Force-Layout die Knoten ohnehin sinnvoll anordnet.)
 const nodeEls = gN.selectAll(".node").data(nodes).join("g")
   .attr("class", d => `node imp${d.imp}`)
-  .call(d3.drag()
-    .on("start", (e,d) => { if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
-    .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
-    .on("end",   (e,d) => { if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
-  )
   .on("click", (e, d) => { e.stopPropagation(); handleNodeClick(e, d); });
 
 // Native browser tooltip — funktioniert auf SVG via <title>
