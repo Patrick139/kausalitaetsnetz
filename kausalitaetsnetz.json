@@ -3169,7 +3169,7 @@
       ]
     },
     {
-      "id": "dotcom_blase_1999",
+      "id": "dotcom_blase_2000",
       "yr": 2000,
       "end_yr": 2002,
       "r": "usa",
@@ -6410,7 +6410,7 @@
     },
     {
       "source": "greenspan_fed_1987",
-      "target": "dotcom_blase_1999",
+      "target": "dotcom_blase_2000",
       "type": "direkt",
       "why": {
         "de": "Greenspans 'irrationaler Überschwang'-Rede 1996 — aber Niedrigzinsen befeuerten die Blase trotzdem weiter. Fed griff erst 2000 ein."
@@ -6473,7 +6473,7 @@
     },
     {
       "source": "netscape_ipo_1995",
-      "target": "dotcom_blase_1999",
+      "target": "dotcom_blase_2000",
       "type": "direkt",
       "why": {
         "de": "Netscape-Erfolg löste die Goldgräberstimmung aus — jeder wollte das nächste Netscape sein."
@@ -7651,7 +7651,7 @@
       "certainty": "belegt"
     },
     {
-      "source": "dotcom_blase_1999",
+      "source": "dotcom_blase_2000",
       "target": "finanzkrise_2008",
       "type": "indirekt",
       "why": {
@@ -7687,7 +7687,7 @@
       "certainty": "plausibel"
     },
     {
-      "source": "dotcom_blase_1999",
+      "source": "dotcom_blase_2000",
       "target": "facebook_2004",
       "type": "indirekt",
       "why": {
@@ -7705,7 +7705,7 @@
       "certainty": "plausibel"
     },
     {
-      "source": "dotcom_blase_1999",
+      "source": "dotcom_blase_2000",
       "target": "iphone_2007",
       "type": "indirekt",
       "why": {

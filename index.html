@@ -250,20 +250,9 @@ h1 em { color: #4a9eff; font-style: normal; }
 }
 .fb:hover { color: #c8d4e4; border-color: #3a4a60; }
 .fb.active { font-weight: 700; }
-.fb[data-r].active { color: #000 !important; }
-.fb[data-r="alle"].active    { background: #c8d4e4; border-color: #c8d4e4; }
-.fb[data-r="usa"].active     { background: #4a9eff; border-color: #4a9eff; }
-.fb[data-r="europa"].active  { background: #3dd68c; border-color: #3dd68c; }
-.fb[data-r="russland"].active{ background: #ff8c4a; border-color: #ff8c4a; }
-.fb[data-r="china"].active   { background: #ff4a6e; border-color: #ff4a6e; }
-.fb[data-r="nahost"].active  { background: #c084fc; border-color: #c084fc; }
-.fb[data-r="welt"].active    { background: #f0c040; border-color: #f0c040; }
-.fb[data-r="tech"].active    { background: #22d3ee; border-color: #22d3ee; }
-.fb[data-r="klima"].active   { background: #86efac; border-color: #86efac; }
-.fb[data-lt="alle"].active   { background: #c8d4e4; border-color: #c8d4e4; }
-.fb[data-lt="direkt"].active     { background: #ff4a6e; border-color: #ff4a6e; }
-.fb[data-lt="indirekt"].active   { background: #f0c040; border-color: #f0c040; }
-.fb[data-lt="beschleunigt"].active { background: #4a9eff; border-color: #4a9eff; }
+.fb[data-r].active { color: #000 !important; background: #c8d4e4; border-color: #c8d4e4; }
+/* Per-region accent colors get set via JS (inline style) from RCOL,
+   because there are 35+ region codes — too many for static CSS rules. */
 
 .sep-v { width: 1px; height: 14px; background: #1c2535; margin: 0 0.2rem; flex-shrink: 0; }
 
@@ -733,8 +722,8 @@ h1 em { color: #4a9eff; font-style: normal; }
     <div class="help-row"><span class="help-key">Region ▾</span><span>Nach Region filtern</span></div>
 
     <div class="help-section">LINIEN-FARBEN</div>
-    <div class="help-row"><span class="help-key" style="color:#ff4a6e">Rot</span><span>Direkte Ursache — A hat B ausgelöst</span></div>
-    <div class="help-row"><span class="help-key" style="color:#f0c040">Gelb</span><span>Indirekte Folge — A hat zu B beigetragen</span></div>
+    <div class="help-row"><span class="help-key" style="color:#ff4a6e">Rot</span><span>Direkte Verbindung — A hat B ausgelöst</span></div>
+    <div class="help-row"><span class="help-key" style="color:#f0c040">Gelb</span><span>Indirekte Verbindung — A hat zu B beigetragen</span></div>
     <div class="help-row"><span class="help-key" style="color:#4a9eff">Blau</span><span>Beschleunigt — A hat B schneller/stärker gemacht</span></div>
 
     <div class="help-section">KNOTEN-GRÖSSE</div>
@@ -766,8 +755,8 @@ h1 em { color: #4a9eff; font-style: normal; }
 </div>
 
 <div id="legend">
-  <div class="leg"><div class="ll" style="background:#ff4a6e"></div>direkte Ursache</div>
-  <div class="leg"><div class="ll" style="background:#f0c040"></div>indirekte Folge</div>
+  <div class="leg"><div class="ll" style="background:#ff4a6e"></div>direkte Verbindung</div>
+  <div class="leg"><div class="ll" style="background:#f0c040"></div>indirekte Verbindung</div>
   <div class="leg"><div class="ll" style="background:#4a9eff"></div>beschleunigt</div>
   <div class="leg" style="margin-top:0.3rem"><div class="ll" style="background:#22d3ee"></div>Kette (Shift+Klick)</div>
   <div class="leg" style="margin-top:0.3rem"><div class="lc" style="border-color:#ff4a6e;width:12px;height:12px"></div>historisch</div>
@@ -1392,7 +1381,7 @@ function renderPanel(d, causes, effects) {
 }
 
 function connCard(n, l, arr, depth = 1) {
-  const typeLabel = {direkt:"direkte Ursache", indirekt:"indirekte Folge", beschleunigt:"beschleunigt"}[l.type]||l.type;
+  const typeLabel = {direkt:"direkte Verbindung", indirekt:"indirekte Verbindung", beschleunigt:"beschleunigt"}[l.type]||l.type;
   const srcLink = l.src ? `<a class="conn-src" href="${l.src}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗ Quelle</a>` : '';
   const indirect = depth > 1 ? ' conn-indirect' : '';
   return `<div class="conn ${l.type}${indirect}" onclick="selectById('${n.id}')">
@@ -1448,6 +1437,15 @@ function applyAllFilters() {
 function applyRegionFilter() { applyAllFilters(); }
 function applyImpFilter() { applyAllFilters(); }
 function applyTagFilter() { applyAllFilters(); }
+
+// Zentrale Wahrheit: ist ein Knoten unter den aktuellen Filtern sichtbar?
+function isNodeVisible(n) {
+  const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+  if(n.imp < minImp) return false;
+  if(filterRegion !== "alle" && n.r !== filterRegion) return false;
+  if(filterTag !== "alle" && !(n.tags||[]).includes(filterTag)) return false;
+  return true;
+}
 
 // Default-Filter beim Laden anwenden (filterImp ist auf "2" voreingestellt)
 applyAllFilters();
@@ -1573,6 +1571,16 @@ document.querySelectorAll("#region-menu .dd-item").forEach(item => {
       regionBtn.textContent = `${icon} ${name} ▾`;
     }
     regionBtn.classList.toggle("active", item.dataset.r === "alle");
+    // Dynamische Farbe aus RCOL setzen (CSS hat nur eine generische Regel für alle Regionen)
+    if(item.dataset.r === "alle") {
+      regionBtn.style.background = "";
+      regionBtn.style.borderColor = "";
+    } else {
+      const col = RCOL[item.dataset.r] || "#4a6080";
+      regionBtn.style.background = col;
+      regionBtn.style.borderColor = col;
+      regionBtn.classList.add("active");  // sicherstellen dass schwarzer Text greift
+    }
     resetVisuals();
     applyRegionFilter();
     regionDropdown.classList.remove("open");
@@ -1696,6 +1704,8 @@ document.getElementById("btn-reset").addEventListener("click", () => {
   document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
   filterRegion = "alle";
   regionBtn.textContent = "Alle Bereiche ▾";
+  regionBtn.style.background = "";
+  regionBtn.style.borderColor = "";
   // Reset imp dropdown
   document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
   document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
@@ -1756,10 +1766,7 @@ svg.on("click", () => {
 
 // ── ZOOM TO FIT (Button) ──
 function zoomToFitVisible() {
-  const visible = nodes.filter(n => {
-    const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
-    return n.imp >= minImp;
-  });
+  const visible = nodes.filter(isNodeVisible);
   if(!visible.length) return;
   const xs = visible.map(n=>n.x), ys = visible.map(n=>n.y);
   const x0=Math.min(...xs), x1=Math.max(...xs);
@@ -1801,13 +1808,31 @@ searchIn.addEventListener("input", () => {
     el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${tx(n.short)}</span>`;
     el.addEventListener("click", () => {
       searchRes.innerHTML = ""; searchIn.value = "";
-      // Wenn der gesuchte Knoten durch imp-Filter ausgeblendet ist, Filter zurücksetzen
-      const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
-      if(n.imp < minImp) {
-        document.querySelectorAll("[data-imp]").forEach(b => b.classList.remove("active"));
-        document.querySelector("[data-imp='alle']").classList.add("active");
-        filterImp = "alle";
-        applyImpFilter();
+      // Wenn der gesuchte Knoten durch IRGENDEINEN aktiven Filter ausgeblendet ist,
+      // entsprechende Filter zurücksetzen (sonst bleibt der Knoten unsichtbar trotz Klick)
+      if(!isNodeVisible(n)) {
+        const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+        if(n.imp < minImp) {
+          document.querySelectorAll("#imp-menu .dd-item").forEach(b => b.classList.remove("active"));
+          document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
+          filterImp = "alle";
+          impBtn.textContent = "Alle Stufen ▾";
+        }
+        if(filterRegion !== "alle" && n.r !== filterRegion) {
+          document.querySelectorAll("#region-menu .dd-item").forEach(b => b.classList.remove("active"));
+          document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
+          filterRegion = "alle";
+          regionBtn.textContent = "Alle Bereiche ▾";
+          regionBtn.style.background = "";
+          regionBtn.style.borderColor = "";
+        }
+        if(filterTag !== "alle" && !(n.tags||[]).includes(filterTag)) {
+          document.querySelectorAll("#tag-menu .dd-item").forEach(b => b.classList.remove("active"));
+          document.querySelector("#tag-menu .dd-item[data-tag='alle']").classList.add("active");
+          filterTag = "alle";
+          tagBtn.textContent = "Alle Themen ▾";
+        }
+        applyAllFilters();
       }
       selectNode(n);
       zoomToNode(n);
