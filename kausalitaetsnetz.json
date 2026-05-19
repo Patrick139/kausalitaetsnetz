@@ -1420,6 +1420,179 @@
         "wirtschaft",
         "konzern"
       ]
+    },
+    {
+      "id": "japan_industrienation_1985",
+      "yr": 1985,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "Japan überholt USA als Top-Industrieexporteur"
+      },
+      "detail": {
+        "de": "Japan wird größter Exporteur von Industrieprodukten weltweit. 'Japan as Number One' (Ezra Vogel, 1979) scheint Realität zu werden. Aus US-Sicht: existenzielle Bedrohung der eigenen Industrie. Auslöser für US-Druck zur Yen-Aufwertung — und damit Wegbereiter des Plaza-Abkommens und der späteren Krise."
+      },
+      "tags": [
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "plaza_accord_1985",
+      "yr": 1985,
+      "end_yr": null,
+      "r": "global",
+      "imp": 3,
+      "short": {
+        "de": "Plaza-Abkommen: Dollar-Abwertung erzwungen"
+      },
+      "detail": {
+        "de": "G5-Finanzminister (USA, Japan, Westdeutschland, Frankreich, UK) einigen sich im New Yorker Plaza-Hotel auf koordinierte Dollar-Abwertung. Yen wertet binnen drei Jahren von 240 auf 120 je Dollar auf — fast Verdoppelung. Japans Exportwirtschaft bricht ein. Reaktion: extreme Geldpolitik-Lockerung, die Asset-Blase entsteht."
+      },
+      "tags": [
+        "wirtschaft",
+        "vertrag",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "japan_blase_1986",
+      "yr": 1986,
+      "end_yr": 1990,
+      "r": "japan",
+      "imp": 3,
+      "short": {
+        "de": "Asset-Blase entsteht"
+      },
+      "detail": {
+        "de": "Reaktion auf Yen-Aufwertung: Bank of Japan senkt Zinsen drastisch, Kredite fluten den Markt. Immobilienpreise verdreifachen sich 1985-1991, Nikkei steigt von 13.000 (1985) auf 38.957 (Dezember 1989). Tokios Imperial Palace-Grund angeblich wertvoller als ganz Kalifornien. Banken vergeben Kredite gegen massiv überbewertete Sicherheiten."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "japan_blase_platzt_1990",
+      "yr": 1990,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 3,
+      "short": {
+        "de": "Blase platzt — Nikkei-Crash"
+      },
+      "detail": {
+        "de": "Bank of Japan erhöht Zinsen von 2,5% auf 6%, um Spekulation zu bremsen. Nikkei stürzt 1990 von 38.957 auf unter 20.000, Immobilienpreise kollabieren. Banken sitzen auf nicht eintreibbaren Krediten. Beginn der Stagnation, die als 'verlorenes Jahrzehnt' bekannt wird — und sich zu drei verlorenen Jahrzehnten verlängert."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "verlorenes_jahrzehnt_1991",
+      "yr": 1991,
+      "end_yr": 2001,
+      "r": "japan",
+      "imp": 3,
+      "short": {
+        "de": "Das verlorene Jahrzehnt"
+      },
+      "detail": {
+        "de": "Japans Wachstum fällt von über 5% (1980er) auf unter 2% pro Jahr. Banken halten Zombie-Firmen am Leben statt Verluste zu realisieren. Deflation greift um sich. Bevölkerung beginnt zu altern und schrumpfen. Aus dem 'verlorenen Jahrzehnt' werden später drei. Japans Aufstieg zur Nummer 1 wird politisch und psychologisch beerdigt."
+      },
+      "tags": [
+        "wirtschaft",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "ldp_macht_verlust_1993",
+      "yr": 1993,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "LDP verliert Macht nach 38 Jahren"
+      },
+      "detail": {
+        "de": "Die Liberaldemokratische Partei (LDP), die Japan seit 1955 ununterbrochen regiert, verliert die Mehrheit. Koalitionsregierung unter Hosokawa folgt — kurzlebig, die LDP kehrt 1996 zurück. Zeigt aber: das Nachkriegs-Einparteiensystem ist nicht mehr unerschütterlich. Hintergrund: Korruptionsskandale, Stagnation, Generationswechsel."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "nordkorea_atomprogramm_1994",
+      "yr": 1994,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "Erste Nordkorea-Nuklearkrise"
+      },
+      "detail": {
+        "de": "Nordkorea kündigt Austritt aus dem Atomwaffensperrvertrag an. Clinton-Administration erwägt Militärschlag gegen Yongbyon-Reaktor. Krise wird durch Ex-Präsident Carter und 'Agreed Framework' entschärft: Nordkorea friert Programm ein, USA und Verbündete liefern Schweröl und Leichtwasser-Reaktoren. Japan und Südkorea finanzieren mit. Setting für die jahrzehntelange Nordkorea-Krise."
+      },
+      "tags": [
+        "geopolitik",
+        "krieg",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "kobe_erdbeben_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "Kobe-Erdbeben"
+      },
+      "detail": {
+        "de": "Am 17. Januar 1995 erschüttert ein Erdbeben der Stärke 7,3 die Region Kobe-Osaka. 6.432 Tote, 43.000 Verletzte, 640.000 beschädigte Gebäude. Staatliche Reaktion langsam und unkoordiniert — Yakuza und freiwillige NGOs leisten teils schnellere Hilfe. Erschüttert das Selbstbild eines Landes, das sich als technologisch perfekt verstand."
+      },
+      "tags": [
+        "katastrophe",
+        "umwelt",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "aum_sarin_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "Aum-Sekte verübt Sarin-Anschlag in Tokio"
+      },
+      "detail": {
+        "de": "Am 20. März 1995 setzen fünf Mitglieder der Aum-Shinrikyō-Sekte das Nervengift Sarin in der Tokioter U-Bahn frei. 14 Tote, mehr als 6.000 Verletzte. Erster großer Terror-Anschlag mit Massenvernichtungswaffe in einer modernen Großstadt. Japans Selbstbild eines sicheren, durchregelbaren Landes zerbricht. Vorbote eines neuen Terror-Zeitalters — sechs Jahre vor 9/11."
+      },
+      "tags": [
+        "terror",
+        "gesellschaft",
+        "religion"
+      ]
+    },
+    {
+      "id": "bankenkrise_japan_1997",
+      "yr": 1997,
+      "end_yr": 1998,
+      "r": "japan",
+      "imp": 2,
+      "short": {
+        "de": "Japanische Bankenkrise"
+      },
+      "detail": {
+        "de": "November 1997: Yamaichi Securities (eines der 'Big Four' Wertpapierhäuser), Hokkaido Takushoku Bank, Sanyo Securities brechen zusammen. 1998 folgen Long-Term Credit Bank und Nippon Credit Bank. Regierung pumpt 9,3 Billionen Yen Steuergeld in das Bankensystem. Verschärft durch Asienkrise und unzureichende Reform nach 1990. Vertrauen in das japanische Finanzsystem dauerhaft beschädigt."
+      },
+      "tags": [
+        "wirtschaft",
+        "konzern"
+      ]
     }
   ],
   "links": [
@@ -2412,6 +2585,96 @@
         "de": "Kim Dae-jung machte Annäherung an Nordkorea zum zentralen außenpolitischen Programm seiner Präsidentschaft."
       },
       "certainty": "belegt"
+    },
+    {
+      "source": "japan_industrienation_1985",
+      "target": "plaza_accord_1985",
+      "type": "direkt",
+      "why": {
+        "de": "Japans Handelsüberschuss und Industrie-Dominanz löste US-Druck zur Yen-Aufwertung aus — Plaza war die Antwort."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "plaza_accord_1985",
+      "target": "japan_blase_1986",
+      "type": "direkt",
+      "why": {
+        "de": "Yen-Aufwertung würgte Exporte ab — Bank of Japan reagierte mit aggressiver Zinssenkung, die Asset-Blase entstand."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "japan_blase_1986",
+      "target": "japan_blase_platzt_1990",
+      "type": "direkt",
+      "why": {
+        "de": "Jede Blase muss platzen — Frage war nur wann. BOJ-Zinserhöhung 1989/90 war der Auslöser."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "japan_blase_platzt_1990",
+      "target": "verlorenes_jahrzehnt_1991",
+      "type": "direkt",
+      "why": {
+        "de": "Banken auf faulen Krediten, überschuldete Unternehmen, eingefrorene Investitionen — die direkten Folgen des Crashs."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "verlorenes_jahrzehnt_1991",
+      "target": "bankenkrise_japan_1997",
+      "type": "indirekt",
+      "why": {
+        "de": "Sechs Jahre nicht-aufgeräumte faule Kredite und Zombie-Banken führten 1997 zur systemischen Bankenkrise — verstärkt durch Asienkrise."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "verlorenes_jahrzehnt_1991",
+      "target": "ldp_macht_verlust_1993",
+      "type": "indirekt",
+      "why": {
+        "de": "Stagnation und Vertrauensverlust in das Nachkriegs-Erfolgsmodell schwächten die regierende LDP."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "verlorenes_jahrzehnt_1991",
+      "target": "finanzkrise_1998",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Japans schwache Banken zogen Kapital aus Südostasien ab um eigene Bilanzen zu stabilisieren — beschleunigte die Asienkrise."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "bankenkrise_japan_1997",
+      "target": "finanzkrise_1998",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Japanische Banken mussten Kredite in Südostasien zurückrufen — verstärkter Liquiditätsschock in der Region."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "aum_sarin_1995",
+      "target": "9_11",
+      "type": "indirekt",
+      "why": {
+        "de": "Erster moderner Massenterror mit unkonventionellen Waffen in einer Metropole — Veränderung des Bedrohungsdenkens westlicher Sicherheitsbehörden vor 9/11."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "nordkorea_atomprogramm_1994",
+      "target": "sonnenscheinpolitik_1998",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfahrung mit Konfrontationskurs (Krise 1994) motivierte Kim Dae-jung zur Annäherungs-Strategie als Alternative."
+      },
+      "certainty": "plausibel"
     }
   ]
 }
