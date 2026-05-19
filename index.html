@@ -890,12 +890,10 @@ const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
   d3.selectAll(".cluster-label").style("opacity", overview * 0.85);
 });
 svg.call(zoom);
-// Initial-Zoom: bei k=0.55 die Karte mittig zentrieren
-// Die Karte erstreckt sich horizontal von yrToX(AXIS_MIN) bis yrToX(AXIS_MAX),
-// vertikal um H/2 + HDR_H/2 zentriert
-const initK = 0.55;
-const mapCx = (yrToX(AXIS_MIN, W) + yrToX(AXIS_MAX, W)) / 2;  // horizontaler Schwerpunkt
-const mapCy = H/2 + HDR_H/2;  // vertikaler Schwerpunkt
+// Initial-Zoom: 0.7 — Übersicht mit Cluster-Labels und Zeitachse sichtbar
+const initK = 0.7;
+const mapCx = (yrToX(AXIS_MIN, W) + yrToX(AXIS_MAX, W)) / 2;
+const mapCy = H/2 + HDR_H/2;
 const initTx = W/2 - mapCx * initK;
 const initTy = H/2 - mapCy * initK;
 svg.call(zoom.transform, d3.zoomIdentity.translate(initTx, initTy).scale(initK));
@@ -909,11 +907,11 @@ const sim = d3.forceSimulation(nodes)
       // Jahresdifferenz spürbar in Distanz übersetzen — verstärkt die horizontale Zeitordnung
       return 40 + Math.abs(s.yr - t.yr) * 2.5;
     }).strength(0.25))
-  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -520 : d.imp === 2 ? -320 : -180))
+  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -380 : d.imp === 2 ? -220 : -120))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
-  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.35))
-  .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.04));
+  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.5))
+  .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.15));
 
 // ── DRAW LINKS ──
 const linkEls = gL.selectAll(".link").data(links).join("line")
@@ -1571,8 +1569,8 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => {
     const newW = window.innerWidth, newH = window.innerHeight;
     sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
-    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.35));
-    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.04));
+    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.5));
+    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.15));
     drawAxis(newW);
     sim.alpha(0.3).restart();
   }, 200);
