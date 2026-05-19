@@ -4175,6 +4175,325 @@
         "katastrophe",
         "protest"
       ]
+    },
+    {
+      "id": "darfur_krieg_2003",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "sudan",
+      "imp": 2,
+      "short": {
+        "de": "Darfur-Krieg: Bashir und Janjaweed"
+      },
+      "detail": {
+        "de": "Ab Februar 2003 startet das Bashir-Regime mit der arabischen Janjaweed-Miliz einen Krieg gegen nicht-arabische Dörfer in Darfur. Die UN-Generalversammlung spricht 2005 von ethnischen Säuberungen, die USA von Völkermord. 300.000+ Tote, 2,5 Millionen Vertriebene. 2009 erlässt der Internationale Strafgerichtshof Haftbefehl gegen Bashir — erstmals gegen einen amtierenden Präsidenten. Die Janjaweed werden 2013 als Rapid Support Forces (RSF) verstaatlicht — dieselbe Truppe führt 2023 den Bürgerkrieg gegen die Armee."
+      },
+      "tags": [
+        "krieg",
+        "terror",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "suedsudan_unabhaengigkeit_2011",
+      "yr": 2011,
+      "end_yr": null,
+      "r": "sudan",
+      "imp": 2,
+      "short": {
+        "de": "Südsudan wird unabhängig"
+      },
+      "detail": {
+        "de": "Nach Referendum mit 98,8% Ja-Stimmen wird Südsudan am 9. Juli 2011 unabhängig — jüngster Staat der Welt. Folge des zweiten sudanesischen Bürgerkriegs (1983-2005, 2 Millionen Tote) und des Friedensabkommens von 2005. Doch schon Dezember 2013 bricht eigener Bürgerkrieg aus zwischen Präsident Kiir (Dinka) und Vize Machar (Nuer). 400.000+ Tote bis 2018. Friedensabkommen 2018 bröckelt 2025/26 wieder. Lehre: Unabhängigkeit löst keine Konflikte, sie organisiert sie neu."
+      },
+      "tags": [
+        "politik",
+        "vertrag",
+        "staat"
+      ]
+    },
+    {
+      "id": "sudan_buergerkrieg_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "sudan",
+      "imp": 3,
+      "short": {
+        "de": "Sudan-Bürgerkrieg: SAF gegen RSF"
+      },
+      "detail": {
+        "de": "Am 15. April 2023 bricht in Khartum Krieg zwischen Sudans Armee (SAF, General Burhan) und der RSF-Miliz (General Hemedti) aus — beide Generäle hatten 2019 zusammen Bashir gestürzt und 2021 die zivile Übergangsregierung. UAE bewaffnet die RSF, Ägypten und Saudi-Arabien unterstützen die SAF. el-Fasher (Darfur) fällt Oktober 2025 an RSF mit Massakern. 12 Millionen Vertriebene (größte Krise weltweit), Hungersnot in Darfur, 150.000+ Tote bis 2026. Äthiopien und Eritrea als Hintergrundakteure — Verflechtung mit Tigray-Konflikt."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "tigray_krieg_2020",
+      "yr": 2020,
+      "end_yr": 2022,
+      "r": "aethiopien",
+      "imp": 3,
+      "short": {
+        "de": "Tigray-Krieg in Äthiopien"
+      },
+      "detail": {
+        "de": "Premier Abiy Ahmed — Friedensnobelpreis 2019 für Eritrea-Versöhnung — startet am 4. November 2020 Krieg gegen die TPLF-regierte Region Tigray. Eritrea kämpft auf äthiopischer Seite (der frühere Erzfeind wird Verbündeter). UAE liefert Drohnen, die TPLF-Vormarsch auf Addis Ababa 2021 stoppen. Hungersnot wird als Waffe eingesetzt. Belgisches Forschungsinstitut schätzt 600.000+ Tote — eine der tödlichsten Konflikte des 21. Jahrhunderts, weitgehend ignoriert von Weltöffentlichkeit. Pretoria-Abkommen November 2022, aber Spannungen 2026 wieder akut."
+      },
+      "tags": [
+        "krieg",
+        "katastrophe",
+        "politik"
+      ]
+    },
+    {
+      "id": "somaliland_israel_2025",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 1,
+      "short": {
+        "de": "Israel erkennt Somaliland an"
+      },
+      "detail": {
+        "de": "Am 26. Dezember 2025 erkennt Israel als erstes Land Somaliland als unabhängigen Staat an — im Tausch gegen eine israelische Militärbasis. Löst Kaskade aus: Somalia kündigt UAE-Verträge, Saudi-Arabien geht gegen UAE-Einfluss am Horn von Afrika vor. Neue Achse Israel-Somaliland-Äthiopien gegen Saudi/Türkei/Somalia. Modell für neue Diplomatie: Anerkennung gegen Militärzugang. Verflechtung mit Iran-Krieg-Spillover, Sudan-Krieg, Tigray-Spannungen 2026."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "gaddafi_sturz_2011",
+      "yr": 2011,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 2,
+      "short": {
+        "de": "Gaddafis Sturz in Libyen"
+      },
+      "detail": {
+        "de": "Im Februar 2011 erheben sich Libyer im Sog des Arabischen Frühlings gegen Muammar al-Gaddafi (42 Jahre an der Macht). NATO-Intervention März-Oktober 2011 auf Basis UN-Resolution 1973 (Schutz von Zivilisten, von Frankreich und UK gegen anfängliche US-Zurückhaltung erkämpft). Gaddafi am 20. Oktober 2011 von Rebellen gelyncht. Libyen zerfällt seitdem in konkurrierende Regierungen Tobruk (Haftar) und Tripoli (GNU). Vakuum macht Libyen zur Mittelmeer-Migrationsroute und Waffenmagazin für Sahel — Tuareg-Söldner kehren mit Waffen nach Mali zurück und lösen 2012 die Mali-Krise aus."
+      },
+      "tags": [
+        "krieg",
+        "revolution",
+        "politik"
+      ]
+    },
+    {
+      "id": "sisi_putsch_aegypten_2013",
+      "yr": 2013,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 2,
+      "short": {
+        "de": "Sisi-Putsch in Ägypten"
+      },
+      "detail": {
+        "de": "General Abdel Fattah al-Sisi stürzt am 3. Juli 2013 den demokratisch gewählten Präsidenten Mohammed Mursi (Muslimbrüder). Rabaa-Massaker am 14. August 2013: Armee und Polizei töten 800-1.000 Demonstranten in Kairo — eines der schlimmsten Massaker des 21. Jahrhunderts an Demonstranten. Restauration der Militärherrschaft. Westen akzeptiert weitgehend (Stabilitätsargument). Lehrstück: Arabischer Frühling endet im Autoritarismus überall außer Tunesien (das 2021 unter Saied auch fällt). Sisi regiert bis heute, lässt 2019 Verfassung ändern, kann bis 2030 bleiben."
+      },
+      "tags": [
+        "politik",
+        "staat",
+        "terror"
+      ]
+    },
+    {
+      "id": "mali_putsch_2020",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "mali",
+      "imp": 2,
+      "short": {
+        "de": "Mali-Putsch: Wagner kommt, Frankreich geht"
+      },
+      "detail": {
+        "de": "August 2020: Junge Offiziere unter Oberst Goïta stürzen Präsident Keïta nach monatelangen Protesten gegen Korruption und Sicherheitskrise. Zweiter Putsch Mai 2021 — Goïta wird Übergangspräsident. Mali bricht 2022 mit Frankreich (Operation Barkhane endet), holt russische Wagner-Söldner ins Land. Auslöser für Putsche-Welle im Sahel: Burkina Faso 2022 (zwei Putsche), Niger 2023, Gabun 2023, Guinea-Bissau 2023. Russisches Sicherheitsmodell ersetzt französische Architektur in einer ganzen Region."
+      },
+      "tags": [
+        "politik",
+        "staat",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "niger_putsch_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 2,
+      "short": {
+        "de": "Niger-Putsch: Letzter pro-westlicher Sahel-Staat fällt"
+      },
+      "detail": {
+        "de": "Am 26. Juli 2023 stürzt General Tchiani den demokratisch gewählten Präsidenten Bazoum — letzter pro-westlicher Sahel-Staat fällt. ECOWAS droht Militärintervention, zieht zurück. Niger schließt US-Drohnenbasen in Agadez und Niamey (waren Drehkreuz für die Sahel-ISR-Mission). Allianz der Sahel-Staaten (Mali, Burkina Faso, Niger) erklärt 2024 Austritt aus ECOWAS, dreht sich Richtung Russland und Sahara-Föderation. USA versuchen 2025/26 Reengagement via Mali."
+      },
+      "tags": [
+        "politik",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "jnim_issp_konflikt_2025",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "mali",
+      "imp": 1,
+      "short": {
+        "de": "JNIM-ISSP-Krieg eskaliert im Sahel"
+      },
+      "detail": {
+        "de": "Seit Ende 2025 eskalierter Krieg zwischen al-Qaida-Affiliat JNIM und ISIS-Sahel-Provinz ISSP im Dreiländereck Mali-Burkina-Niger. JNIM blockiert ab September 2025 die Treibstoff-Versorgung südlicher Mali-Städte — Bamako leidet unter Stromausfällen. ISSP greift Januar/März 2026 Flughäfen Niamey und Tahoua an. Über 200 Tote allein Q4 2025. Sahel wird zum globalen Epizentrum dschihadistischer Gewalt — mehr Tote als in Naher Osten zusammen 2024-25."
+      },
+      "tags": [
+        "krieg",
+        "terror"
+      ]
+    },
+    {
+      "id": "boko_haram_2014",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "nigeria",
+      "imp": 2,
+      "short": {
+        "de": "Boko Haram entführt Chibok-Schulmädchen"
+      },
+      "detail": {
+        "de": "Am 14. April 2014 entführt Boko Haram 276 Schulmädchen aus Chibok, Nordost-Nigeria. #BringBackOurGirls wird globale Kampagne (Michelle Obama, US-Politiker). Boko Haram (entstanden 2009 nach Erschießung des Gründers Mohammed Yusuf in Polizeigewahrsam) kontrolliert 2014-15 Gebiet von Belgien-Größe in Borno-Staat. Spaltet sich 2016 in IS-Affiliat ISWAP und Boko-Haram-Kern unter Shekau. Über 350.000 Tote im Lake-Chad-Becken (Nigeria, Niger, Tschad, Kamerun) bis 2025. Eines der am wenigsten beachteten Konflikt-Theater der Welt."
+      },
+      "tags": [
+        "terror",
+        "krieg",
+        "religion"
+      ]
+    },
+    {
+      "id": "nigeria_endsars_2020",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "nigeria",
+      "imp": 1,
+      "short": {
+        "de": "EndSARS-Proteste in Nigeria"
+      },
+      "detail": {
+        "de": "Oktober 2020: Massenproteste gegen die berüchtigte Polizeieinheit SARS (Special Anti-Robbery Squad) und Polizeigewalt allgemein. #EndSARS wird globale Social-Media-Bewegung. Militär schießt am 20. Oktober am Lekki Toll Gate auf friedliche Demonstranten — mindestens 12 Tote. Junge Nigerianer (Generation Z, Median-Alter 18, 60% der Bevölkerung unter 25) gegen alternde Eliten und kolonialgeprägte Sicherheitsstrukturen. Vorbote nigerianischer Demokratiekrise und Vertrauensbruch zur Buhari-Generation."
+      },
+      "tags": [
+        "protest",
+        "gesellschaft",
+        "bewegung"
+      ]
+    },
+    {
+      "id": "m23_drc_2012",
+      "yr": 2012,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 2,
+      "short": {
+        "de": "M23-Aufstand im Ost-Kongo"
+      },
+      "detail": {
+        "de": "April 2012: Die M23-Miliz rebelliert im Ost-Kongo (Nord-Kivu) gegen die Regierung. Stark unterstützt durch Ruanda (UN-Expertenberichte 2012, 2022, 2024 bestätigen). M23 erobert November 2024 Goma, eine Millionenstadt — Beginn der schweren Eskalation 2025/26 mit der 'Alliance Fleuve Congo' (M23 plus weitere Milizen). Kobalt-, Coltan- und Goldreichtum als ökonomischer Treiber — Smartphones der Welt enthalten Mineralien aus diesem Krieg. Erinnert an Erste/Zweite Kongo-Kriege 1996-2003 (6 Millionen Tote, deadlichster Konflikt seit Zweitem Weltkrieg)."
+      },
+      "tags": [
+        "krieg",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "kenia_wahlgewalt_2007",
+      "yr": 2007,
+      "end_yr": 2008,
+      "r": "afrika",
+      "imp": 1,
+      "short": {
+        "de": "Wahlgewalt in Kenia"
+      },
+      "detail": {
+        "de": "Dezember 2007: Umstrittene Präsidentschaftswahl Kibaki gegen Odinga eskaliert zu ethnischer Gewalt zwischen Kikuyu und Luo. 1.200+ Tote, 600.000 Vertriebene innerhalb weniger Wochen. ICC-Anklage 2010 gegen Uhuru Kenyatta und William Ruto (beide werden später Präsident/Vize). Erschüttert Kenias Ruf als stabile Demokratie. Power-Sharing-Vertrag 2008 unter Kofi-Annan-Vermittlung — frühes Beispiel für post-electoral Konfliktlösung in Afrika."
+      },
+      "tags": [
+        "wahl",
+        "krieg",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "marikana_massaker_2012",
+      "yr": 2012,
+      "end_yr": null,
+      "r": "suedafrika",
+      "imp": 2,
+      "short": {
+        "de": "Marikana-Massaker"
+      },
+      "detail": {
+        "de": "Am 16. August 2012 erschießt südafrikanische Polizei 34 streikende Bergleute der Lonmin-Platinmine in Marikana, weitere 78 werden verletzt. Schlimmstes Polizeigewalt-Ereignis Südafrikas seit dem Ende der Apartheid 1994. ANC-Regierung diskreditiert sich als angeblicher Schützer der Armen. Cyril Ramaphosa (damals Lonmin-Direktor, heute Präsident) in interne E-Mails verwickelt, die ein hartes Vorgehen verlangten. Symbol für ANC-Korruption und persistente Ungleichheit — 30 Jahre nach Apartheid bleibt Südafrika das ungleichste Land der Welt (Gini ~0,63)."
+      },
+      "tags": [
+        "protest",
+        "katastrophe",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "zuma_ruecktritt_2018",
+      "yr": 2018,
+      "end_yr": null,
+      "r": "suedafrika",
+      "imp": 1,
+      "short": {
+        "de": "Zuma-Rücktritt: State Capture aufgedeckt"
+      },
+      "detail": {
+        "de": "Jacob Zuma tritt unter ANC-Druck am 14. Februar 2018 zurück, nach 9 Jahren Präsidentschaft und über 700 Korruptionsanklagen. Zondo-Kommission deckt 'State Capture' durch die indisch-südafrikanische Gupta-Familie auf — Ministerien wurden gegen Geld besetzt. Cyril Ramaphosa wird Nachfolger. Zuma 2021 wegen Missachtung der Kommission verhaftet — landesweite Unruhen mit 300+ Toten und 25 Mrd. Rand Schaden folgen. Sinnbild: ANC verlor seine moralische Führung — Wahlergebnis 2024 fällt erstmals unter 50%."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "covid_afrika_2020",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 1,
+      "short": {
+        "de": "Impfstoff-Apartheid trifft Afrika"
+      },
+      "detail": {
+        "de": "COVID-19 trifft Afrika anders als befürchtet: niedrige offizielle Sterblichkeit (junge Bevölkerung, Median-Alter 19), aber massive wirtschaftliche Schäden (-2,1% BIP 2020, erste Rezession seit 25 Jahren). Impfstoff-Apartheid: bis Ende 2021 nur 8% der Afrikaner geimpft (vs. 70% in EU). African Union gründet Africa Vaccine Acquisition Trust (AVAT). Lehre: Globaler Süden auf Selbstversorgung angewiesen. mRNA-Fabriken in Südafrika (Afrigen), Ruanda (BioNTech) und Senegal (Institut Pasteur) angeschoben — werden 2024-26 produktionsbereit."
+      },
+      "tags": [
+        "gesundheit",
+        "katastrophe",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "mosambik_zyklon_idai_2019",
+      "yr": 2019,
+      "end_yr": null,
+      "r": "afrika",
+      "imp": 1,
+      "short": {
+        "de": "Zyklon Idai: Klimakatastrophe Südostafrika"
+      },
+      "detail": {
+        "de": "Tropischer Wirbelsturm Idai trifft am 14. März 2019 Mosambik, Simbabwe, Malawi. Stärkster Tropensturm der südlichen Hemisphäre damals. 1.300+ Tote, 3 Millionen Betroffene. Beira (Mosambik, 500.000 Einwohner) zu 90% zerstört. Sechs Wochen später schon Zyklon Kenneth — zwei Kategorie-4-Stürme in derselben Saison sind extrem ungewöhnlich. Klimawandel-Symbol: Afrika trägt 4% der globalen Emissionen, leidet überproportional unter Folgen. Mosambik gehört zu den Top-3-Klimarisiko-Ländern weltweit."
+      },
+      "tags": [
+        "katastrophe",
+        "klima",
+        "umwelt"
+      ]
     }
   ],
   "links": [
@@ -6895,6 +7214,132 @@
         "de": "Demokratische Argentinien und Brasilien öffneten politisch das Tor für regionale Integration — Mercosur unter Diktaturen undenkbar."
       },
       "certainty": "belegt"
+    },
+    {
+      "source": "darfur_krieg_2003",
+      "target": "sudan_buergerkrieg_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Janjaweed-Miliz wurde 2013 als Rapid Support Forces verstaatlicht — RSF ist heute eine der zwei Kriegsparteien gegen die Armee."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "suedsudan_unabhaengigkeit_2011",
+      "target": "sudan_buergerkrieg_2023",
+      "type": "indirekt",
+      "why": {
+        "de": "Verlust des Ölgebiets südlich destabilisierte Bashir-Regime ökonomisch — beschleunigte 2019 seinen Sturz und Aufstieg der Militär-RSF-Doppelmacht."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "tigray_krieg_2020",
+      "target": "sudan_buergerkrieg_2023",
+      "type": "indirekt",
+      "why": {
+        "de": "Äthiopien stabilisierte sich durch Drohnenhilfe der UAE — UAE wendet dieselbe Methode später bei RSF im Sudan an. Regionale Proxy-Achsen verfestigen sich am Horn."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "arabischer_fruehling",
+      "target": "gaddafi_sturz_2011",
+      "type": "direkt",
+      "why": {
+        "de": "Libyer übernahmen Repertoire der tunesischen und ägyptischen Revolutionen ab Februar 2011."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "arabischer_fruehling",
+      "target": "sisi_putsch_aegypten_2013",
+      "type": "indirekt",
+      "why": {
+        "de": "Mursis Wahl 2012 war direkte Folge des Sturzes Mubaraks — Sisi-Putsch war konterrevolutionäre Antwort der Militärs auf islamistische Wahlgewinne."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "arabischer_fruehling",
+      "target": "syrien_krieg",
+      "type": "direkt",
+      "why": {
+        "de": "Syrische Proteste März 2011 folgten direkt dem regionalen Protest-Repertoire — Assad antwortet mit Gewalt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "gaddafi_sturz_2011",
+      "target": "mali_putsch_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Tuareg-Söldner kehrten mit libyschen Waffen nach Mali zurück, lösten 2012 Mali-Krise aus — Sicherheits-Erosion gipfelt 2020 im Putsch."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "mali_putsch_2020",
+      "target": "niger_putsch_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Mali-Modell (Putsch + Russland + Anti-Frankreich) wurde Vorbild für Burkina Faso 2022, Niger 2023. Putsche werden in Nachbarländern wahrnehmbar erfolgreich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "niger_putsch_2023",
+      "target": "jnim_issp_konflikt_2025",
+      "type": "indirekt",
+      "why": {
+        "de": "Rückzug westlicher Anti-Terror-Operationen (Frankreich, US-Drohnen) schuf Vakuum — Dschihadisten konkurrieren untereinander um die offene Region."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "mali_putsch_2020",
+      "target": "jnim_issp_konflikt_2025",
+      "type": "indirekt",
+      "why": {
+        "de": "Wagner-Söldner und malische Armee scheitern an Aufstandsbekämpfung — JNIM und ISSP expandieren, treffen aufeinander."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "arabischer_fruehling",
+      "target": "boko_haram_2014",
+      "type": "indirekt",
+      "why": {
+        "de": "Globale Welle islamistischer Mobilisierung 2011-2014 und Waffenfluss aus Libyen stärkten westafrikanische Dschihad-Bewegungen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ruanda_voelkermord_1994",
+      "target": "m23_drc_2012",
+      "type": "indirekt",
+      "why": {
+        "de": "Hutu-Tutsi-Konflikt verlagerte sich nach 1994 in den Ost-Kongo — M23 ist Teil dieser ungelösten regionalen Dynamik mit ruandischer Unterstützung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "tigray_krieg_2020",
+      "target": "somaliland_israel_2025",
+      "type": "indirekt",
+      "why": {
+        "de": "Äthiopien-Strategie der UAE-Allianz beinhaltet Hafen-Zugang über Somaliland — Israel-Anerkennung passt in Achse Israel-UAE-Äthiopien."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "marikana_massaker_2012",
+      "target": "zuma_ruecktritt_2018",
+      "type": "indirekt",
+      "why": {
+        "de": "Massaker brach moralische Autorität des ANC — Korruptionsskandale (State Capture) konnten danach das öffentliche Vertrauen vollständig erodieren."
+      },
+      "certainty": "plausibel"
     }
   ]
 }
