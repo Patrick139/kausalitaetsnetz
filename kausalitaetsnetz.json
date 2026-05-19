@@ -1593,6 +1593,177 @@
         "wirtschaft",
         "konzern"
       ]
+    },
+    {
+      "id": "mao_tod_1976",
+      "yr": 1976,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "Mao Zedong stirbt"
+      },
+      "detail": {
+        "de": "Mao Zedong stirbt am 9. September 1976 nach 27 Jahren absoluter Macht. Kulturrevolution endet, Viererbande wird verhaftet. Machtvakuum öffnet den Weg für Deng Xiaoping. Beginn einer fundamentalen Neuausrichtung Chinas — vom maoistischen Klassenkampf zur Reform-Politik."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "deng_reformen_1978",
+      "yr": 1978,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "Deng Xiaoping startet Reform und Öffnung"
+      },
+      "detail": {
+        "de": "Beim 3. Plenum des 11. ZK der KPCh im Dezember 1978 leitet Deng Xiaoping 'Reform und Öffnung' ein. Marktelemente werden zugelassen, Landwirtschaft de-kollektiviert, Staatsbetriebe dürfen Gewinne behalten. 1979: erste Sonderwirtschaftszonen in Shenzhen, Zhuhai, Shantou, Xiamen. Beginn des wirtschaftlichen Aufstiegs — und der Spannung zwischen wirtschaftlicher Liberalisierung und politischer Kontrolle."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "usa_china_anerkennung_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "USA erkennt Volksrepublik China an"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1979 nehmen USA und Volksrepublik China formelle diplomatische Beziehungen auf. Carter beendet die offizielle Anerkennung Taiwans (auch wenn die Beziehungen informell weitergehen). Westliche Investitionen und Technologie strömen nach China. Strategische Allianz gegen die Sowjetunion."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "sino_britische_erklaerung_1984",
+      "yr": 1984,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "Sino-Britische Erklärung über Hongkong"
+      },
+      "detail": {
+        "de": "Großbritannien und China unterzeichnen am 19. Dezember 1984 die Vereinbarung über die Rückgabe Hongkongs. Übergabe-Datum: 1. Juli 1997. Deng Xiaoping prägt das Konzept 'Ein Land, zwei Systeme': Hongkong soll seinen Kapitalismus, seine Justiz und seine Lebensweise für 50 Jahre behalten. Hongkongs Bevölkerung ist an den Verhandlungen nicht beteiligt."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "tiananmen_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "Tiananmen-Massaker"
+      },
+      "detail": {
+        "de": "Wochenlange Studenten- und Bürgerproteste auf dem Tiananmen-Platz fordern politische Reformen und Demokratie. Auslöser: Tod des reformistischen Parteichefs Hu Yaobang am 15. April. In der Nacht zum 4. Juni 1989 lässt Deng Xiaoping die Armee gegen die unbewaffneten Demonstranten vorrücken. Hunderte bis Tausende Tote. Politische Reformen werden auf Eis gelegt — endgültig. Westen verhängt Waffenembargo. Markiert den Punkt, an dem die KPCh entscheidet: wirtschaftliche Öffnung ja, politische niemals."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "staat"
+      ]
+    },
+    {
+      "id": "deng_suedreise_1992",
+      "yr": 1992,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "Dengs Südreise rettet die Marktreformen"
+      },
+      "detail": {
+        "de": "Nach Tiananmen und dem Zusammenbruch der Sowjetunion drohen Konservative in der KPCh, die Wirtschaftsreformen rückgängig zu machen. Im Januar/Februar 1992 reist der offiziell zurückgetretene Deng Xiaoping nach Shenzhen, Zhuhai, Shanghai. Sagt: 'Reich zu werden ist ehrenvoll.' Mit Militärrückendeckung zwingt er die Parteiführung um Jiang Zemin auf den Reformkurs zurück. Beginn des chinesischen Wirtschaftswunders im großen Stil."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "china_werkbank_1990er",
+      "yr": 1995,
+      "end_yr": 2001,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "China wird globale Werkbank"
+      },
+      "detail": {
+        "de": "Nach Dengs Südreise strömt ausländisches Kapital nach China. Westliche Konzerne verlagern Produktion massenhaft — Textilien, Elektronik, Spielzeug, später alles. Chinas BIP wächst zweistellig. Bis Ende der 1990er ist China unverzichtbar für globale Lieferketten. Bereitet den WTO-Beitritt 2001 vor — Verhandlungen laufen seit 1986."
+      },
+      "tags": [
+        "wirtschaft",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "hongkong_uebergabe_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "Hongkong-Übergabe an China"
+      },
+      "detail": {
+        "de": "Am 1. Juli 1997, Mitternacht, geht Hongkong nach 156 Jahren britischer Herrschaft an China zurück. 'Ein Land, zwei Systeme' für 50 Jahre garantiert. 4.000 PLA-Soldaten marschieren ein. Symbolisch markiert es das Ende der westlichen Kolonialära in Asien. Chinas Wiederaufstieg zur Großmacht wird greifbar. Spannungen zwischen Hongkongs Demokratiebewegung und Peking beginnen sich aufzubauen."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "macau_uebergabe_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "china",
+      "imp": 1,
+      "short": {
+        "de": "Macau-Übergabe an China"
+      },
+      "detail": {
+        "de": "Am 20. Dezember 1999 geht Macau nach 442 Jahren von Portugal an China zurück. Wie Hongkong unter 'Ein Land, zwei Systeme'. Schließt symbolisch das Kapitel europäischer Kolonien in Asien."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "alibaba_gruendung_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "Alibaba gegründet"
+      },
+      "detail": {
+        "de": "Jack Ma gründet am 4. April 1999 in Hangzhou Alibaba.com. Beginn des chinesischen Internet-Konzerns, der später Amazon-Konkurrent und Tech-Gigant wird. Symbol für Chinas Aufstieg vom Industriestandort zum Tech-Player. Eine neue Generation chinesischer Unternehmer entsteht — bis sie unter Xi Jinping politisch gezähmt wird."
+      },
+      "tags": [
+        "technologie",
+        "konzern"
+      ]
     }
   ],
   "links": [
@@ -2673,6 +2844,105 @@
       "type": "indirekt",
       "why": {
         "de": "Erfahrung mit Konfrontationskurs (Krise 1994) motivierte Kim Dae-jung zur Annäherungs-Strategie als Alternative."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "mao_tod_1976",
+      "target": "deng_reformen_1978",
+      "type": "direkt",
+      "why": {
+        "de": "Maos Tod und das Machtvakuum nach der Kulturrevolution ermöglichten Dengs Reformkurs gegen die maoistische Orthodoxie."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "deng_reformen_1978",
+      "target": "usa_china_anerkennung_1979",
+      "type": "direkt",
+      "why": {
+        "de": "Dengs Öffnungspolitik war Voraussetzung für die formelle Anerkennung — Carter sah ein neues, reformbereites China."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "deng_reformen_1978",
+      "target": "sino_britische_erklaerung_1984",
+      "type": "indirekt",
+      "why": {
+        "de": "Dengs Reformkurs machte 'Ein Land, zwei Systeme' für Großbritannien glaubwürdig genug, um Hongkong friedlich zurückzugeben."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "deng_reformen_1978",
+      "target": "tiananmen_1989",
+      "type": "indirekt",
+      "why": {
+        "de": "Wirtschaftliche Öffnung ohne politische Reform erzeugte Inflation, Korruption und neue Bildungseliten — Spannung entlud sich 1989."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "tiananmen_1989",
+      "target": "deng_suedreise_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Konservative versuchten nach 1989 die Reformen rückgängig zu machen — Dengs Südreise war Gegenoffensive zur Rettung des Reformkurses."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "deng_suedreise_1992",
+      "target": "china_werkbank_1990er",
+      "type": "direkt",
+      "why": {
+        "de": "Dengs Sieg über die Konservativen löste die zweite, viel größere Welle ausländischer Investitionen und Produktionsverlagerungen aus."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "china_werkbank_1990er",
+      "target": "alibaba_gruendung_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Wirtschaftsboom und Internet-Aufstieg ermöglichten eine neue chinesische Unternehmergeneration."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "sino_britische_erklaerung_1984",
+      "target": "hongkong_uebergabe_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Die Erklärung legte Übergabe-Datum und Modus rechtsverbindlich fest."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "hongkong_uebergabe_1997",
+      "target": "macau_uebergabe_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Hongkong-Modell ('Ein Land, zwei Systeme') wurde direkter Präzedenzfall für Macau-Übergabe zwei Jahre später."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "juni_aufstand_1987",
+      "target": "tiananmen_1989",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfolgreiche Demokratiebewegung in Südkorea (und Philippinen, Taiwan) inspirierte chinesische Studenten — zeigte: autoritäre Regime in Asien sind nicht unangreifbar."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "tiananmen_1989",
+      "target": "hongkong_2019",
+      "type": "indirekt",
+      "why": {
+        "de": "Hongkonger sahen 1989, wie Peking mit Demokratiebewegungen umgeht. Das prägte das Misstrauen über Jahrzehnte und befeuerte 2019 die Proteste gegen das Auslieferungsgesetz."
       },
       "certainty": "plausibel"
     }
