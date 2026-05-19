@@ -246,7 +246,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   border: 1px solid #1c2535; background: transparent;
   color: #4a6080; cursor: pointer;
   letter-spacing: 0.07em; text-transform: uppercase;
-  transition: all 0.1s; white-space: nowrap;
+  transition: color 0.1s, background 0.1s, border-color 0.1s; white-space: nowrap;
 }
 .fb:hover { color: #c8d4e4; border-color: #3a4a60; }
 .fb.active { font-weight: 700; }
@@ -275,7 +275,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   font-size: 0.7rem; cursor: pointer;
   display: flex; gap: 0.4rem; align-items: center;
 }
-.sr:hover { border-color: #3a4a60; }
+.sr:hover, .sr.sr-active { border-color: #3a4a60; background: rgba(28,37,53,0.98); }
 .sr-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
 .sr-yr { font-family: monospace; font-size: 0.58rem; color: #4a6080; flex-shrink: 0; }
 
@@ -291,7 +291,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   font-size: 0.65rem; padding: 0.2rem 0.55rem;
   border-radius: 2px; border: 1px solid #1c2535;
   background: transparent; color: #4a6080;
-  cursor: pointer; transition: all 0.1s;
+  cursor: pointer; transition: color 0.1s, background 0.1s, border-color 0.1s;
   white-space: nowrap;
 }
 .icon-btn:hover { color: #c8d4e4; border-color: #3a4a60; }
@@ -323,7 +323,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   font-family: monospace; font-size: 0.58rem;
   background: none; border: 1px solid #1c2535;
   color: #4a6080; cursor: pointer; padding: 0.18rem 0.5rem;
-  border-radius: 2px; transition: all 0.1s;
+  border-radius: 2px; transition: color 0.1s, background 0.1s, border-color 0.1s;
 }
 .pf-btn.active { background: #1c2535; color: #c8d4e4; }
 .pf-btn:hover { border-color: #3a4a60; }
@@ -338,7 +338,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   font-family: monospace; font-size: 0.58rem; letter-spacing: 0.05em;
   color: #4a9eff; border: 1px solid rgba(74,158,255,0.3);
   padding: 0.18rem 0.5rem; border-radius: 2px;
-  text-decoration: none; transition: all 0.1s;
+  text-decoration: none; transition: color 0.1s, background 0.1s, border-color 0.1s;
 }
 .p-src:hover { background: rgba(74,158,255,0.08); border-color: #4a9eff; }
 .conn-src {
@@ -450,7 +450,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   width: 22px; height: 22px; border-radius: 2px;
   font-size: 0.7rem; line-height: 1;
   display: flex; align-items: center; justify-content: center;
-  transition: all 0.1s;
+  transition: color 0.1s, background 0.1s, border-color 0.1s;
 }
 .depth-btn:hover:not(:disabled) { border-color: #4a9eff; color: #4a9eff; }
 .depth-btn:disabled { opacity: 0.25; cursor: not-allowed; }
@@ -648,8 +648,8 @@ h1 em { color: #4a9eff; font-style: normal; }
     <!-- Region dropdown -->
     <div class="dropdown" id="region-dropdown">
       <div class="dd-label">BEREICH</div>
-      <button class="fb active" id="region-btn">Alle Bereiche ▾</button>
-      <div class="dropdown-menu" id="region-menu">
+      <button class="fb active" id="region-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Region-Filter">Alle Bereiche ▾</button>
+      <div class="dropdown-menu" id="region-menu" role="listbox" aria-label="Regionen">
         <!-- dynamisch befüllt aus den Daten -->
       </div>
     </div>
@@ -657,41 +657,41 @@ h1 em { color: #4a9eff; font-style: normal; }
     <!-- Importance dropdown -->
     <div class="dropdown" id="imp-dropdown">
       <div class="dd-label">WICHTIGKEIT</div>
-      <button class="fb active" id="imp-btn">★★ Wichtig + Historisch ▾</button>
-      <div class="dropdown-menu" id="imp-menu">
-        <div class="dd-item" data-imp="alle">★ Alle</div>
-        <div class="dd-item active" data-imp="2">★★ Wichtig + Historisch</div>
-        <div class="dd-item" data-imp="3">★★★ Nur Historisch</div>
+      <button class="fb active" id="imp-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Wichtigkeits-Filter">★★ Wichtig + Historisch ▾</button>
+      <div class="dropdown-menu" id="imp-menu" role="listbox" aria-label="Wichtigkeits-Stufen">
+        <div class="dd-item" data-imp="alle" role="option">★ Alle</div>
+        <div class="dd-item active" data-imp="2" role="option" aria-selected="true">★★ Wichtig + Historisch</div>
+        <div class="dd-item" data-imp="3" role="option">★★★ Nur Historisch</div>
       </div>
     </div>
     <div class="sep-v"></div>
     <!-- Tag (Thema) dropdown -->
     <div class="dropdown" id="tag-dropdown">
       <div class="dd-label">THEMA</div>
-      <button class="fb active" id="tag-btn">Alle Themen ▾</button>
-      <div class="dropdown-menu" id="tag-menu">
+      <button class="fb active" id="tag-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Themen-Filter">Alle Themen ▾</button>
+      <div class="dropdown-menu" id="tag-menu" role="listbox" aria-label="Themen">
         <!-- wird per JS gefüllt -->
       </div>
     </div>
     <div class="sep-v"></div>
     <!-- Tools -->
-    <button class="icon-btn" id="btn-path">⇢ Kette</button>
-    <button class="icon-btn" id="btn-help">? Hilfe</button>
-    <button class="icon-btn" id="btn-reset">✕ Reset</button>
+    <button class="icon-btn" id="btn-path" aria-label="Kausalkette zwischen zwei Knoten finden">⇢ Kette</button>
+    <button class="icon-btn" id="btn-help" aria-label="Hilfe anzeigen">? Hilfe</button>
+    <button class="icon-btn" id="btn-reset" aria-label="Alle Filter zurücksetzen">✕ Reset</button>
     <div class="sep-v"></div>
     <div id="search-wrap">
-      <input id="search-in" type="text" placeholder="Suche...">
-      <div id="search-res"></div>
+      <input id="search-in" type="text" placeholder="Suche..." aria-label="Knoten suchen" autocomplete="off">
+      <div id="search-res" role="listbox" aria-label="Suchergebnisse"></div>
     </div>
     <div id="path-hint">Klicke zwei Knoten nacheinander</div>
   </div>
 </div>
 
 <!-- HILFE OVERLAY -->
-<div id="help-overlay" style="display:none">
+<div id="help-overlay" role="dialog" aria-modal="true" aria-labelledby="help-title" style="display:none">
   <div id="help-box">
-    <button id="help-close">✕</button>
-    <div class="help-title">Kausal<em>netz</em></div>
+    <button id="help-close" aria-label="Hilfe schließen">✕</button>
+    <div class="help-title" id="help-title">Kausal<em>netz</em></div>
 
     <div class="help-text" style="color:#c8d4e4;font-size:0.82rem;line-height:1.7;margin-bottom:1rem">
       Geschichte wird meistens falsch präsentiert: chronologisch, vollständig, neutral, trocken. Schule. Lehrbuch. Wikipedia.
@@ -747,14 +747,14 @@ h1 em { color: #4a9eff; font-style: normal; }
   <g id="g-nodes"></g>
 </svg>
 
-<div id="panel">
-  <div id="panel-handle"></div>
-  <button id="minimize-btn" title="Panel ausblenden, Auswahl behalten">▼ Panel zu</button>
-  <button id="close-btn">✕</button>
+<div id="panel" role="complementary" aria-label="Knotendetails">
+  <div id="panel-handle" aria-hidden="true"></div>
+  <button id="minimize-btn" title="Panel ausblenden, Auswahl behalten" aria-label="Panel ausblenden">▼ Panel zu</button>
+  <button id="close-btn" aria-label="Panel schließen und Auswahl zurücksetzen">✕</button>
   <div id="panel-content"></div>
 </div>
 
-<div id="legend">
+<div id="legend" aria-hidden="true">
   <div class="leg"><div class="ll" style="background:#ff4a6e"></div>direkte Verbindung</div>
   <div class="leg"><div class="ll" style="background:#f0c040"></div>indirekte Verbindung</div>
   <div class="leg"><div class="ll" style="background:#4a9eff"></div>beschleunigt</div>
@@ -764,7 +764,7 @@ h1 em { color: #4a9eff; font-style: normal; }
   <div class="leg"><div class="lc" style="border-color:#3a4a60"></div>relevant</div>
 </div>
 
-<button id="zoom-fit">⊡ Zoom zurücksetzen</button>
+<button id="zoom-fit" aria-label="Auf sichtbare Knoten zoomen">⊡ Zoom zurücksetzen</button>
 
 <script>
 // ╔══════════════════════════════════════════════════════════════╗
@@ -842,7 +842,7 @@ function tx(obj) {
   return obj[LANG] || obj.de || obj.en || Object.values(obj)[0] || '';
 }
 
-const W = window.innerWidth, H = window.innerHeight;
+let W = window.innerWidth, H = window.innerHeight;
 // Header-Höhe dynamisch: auf Mobile wickelt der Header mehrzeilig
 let HDR_H = (document.getElementById('hdr')?.offsetHeight) || (W < 768 ? 130 : 70);
 
@@ -1007,14 +1007,16 @@ const initTx = W/2 - mapCx * initK;
 const initTy = H/2 - mapCy * initK;
 svg.call(zoom.transform, d3.zoomIdentity.translate(initTx, initTy).scale(initK));
 
+// Link-Distanz vorab berechnen (war: bei jedem Force-Tick neu, ~43k Lookups/s bei 60fps)
+links.forEach(l => {
+  const s = byId[l.source.id||l.source], t = byId[l.target.id||l.target];
+  l._dist = (s && t) ? 40 + Math.abs(s.yr - t.yr) * 2.5 : 120;
+});
+
 // ── SIMULATION ──
 const sim = d3.forceSimulation(nodes)
   .force("link", d3.forceLink(links).id(d => d.id)
-    .distance(d => {
-      const s = byId[d.source.id||d.source], t = byId[d.target.id||d.target];
-      if(!s||!t) return 120;
-      return 40 + Math.abs(s.yr - t.yr) * 2.5;
-    }).strength(0.15))
+    .distance(d => d._dist).strength(0.15))
   .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -250 : d.imp === 2 ? -160 : -100))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
@@ -1063,7 +1065,7 @@ nodeEls.filter(d => d.imp >= 2).append("text")
   .attr("dy", "0.35em").attr("text-anchor", "middle")
   .style("font-size", "8px").style("font-family", "monospace")
   .style("fill", d => RCOL[d.r]||"#4a6080")
-  .text(d => String(d.yr));
+  .text(d => d.yr);
 
 // ── TICK ──
 sim.on("tick", () => {
@@ -1456,7 +1458,10 @@ sim.on("end", () => {
   // Achse unter den niedrigsten Knoten platzieren
   const maxY = Math.max(...nodes.map(n => n.y || 0));
   axisY = maxY + 50;
-  drawAxis(window.innerWidth);
+  drawAxis(W);
+  // Sim explizit stoppen — D3 stoppt zwar automatisch wenn alpha < alphaMin,
+  // aber explizit ist sicherer (keine zukünftigen Ticks die unnötig CPU kosten)
+  sim.stop();
 });
 
 // ── CONTROLS ──
@@ -1478,6 +1483,45 @@ document.getElementById("help-close").addEventListener("click", () => {
   document.getElementById("help-overlay").style.display = "none";
 });
 
+// ── KEYBOARD: Esc schließt Help-Overlay, Panel und Dropdowns ──
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape") {
+    const helpOverlay = document.getElementById("help-overlay");
+    if(helpOverlay.style.display !== "none") {
+      helpOverlay.style.display = "none";
+      return;
+    }
+    // Geöffnete Dropdowns schließen
+    const openDd = document.querySelector(".dropdown.open");
+    if(openDd) {
+      openDd.classList.remove("open");
+      return;
+    }
+    // Panel schließen + Auswahl zurücksetzen
+    const panel = document.getElementById("panel");
+    if(panel.classList.contains("open")) {
+      panel.classList.remove("open");
+      resetVisuals();
+      return;
+    }
+    // Suchfeld leeren falls fokussiert
+    if(document.activeElement === searchIn && searchIn.value) {
+      searchIn.value = "";
+      searchRes.innerHTML = "";
+      return;
+    }
+    // PathMode beenden
+    if(pathMode) {
+      pathMode = false;
+      pathStart = null;
+      pathReachableSet = null;
+      document.getElementById("btn-path").classList.remove("active");
+      document.getElementById("path-hint").style.display = "none";
+      resetVisuals();
+    }
+  }
+});
+
 // ── IMP DROPDOWN ──
 const impBtn = document.getElementById("imp-btn");
 const impDropdown = document.getElementById("imp-dropdown");
@@ -1488,8 +1532,6 @@ impBtn.addEventListener("click", e => {
   document.getElementById("tag-dropdown").classList.remove("open");
   impDropdown.classList.toggle("open");
 });
-document.addEventListener("click", () => impDropdown.classList.remove("open"));
-
 document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
   item.addEventListener("click", () => {
     document.querySelectorAll("#imp-menu .dd-item").forEach(i => i.classList.remove("active"));
@@ -1517,23 +1559,26 @@ const REGION_ICONS = {
 };
 (function buildRegionMenu() {
   const menu = document.getElementById("region-menu");
-  // Such-Feld zuerst
-  menu.innerHTML = `
-    <div id="region-search-wrap">
-      <input id="region-search" type="text" placeholder="Region suchen..." />
-    </div>
-    <div class="dd-item active" data-r="alle">Alle Bereiche</div>
-  `;
   // Regionen nach Häufigkeit sortieren (größte zuerst) — Counts machen Logik sichtbar,
   // Suchfeld oben fängt zielgerichtete Suche ab
   const counts = {};
   nodes.forEach(n => counts[n.r] = (counts[n.r]||0)+1);
   const regions = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+  // HTML in einem Rutsch bauen — verhindert dass beim wiederholten innerHTML+=
+  // bereits registrierte Event-Listener auf Sub-Elementen verloren gehen
+  let html = `
+    <div id="region-search-wrap">
+      <input id="region-search" type="text" placeholder="Region suchen..." aria-label="Region in Liste suchen" />
+    </div>
+    <div class="dd-item active" data-r="alle" role="option" aria-selected="true">Alle Bereiche</div>
+  `;
   for(const r of regions) {
     const icon = REGION_ICONS[r] || "•";
     const name = RNAME[r] || r;
-    menu.innerHTML += `<div class="dd-item" data-r="${r}" data-name="${name.toLowerCase()}">${icon} ${name} <span class="dd-count">${counts[r]}</span></div>`;
+    html += `<div class="dd-item" data-r="${r}" data-name="${name.toLowerCase()}" role="option">${icon} ${name} <span class="dd-count">${counts[r]}</span></div>`;
   }
+  menu.innerHTML = html;
   // Inline-Suche: filtert die dd-items
   const searchInput = document.getElementById("region-search");
   searchInput.addEventListener("input", () => {
@@ -1556,7 +1601,6 @@ regionBtn.addEventListener("click", e => {
   document.getElementById("tag-dropdown").classList.remove("open");
   regionDropdown.classList.toggle("open");
 });
-document.addEventListener("click", () => regionDropdown.classList.remove("open"));
 document.querySelectorAll("#region-menu .dd-item").forEach(item => {
   item.addEventListener("click", () => {
     document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
@@ -1608,20 +1652,22 @@ const TAG_NAME = {
 };
 (function buildTagMenu() {
   const menu = document.getElementById("tag-menu");
-  menu.innerHTML = `
-    <div id="tag-search-wrap">
-      <input id="tag-search" type="text" placeholder="Thema suchen..." />
-    </div>
-    <div class="dd-item active" data-tag="alle">Alle Themen</div>
-  `;
   const counts = {};
   nodes.forEach(n => (n.tags||[]).forEach(t => counts[t] = (counts[t]||0)+1));
   const tags = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+  let html = `
+    <div id="tag-search-wrap">
+      <input id="tag-search" type="text" placeholder="Thema suchen..." aria-label="Thema in Liste suchen" />
+    </div>
+    <div class="dd-item active" data-tag="alle" role="option" aria-selected="true">Alle Themen</div>
+  `;
   for(const t of tags) {
     const icon = TAG_ICONS[t] || "•";
     const name = TAG_NAME[t] || t;
-    menu.innerHTML += `<div class="dd-item" data-tag="${t}" data-name="${name.toLowerCase()}">${icon} ${name} <span class="dd-count">${counts[t]}</span></div>`;
+    html += `<div class="dd-item" data-tag="${t}" data-name="${name.toLowerCase()}" role="option">${icon} ${name} <span class="dd-count">${counts[t]}</span></div>`;
   }
+  menu.innerHTML = html;
   const searchInput = document.getElementById("tag-search");
   searchInput.addEventListener("input", () => {
     const q = searchInput.value.trim().toLowerCase();
@@ -1642,7 +1688,23 @@ tagBtn.addEventListener("click", e => {
   document.getElementById("imp-dropdown").classList.remove("open");
   tagDropdown.classList.toggle("open");
 });
-document.addEventListener("click", () => tagDropdown.classList.remove("open"));
+// Einheitlicher Click-Outside-Handler für alle Dropdowns
+document.addEventListener("click", () => {
+  document.querySelectorAll(".dropdown.open").forEach(dd => dd.classList.remove("open"));
+});
+
+// aria-expanded synchron halten mit .dropdown.open (Screenreader-Support)
+(function syncAriaExpanded() {
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(m => {
+      const btn = m.target.querySelector(".fb");
+      if(btn) btn.setAttribute("aria-expanded", m.target.classList.contains("open") ? "true" : "false");
+    });
+  });
+  document.querySelectorAll(".dropdown").forEach(dd => {
+    observer.observe(dd, { attributes: true, attributeFilter: ["class"] });
+  });
+})();
 document.querySelectorAll("#tag-menu .dd-item").forEach(item => {
   item.addEventListener("click", () => {
     document.querySelectorAll("#tag-menu .dd-item").forEach(i => i.classList.remove("active"));
@@ -1788,10 +1850,51 @@ document.getElementById("zoom-fit").addEventListener("click", zoomToFitVisible);
 // ── SEARCH ──
 const searchIn = document.getElementById("search-in");
 const searchRes = document.getElementById("search-res");
+let searchSelectedIdx = -1;  // aktuell hervorgehobener Eintrag (Pfeiltasten)
+
+// Knoten auswählen + ggf. Filter zurücksetzen
+function selectSearchResult(n) {
+  searchRes.innerHTML = ""; searchIn.value = "";
+  searchSelectedIdx = -1;
+  // Wenn der Knoten durch IRGENDEINEN aktiven Filter ausgeblendet ist, entsprechende zurücksetzen
+  if(!isNodeVisible(n)) {
+    const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+    if(n.imp < minImp) {
+      document.querySelectorAll("#imp-menu .dd-item").forEach(b => b.classList.remove("active"));
+      document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
+      filterImp = "alle";
+      impBtn.textContent = "Alle Stufen ▾";
+    }
+    if(filterRegion !== "alle" && n.r !== filterRegion) {
+      document.querySelectorAll("#region-menu .dd-item").forEach(b => b.classList.remove("active"));
+      document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
+      filterRegion = "alle";
+      regionBtn.textContent = "Alle Bereiche ▾";
+      regionBtn.style.background = "";
+      regionBtn.style.borderColor = "";
+    }
+    if(filterTag !== "alle" && !(n.tags||[]).includes(filterTag)) {
+      document.querySelectorAll("#tag-menu .dd-item").forEach(b => b.classList.remove("active"));
+      document.querySelector("#tag-menu .dd-item[data-tag='alle']").classList.add("active");
+      filterTag = "alle";
+      tagBtn.textContent = "Alle Themen ▾";
+    }
+    applyAllFilters();
+  }
+  selectNode(n);
+  zoomToNode(n);
+}
+
+// Visuelles Highlight für aktuell selektiertes Such-Item (per Tastatur)
+function updateSearchHighlight() {
+  const items = searchRes.querySelectorAll(".sr");
+  items.forEach((el, i) => el.classList.toggle("sr-active", i === searchSelectedIdx));
+}
 
 searchIn.addEventListener("input", () => {
   const q = searchIn.value.trim().toLowerCase();
   searchRes.innerHTML = "";
+  searchSelectedIdx = -1;
   if(q.length < 2) return;
 
   const matches = nodes.filter(n =>
@@ -1801,44 +1904,43 @@ searchIn.addEventListener("input", () => {
     n.r.includes(q)
   ).slice(0, 7);
 
-  matches.forEach(n => {
+  matches.forEach((n, idx) => {
     const col = RCOL[n.r]||"#4a6080";
     const el = document.createElement("div");
     el.className = "sr";
+    el.dataset.idx = idx;
     el.innerHTML = `<div class="sr-dot" style="background:${col}"></div><span class="sr-yr">${n.yr}</span><span>${tx(n.short)}</span>`;
-    el.addEventListener("click", () => {
-      searchRes.innerHTML = ""; searchIn.value = "";
-      // Wenn der gesuchte Knoten durch IRGENDEINEN aktiven Filter ausgeblendet ist,
-      // entsprechende Filter zurücksetzen (sonst bleibt der Knoten unsichtbar trotz Klick)
-      if(!isNodeVisible(n)) {
-        const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
-        if(n.imp < minImp) {
-          document.querySelectorAll("#imp-menu .dd-item").forEach(b => b.classList.remove("active"));
-          document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
-          filterImp = "alle";
-          impBtn.textContent = "Alle Stufen ▾";
-        }
-        if(filterRegion !== "alle" && n.r !== filterRegion) {
-          document.querySelectorAll("#region-menu .dd-item").forEach(b => b.classList.remove("active"));
-          document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
-          filterRegion = "alle";
-          regionBtn.textContent = "Alle Bereiche ▾";
-          regionBtn.style.background = "";
-          regionBtn.style.borderColor = "";
-        }
-        if(filterTag !== "alle" && !(n.tags||[]).includes(filterTag)) {
-          document.querySelectorAll("#tag-menu .dd-item").forEach(b => b.classList.remove("active"));
-          document.querySelector("#tag-menu .dd-item[data-tag='alle']").classList.add("active");
-          filterTag = "alle";
-          tagBtn.textContent = "Alle Themen ▾";
-        }
-        applyAllFilters();
-      }
-      selectNode(n);
-      zoomToNode(n);
-    });
+    el.addEventListener("click", () => selectSearchResult(n));
+    el.addEventListener("mouseenter", () => { searchSelectedIdx = idx; updateSearchHighlight(); });
     searchRes.appendChild(el);
   });
+});
+
+// Tastatur-Navigation: ArrowDown/Up, Enter, Esc
+searchIn.addEventListener("keydown", e => {
+  const items = searchRes.querySelectorAll(".sr");
+  if(!items.length) return;
+  if(e.key === "ArrowDown") {
+    e.preventDefault();
+    searchSelectedIdx = Math.min(items.length - 1, searchSelectedIdx + 1);
+    updateSearchHighlight();
+  } else if(e.key === "ArrowUp") {
+    e.preventDefault();
+    searchSelectedIdx = Math.max(0, searchSelectedIdx - 1);
+    updateSearchHighlight();
+  } else if(e.key === "Enter") {
+    e.preventDefault();
+    // Falls noch keiner ausgewählt: ersten Treffer nehmen
+    const idx = searchSelectedIdx < 0 ? 0 : searchSelectedIdx;
+    const q = searchIn.value.trim().toLowerCase();
+    const matches = nodes.filter(n =>
+      tx(n.short).toLowerCase().includes(q) ||
+      tx(n.detail).toLowerCase().includes(q) ||
+      String(n.yr).includes(q) ||
+      n.r.includes(q)
+    ).slice(0, 7);
+    if(matches[idx]) selectSearchResult(matches[idx]);
+  }
 });
 
 document.addEventListener("click", e => {
@@ -1848,13 +1950,16 @@ document.addEventListener("click", e => {
 function zoomToNode(n) {
   const k = d3.zoomTransform(svg.node()).k; // preserve current scale
   const panelOpen = document.getElementById("panel").classList.contains("open");
-  const cx = (W - (panelOpen ? 320 : 0)) / 2;
-  const cy = H / 2;
+  const curW = window.innerWidth, curH = window.innerHeight;
+  const cx = (curW - (panelOpen ? 320 : 0)) / 2;
+  const cy = curH / 2;
   const tx = cx - n.x * k;
   const ty = cy - n.y * k;
   svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
 }
 
+// Globale API für externe Verlinkung (z.B. Bookmarks oder URL-Parameter):
+// Aus Browser-Konsole oder externem Code aufrufen: selectById("trump_2016")
 window.selectById = id => {
   const n = nodes.find(d => d.id === id);
   if(n) { selectNode(n, true); zoomToNode(n); }
@@ -1865,13 +1970,14 @@ let resizeTimer;
 window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
-    const newW = window.innerWidth, newH = window.innerHeight;
+    W = window.innerWidth;
+    H = window.innerHeight;
     // Header-Höhe könnte sich geändert haben (z.B. Geräte-Rotation, Mobile-Wrap)
-    HDR_H = (document.getElementById('hdr')?.offsetHeight) || (newW < 768 ? 130 : 70);
-    sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
-    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.6));
-    sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.35));
-    drawAxis(newW);
+    HDR_H = (document.getElementById('hdr')?.offsetHeight) || (W < 768 ? 130 : 70);
+    sim.force("center", d3.forceCenter(W/2, H/2 + HDR_H/2));
+    sim.force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.6));
+    sim.force("y", d3.forceY(H/2 + HDR_H/2).strength(0.35));
+    drawAxis(W);
     sim.alpha(0.3).restart();
   }, 200);
 });
