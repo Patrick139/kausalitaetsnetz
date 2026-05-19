@@ -3912,6 +3912,269 @@
         "krieg",
         "politik"
       ]
+    },
+    {
+      "id": "allende_pinochet_1973",
+      "yr": 1973,
+      "end_yr": null,
+      "r": "chile",
+      "imp": 3,
+      "short": {
+        "de": "Pinochet stürzt Allende in Chile"
+      },
+      "detail": {
+        "de": "Am 11. September 1973 stürzt General Augusto Pinochet mit US-Unterstützung (CIA, Kissinger, Nixon) den demokratisch gewählten sozialistischen Präsidenten Salvador Allende. Allende stirbt im Präsidentenpalast La Moneda während der Bombardierung. Beginn 17-jähriger Militärdiktatur — über 3.000 Tote, 40.000 Folterfälle. 'Chicago Boys' (Friedman-Schüler) setzen radikales neoliberales Wirtschaftsmodell um — Vorbild für Thatcher und Reagan. Symbol für US-Lateinamerika-Politik des Kalten Kriegs."
+      },
+      "tags": [
+        "politik",
+        "krieg",
+        "staat"
+      ]
+    },
+    {
+      "id": "operation_condor_1975",
+      "yr": 1975,
+      "end_yr": 1985,
+      "r": "chile",
+      "imp": 2,
+      "short": {
+        "de": "Operation Condor: Diktaturen koordinieren Mord"
+      },
+      "detail": {
+        "de": "1975 institutionalisierte transnationale Kooperation der Militärdiktaturen Chile (Pinochet, Hauptarchitekt via DINA), Argentinien (Videla ab 1976, aktivster Partner), Uruguay, Paraguay (Stroessner), Bolivien und Brasilien. Über 60.000 Tote, 30.000 Verschwundene regionweit. Exilanten wurden grenzüberschreitend gejagt und ermordet — auch in Washington (Letelier 1976), Paris, Rom, Madrid. USA wussten und unterstützten anfangs. Aufgearbeitet erst nach 2000."
+      },
+      "tags": [
+        "terror",
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "videla_putsch_1976",
+      "yr": 1976,
+      "end_yr": 1983,
+      "r": "argentinien",
+      "imp": 3,
+      "short": {
+        "de": "Videla-Junta: Schmutziger Krieg in Argentinien"
+      },
+      "detail": {
+        "de": "Am 24. März 1976 stürzt eine Militärjunta unter Jorge Rafael Videla Präsidentin Isabel Perón. Beginn des 'Schmutzigen Krieges' (1976-1983): systematische Verfolgung mutmaßlicher Linker. 10.000 bis 30.000 'Verschwundene' (desaparecidos), 340 geheime Folter- und Vernichtungslager. Mütter der Plaza de Mayo formieren sich ab 1977 — Frauen mit Fotos ihrer Kinder im Schweigemarsch vor dem Präsidentenpalast. Ikone des Widerstands."
+      },
+      "tags": [
+        "politik",
+        "terror",
+        "staat"
+      ]
+    },
+    {
+      "id": "falkland_krieg_1982",
+      "yr": 1982,
+      "end_yr": null,
+      "r": "argentinien",
+      "imp": 2,
+      "short": {
+        "de": "Falkland-Krieg"
+      },
+      "detail": {
+        "de": "Die argentinische Militärjunta unter Galtieri besetzt am 2. April 1982 die Falklandinseln (Malvinas), um von der Wirtschaftskrise abzulenken und Nationalismus zu mobilisieren. Thatcher schickt eine britische Marineflotte. 74 Tage Krieg, etwa 900 Tote. Argentinische Niederlage im Juni 1982 diskreditiert die Militärdiktatur endgültig und beschleunigt die Demokratisierung 1983. Thatcher sichert sich umgekehrt mit dem Sieg ihre Wiederwahl 1983."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "lateinamerika_schuldenkrise_1982",
+      "yr": 1982,
+      "end_yr": 1990,
+      "r": "mexiko",
+      "imp": 2,
+      "short": {
+        "de": "Lateinamerikanische Schuldenkrise"
+      },
+      "detail": {
+        "de": "Am 12. August 1982 erklärt Mexiko Zahlungsunfähigkeit — löst die regionsweite Schuldenkrise aus. Domino: Argentinien, Brasilien, Venezuela, Peru folgen. Ursache: Volckers Zinsschock 1979 ließ Auslandsverschuldungen explodieren. IWF erzwingt Strukturanpassung: Subventionsabbau, Privatisierung, Sparpolitik. 'Verlorenes Jahrzehnt' Lateinamerikas — BIP-Stagnation, Hyperinflation, Massenarmut. Verlust des Vertrauens in das neoliberale Modell auf Generationen."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "argentinien_demokratie_1983",
+      "yr": 1983,
+      "end_yr": null,
+      "r": "argentinien",
+      "imp": 2,
+      "short": {
+        "de": "Argentinien wird Demokratie"
+      },
+      "detail": {
+        "de": "Raúl Alfonsín gewinnt am 30. Oktober 1983 die freie Wahl und beendet die Militärdiktatur. CONADEP-Kommission unter Ernesto Sabato sammelt Zeugenaussagen — Bericht 'Nunca Más' (1984) dokumentiert 8.961 Verschwundene-Fälle. 1985 Juntas-Prozess vor Zivilgericht — fünf Top-Kommandanten verurteilt, darunter Videla. Erste lateinamerikanische Diktatur, die strafrechtlich aufgearbeitet wird. Globales Modell für Wahrheitskommissionen — von Südafrika bis Osteuropa."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "brasilien_demokratie_1985",
+      "yr": 1985,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 2,
+      "short": {
+        "de": "Brasilien beendet Militärdiktatur"
+      },
+      "detail": {
+        "de": "Am 15. März 1985 ist Tancredo Neves der erste Zivilpräsident seit dem Militärputsch 1964 — stirbt aber vor Amtsantritt, Vize Sarney übernimmt. Ende der 21-jährigen Militärdiktatur. Erzwungen durch 'Diretas Já' (Direkte jetzt!)-Massenbewegung 1984. Bundesverfassung 1988 ist eine der progressivsten weltweit: garantiert Indigenenrechte, Umweltschutz, breite Sozialrechte. Vorbedingung für Lula 2003."
+      },
+      "tags": [
+        "politik"
+      ]
+    },
+    {
+      "id": "pinochet_referendum_1988",
+      "yr": 1988,
+      "end_yr": null,
+      "r": "chile",
+      "imp": 3,
+      "short": {
+        "de": "Pinochet verliert eigenes Referendum"
+      },
+      "detail": {
+        "de": "Pinochet wagt am 5. Oktober 1988 ein Plebiszit über die Verlängerung seiner Amtszeit um weitere 8 Jahre. Glaubt durch Manipulation und Repression sicher zu gewinnen. NO gewinnt mit 55,99% — Diktator akzeptiert das Ergebnis erst nach internem Druck der Junta. Demokratischer Übergang ab 1989, Aylwin Präsident März 1990. Wahrheitskommission (Rettig-Bericht) folgt. Pinochet wird nie strafrechtlich verurteilt — stirbt 2006 unter Hausarrest. Lehrstück für friedlichen Diktaturen-Sturz durch Wahlen."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "caracazo_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 2,
+      "short": {
+        "de": "Caracazo: Massaker an Demonstranten"
+      },
+      "detail": {
+        "de": "Am 27. Februar 1989 erheben sich Caracas-Vororte gegen IWF-Sparpaket unter Präsident Carlos Andrés Pérez — Benzinpreise und Tarife explodieren über Nacht. Militär schießt auf Demonstranten. Offiziell 277 Tote, real wohl 3.000+. Bruchpunkt der venezolanischen Demokratie. Hugo Chávez (damals junger Offizier) nutzt das Trauma 1992 für Putschversuch, 1998 für Wahlsieg. Erstes Symbol für regionale Anti-IWF-Wut."
+      },
+      "tags": [
+        "protest",
+        "katastrophe",
+        "politik"
+      ]
+    },
+    {
+      "id": "mercosur_1991",
+      "yr": 1991,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 1,
+      "short": {
+        "de": "Mercosur gegründet"
+      },
+      "detail": {
+        "de": "Vertrag von Asunción am 26. März 1991: Argentinien, Brasilien, Paraguay, Uruguay gründen Mercosur (Gemeinsamer Markt des Südens). Erste ernsthafte regionale Wirtschaftsintegration in Lateinamerika seit der Kolonialzeit. Funktioniert mäßig — interne Spannungen, asymmetrische Größen. Bleibt aber strukturell relevant, EU-Mercosur-Abkommen 2019 verhandelt. Venezuela 2017 ausgeschlossen, Bolivien 2024 vollwertiges Mitglied."
+      },
+      "tags": [
+        "vertrag",
+        "wirtschaft",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "chavez_putschversuch_1992",
+      "yr": 1992,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 2,
+      "short": {
+        "de": "Chávez' Putschversuch gegen Pérez"
+      },
+      "detail": {
+        "de": "Am 4. Februar 1992 führt Oberstleutnant Hugo Chávez einen Militärputsch gegen Präsident Carlos Andrés Pérez. Scheitert nach wenigen Stunden. Chávez ergibt sich, sagt im Fernsehen 'por ahora' (vorerst) — macht ihn schlagartig zur nationalen Figur. Sitzt zwei Jahre im Gefängnis, wird 1994 von Präsident Caldera begnadigt. Gründet linke Bewegung MVR. Beginn seines politischen Aufstiegs — Wahlsieg 1998."
+      },
+      "tags": [
+        "politik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "zapatistas_1994",
+      "yr": 1994,
+      "end_yr": null,
+      "r": "mexiko",
+      "imp": 1,
+      "short": {
+        "de": "Zapatistas erheben sich am NAFTA-Tag"
+      },
+      "detail": {
+        "de": "Am 1. Januar 1994 — am ersten Tag des NAFTA-Inkrafttretens — erhebt sich die EZLN (Ejército Zapatista de Liberación Nacional) in Chiapas, Mexiko. Indigene Maya-Bewegung gegen NAFTA-Folgen für Kleinbauern und 500 Jahre Unterdrückung. Subcomandante Marcos mit Skimaske und Pfeife wird globale Ikone. Erstes Symbol der globalisierungskritischen Bewegung — Vorlage für WTO-Proteste Seattle 1999 und World Social Forum Porto Alegre 2001."
+      },
+      "tags": [
+        "protest",
+        "bewegung",
+        "politik"
+      ]
+    },
+    {
+      "id": "cardoso_real_plan_1994",
+      "yr": 1994,
+      "end_yr": null,
+      "r": "brasilien",
+      "imp": 2,
+      "short": {
+        "de": "Cardosos Plano Real bricht Hyperinflation"
+      },
+      "detail": {
+        "de": "Finanzminister Fernando Henrique Cardoso führt im Juli 1994 den 'Plano Real' ein: neue Währung Real, anfangs an Dollar gekoppelt. Bricht die brasilianische Hyperinflation (2.500% jährlich) binnen Monaten. Cardoso gewinnt Präsidentschaftswahl Oktober 1994, regiert 1995-2002. Stabilisiert Brasilien für 8 Jahre — schafft die Vorbedingungen für Lulas erfolgreiche Sozialpolitik 2003. Ohne Real-Plan kein 'Brasilien-Wunder' der 2000er."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "chavez_wahl_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "venezuela",
+      "imp": 3,
+      "short": {
+        "de": "Chávez gewinnt Venezuela-Wahl"
+      },
+      "detail": {
+        "de": "Hugo Chávez gewinnt am 6. Dezember 1998 die Präsidentschaftswahl mit 56%. Zerstört die traditionelle Zweiparteiendemokratie (Punto-Fijo-Pakt seit 1958). Neue 'Bolivarianische Verfassung' 1999. Beginn der 'Bolivarianischen Revolution': Verstaatlichungen, Ölgeld-Sozialprogramme, Konfrontation mit USA. Vorbild für die erste Pink Tide — Lula, Kirchner, Morales, Correa folgen seinem Beispiel. Schafft das Modell des linken Populismus mit demokratischer Erosion."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "bewegung"
+      ]
+    },
+    {
+      "id": "argentinien_krise_2001",
+      "yr": 2001,
+      "end_yr": 2002,
+      "r": "argentinien",
+      "imp": 2,
+      "short": {
+        "de": "Argentiniens großer Staatsbankrott"
+      },
+      "detail": {
+        "de": "Dezember 2001: Argentinische Wirtschaftskrise eskaliert nach Jahren der Dollar-Bindung und neoliberaler Reformen. Corralito sperrt Bankkonten, Massenproteste 'Cacerolazo' (Topfschlagen). Fünf Präsidenten in 10 Tagen. Default über 100 Mrd. USD — größter Staatsbankrott der Geschichte bis dato. 'Que se vayan todos' ('Sie sollen alle gehen') — totale Vertrauenskrise in die politische Klasse. Trauma prägt argentinische Politik bis Milei 2023."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe",
+        "protest"
+      ]
     }
   ],
   "links": [
@@ -6416,6 +6679,222 @@
         "de": "Frustration über 12 Jahre erfolglosen Drogenkrieg und Sicherheitskrise trieb mexikanische Wähler zur Anti-System-Wahl."
       },
       "certainty": "plausibel"
+    },
+    {
+      "source": "allende_pinochet_1973",
+      "target": "operation_condor_1975",
+      "type": "direkt",
+      "why": {
+        "de": "Pinochets DINA wurde Hauptarchitekt der transnationalen Diktaturen-Kooperation — Allende-Sturz war Modell und Anfangspunkt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "operation_condor_1975",
+      "target": "videla_putsch_1976",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Argentinische Militärs sahen in Pinochets Erfolg und Condor-Infrastruktur das Modell für eigenen Putsch und Repressionsapparat."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "videla_putsch_1976",
+      "target": "falkland_krieg_1982",
+      "type": "indirekt",
+      "why": {
+        "de": "Galtieri-Junta brauchte 1982 nationalistische Ablenkung von Wirtschaftskrise und Vertrauensverlust — Malvinas-Abenteuer war Ausweg."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "falkland_krieg_1982",
+      "target": "argentinien_demokratie_1983",
+      "type": "direkt",
+      "why": {
+        "de": "Niederlage diskreditierte die Militärjunta endgültig — Übergang zur Demokratie ein Jahr später war unausweichlich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "argentinien_demokratie_1983",
+      "target": "brasilien_demokratie_1985",
+      "type": "indirekt",
+      "why": {
+        "de": "Argentiniens Übergang zeigte: Militärdiktaturen sind in Lateinamerika friedlich ablösbar — verstärkte 'Diretas Já'-Bewegung in Brasilien."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "argentinien_demokratie_1983",
+      "target": "pinochet_referendum_1988",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratische Welle in der Region und internationaler Druck machten Pinochets Plebiszit-Risiko notwendig — Junta-Prozess 1985 in Argentinien war Mahnung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "volcker_zinsschock_1979",
+      "target": "lateinamerika_schuldenkrise_1982",
+      "type": "direkt",
+      "why": {
+        "de": "Volcker-Zinsschock verdoppelte Schuldendienst lateinamerikanischer Länder über Nacht — Mexiko zuerst zahlungsunfähig."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "lateinamerika_schuldenkrise_1982",
+      "target": "argentinien_demokratie_1983",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Wirtschaftliche Implosion entzog der Junta die letzte Legitimation — Demokratisierung als einziger Ausweg."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "lateinamerika_schuldenkrise_1982",
+      "target": "caracazo_1989",
+      "type": "direkt",
+      "why": {
+        "de": "IWF-Strukturanpassung als Lösung der Schuldenkrise schuf die Sozialspannungen, die in Caracazo explodierten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "lateinamerika_schuldenkrise_1982",
+      "target": "cardoso_real_plan_1994",
+      "type": "indirekt",
+      "why": {
+        "de": "Ein Jahrzehnt Hyperinflation als Schuldenkrise-Folge machte radikale Stabilisierungs-Pläne nötig."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "people_power_1986",
+      "target": "pinochet_referendum_1988",
+      "type": "indirekt",
+      "why": {
+        "de": "Philippinische Massenrevolution zeigte: Diktatoren können friedlich gestürzt werden — Modell für Anti-Pinochet-Kampagne."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "pinochet_referendum_1988",
+      "target": "mauerfall_1989",
+      "type": "indirekt",
+      "why": {
+        "de": "Friedlicher Diktatur-Sturz durch Wahl wurde Teil der globalen Demokratie-Welle 1986-1991 (Philippinen, Korea, Chile, Osteuropa, Sowjetunion)."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "caracazo_1989",
+      "target": "chavez_putschversuch_1992",
+      "type": "direkt",
+      "why": {
+        "de": "Chávez nannte Caracazo später den 'Moment der Wahrheit' — Massaker an Armen radikalisierte ihn als junger Offizier zum Putschversuch."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chavez_putschversuch_1992",
+      "target": "chavez_wahl_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Gescheiterter Putsch machte Chávez national bekannt — 'por ahora'-Rede wurde zur Marke. Sechs Jahre später gewinnt er Wahl."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chavez_wahl_1998",
+      "target": "chavez_tod_2013",
+      "type": "direkt",
+      "why": {
+        "de": "14 Jahre Chávez-Präsidentschaft endeten erst durch seinen Tod 2013."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chavez_wahl_1998",
+      "target": "lula_praesidentschaft_2003",
+      "type": "indirekt",
+      "why": {
+        "de": "Chávez-Sieg legte die erste Pink Tide an — Lula folgte fünf Jahre später im größten Land der Region."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "nafta_1994",
+      "target": "zapatistas_1994",
+      "type": "direkt",
+      "why": {
+        "de": "Aufstand begann am Tag des NAFTA-Inkrafttretens — explizit als Antwort auf Globalisierungs-Folgen für indigene Kleinbauern."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "brasilien_demokratie_1985",
+      "target": "cardoso_real_plan_1994",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratische Stabilität ab 1985 und Verfassung 1988 schufen institutionellen Rahmen für Cardosos technokratischen Wirtschaftsplan."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "cardoso_real_plan_1994",
+      "target": "lula_praesidentschaft_2003",
+      "type": "direkt",
+      "why": {
+        "de": "Ohne Cardosos Stabilisierung wäre Lulas erfolgreiche Sozialpolitik 2003 nicht finanzierbar gewesen — Real war Vorbedingung des Brasilien-Wunders."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "argentinien_demokratie_1983",
+      "target": "argentinien_krise_2001",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratisches Argentinien übernahm Schuldenlast und folgte neoliberalem Konsens der 90er — Krise war Folge dieser Akkumulationsdynamik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "lateinamerika_schuldenkrise_1982",
+      "target": "argentinien_krise_2001",
+      "type": "indirekt",
+      "why": {
+        "de": "Krise von 2001 war direkter Nachhall der 1982er-Schuldenkrise — Dollar-Bindung 1991 als verspätete Reaktion brach zwanzig Jahre später."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "argentinien_krise_2001",
+      "target": "milei_argentinien_2023",
+      "type": "indirekt",
+      "why": {
+        "de": "Generationentrauma 2001 und Inflation der 2010er-2020er bereitete den Boden für radikales Anti-System-Programm Mileis."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "argentinien_demokratie_1983",
+      "target": "mercosur_1991",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratische Argentinien und Brasilien öffneten politisch das Tor für regionale Integration — Mercosur unter Diktaturen undenkbar."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "brasilien_demokratie_1985",
+      "target": "mercosur_1991",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratische Argentinien und Brasilien öffneten politisch das Tor für regionale Integration — Mercosur unter Diktaturen undenkbar."
+      },
+      "certainty": "belegt"
     }
   ]
 }
