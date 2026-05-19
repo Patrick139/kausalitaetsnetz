@@ -211,14 +211,14 @@ body { background: #07090d; color: #c8d4e4; font-family: 'Segoe UI', system-ui, 
 .node.selected text, .node.path-node text { fill: #fff; font-weight: 700; }
 
 /* Zeitachse — nur sichtbar bei niedrigem Zoom */
-#g-axis { pointer-events: none; }
-.axis-line { stroke: #2a3a52; stroke-width: 1; }
-.axis-tick { stroke: #2a3a52; stroke-width: 1; }
-.axis-label { fill: #5a6f8a; font-family: monospace; font-size: 11px; text-anchor: middle; pointer-events: none; }
+#g-axis { pointer-events: none; opacity: 0; }
+.axis-line { stroke: #4a5d7a; stroke-width: 1.5; }
+.axis-tick { stroke: #4a5d7a; stroke-width: 1; }
+.axis-label { fill: #8da3c2; font-family: monospace; font-size: 13px; font-weight: 700; text-anchor: middle; pointer-events: none; }
 
 /* Cluster-Labels — nur sichtbar bei niedrigem Zoom */
 #g-clusters { pointer-events: none; }
-.cluster-label { fill: #c8d4e4; font-family: monospace; font-weight: 700; letter-spacing: 0.1em; text-anchor: middle; pointer-events: none; }
+.cluster-label { fill: #d8e4f4; font-family: monospace; font-weight: 700; letter-spacing: 0.15em; text-anchor: middle; pointer-events: none; opacity: 0; }
 
 .link { stroke-opacity: 0.3; fill: none; }
 .link.direkt       { stroke: #ff4a6e; }
@@ -826,10 +826,11 @@ const gC = svg.select("#g-clusters");
 const gN = svg.select("#g-nodes");
 
 // ── ZEITACHSE zeichnen ──
-function drawAxis(width, height) {
+// y wird dynamisch berechnet — unter dem tiefsten Knoten
+let axisY = H / 2 + 320;  // Initial-Wert (wird nach Simulation aktualisiert)
+function drawAxis(width) {
   gA.selectAll("*").remove();
-  // y unter den Knoten — H/2 ist die Force-y-Zentrum, Knoten verteilen sich ~250px vertikal
-  const yBase = height / 2 + 280;
+  const yBase = axisY;
   // Hauptlinie
   gA.append("line").attr("class", "axis-line")
     .attr("x1", yrToX(AXIS_MIN, width)).attr("x2", yrToX(AXIS_MAX, width))
@@ -840,14 +841,14 @@ function drawAxis(width, height) {
     const isMajor = y % 10 === 0;
     gA.append("line").attr("class", "axis-tick")
       .attr("x1", x).attr("x2", x)
-      .attr("y1", yBase - (isMajor ? 8 : 4)).attr("y2", yBase + (isMajor ? 8 : 4));
+      .attr("y1", yBase - (isMajor ? 10 : 5)).attr("y2", yBase + (isMajor ? 10 : 5));
     if(isMajor) {
       gA.append("text").attr("class", "axis-label")
-        .attr("x", x).attr("y", yBase + 24).text(y);
+        .attr("x", x).attr("y", yBase + 28).text(y);
     }
   }
 }
-drawAxis(W, H);
+drawAxis(W);
 
 // ── CLUSTER-LABELS ──
 // Verzögert nach Simulation: y-Schwerpunkt pro Region berechnen
@@ -883,15 +884,21 @@ const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
   // LOD: imp:1 Labels nur beim Reinzoomen sichtbar
   const impOpacity = k > 1.4 ? Math.min(1, (k - 1.4) / 0.4) : 0;
   d3.selectAll(".node-label-imp1").style("opacity", impOpacity);
-  // Zeitachse + Cluster-Labels: nur beim Rauszoomen sichtbar
-  const overviewOpacity = k < 0.8 ? Math.min(0.55, (0.8 - k) / 0.4 * 0.55) : 0;
-  gA.style("opacity", overviewOpacity / 0.55);  // Achse darf voll sichtbar werden
-  d3.selectAll(".cluster-label").style("opacity", overviewOpacity);
+  // Zeitachse + Cluster-Labels: beim Rauszoomen sichtbar — kräftiger als vorher
+  const overview = k < 1.0 ? Math.min(1, (1.0 - k) / 0.4) : 0;
+  gA.style("opacity", overview);
+  d3.selectAll(".cluster-label").style("opacity", overview * 0.85);
 });
 svg.call(zoom);
-// Initial zoom: gleich am Start auf "Überblick" (k=0.55), damit man das ganze Netz sieht
-// Kein nerviger Auto-Zoom Sekunden später — sofort beim Laden gesetzt
-svg.call(zoom.transform, d3.zoomIdentity.translate(W/2*0.45, H/2*0.45 + HDR_H/2).scale(0.55));
+// Initial-Zoom: bei k=0.55 die Karte mittig zentrieren
+// Die Karte erstreckt sich horizontal von yrToX(AXIS_MIN) bis yrToX(AXIS_MAX),
+// vertikal um H/2 + HDR_H/2 zentriert
+const initK = 0.55;
+const mapCx = (yrToX(AXIS_MIN, W) + yrToX(AXIS_MAX, W)) / 2;  // horizontaler Schwerpunkt
+const mapCy = H/2 + HDR_H/2;  // vertikaler Schwerpunkt
+const initTx = W/2 - mapCx * initK;
+const initTy = H/2 - mapCy * initK;
+svg.call(zoom.transform, d3.zoomIdentity.translate(initTx, initTy).scale(initK));
 
 // ── SIMULATION ──
 const sim = d3.forceSimulation(nodes)
@@ -899,12 +906,13 @@ const sim = d3.forceSimulation(nodes)
     .distance(d => {
       const s = byId[d.source.id||d.source], t = byId[d.target.id||d.target];
       if(!s||!t) return 120;
-      return 70 + Math.abs(s.yr - t.yr) * 0.5;
+      // Jahresdifferenz spürbar in Distanz übersetzen — verstärkt die horizontale Zeitordnung
+      return 40 + Math.abs(s.yr - t.yr) * 2.5;
     }).strength(0.25))
   .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -520 : d.imp === 2 ? -320 : -180))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
-  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.12))
+  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.35))
   .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.04));
 
 // ── DRAW LINKS ──
@@ -1318,6 +1326,10 @@ function applyImpFilter() {
 // ── AUTO ZOOM TO FIT — entfernt, nervte beim Start (kam Sekunden später)
 // Nutzer kann jederzeit über den "⊡ Zoom zurücksetzen"-Button neu zentrieren
 sim.on("end", () => {
+  // Achse unter den niedrigsten Knoten platzieren
+  const maxY = Math.max(...nodes.map(n => n.y || 0));
+  axisY = maxY + 50;
+  drawAxis(window.innerWidth);
   updateClusters();  // finale Cluster-Positionen
 });
 
@@ -1559,9 +1571,9 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => {
     const newW = window.innerWidth, newH = window.innerHeight;
     sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
-    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.12));
+    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.35));
     sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.04));
-    drawAxis(newW, newH);
+    drawAxis(newW);
     sim.alpha(0.3).restart();
   }, 200);
 });
