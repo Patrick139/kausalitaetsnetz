@@ -431,19 +431,19 @@ h1 em { color: #4a9eff; font-style: normal; }
 .dd-item.active .dd-count { background: rgba(34,211,238,0.15); color: #22d3ee; }
 
 /* Inline-Suche im Region-Dropdown */
-#region-search-wrap {
+#region-search-wrap, #tag-search-wrap {
   padding: 0.3rem 0.5rem 0.5rem;
   border-bottom: 1px solid #1c2535; margin-bottom: 0.2rem;
   position: sticky; top: 0; background: #0d1219; z-index: 1;
 }
-#region-search {
+#region-search, #tag-search {
   width: 100%; box-sizing: border-box;
   font-family: monospace; font-size: 0.62rem;
   background: #060a10; border: 1px solid #1c2535;
   color: #c8d4e4; padding: 0.3rem 0.5rem;
   border-radius: 2px; outline: none;
 }
-#region-search:focus { border-color: #3a4a60; }
+#region-search:focus, #tag-search:focus { border-color: #3a4a60; }
 
 /* ── TIEFE-STEUERUNG IM PANEL ── */
 .depth-ctrl {
@@ -675,6 +675,15 @@ h1 em { color: #4a9eff; font-style: normal; }
       </div>
     </div>
     <div class="sep-v"></div>
+    <!-- Tag (Thema) dropdown -->
+    <div class="dropdown" id="tag-dropdown">
+      <div class="dd-label">THEMA</div>
+      <button class="fb active" id="tag-btn">Alle Themen ▾</button>
+      <div class="dropdown-menu" id="tag-menu">
+        <!-- wird per JS gefüllt -->
+      </div>
+    </div>
+    <div class="sep-v"></div>
     <!-- Tools -->
     <button class="icon-btn" id="btn-path">⇢ Kette</button>
     <button class="icon-btn" id="btn-help">? Hilfe</button>
@@ -903,6 +912,7 @@ function reachableFrom(id) {
 // ── STATE ──
 let filterRegion = "alle";
 let filterImp = "2";  // Default: Wichtig + Historisch — bei 200+ Knoten ist "alle" zu viel beim Erstkontakt
+let filterTag = "alle";
 let pathMode = false;
 let pathStart = null;
 let selectedNode = null;
@@ -1391,27 +1401,42 @@ function renderPanelMessage(msg) {
   document.getElementById("panel").classList.add("open");
 }
 
-// ── REGION FILTER ──
-function applyRegionFilter() {
-  const active = filterRegion;
-  nodeEls.classed("faded", d => active !== "alle" && d.r !== active);
-  linkEls.classed("faded", l => {
-    if(active === "alle") return false;
+// ── COMBINED FILTERS: region AND imp AND tag ──
+// Statt drei separate "fade"/"display"-Logiken: ein zentraler Sichtbarkeits-Check
+function nodeVisible(n) {
+  // Wichtigkeit
+  const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
+  if(n.imp < minImp) return false;
+  // Tag
+  if(filterTag !== "alle") {
+    if(!n.tags || !n.tags.includes(filterTag)) return false;
+  }
+  return true;
+}
+function nodeFaded(n) {
+  // Region-Filter: blendet aus (faded), entfernt aber nicht
+  return filterRegion !== "alle" && n.r !== filterRegion;
+}
+
+function applyAllFilters() {
+  nodeEls.style("display", d => nodeVisible(d) ? null : "none");
+  nodeEls.classed("faded", d => nodeFaded(d));
+  linkEls.style("display", l => {
     const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
-    return !(sn && sn.r === active) && !(tn && tn.r === active);
+    if(!sn || !tn) return "none";
+    return (nodeVisible(sn) && nodeVisible(tn)) ? null : "none";
+  });
+  linkEls.classed("faded", l => {
+    if(filterRegion === "alle") return false;
+    const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
+    return !(sn && sn.r === filterRegion) && !(tn && tn.r === filterRegion);
   });
 }
 
-// ── IMP FILTER ──
-function applyImpFilter() {
-  const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
-  nodeEls.style("display", d => d.imp >= minImp ? null : "none");
-  linkEls.style("opacity", l => {
-    const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
-    if(!sn || !tn) return 0;
-    return (sn.imp >= minImp && tn.imp >= minImp) ? null : 0;
-  });
-}
+// Alte Funktionen behalten als Aliase (werden noch von vielen Stellen aufgerufen)
+function applyRegionFilter() { applyAllFilters(); }
+function applyImpFilter() { applyAllFilters(); }
+function applyTagFilter() { applyAllFilters(); }
 
 // ── AUTO ZOOM TO FIT — entfernt, nervte beim Start (kam Sekunden später)
 // Nutzer kann jederzeit über den "⊡ Zoom zurücksetzen"-Button neu zentrieren
@@ -1448,6 +1473,7 @@ impBtn.addEventListener("click", e => {
   e.stopPropagation();
   // Andere Dropdowns schließen
   regionDropdown.classList.remove("open");
+  document.getElementById("tag-dropdown").classList.remove("open");
   impDropdown.classList.toggle("open");
 });
 document.addEventListener("click", () => impDropdown.classList.remove("open"));
@@ -1511,6 +1537,7 @@ const regionDropdown = document.getElementById("region-dropdown");
 regionBtn.addEventListener("click", e => {
   e.stopPropagation();
   impDropdown.classList.remove("open");
+  document.getElementById("tag-dropdown").classList.remove("open");
   regionDropdown.classList.toggle("open");
 });
 document.addEventListener("click", () => regionDropdown.classList.remove("open"));
@@ -1531,6 +1558,81 @@ document.querySelectorAll("#region-menu .dd-item").forEach(item => {
     resetVisuals();
     applyRegionFilter();
     regionDropdown.classList.remove("open");
+  });
+});
+
+// ═══ TAG (THEMA) DROPDOWN ═══
+const TAG_ICONS = {
+  politik: "🏛️", geopolitik: "🌐", krieg: "⚔️", wirtschaft: "💰",
+  vertrag: "📜", gesellschaft: "👥", religion: "🕊️", technologie: "💻",
+  staat: "🏛️", katastrophe: "⚡", wahl: "🗳️", terror: "💥",
+  konzern: "🏢", protest: "✊", umwelt: "🌱", revolution: "🔥",
+  gesetz: "⚖️", klima: "🌡️", bewegung: "📢", kultur: "🎭",
+  migration: "🧭", gesundheit: "🏥", entdeckung: "🔬", energie: "⚡"
+};
+const TAG_NAME = {
+  politik: "Politik", geopolitik: "Geopolitik", krieg: "Krieg",
+  wirtschaft: "Wirtschaft", vertrag: "Vertrag", gesellschaft: "Gesellschaft",
+  religion: "Religion", technologie: "Technologie", staat: "Staat",
+  katastrophe: "Katastrophe", wahl: "Wahl", terror: "Terror",
+  konzern: "Konzern", protest: "Protest", umwelt: "Umwelt",
+  revolution: "Revolution", gesetz: "Gesetz", klima: "Klima",
+  bewegung: "Bewegung", kultur: "Kultur", migration: "Migration",
+  gesundheit: "Gesundheit", entdeckung: "Entdeckung", energie: "Energie"
+};
+(function buildTagMenu() {
+  const menu = document.getElementById("tag-menu");
+  menu.innerHTML = `
+    <div id="tag-search-wrap">
+      <input id="tag-search" type="text" placeholder="Thema suchen..." />
+    </div>
+    <div class="dd-item active" data-tag="alle">Alle Themen</div>
+  `;
+  const counts = {};
+  nodes.forEach(n => (n.tags||[]).forEach(t => counts[t] = (counts[t]||0)+1));
+  const tags = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  for(const t of tags) {
+    const icon = TAG_ICONS[t] || "•";
+    const name = TAG_NAME[t] || t;
+    menu.innerHTML += `<div class="dd-item" data-tag="${t}" data-name="${name.toLowerCase()}">${icon} ${name} <span class="dd-count">${counts[t]}</span></div>`;
+  }
+  const searchInput = document.getElementById("tag-search");
+  searchInput.addEventListener("input", () => {
+    const q = searchInput.value.trim().toLowerCase();
+    menu.querySelectorAll(".dd-item").forEach(item => {
+      if(item.dataset.tag === "alle") return;
+      const name = item.dataset.name || "";
+      item.style.display = (q === "" || name.includes(q)) ? "" : "none";
+    });
+  });
+  searchInput.addEventListener("click", e => e.stopPropagation());
+})();
+
+const tagDropdown = document.getElementById("tag-dropdown");
+const tagBtn = document.getElementById("tag-btn");
+tagBtn.addEventListener("click", e => {
+  e.stopPropagation();
+  regionDropdown.classList.remove("open");
+  document.getElementById("imp-dropdown").classList.remove("open");
+  tagDropdown.classList.toggle("open");
+});
+document.addEventListener("click", () => tagDropdown.classList.remove("open"));
+document.querySelectorAll("#tag-menu .dd-item").forEach(item => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll("#tag-menu .dd-item").forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
+    filterTag = item.dataset.tag;
+    if(filterTag === "alle") {
+      tagBtn.textContent = "Alle Themen ▾";
+    } else {
+      const icon = TAG_ICONS[filterTag] || "•";
+      const name = TAG_NAME[filterTag] || filterTag;
+      tagBtn.textContent = `${icon} ${name} ▾`;
+    }
+    tagBtn.classList.toggle("active", filterTag === "alle");
+    resetVisuals();
+    applyTagFilter();
+    tagDropdown.classList.remove("open");
   });
 });
 
@@ -1581,8 +1683,12 @@ document.getElementById("btn-reset").addEventListener("click", () => {
   document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
   filterImp = "alle";
   impBtn.textContent = "Alle Stufen ▾";
-  applyImpFilter();
-  applyRegionFilter();
+  // Reset tag dropdown
+  document.querySelectorAll("#tag-menu .dd-item").forEach(i => i.classList.remove("active"));
+  document.querySelector("#tag-menu .dd-item[data-tag='alle']").classList.add("active");
+  filterTag = "alle";
+  tagBtn.textContent = "Alle Themen ▾";
+  applyAllFilters();
 });
 
 document.getElementById("close-btn").addEventListener("click", () => {
