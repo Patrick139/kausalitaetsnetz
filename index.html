@@ -522,6 +522,9 @@ h1 em { color: #4a9eff; font-style: normal; }
 }
 #help-start:hover { background: #38e8ff; }
 
+/* Panel-Drag-Handle (nur auf Mobile sichtbar — visueller Hinweis bottom-sheet) */
+#panel-handle { display: none; }
+
 /* (hint overlay entfernt — war verwirrend und unleserlich) */
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -545,10 +548,40 @@ h1 em { color: #4a9eff; font-style: normal; }
   #search-wrap { width: 100%; order: 99; margin-top: 0.3rem; }
   #search-in { width: 100%; box-sizing: border-box; font-size: 0.75rem; }
 
-  /* Panel: vollformatig auf Mobile, schiebt von rechts rein */
-  #panel { width: 100vw; max-width: 100vw; padding: 1rem 0.85rem; }
-  /* Close-Button größer für Touch */
-  #close-btn { font-size: 0.75rem; padding: 0.35rem 0.6rem; top: 0.65rem; right: 0.65rem; }
+  /* Panel: Bottom-Sheet auf Mobile (kommt von unten, lässt Netz oben sichtbar) */
+  #panel {
+    width: 100vw; max-width: 100vw;
+    height: 75vh;          /* nur 3/4 der Höhe — oben bleibt Netz sichtbar */
+    top: auto;             /* statt top:0 */
+    bottom: 0;
+    border-left: none;
+    border-top: 2px solid #2a3a52;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1rem 0.85rem;
+    transform: translateY(100%);  /* von unten reinschieben statt von rechts */
+  }
+  #panel.open { transform: translateY(0); }
+  /* Drag-Handle: visueller Bottom-Sheet-Indikator oben am Panel */
+  #panel-handle {
+    display: block;
+    position: absolute; top: 0.4rem; left: 50%;
+    transform: translateX(-50%);
+    width: 36px; height: 4px;
+    background: #3a4a60; border-radius: 2px;
+  }
+  /* Großer prominenter Close-Button — touch-freundlich */
+  #close-btn {
+    font-size: 1.1rem !important;
+    padding: 0.5rem 0.85rem !important;
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    background: #1c2535 !important;
+    color: #c8d4e4 !important;
+    border-color: #3a4a60 !important;
+    min-width: 44px;     /* iOS touch-target Mindestmaß */
+    min-height: 44px;
+  }
 
   /* Hilfe-Overlay scrollbar */
   #help-box {
@@ -686,6 +719,7 @@ h1 em { color: #4a9eff; font-style: normal; }
 </svg>
 
 <div id="panel">
+  <div id="panel-handle"></div>
   <button id="close-btn">✕</button>
   <div id="panel-content"></div>
 </div>
