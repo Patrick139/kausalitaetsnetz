@@ -216,10 +216,6 @@ body { background: #07090d; color: #c8d4e4; font-family: 'Segoe UI', system-ui, 
 .axis-tick { stroke: #4a5d7a; stroke-width: 1.5; }
 .axis-label { fill: #8da3c2; font-family: monospace; font-size: 22px; font-weight: 700; text-anchor: middle; pointer-events: none; }
 
-/* Cluster-Labels — nur sichtbar bei niedrigem Zoom */
-#g-clusters { pointer-events: none; }
-.cluster-label { fill: #d8e4f4; font-family: monospace; font-weight: 700; letter-spacing: 0.15em; text-anchor: middle; pointer-events: none; opacity: 0; }
-
 .link { stroke-opacity: 0.3; fill: none; }
 .link.direkt       { stroke: #ff4a6e; }
 .link.indirekt     { stroke: #f0c040; }
@@ -527,6 +523,67 @@ h1 em { color: #4a9eff; font-style: normal; }
 #help-start:hover { background: #38e8ff; }
 
 /* (hint overlay entfernt — war verwirrend und unleserlich) */
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOBILE LAYOUT — Bildschirme bis 768px
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Header kompakter */
+  #hdr { padding: 0.5rem 0.6rem; gap: 0.35rem; }
+  h1 { font-size: 0.85rem; margin-right: 0.25rem; }
+  .hdr-row { gap: 0.3rem; }
+  .sep-v { display: none; }
+
+  /* Dropdowns kompakter — Label kleiner darüber */
+  .dd-label { font-size: 0.45rem; }
+  .fb { font-size: 0.55rem; padding: 0.25rem 0.45rem; }
+
+  /* Buttons kleiner, Text nur Icons */
+  .icon-btn { font-size: 0.6rem; padding: 0.25rem 0.4rem; }
+
+  /* Suche auf eigene Zeile, full-width */
+  #search-wrap { width: 100%; order: 99; margin-top: 0.3rem; }
+  #search-in { width: 100%; box-sizing: border-box; font-size: 0.75rem; }
+
+  /* Panel: vollformatig auf Mobile, schiebt von rechts rein */
+  #panel { width: 100vw; max-width: 100vw; padding: 1rem 0.85rem; }
+  /* Close-Button größer für Touch */
+  #close-btn { font-size: 0.75rem; padding: 0.35rem 0.6rem; top: 0.65rem; right: 0.65rem; }
+
+  /* Hilfe-Overlay scrollbar */
+  #help-box {
+    max-width: 92vw !important;
+    max-height: 85vh !important;
+    padding: 1rem !important;
+    overflow-y: auto;
+  }
+  .help-title { font-size: 1.2rem !important; }
+
+  /* Legende sehr kompakt */
+  #legend { bottom: 0.6rem; left: 0.6rem; font-size: 0.5rem; line-height: 1.6; }
+  .ll { width: 14px; }
+  .lc { width: 7px; height: 7px; }
+
+  /* Zoom-Button */
+  #zoom-fit { bottom: 0.6rem; right: 0.6rem; font-size: 0.55rem; padding: 0.3rem 0.5rem; }
+
+  /* Achsen-Schrift auf Mobile kleiner — Bildschirm ist schmaler */
+  .axis-label { font-size: 14px; }
+
+  /* Path-Hint kompakter */
+  #path-hint { font-size: 0.55rem; }
+}
+
+/* Sehr schmale Bildschirme (Phones < 420px) */
+@media (max-width: 420px) {
+  /* Tiefe-Steuerung kompakter */
+  .depth-ctrl { font-size: 0.7rem; }
+  .depth-btn { padding: 0.15rem 0.4rem; }
+
+  /* Header-Buttons: nur Symbol, Text weglassen mit ::after-Trick */
+  /* Wir lassen den Text aber dünner */
+  h1 { font-size: 0.75rem; }
+}
 </style>
 </head>
 <body>
@@ -625,7 +682,6 @@ h1 em { color: #4a9eff; font-style: normal; }
   </defs>
   <g id="g-axis"></g>
   <g id="g-links"></g>
-  <g id="g-clusters"></g>
   <g id="g-nodes"></g>
 </svg>
 
@@ -710,7 +766,8 @@ function tx(obj) {
 }
 
 const W = window.innerWidth, H = window.innerHeight;
-const HDR_H = 70; // approximate header height
+// Header-Höhe dynamisch: auf Mobile wickelt der Header mehrzeilig
+let HDR_H = (document.getElementById('hdr')?.offsetHeight) || (W < 768 ? 130 : 70);
 
 // Deep-copy nodes so D3 can mutate
 const nodes = NODES.map(d => ({...d}));
@@ -822,7 +879,6 @@ function maxReachDepth(startId, adjMap) {
 const svg = d3.select("#canvas");
 const gA = svg.select("#g-axis");
 const gL = svg.select("#g-links");
-const gC = svg.select("#g-clusters");
 const gN = svg.select("#g-nodes");
 
 // ── ZEITACHSE zeichnen ──
@@ -850,48 +906,23 @@ function drawAxis(width) {
 }
 drawAxis(W);
 
-// ── CLUSTER-LABELS ──
-// Verzögert nach Simulation: y-Schwerpunkt pro Region berechnen
-function updateClusters() {
-  gC.selectAll("*").remove();
-  const byRegion = {};
-  nodes.forEach(n => {
-    if(n.x == null || n.y == null) return;
-    if(!byRegion[n.r]) byRegion[n.r] = [];
-    byRegion[n.r].push(n);
-  });
-  for(const r in byRegion) {
-    const ns = byRegion[r];
-    if(ns.length < 3) continue; // nur Cluster mit mind. 3 Knoten beschriften
-    const cx = ns.reduce((s,n) => s + n.x, 0) / ns.length;
-    const cy = ns.reduce((s,n) => s + n.y, 0) / ns.length;
-    const name = (RNAME[r] || r).toUpperCase();
-    const size = 12 + Math.min(28, ns.length * 1.5);
-    gC.append("text").attr("class", "cluster-label")
-      .attr("x", cx).attr("y", cy)
-      .attr("font-size", size)
-      .attr("opacity", 0)
-      .text(name);
-  }
-}
+// (Cluster-Labels entfernt — Konflikt mit Zeit-Achsen-Verteilung. Knotenfarbe + Filter reichen.)
 
 const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
   gA.attr("transform", e.transform);
   gL.attr("transform", e.transform);
-  gC.attr("transform", e.transform);
   gN.attr("transform", e.transform);
   const k = e.transform.k;
   // LOD: imp:1 Labels nur beim Reinzoomen sichtbar
   const impOpacity = k > 1.4 ? Math.min(1, (k - 1.4) / 0.4) : 0;
   d3.selectAll(".node-label-imp1").style("opacity", impOpacity);
-  // Zeitachse + Cluster-Labels: beim Rauszoomen sichtbar — kräftiger als vorher
+  // Zeitachse: beim Rauszoomen sichtbar
   const overview = k < 1.0 ? Math.min(1, (1.0 - k) / 0.4) : 0;
   gA.style("opacity", overview);
-  d3.selectAll(".cluster-label").style("opacity", overview * 0.85);
 });
 svg.call(zoom);
-// Initial-Zoom: 0.7 — Übersicht mit Cluster-Labels und Zeitachse sichtbar
-const initK = 0.7;
+// Initial-Zoom: auf Desktop 0.7, auf Mobile 0.5 (mehr Übersicht weil schmaler Bildschirm)
+const initK = W < 768 ? 0.5 : 0.7;
 const mapCx = (yrToX(AXIS_MIN, W) + yrToX(AXIS_MAX, W)) / 2;
 const mapCy = H/2 + HDR_H/2;
 const initTx = W/2 - mapCx * initK;
@@ -960,13 +991,10 @@ nodeEls.filter(d => d.imp >= 2).append("text")
   .text(d => String(d.yr));
 
 // ── TICK ──
-let tickCount = 0;
 sim.on("tick", () => {
   linkEls.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
          .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
   nodeEls.attr("transform", d => `translate(${d.x},${d.y})`);
-  // Cluster-Labels-Position alle 30 Ticks neu berechnen (sonst zu teuer)
-  if(++tickCount % 30 === 0) updateClusters();
 });
 
 // ── NODE CLICK ──
@@ -1327,7 +1355,6 @@ sim.on("end", () => {
   const maxY = Math.max(...nodes.map(n => n.y || 0));
   axisY = maxY + 50;
   drawAxis(window.innerWidth);
-  updateClusters();  // finale Cluster-Positionen
 });
 
 // ── CONTROLS ──
@@ -1567,6 +1594,8 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     const newW = window.innerWidth, newH = window.innerHeight;
+    // Header-Höhe könnte sich geändert haben (z.B. Geräte-Rotation, Mobile-Wrap)
+    HDR_H = (document.getElementById('hdr')?.offsetHeight) || (newW < 768 ? 130 : 70);
     sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
     sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.6));
     sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.35));
