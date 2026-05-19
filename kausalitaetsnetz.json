@@ -2,8 +2,8 @@
   "nodes": [
     {
       "id": "finanzkrise_1998",
-      "yr": 1998,
-      "end_yr": null,
+      "yr": 1997,
+      "end_yr": 1998,
       "r": "global",
       "imp": 2,
       "short": {
@@ -1248,6 +1248,178 @@
       "tags": [
         "politik"
       ]
+    },
+    {
+      "id": "park_ermordet_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Park Chung-hee wird ermordet"
+      },
+      "detail": {
+        "de": "Der Diktator Park Chung-hee, der Südkorea seit 1961 mit Militärherrschaft regierte, wird vom Chef seines eigenen Geheimdienstes (KCIA) erschossen. Sein 18-jähriges autoritäres Regime endet abrupt. Beginnt das politische Machtvakuum, das General Chun Doo-hwan einige Wochen später durch Militärputsch füllt."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "chun_doo_hwan_1980",
+      "yr": 1980,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Chun Doo-hwan ergreift die Macht"
+      },
+      "detail": {
+        "de": "Nach der Ermordung Park Chung-hees übernimmt General Chun Doo-hwan durch Militärputsch die Macht. Verhängt Kriegsrecht, unterdrückt Opposition. Sieben Jahre autoritäre Herrschaft folgen."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "gwangju_1980",
+      "yr": 1980,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 3,
+      "short": {
+        "de": "Gwangju-Aufstand und Massaker"
+      },
+      "detail": {
+        "de": "Studenten und Bürger in Gwangju protestieren gegen die Militärdiktatur Chun Doo-hwans. Das Militär eröffnet das Feuer auf Demonstranten. Mindestens 200 Tote, viele tausend Verletzte. Das Massaker wird zur traumatischen Geburtsstunde der südkoreanischen Demokratiebewegung und prägt den politischen Diskurs bis heute."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "staat"
+      ]
+    },
+    {
+      "id": "juni_aufstand_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 3,
+      "short": {
+        "de": "Juni-Aufstand erzwingt Demokratie"
+      },
+      "detail": {
+        "de": "Millionen Südkoreaner protestieren wochenlang gegen Chun Doo-hwans Versuch, einen Wahl-Nachfolger zu installieren. Auslöser: der Tod des Studenten Park Jong-chul unter Folter. Das Regime gibt nach. Direkte Präsidentschaftswahlen werden eingeführt, die Verfassung neu geschrieben. Beginn der südkoreanischen Demokratie."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "revolution"
+      ]
+    },
+    {
+      "id": "seoul_olympia_1988",
+      "yr": 1988,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Olympische Spiele Seoul"
+      },
+      "detail": {
+        "de": "Erste Olympiade in einem industrialisierten Schwellenland. Südkorea präsentiert sich als wirtschaftliches Wunder. Die internationale Aufmerksamkeit im Vorfeld erhöhte den Druck für Demokratisierung — das Regime konnte Repression nicht mehr verbergen."
+      },
+      "tags": [
+        "kultur",
+        "politik"
+      ]
+    },
+    {
+      "id": "imf_krise_korea_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 3,
+      "short": {
+        "de": "Asienkrise zwingt Korea unter IMF"
+      },
+      "detail": {
+        "de": "Im November 1997 ist Südkorea zahlungsunfähig. Der Won verliert binnen Wochen die Hälfte seines Werts. IMF gewährt 58 Milliarden US-Dollar Rettungspaket — das größte der IMF-Geschichte zu dem Zeitpunkt. Bedingungen: Auflösung der engen Staat-Chaebol-Verflechtung, Öffnung für ausländisches Kapital, flexibler Arbeitsmarkt. Wirtschaftliches Trauma das das Selbstverständnis Südkoreas bis heute prägt."
+      },
+      "tags": [
+        "wirtschaft",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "gold_kampagne_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Gold-Spende-Kampagne der Bürger"
+      },
+      "detail": {
+        "de": "Während der IMF-Krise spenden Millionen Südkoreaner ihr persönliches Gold — Eheringe, Erbstücke, Goldmünzen — an den Staat zur Schuldentilgung. 227 Tonnen Gold im Wert von rund 2,2 Milliarden Dollar. Symbol für nationale Solidarität und Identität."
+      },
+      "tags": [
+        "gesellschaft",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "kim_dae_jung_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 3,
+      "short": {
+        "de": "Kim Dae-jung wird Präsident"
+      },
+      "detail": {
+        "de": "Erster Machtwechsel zur Opposition seit Gründung der Republik. Kim Dae-jung — jahrzehntelang verfolgter Dissident, einmal vom Geheimdienst entführt — wird mitten in der IMF-Krise Präsident. Beginnt 'Sonnenscheinpolitik' der Annäherung an Nordkorea."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "sonnenscheinpolitik_1998",
+      "yr": 1998,
+      "end_yr": 2008,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Sonnenscheinpolitik gegenüber Nordkorea"
+      },
+      "detail": {
+        "de": "Kim Dae-jung leitet Politik der Annäherung an Nordkorea ein: Wirtschaftshilfe, Familienzusammenführungen, Tourismusprogramme. 2000 historisches Gipfeltreffen mit Kim Jong-il. Friedensnobelpreis. Wird unter Nachfolger-Konservativen 2008 wieder beendet."
+      },
+      "tags": [
+        "politik",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "chaebol_reform_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "südkorea",
+      "imp": 2,
+      "short": {
+        "de": "Zwangsreform der Chaebols"
+      },
+      "detail": {
+        "de": "Unter IMF-Druck werden die mächtigen Industriekonglomerate (Samsung, Hyundai, LG, Daewoo, SK) zwangsreformiert. Daewoo bricht zusammen — bis dahin zweitgrößter Chaebol. Schuldenquoten müssen halbiert werden, Familieneigentum offengelegt. Kein vollständiger Bruch der Chaebol-Macht, aber strukturelle Verschiebung."
+      },
+      "tags": [
+        "wirtschaft",
+        "konzern"
+      ]
     }
   ],
   "links": [
@@ -2150,6 +2322,96 @@
         "de": "Obama übernahm die explodierte Wirtschaft — sein Stimulus rettete sie, aber die politischen Kosten zahlten die Demokraten jahrelang."
       },
       "certainty": "plausibel"
+    },
+    {
+      "source": "park_ermordet_1979",
+      "target": "chun_doo_hwan_1980",
+      "type": "direkt",
+      "why": {
+        "de": "Machtvakuum nach Parks Tod ermöglichte Chuns Militärputsch innerhalb weniger Wochen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chun_doo_hwan_1980",
+      "target": "gwangju_1980",
+      "type": "direkt",
+      "why": {
+        "de": "Chuns Verhängung des Kriegsrechts und Militäreinsatz gegen Demonstranten löste das Massaker aus."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "gwangju_1980",
+      "target": "juni_aufstand_1987",
+      "type": "indirekt",
+      "why": {
+        "de": "Das Trauma von Gwangju mobilisierte über sieben Jahre eine breite Demokratiebewegung aus Studenten, Arbeitern und Religionsgemeinschaften, die 1987 zum Erfolg führte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "juni_aufstand_1987",
+      "target": "seoul_olympia_1988",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratische Reform machte die internationale Bühne Olympia friedlich möglich — Repression hätte die Spiele gefährdet."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "juni_aufstand_1987",
+      "target": "kim_dae_jung_1998",
+      "type": "indirekt",
+      "why": {
+        "de": "Demokratisierung ermöglichte ersten echten Oppositions-Sieg — Kim Dae-jung war zuvor jahrzehntelang verfolgt worden."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_1998",
+      "target": "imf_krise_korea_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Asienweite Ansteckung: Foreign creditors zogen Kapital aus allen Tigern ab, Korea war mit höchster Auslandsverschuldung am verwundbarsten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "imf_krise_korea_1997",
+      "target": "gold_kampagne_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Verzweiflung über Staatspleite und nationale Demütigung mobilisierten Bürger zur Goldspende."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "imf_krise_korea_1997",
+      "target": "chaebol_reform_1998",
+      "type": "direkt",
+      "why": {
+        "de": "IMF-Auflagen erzwangen Restrukturierung der Industriekonglomerate als Bedingung des Rettungspakets."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "imf_krise_korea_1997",
+      "target": "kim_dae_jung_1998",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Wirtschaftskrise diskreditierte die Regierungspartei und ermöglichte Kim Dae-jungs Wahl mit hauchdünner Mehrheit."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "kim_dae_jung_1998",
+      "target": "sonnenscheinpolitik_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Kim Dae-jung machte Annäherung an Nordkorea zum zentralen außenpolitischen Programm seiner Präsidentschaft."
+      },
+      "certainty": "belegt"
     }
   ]
 }
