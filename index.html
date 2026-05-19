@@ -410,16 +410,38 @@ h1 em { color: #4a9eff; font-style: normal; }
   display: none; position: absolute; top: 100%; left: 0;
   margin-top: 3px; background: #0d1219;
   border: 1px solid #1c2535; border-radius: 3px;
-  z-index: 200; min-width: 180px; padding: 0.25rem 0;
+  z-index: 200; min-width: 220px; padding: 0.25rem 0;
+  max-height: 65vh; overflow-y: auto;
 }
 .dropdown.open .dropdown-menu { display: block; }
 .dd-item {
   padding: 0.35rem 0.75rem; font-family: monospace;
   font-size: 0.62rem; color: #8a9ab0; cursor: pointer;
   letter-spacing: 0.03em;
+  display: flex; align-items: center; gap: 0.4rem;
 }
 .dd-item:hover { background: #1c2535; color: #c8d4e4; }
 .dd-item.active { color: #22d3ee; }
+.dd-count {
+  margin-left: auto; font-size: 0.55rem; color: #4a6080;
+  background: #1c2535; padding: 0.05rem 0.35rem; border-radius: 2px;
+}
+.dd-item.active .dd-count { background: rgba(34,211,238,0.15); color: #22d3ee; }
+
+/* Inline-Suche im Region-Dropdown */
+#region-search-wrap {
+  padding: 0.3rem 0.5rem 0.5rem;
+  border-bottom: 1px solid #1c2535; margin-bottom: 0.2rem;
+  position: sticky; top: 0; background: #0d1219; z-index: 1;
+}
+#region-search {
+  width: 100%; box-sizing: border-box;
+  font-family: monospace; font-size: 0.62rem;
+  background: #060a10; border: 1px solid #1c2535;
+  color: #c8d4e4; padding: 0.3rem 0.5rem;
+  border-radius: 2px; outline: none;
+}
+#region-search:focus { border-color: #3a4a60; }
 
 /* ── TIEFE-STEUERUNG IM PANEL ── */
 .depth-ctrl {
@@ -1444,17 +1466,35 @@ const REGION_ICONS = {
 };
 (function buildRegionMenu() {
   const menu = document.getElementById("region-menu");
-  // "Alle" zuerst
-  menu.innerHTML = `<div class="dd-item active" data-r="alle">Alle Bereiche</div>`;
-  // Alle Regionen aus Daten sammeln und sortiert nach Häufigkeit
+  // Such-Feld zuerst
+  menu.innerHTML = `
+    <div id="region-search-wrap">
+      <input id="region-search" type="text" placeholder="Region suchen..." />
+    </div>
+    <div class="dd-item active" data-r="alle">Alle Bereiche</div>
+  `;
+  // Regionen nach Häufigkeit sortieren (größte zuerst) — Counts machen Logik sichtbar,
+  // Suchfeld oben fängt zielgerichtete Suche ab
   const counts = {};
   nodes.forEach(n => counts[n.r] = (counts[n.r]||0)+1);
-  const regions = Object.keys(counts).sort((a,b) => counts[b] - counts[a]);
+  const regions = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
   for(const r of regions) {
     const icon = REGION_ICONS[r] || "•";
     const name = RNAME[r] || r;
-    menu.innerHTML += `<div class="dd-item" data-r="${r}">${icon} ${name}</div>`;
+    menu.innerHTML += `<div class="dd-item" data-r="${r}" data-name="${name.toLowerCase()}">${icon} ${name} <span class="dd-count">${counts[r]}</span></div>`;
   }
+  // Inline-Suche: filtert die dd-items
+  const searchInput = document.getElementById("region-search");
+  searchInput.addEventListener("input", () => {
+    const q = searchInput.value.trim().toLowerCase();
+    menu.querySelectorAll(".dd-item").forEach(item => {
+      if(item.dataset.r === "alle") return; // "Alle" immer sichtbar
+      const name = item.dataset.name || "";
+      item.style.display = (q === "" || name.includes(q)) ? "" : "none";
+    });
+  });
+  // Klick aufs Suchfeld soll Dropdown NICHT schließen
+  searchInput.addEventListener("click", e => e.stopPropagation());
 })();
 
 const regionBtn = document.getElementById("region-btn");
@@ -1470,7 +1510,14 @@ document.querySelectorAll("#region-menu .dd-item").forEach(item => {
     document.querySelectorAll("#region-menu .dd-item").forEach(i => i.classList.remove("active"));
     item.classList.add("active");
     filterRegion = item.dataset.r;
-    regionBtn.textContent = item.dataset.r === "alle" ? "Alle Bereiche ▾" : item.textContent + " ▾";
+    if(item.dataset.r === "alle") {
+      regionBtn.textContent = "Alle Bereiche ▾";
+    } else {
+      // Icon + Name aus Item ohne Count-Span
+      const icon = REGION_ICONS[item.dataset.r] || "•";
+      const name = RNAME[item.dataset.r] || item.dataset.r;
+      regionBtn.textContent = `${icon} ${name} ▾`;
+    }
     regionBtn.classList.toggle("active", item.dataset.r === "alle");
     resetVisuals();
     applyRegionFilter();
