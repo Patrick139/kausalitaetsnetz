@@ -1,18 +1,21 @@
 {
   "nodes": [
     {
-      "id": "finanzkrise_1998",
-      "yr": 1997,
-      "end_yr": 1998,
-      "r": "global",
+      "id": "ltcm_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "usa",
       "imp": 2,
       "short": {
-        "de": "Asienkrise / LTCM"
+        "de": "LTCM-Kollaps"
       },
       "detail": {
-        "de": "Asienkrise und Kollaps des Hedgefonds LTCM zeigen: globale Finanzmärkte sind systemisch vernetzt. Erster Vorgeschmack auf 2008."
+        "de": "Hedgefonds Long-Term Capital Management (LTCM) bricht im September 1998 zusammen. Verluste durch falsche Wetten auf russische Anleihen nach Russland-Default. Fed organisiert privates Rettungspaket über 3,6 Mrd. USD. Erstes \"too big to fail\" der Geldgeschichte. Lehre für 2008 — die niemand zog. Asienkrise war der globale Auslöser, LTCM die US-Erschütterung."
       },
-      "tags": []
+      "tags": [
+        "wirtschaft",
+        "konzern"
+      ]
     },
     {
       "id": "putin_2000",
@@ -1764,6 +1767,521 @@
         "technologie",
         "konzern"
       ]
+    },
+    {
+      "id": "kriegsrecht_taiwan_1949",
+      "yr": 1949,
+      "end_yr": 1987,
+      "r": "taiwan",
+      "imp": 2,
+      "short": {
+        "de": "Kriegsrecht über Taiwan verhängt"
+      },
+      "detail": {
+        "de": "Nach Niederlage gegen Mao zog sich Chiang Kai-sheks Kuomintang nach Taiwan zurück und verhängte Kriegsrecht. 38 Jahre Einparteiendiktatur, Verfolgung Andersdenkender (Weißer Terror), keine politische Konkurrenz. Längste Kriegsrechtsperiode der Welt bis dahin."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "kaohsiung_zwischenfall_1979",
+      "yr": 1979,
+      "end_yr": null,
+      "r": "taiwan",
+      "imp": 1,
+      "short": {
+        "de": "Kaohsiung-Zwischenfall"
+      },
+      "detail": {
+        "de": "Demokratie-Demonstration zum Tag der Menschenrechte 1979 in Kaohsiung wird gewaltsam aufgelöst. Hauptaktivisten werden verhaftet, einige zu lebenslanger Haft verurteilt. Wird zur Geburtsstunde der Tangwai-Bewegung und später der Demokratischen Fortschrittspartei (DPP)."
+      },
+      "tags": [
+        "politik",
+        "protest"
+      ]
+    },
+    {
+      "id": "taiwan_kriegsrecht_ende_1987",
+      "yr": 1987,
+      "end_yr": null,
+      "r": "taiwan",
+      "imp": 3,
+      "short": {
+        "de": "Taiwan beendet Kriegsrecht"
+      },
+      "detail": {
+        "de": "Präsident Chiang Ching-kuo, Sohn von Chiang Kai-shek, hebt am 15. Juli 1987 das Kriegsrecht auf. 38 Jahre Diktatur enden. Oppositionspartei DPP wird legalisiert, Pressezensur fällt, Familienzusammenführung mit dem Festland wird möglich. Beginn der Demokratisierung."
+      },
+      "tags": [
+        "politik",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "taiwan_strasse_krise_1995",
+      "yr": 1995,
+      "end_yr": 1996,
+      "r": "taiwan",
+      "imp": 2,
+      "short": {
+        "de": "Dritte Taiwan-Straße-Krise"
+      },
+      "detail": {
+        "de": "China feuert 1995-96 Raketen in die Gewässer um Taiwan, um die ersten direkten Präsidentschaftswahlen einzuschüchtern. USA schickt zwei Flugzeugträger-Verbände. Größte militärische Konfrontation in der Straße seit Jahrzehnten. Effekt: Lee Teng-hui gewinnt mit 54%. Setting für die seitdem zyklisch eskalierende Taiwan-Frage."
+      },
+      "tags": [
+        "geopolitik",
+        "krieg"
+      ]
+    },
+    {
+      "id": "taiwan_erste_wahl_1996",
+      "yr": 1996,
+      "end_yr": null,
+      "r": "taiwan",
+      "imp": 3,
+      "short": {
+        "de": "Erste direkte Präsidentschaftswahl Taiwan"
+      },
+      "detail": {
+        "de": "Am 23. März 1996 wählen über 10 Millionen Taiwaner direkt ihren Präsidenten. Lee Teng-hui (KMT) gewinnt mit 54%. Trotz chinesischer Raketendrohungen friedliche Wahl. Taiwan wird die einzige funktionierende Demokratie der chinesisch-sprachigen Welt. Identität verschiebt sich: 'taiwanesisch' statt 'chinesisch'."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "revolution"
+      ]
+    },
+    {
+      "id": "hongkong_tiananmen_solidaritaet_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "Eine Million Hongkonger marschieren für Tiananmen"
+      },
+      "detail": {
+        "de": "Am 28. Mai 1989 demonstriert eine Million Hongkonger gegen das Vorgehen der Pekinger Führung — größte Demo der Hongkonger Geschichte bis 2003. Politisches Erwachen der bis dahin überwiegend unpolitischen Bevölkerung. Tiananmen wird zum Trauma, das die Übergabe 1997 schattenhaft begleitet. Jährliche Mahnwachen in Victoria Park bis 2020 verboten."
+      },
+      "tags": [
+        "politik",
+        "protest"
+      ]
+    },
+    {
+      "id": "hk_basic_law_1990",
+      "yr": 1990,
+      "end_yr": null,
+      "r": "china",
+      "imp": 1,
+      "short": {
+        "de": "Hongkong-Basic-Law verabschiedet"
+      },
+      "detail": {
+        "de": "Pekinger Nationalkongress verabschiedet am 4. April 1990 das 'Basic Law' — Hongkongs Mini-Verfassung nach 1997. Garantiert 'Ein Land, zwei Systeme' für 50 Jahre, aber lässt zentrale Auslegungen Peking. Artikel 23 (nationale Sicherheit) wird später zur Sollbruchstelle der Demokratiebewegung."
+      },
+      "tags": [
+        "politik",
+        "gesetz"
+      ]
+    },
+    {
+      "id": "patten_reformen_hk_1992",
+      "yr": 1992,
+      "end_yr": 1997,
+      "r": "uk",
+      "imp": 1,
+      "short": {
+        "de": "Patten-Reformen in Hongkong"
+      },
+      "detail": {
+        "de": "Letzter britischer Gouverneur Chris Patten führt vor der Übergabe Demokratie-Reformen ein. Direktwahlen für den Legislativrat (LegCo). China verurteilt es als Bruch der Vereinbarung. 1995 gewinnt die Demokratische Partei. Peking nennt es Sabotage und verspricht alle Reformen 1997 rückgängig zu machen. Setting für die Demokratie-Frage in Hongkong."
+      },
+      "tags": [
+        "politik",
+        "gesetz"
+      ]
+    },
+    {
+      "id": "indien_liberalisierung_1991",
+      "yr": 1991,
+      "end_yr": null,
+      "r": "indien",
+      "imp": 3,
+      "short": {
+        "de": "Indiens Wirtschaftsliberalisierung"
+      },
+      "detail": {
+        "de": "Indien am Rand der Staatspleite. Finanzminister Manmohan Singh — später Premierminister — startet radikale Liberalisierung: Abbau des sozialistischen 'License Raj', Öffnung für Auslandskapital, Abwertung der Rupie. Beginn des indischen Aufstiegs zur Wirtschaftsmacht. Premier Narasimha Rao trägt politisch."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "babri_moschee_1992",
+      "yr": 1992,
+      "end_yr": null,
+      "r": "indien",
+      "imp": 2,
+      "short": {
+        "de": "Zerstörung der Babri-Moschee"
+      },
+      "detail": {
+        "de": "Hindu-Nationalisten zerstören am 6. Dezember 1992 die Babri-Moschee in Ayodhya. Behauptung: Stand auf dem Geburtsort des Hindu-Gottes Ram. Folge: Hindu-Muslim-Unruhen mit tausenden Toten. Hindu-nationalistische BJP wird politisch salonfähig — Beginn ihres Aufstiegs zur dominanten Partei (später Modi)."
+      },
+      "tags": [
+        "religion",
+        "gesellschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "bjp_aufstieg_1996",
+      "yr": 1996,
+      "end_yr": null,
+      "r": "indien",
+      "imp": 2,
+      "short": {
+        "de": "BJP erstmals stärkste Partei"
+      },
+      "detail": {
+        "de": "Die hindu-nationalistische BJP wird 1996 erstmals stärkste Partei im indischen Parlament. Regierung Vajpayee scheitert nach 13 Tagen am Vertrauensvotum, kommt aber 1998 stabil zurück. Ende der jahrzehntelangen Dominanz der säkular-sozialistischen Kongresspartei. Vorzeichen für Modis späteren Sieg 2014."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "indien_atomtest_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "indien",
+      "imp": 2,
+      "short": {
+        "de": "Indien wird Atommacht"
+      },
+      "detail": {
+        "de": "Indien testet im Mai 1998 fünf Atomwaffen unter Premier Vajpayee (BJP). Pakistan kontert binnen Wochen mit eigenen Tests. Beide Länder werden offiziell Atommächte. USA und Westen verhängen Sanktionen, die kurz darauf wieder aufgehoben werden. Neue strategische Realität in Südasien."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "kargil_krieg_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "indien",
+      "imp": 2,
+      "short": {
+        "de": "Kargil-Krieg Indien-Pakistan"
+      },
+      "detail": {
+        "de": "Pakistanische Soldaten und Kämpfer infiltrieren indisch kontrollierte Höhen in Kashmir. Indien antwortet mit Luftangriffen und Bodenoffensive. Erster konventioneller Krieg zwischen zwei Atommächten der Geschichte. USA übt Druck auf Pakistan aus, sich zurückzuziehen. Pakistanisches Militär stürzt kurz danach Premier Sharif (Musharraf-Putsch)."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "doi_moi_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "vietnam",
+      "imp": 3,
+      "short": {
+        "de": "Doi Moi: Vietnams Reform"
+      },
+      "detail": {
+        "de": "Sechster Parteitag der KP Vietnams beschließt im Dezember 1986 die Reformpolitik 'Doi Moi' (Erneuerung). Übergang von zentraler Planwirtschaft zur 'sozialistisch orientierten Marktwirtschaft'. Vietnam folgt dem chinesischen Modell: wirtschaftliche Öffnung, politische Kontrolle bleibt. Bauern dürfen privat anbauen, ausländisches Kapital kommt. Vietnams wirtschaftlicher Aufstieg beginnt."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "vietnam_usa_normalisierung_1995",
+      "yr": 1995,
+      "end_yr": null,
+      "r": "vietnam",
+      "imp": 2,
+      "short": {
+        "de": "USA-Vietnam-Beziehungen normalisiert"
+      },
+      "detail": {
+        "de": "Clinton normalisiert 1995 diplomatische Beziehungen zu Vietnam — 20 Jahre nach Kriegsende. Embargo war bereits 1994 aufgehoben worden. Vietnam wird in regionale Strukturen (ASEAN 1995) integriert. Ende der Kalten-Kriegs-Isolation. Setting für späteren US-Vietnam-Schulterschluss gegen Chinas Expansion."
+      },
+      "tags": [
+        "geopolitik",
+        "vertrag"
+      ]
+    },
+    {
+      "id": "vietnam_asienkrise_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "vietnam",
+      "imp": 1,
+      "short": {
+        "de": "Vietnam wird von Asienkrise getroffen"
+      },
+      "detail": {
+        "de": "Anders als Thailand oder Indonesien hält Vietnam seine Währung stabil, aber Investitionen brechen ein. Wachstum halbiert sich. Stärkt aber die Reformer-Fraktion in der KP: weitere Öffnung notwendig. Bereitet bilaterales Handelsabkommen mit USA (2001) vor."
+      },
+      "tags": [
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "suharto_neue_ordnung_1967",
+      "yr": 1967,
+      "end_yr": 1998,
+      "r": "indonesien",
+      "imp": 2,
+      "short": {
+        "de": "Suhartos 'Neue Ordnung' beginnt"
+      },
+      "detail": {
+        "de": "General Suharto übernimmt 1967 nach dem Massaker an angeblichen Kommunisten (1965-66, geschätzt 500.000 bis 1 Million Tote). 32-jährige Militärdiktatur. Wirtschaftswachstum durch Öl und ausländische Investitionen, aber Korruption, Vetternwirtschaft, Unterdrückung. Westen toleriert wegen Antikommunismus."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "osttimor_invasion_1975",
+      "yr": 1975,
+      "end_yr": 1999,
+      "r": "indonesien",
+      "imp": 2,
+      "short": {
+        "de": "Indonesien besetzt Osttimor"
+      },
+      "detail": {
+        "de": "Indonesien marschiert nach Portugals Rückzug 1975 in Osttimor ein. Etwa 100.000 bis 180.000 Osttimoresen sterben in der Besatzung — ein Viertel der Bevölkerung. USA und Australien tolerieren wegen Kalter-Krieg-Logik. 1991 Santa-Cruz-Massaker in Dili zerstört das Schweigen international."
+      },
+      "tags": [
+        "krieg",
+        "staat",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "suharto_sturz_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "indonesien",
+      "imp": 3,
+      "short": {
+        "de": "Suharto-Sturz und Reformasi"
+      },
+      "detail": {
+        "de": "Asienkrise ruiniert Indonesien: Rupiah verliert 85% Wert. Studenten- und Massenproteste eskalieren. Anti-chinesische Pogrome in Jakarta (rund 1.000 Tote, hunderte Vergewaltigungen). Suharto tritt am 21. Mai 1998 nach 32 Jahren zurück. Beginn von 'Reformasi' — Indonesiens Übergang zur Demokratie."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "revolution"
+      ]
+    },
+    {
+      "id": "osttimor_referendum_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "indonesien",
+      "imp": 2,
+      "short": {
+        "de": "Osttimor stimmt für Unabhängigkeit"
+      },
+      "detail": {
+        "de": "Habibie erlaubt 1999 ein Referendum in Osttimor. 78,5% stimmen für Unabhängigkeit. Indonesische Militärs und Milizen reagieren mit Massakern und Verwüstung — Tausende Tote, 75% der Infrastruktur zerstört. UN-Truppe (INTERFET unter Australien) interveniert. Osttimor wird 2002 unabhängig."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "krieg"
+      ]
+    },
+    {
+      "id": "indonesien_demokratie_1999",
+      "yr": 1999,
+      "end_yr": null,
+      "r": "indonesien",
+      "imp": 2,
+      "short": {
+        "de": "Erste freie Wahl in Indonesien"
+      },
+      "detail": {
+        "de": "Im Juni 1999 finden die ersten freien Wahlen seit 44 Jahren statt. 48 Parteien treten an, Megawati Sukarnoputris PDI-P gewinnt die meisten Stimmen. Abdurrahman Wahid wird Präsident. Indonesien wird drittgrößte Demokratie der Welt — mit hauptsächlich muslimischer Bevölkerung."
+      },
+      "tags": [
+        "politik",
+        "wahl"
+      ]
+    },
+    {
+      "id": "marcos_kriegsrecht_1972",
+      "yr": 1972,
+      "end_yr": 1981,
+      "r": "philippinen",
+      "imp": 2,
+      "short": {
+        "de": "Marcos verhängt Kriegsrecht"
+      },
+      "detail": {
+        "de": "Ferdinand Marcos verhängt 1972 Kriegsrecht. Bekämpfung von Opposition, Pressezensur, Korruption auf Rekordhöhe. Schätzungen: 70.000 Verhaftungen, 34.000 Folterungen, 3.240 Tötungen. Marcos und seine Frau Imelda häufen Milliarden an. USA toleriert wegen Anti-Kommunismus und Militärbasen."
+      },
+      "tags": [
+        "politik",
+        "staat"
+      ]
+    },
+    {
+      "id": "aquino_ermordung_1983",
+      "yr": 1983,
+      "end_yr": null,
+      "r": "philippinen",
+      "imp": 2,
+      "short": {
+        "de": "Benigno Aquino ermordet"
+      },
+      "detail": {
+        "de": "Oppositionsführer Benigno 'Ninoy' Aquino wird am 21. August 1983 bei Rückkehr aus US-Exil am Flughafen Manila erschossen. Mord wird Marcos und seinem Militär zugeschrieben. Massive Proteste folgen. Witwe Corazon Aquino wird zur Gallionsfigur der Opposition."
+      },
+      "tags": [
+        "politik",
+        "terror"
+      ]
+    },
+    {
+      "id": "people_power_1986",
+      "yr": 1986,
+      "end_yr": null,
+      "r": "philippinen",
+      "imp": 3,
+      "short": {
+        "de": "People Power: Marcos gestürzt"
+      },
+      "detail": {
+        "de": "Februar 1986: Marcos manipuliert Wahl gegen Corazon Aquino. Militärs meutern. Millionen Filipinos versammeln sich auf EDSA-Boulevard in Manila zwischen den Truppen — drei Tage friedlicher Massenprotest. Marcos flieht ins US-Exil. Erste 'farbige Revolution' der Moderne — Vorbild für Osteuropa 1989, Korea 1987, später Arabischer Frühling."
+      },
+      "tags": [
+        "politik",
+        "protest",
+        "revolution"
+      ]
+    },
+    {
+      "id": "asienkrise_thailand_1997",
+      "yr": 1997,
+      "end_yr": null,
+      "r": "thailand",
+      "imp": 3,
+      "short": {
+        "de": "Thailand entwertet Baht — Asienkrise beginnt"
+      },
+      "detail": {
+        "de": "Thailand gibt am 2. Juli 1997 die Bindung des Baht an den Dollar auf. Spekulanten hatten Reserven aufgebraucht. Baht stürzt 50% ab. Innerhalb von Wochen folgt Ansteckung: Indonesien, Südkorea, Malaysia, Philippinen. Vorzeichen waren ignoriert worden. Beginn der Asienkrise."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "tigerstaaten_aufstieg_1980er",
+      "yr": 1980,
+      "end_yr": 1997,
+      "r": "südostasien",
+      "imp": 2,
+      "short": {
+        "de": "Tigerstaaten-Aufstieg"
+      },
+      "detail": {
+        "de": "Südkorea, Taiwan, Hongkong, Singapur — die 'Vier Asiatischen Tiger' — wachsen jährlich zweistellig durch Exportorientierung. Vorbilder für China, Vietnam, Malaysia, Thailand, Indonesien. Asiatisches Wachstumsmodell überholt erstmals westliche Vorstellungen. 'Asian Values'-Debatte: ist Demokratie nötig für Wohlstand?"
+      },
+      "tags": [
+        "wirtschaft",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "apec_1989",
+      "yr": 1989,
+      "end_yr": null,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "APEC gegründet"
+      },
+      "detail": {
+        "de": "Asia-Pacific Economic Cooperation 1989 in Canberra gegründet, Initiative Australiens. Erstes pazifisches Wirtschaftsforum. 1993: erste APEC-Gipfelkonferenz in Seattle unter Clinton. Symbol für die Verschiebung des wirtschaftlichen Schwerpunkts vom Atlantik zum Pazifik."
+      },
+      "tags": [
+        "vertrag",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "asean_erweiterung_1990er",
+      "yr": 1995,
+      "end_yr": 1999,
+      "r": "südostasien",
+      "imp": 1,
+      "short": {
+        "de": "ASEAN erweitert sich"
+      },
+      "detail": {
+        "de": "ASEAN (1967 gegründet) nimmt Vietnam (1995), Laos und Myanmar (1997), Kambodscha (1999) auf. Aus westlich orientierter Anti-Kommunismus-Allianz wird umfassendes regionales Forum. Setting für ASEAN+3 (China, Japan, Südkorea) und spätere geopolitische Rolle Südostasiens."
+      },
+      "tags": [
+        "vertrag",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "pakistan_atomwaffen_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "pakistan",
+      "imp": 2,
+      "short": {
+        "de": "Pakistan wird Atommacht"
+      },
+      "detail": {
+        "de": "Pakistan kontert Indiens Atomtests innerhalb von 17 Tagen mit eigenen sechs Tests. Premierminister Nawaz Sharif erklärt: 'heute haben wir die Rechnung beglichen'. Subkontinent nuklearisiert. Sanktionen, später aufgehoben. Setting für jahrzehntelange Spannungen — und das größte Atomwaffenproliferations-Risiko der Welt."
+      },
+      "tags": [
+        "krieg",
+        "geopolitik"
+      ]
+    },
+    {
+      "id": "mahathir_capital_controls_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "malaysia",
+      "imp": 1,
+      "short": {
+        "de": "Mahathir trotzt IMF — Kapitalkontrollen"
+      },
+      "detail": {
+        "de": "Malaysias Premier Mahathir Mohamad weigert sich 1998 als einziges Land, IMF-Hilfe anzunehmen. Verhängt stattdessen Kapitalkontrollen und Wechselkursbindung — gegen alle westliche Ratschläge. Malaysia erholt sich überraschend schnell. Wird zum Lehrstück gegen IMF-Orthodoxie. Beeinflusst spätere Reaktionen auf Finanzkrisen."
+      },
+      "tags": [
+        "wirtschaft",
+        "politik"
+      ]
     }
   ],
   "links": [
@@ -2713,15 +3231,6 @@
       "certainty": "belegt"
     },
     {
-      "source": "finanzkrise_1998",
-      "target": "imf_krise_korea_1997",
-      "type": "direkt",
-      "why": {
-        "de": "Asienweite Ansteckung: Foreign creditors zogen Kapital aus allen Tigern ab, Korea war mit höchster Auslandsverschuldung am verwundbarsten."
-      },
-      "certainty": "belegt"
-    },
-    {
       "source": "imf_krise_korea_1997",
       "target": "gold_kampagne_1998",
       "type": "direkt",
@@ -2813,7 +3322,7 @@
     },
     {
       "source": "verlorenes_jahrzehnt_1991",
-      "target": "finanzkrise_1998",
+      "target": "ltcm_1998",
       "type": "beschleunigt",
       "why": {
         "de": "Japans schwache Banken zogen Kapital aus Südostasien ab um eigene Bilanzen zu stabilisieren — beschleunigte die Asienkrise."
@@ -2822,7 +3331,7 @@
     },
     {
       "source": "bankenkrise_japan_1997",
-      "target": "finanzkrise_1998",
+      "target": "ltcm_1998",
       "type": "beschleunigt",
       "why": {
         "de": "Japanische Banken mussten Kredite in Südostasien zurückrufen — verstärkter Liquiditätsschock in der Region."
@@ -2945,6 +3454,276 @@
         "de": "Hongkonger sahen 1989, wie Peking mit Demokratiebewegungen umgeht. Das prägte das Misstrauen über Jahrzehnte und befeuerte 2019 die Proteste gegen das Auslieferungsgesetz."
       },
       "certainty": "plausibel"
+    },
+    {
+      "source": "kriegsrecht_taiwan_1949",
+      "target": "kaohsiung_zwischenfall_1979",
+      "type": "direkt",
+      "why": {
+        "de": "Unter Kriegsrecht war jede Demokratieforderung illegal — Kaohsiung war Eskalation gegen die KMT-Diktatur."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "kaohsiung_zwischenfall_1979",
+      "target": "taiwan_kriegsrecht_ende_1987",
+      "type": "indirekt",
+      "why": {
+        "de": "Kaohsiung-Aktivisten bauten über acht Jahre die DPP-Opposition auf — internationaler und innerer Druck zwang Chiang Ching-kuo zur Liberalisierung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "taiwan_kriegsrecht_ende_1987",
+      "target": "taiwan_erste_wahl_1996",
+      "type": "indirekt",
+      "why": {
+        "de": "Kriegsrechtsende ermöglichte Parteienpluralismus, Verfassungsreform und direkte Präsidentschaftswahl nach neun Jahren Übergang."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "taiwan_strasse_krise_1995",
+      "target": "taiwan_erste_wahl_1996",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Chinesische Raketendrohungen mobilisierten taiwanesische Identität — Lee Teng-hui profitierte als 'Verteidiger der Demokratie' und gewann mit 54%."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "tiananmen_1989",
+      "target": "hongkong_tiananmen_solidaritaet_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Tiananmen-Massaker löste in Hongkong unmittelbar die größte Demonstration der Stadt-Geschichte aus."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "hongkong_tiananmen_solidaritaet_1989",
+      "target": "hongkong_2019",
+      "type": "indirekt",
+      "why": {
+        "de": "Politisches Erwachen 1989 schuf eine Generation von Demokratie-Aktivisten, die 30 Jahre später die Bewegung führten."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "sino_britische_erklaerung_1984",
+      "target": "hk_basic_law_1990",
+      "type": "direkt",
+      "why": {
+        "de": "Erklärung von 1984 forderte explizit die Erarbeitung einer Mini-Verfassung — Basic Law setzte das um."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "hk_basic_law_1990",
+      "target": "patten_reformen_hk_1992",
+      "type": "indirekt",
+      "why": {
+        "de": "Basic Law ließ Spielraum für Wahlrecht-Reformen — Patten nutzte ihn aus, gegen chinesischen Widerstand."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "indien_liberalisierung_1991",
+      "target": "bjp_aufstieg_1996",
+      "type": "indirekt",
+      "why": {
+        "de": "Wirtschaftliberalisierung schuf neue urbane Mittelschicht — Kernwählerschaft der BJP, die kulturell-religiöse Identitätspolitik mit Wirtschaftsöffnung verband."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "babri_moschee_1992",
+      "target": "bjp_aufstieg_1996",
+      "type": "direkt",
+      "why": {
+        "de": "Babri war Aktivismus der Hindutva-Bewegung — politische Mobilisierung führte 4 Jahre später zum BJP-Wahlsieg."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "bjp_aufstieg_1996",
+      "target": "indien_atomtest_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Indische Atomtests waren Wahlversprechen der BJP — Vajpayee ordnete sie binnen Wochen nach Amtsantritt an."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "indien_atomtest_1998",
+      "target": "pakistan_atomwaffen_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Pakistan reagierte binnen 17 Tagen mit eigenen Tests — direkte Antwort auf Indiens Schritt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "indien_atomtest_1998",
+      "target": "kargil_krieg_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Atomschirm verleitete Pakistan zu konventioneller Eskalation — Annahme: Indien würde unter dem nuklearen Tabu nicht voll reagieren."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "deng_reformen_1978",
+      "target": "doi_moi_1986",
+      "type": "direkt",
+      "why": {
+        "de": "Chinas Reform und Öffnung war direktes Vorbild — Vietnam kopierte das Modell wirtschaftlich öffnen, politisch geschlossen halten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "doi_moi_1986",
+      "target": "vietnam_usa_normalisierung_1995",
+      "type": "indirekt",
+      "why": {
+        "de": "Wirtschaftsöffnung machte Vietnam für US-Unternehmen attraktiv — Treiber für Aufhebung des Embargos und diplomatische Normalisierung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "suharto_neue_ordnung_1967",
+      "target": "osttimor_invasion_1975",
+      "type": "direkt",
+      "why": {
+        "de": "Suhartos antikommunistische Doktrin trieb die Eroberung Osttimors nach portugiesischem Rückzug — angeblich um 'kommunistisches FRETILIN' zu verhindern."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "asienkrise_thailand_1997",
+      "target": "suharto_sturz_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Rupiah-Kollaps zerstörte die wirtschaftliche Legitimation der Diktatur — Studentenproteste eskalierten ungebremst."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "suharto_sturz_1998",
+      "target": "osttimor_referendum_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Habibie erlaubte das Referendum als Reformsignal — wäre unter Suharto undenkbar gewesen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "suharto_sturz_1998",
+      "target": "indonesien_demokratie_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Reformasi schuf die institutionellen Rahmenbedingungen für die erste freie Wahl binnen eines Jahres."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "marcos_kriegsrecht_1972",
+      "target": "aquino_ermordung_1983",
+      "type": "indirekt",
+      "why": {
+        "de": "Eskalation der Repression unter Kriegsrecht machte Aquino zur Bedrohung, die nur durch Mord neutralisiert werden konnte."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "aquino_ermordung_1983",
+      "target": "people_power_1986",
+      "type": "direkt",
+      "why": {
+        "de": "Mord radikalisierte die Opposition und mobilisierte die Mittelschicht — Corazon Aquino wurde unausweichliche Gegenkandidatin."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "asienkrise_thailand_1997",
+      "target": "imf_krise_korea_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Thailand-Crash löste Kapitalflucht aus allen Tigerstaaten aus — Südkorea war wegen höchster Auslandsverschuldung am verwundbarsten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "asienkrise_thailand_1997",
+      "target": "vietnam_asienkrise_1997",
+      "type": "direkt",
+      "why": {
+        "de": "Regionale Ansteckung erreichte auch Vietnam, wenn auch milder durch Währungskontrollen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "asienkrise_thailand_1997",
+      "target": "mahathir_capital_controls_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Malaysias Kapitalkontrollen waren Reaktion auf Spekulationsangriff im Zuge der Asienkrise."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "asienkrise_thailand_1997",
+      "target": "ltcm_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Russland-Default war Folge der Asienkrise (Rohstoffpreise gefallen). LTCM hatte falsch auf Russland gewettet — Asienkrise tötete den Fonds indirekt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "tigerstaaten_aufstieg_1980er",
+      "target": "doi_moi_1986",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfolg der Tiger zeigte Vietnam: exportorientierte Marktwirtschaft funktioniert — Druck zur Nachahmung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "tigerstaaten_aufstieg_1980er",
+      "target": "deng_suedreise_1992",
+      "type": "indirekt",
+      "why": {
+        "de": "Deng nannte Tiger explizit als Vorbild — Südreise war Mahnung an die KPCh, nicht den Anschluss zu verlieren."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "people_power_1986",
+      "target": "juni_aufstand_1987",
+      "type": "indirekt",
+      "why": {
+        "de": "Philippinische Massenproteste zeigten koreanischen Aktivisten: friedlicher Sturz autoritärer Regime ist möglich — Inspiration unmittelbar darauf."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "people_power_1986",
+      "target": "taiwan_kriegsrecht_ende_1987",
+      "type": "indirekt",
+      "why": {
+        "de": "Marcos-Sturz alarmierte KMT — Chiang Ching-kuo erkannte: Reform von oben besser als Sturz von unten."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "vietnam_usa_normalisierung_1995",
+      "target": "asean_erweiterung_1990er",
+      "type": "direkt",
+      "why": {
+        "de": "Diplomatische Öffnung Vietnams machte ASEAN-Beitritt im selben Jahr möglich."
+      },
+      "certainty": "belegt"
     }
   ]
 }
