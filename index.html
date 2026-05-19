@@ -193,7 +193,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kausalitätsnetz 2000–2026</title>
+<title>Kausalitätsnetz</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -209,6 +209,16 @@ body { background: #07090d; color: #c8d4e4; font-family: 'Segoe UI', system-ui, 
 .node.faded { opacity: 0.08; }
 .node text { font-size: 10px; fill: #c8d4e4; pointer-events: none; }
 .node.selected text, .node.path-node text { fill: #fff; font-weight: 700; }
+
+/* Zeitachse — nur sichtbar bei niedrigem Zoom */
+#g-axis { pointer-events: none; }
+.axis-line { stroke: #2a3a52; stroke-width: 1; }
+.axis-tick { stroke: #2a3a52; stroke-width: 1; }
+.axis-label { fill: #5a6f8a; font-family: monospace; font-size: 11px; text-anchor: middle; pointer-events: none; }
+
+/* Cluster-Labels — nur sichtbar bei niedrigem Zoom */
+#g-clusters { pointer-events: none; }
+.cluster-label { fill: #c8d4e4; font-family: monospace; font-weight: 700; letter-spacing: 0.1em; text-anchor: middle; pointer-events: none; }
 
 .link { stroke-opacity: 0.3; fill: none; }
 .link.direkt       { stroke: #ff4a6e; }
@@ -523,7 +533,7 @@ h1 em { color: #4a9eff; font-style: normal; }
 
 <div id="hdr">
   <div class="hdr-row">
-    <h1>Kausal<em>netz</em> 2000–2026</h1>
+    <h1>Kausal<em>netz</em> <span id="hdr-yr">…</span></h1>
     <div class="sep-v"></div>
     <!-- Region dropdown -->
     <div class="dropdown" id="region-dropdown">
@@ -613,7 +623,9 @@ h1 em { color: #4a9eff; font-style: normal; }
     <marker id="arr-beschleunigt"markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#4a9eff" opacity="0.7"/></marker>
     <marker id="arr-path"        markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#22d3ee"/></marker>
   </defs>
+  <g id="g-axis"></g>
   <g id="g-links"></g>
+  <g id="g-clusters"></g>
   <g id="g-nodes"></g>
 </svg>
 
@@ -678,10 +690,14 @@ const RNAME = {
   china:"China", mittelost:"Naher Osten", global:"Global",
   oesterreich:"Österreich",
   uk:"UK", japan:"Japan", taiwan:"Taiwan",
+  südkorea:"Südkorea",
   iran:"Iran", israel:"Israel", saudi:"Saudi-Arabien",
   afghanistan:"Afghanistan", brasilien:"Brasilien",
   australien:"Australien", syrien:"Syrien",
-  südostasien:"Südostasien"
+  südostasien:"Südostasien",
+  indien:"Indien", indonesien:"Indonesien",
+  vietnam:"Vietnam", philippinen:"Philippinen",
+  thailand:"Thailand", pakistan:"Pakistan", malaysia:"Malaysia"
 };
 const IRAD = {3:22, 2:13, 1:7};
 
@@ -699,6 +715,20 @@ const HDR_H = 70; // approximate header height
 // Deep-copy nodes so D3 can mutate
 const nodes = NODES.map(d => ({...d}));
 const links = LINKS.map(d => ({...d}));
+
+// Dynamische Jahresspanne aus den Daten
+const YR_MIN = Math.min(...nodes.map(n => n.yr));
+const YR_MAX = Math.max(...nodes.map(n => n.yr));
+// Auf 5er-Schritte runden für saubere Achse
+const AXIS_MIN = Math.floor(YR_MIN / 5) * 5;
+const AXIS_MAX = Math.ceil(YR_MAX / 5) * 5;
+function yrToX(yr, width) {
+  return 100 + ((yr - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * (width - 200);
+}
+
+// Header-Titel mit echter Jahresspanne aus den Daten setzen
+document.getElementById('hdr-yr').textContent = YR_MIN + '–' + YR_MAX;
+document.title = 'Kausalitätsnetz ' + YR_MIN + '–' + YR_MAX;
 
 // Lookup
 const byId = {};
@@ -790,18 +820,78 @@ function maxReachDepth(startId, adjMap) {
 
 // ── SVG ──
 const svg = d3.select("#canvas");
+const gA = svg.select("#g-axis");
 const gL = svg.select("#g-links");
+const gC = svg.select("#g-clusters");
 const gN = svg.select("#g-nodes");
 
+// ── ZEITACHSE zeichnen ──
+function drawAxis(width, height) {
+  gA.selectAll("*").remove();
+  // y unter den Knoten — H/2 ist die Force-y-Zentrum, Knoten verteilen sich ~250px vertikal
+  const yBase = height / 2 + 280;
+  // Hauptlinie
+  gA.append("line").attr("class", "axis-line")
+    .attr("x1", yrToX(AXIS_MIN, width)).attr("x2", yrToX(AXIS_MAX, width))
+    .attr("y1", yBase).attr("y2", yBase);
+  // Ticks alle 5 Jahre
+  for(let y = AXIS_MIN; y <= AXIS_MAX; y += 5) {
+    const x = yrToX(y, width);
+    const isMajor = y % 10 === 0;
+    gA.append("line").attr("class", "axis-tick")
+      .attr("x1", x).attr("x2", x)
+      .attr("y1", yBase - (isMajor ? 8 : 4)).attr("y2", yBase + (isMajor ? 8 : 4));
+    if(isMajor) {
+      gA.append("text").attr("class", "axis-label")
+        .attr("x", x).attr("y", yBase + 24).text(y);
+    }
+  }
+}
+drawAxis(W, H);
+
+// ── CLUSTER-LABELS ──
+// Verzögert nach Simulation: y-Schwerpunkt pro Region berechnen
+function updateClusters() {
+  gC.selectAll("*").remove();
+  const byRegion = {};
+  nodes.forEach(n => {
+    if(n.x == null || n.y == null) return;
+    if(!byRegion[n.r]) byRegion[n.r] = [];
+    byRegion[n.r].push(n);
+  });
+  for(const r in byRegion) {
+    const ns = byRegion[r];
+    if(ns.length < 3) continue; // nur Cluster mit mind. 3 Knoten beschriften
+    const cx = ns.reduce((s,n) => s + n.x, 0) / ns.length;
+    const cy = ns.reduce((s,n) => s + n.y, 0) / ns.length;
+    const name = (RNAME[r] || r).toUpperCase();
+    const size = 12 + Math.min(28, ns.length * 1.5);
+    gC.append("text").attr("class", "cluster-label")
+      .attr("x", cx).attr("y", cy)
+      .attr("font-size", size)
+      .attr("opacity", 0)
+      .text(name);
+  }
+}
+
 const zoom = d3.zoom().scaleExtent([0.2, 4]).on("zoom", e => {
+  gA.attr("transform", e.transform);
   gL.attr("transform", e.transform);
+  gC.attr("transform", e.transform);
   gN.attr("transform", e.transform);
-  // LOD: imp:1 Labels nur beim Reinzoomen sichtbar
   const k = e.transform.k;
-  const opacity = k > 1.4 ? Math.min(1, (k - 1.4) / 0.4) : 0;
-  d3.selectAll(".node-label-imp1").style("opacity", opacity);
+  // LOD: imp:1 Labels nur beim Reinzoomen sichtbar
+  const impOpacity = k > 1.4 ? Math.min(1, (k - 1.4) / 0.4) : 0;
+  d3.selectAll(".node-label-imp1").style("opacity", impOpacity);
+  // Zeitachse + Cluster-Labels: nur beim Rauszoomen sichtbar
+  const overviewOpacity = k < 0.8 ? Math.min(0.55, (0.8 - k) / 0.4 * 0.55) : 0;
+  gA.style("opacity", overviewOpacity / 0.55);  // Achse darf voll sichtbar werden
+  d3.selectAll(".cluster-label").style("opacity", overviewOpacity);
 });
 svg.call(zoom);
+// Initial zoom: gleich am Start auf "Überblick" (k=0.55), damit man das ganze Netz sieht
+// Kein nerviger Auto-Zoom Sekunden später — sofort beim Laden gesetzt
+svg.call(zoom.transform, d3.zoomIdentity.translate(W/2*0.45, H/2*0.45 + HDR_H/2).scale(0.55));
 
 // ── SIMULATION ──
 const sim = d3.forceSimulation(nodes)
@@ -814,10 +904,7 @@ const sim = d3.forceSimulation(nodes)
   .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -520 : d.imp === 2 ? -320 : -180))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
-  .force("x", d3.forceX(d => {
-    const mn=1998, mx=2026;
-    return 100 + ((d.yr-mn)/(mx-mn)) * (W-200);
-  }).strength(0.12))
+  .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.12))
   .force("y", d3.forceY(H/2 + HDR_H/2).strength(0.04));
 
 // ── DRAW LINKS ──
@@ -868,10 +955,13 @@ nodeEls.filter(d => d.imp >= 2).append("text")
   .text(d => String(d.yr));
 
 // ── TICK ──
+let tickCount = 0;
 sim.on("tick", () => {
   linkEls.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
          .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
   nodeEls.attr("transform", d => `translate(${d.x},${d.y})`);
+  // Cluster-Labels-Position alle 30 Ticks neu berechnen (sonst zu teuer)
+  if(++tickCount % 30 === 0) updateClusters();
 });
 
 // ── NODE CLICK ──
@@ -1225,21 +1315,10 @@ function applyImpFilter() {
   });
 }
 
-// ── AUTO ZOOM TO FIT — nur einmal beim ersten Laden ──
-let initialZoomDone = false;
+// ── AUTO ZOOM TO FIT — entfernt, nervte beim Start (kam Sekunden später)
+// Nutzer kann jederzeit über den "⊡ Zoom zurücksetzen"-Button neu zentrieren
 sim.on("end", () => {
-  if(initialZoomDone) return;
-  initialZoomDone = true;
-  const xs = nodes.map(n=>n.x), ys = nodes.map(n=>n.y);
-  const x0=Math.min(...xs), x1=Math.max(...xs);
-  const y0=Math.min(...ys), y1=Math.max(...ys);
-  const pad = 60;
-  const scaleX = (W-pad*2)/(x1-x0||1);
-  const scaleY = (H-HDR_H-pad*2)/(y1-y0||1);
-  const k = Math.min(scaleX, scaleY, 1.5);
-  const tx = W/2 - k*(x0+x1)/2;
-  const ty = H/2 - k*(y0+y1)/2 + HDR_H/2;
-  svg.transition().duration(800).call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
+  updateClusters();  // finale Cluster-Positionen
 });
 
 // ── CONTROLS ──
@@ -1480,11 +1559,9 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => {
     const newW = window.innerWidth, newH = window.innerHeight;
     sim.force("center", d3.forceCenter(newW/2, newH/2 + HDR_H/2));
-    sim.force("x", d3.forceX(d => {
-      const mn=1998, mx=2026;
-      return 100 + ((d.yr-mn)/(mx-mn)) * (newW-200);
-    }).strength(0.12));
+    sim.force("x", d3.forceX(d => yrToX(d.yr, newW)).strength(0.12));
     sim.force("y", d3.forceY(newH/2 + HDR_H/2).strength(0.04));
+    drawAxis(newW, newH);
     sim.alpha(0.3).restart();
   }, 200);
 });
