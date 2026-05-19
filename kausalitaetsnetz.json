@@ -4494,6 +4494,161 @@
         "klima",
         "umwelt"
       ]
+    },
+    {
+      "id": "erster_tschetschenien_krieg_1994",
+      "yr": 1994,
+      "end_yr": 1996,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Erster Tschetschenien-Krieg"
+      },
+      "detail": {
+        "de": "Jelzin schickt im Dezember 1994 Truppen in die abtrünnige Republik Tschetschenien. Russische Armee erleidet demütigende Niederlage gegen Dudajews Guerilla. 80.000+ Tote, Grosny verwüstet. Khasavyurt-Abkommen August 1996: De-facto-Unabhängigkeit Tschetscheniens. Trauma der russischen Armee, breite Sehnsucht nach 'Stärke' — Vorbedingung für Putins Aufstieg drei Jahre später."
+      },
+      "tags": [
+        "krieg"
+      ]
+    },
+    {
+      "id": "russland_finanzkrise_1998",
+      "yr": 1998,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Russland-Finanzkrise: Rubel-Default"
+      },
+      "detail": {
+        "de": "17. August 1998: Russland erklärt Default auf Staatsanleihen, Rubel verliert binnen Wochen zwei Drittel seines Wertes. Folge der Asien-Krise plus jahrelanger Misswirtschaft und Steuerschwäche. Massive Verarmung — Ersparnisse vernichtet, Renten wertlos. Jelzin endgültig diskreditiert. LTCM-Hedgefonds bricht in den USA daraufhin zusammen. Vorbedingung für die Suche nach einem 'starken Mann': Putin wird August 1999 Premier."
+      },
+      "tags": [
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "zweiter_tschetschenien_krieg_1999",
+      "yr": 1999,
+      "end_yr": 2009,
+      "r": "russland",
+      "imp": 3,
+      "short": {
+        "de": "Zweiter Tschetschenien-Krieg — Putins Aufstieg"
+      },
+      "detail": {
+        "de": "Putin als neuer Premier startet im September 1999 den Zweiten Tschetschenien-Krieg, ausgelöst durch eine Serie von Wohnungsbombenanschlägen in russischen Städten (307 Tote; Beteiligung des FSB bis heute nicht aufgeklärt — in Rjasan wurden FSB-Agenten beim Anbringen weiteren Sprengstoffs ertappt, was offiziell als 'Übung' deklariert wurde). Grosny wird systematisch zerstört, brutaler 'Wiederaufbau' unter der Kadyrow-Familie. 50.000+ Tote. Macht Putin schlagartig populär — Präsidentschaftswahl März 2000 gewinnt er mit 53%."
+      },
+      "tags": [
+        "krieg",
+        "politik"
+      ]
+    },
+    {
+      "id": "khodorkovsky_2003",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Khodorkowski verhaftet — Oligarchen unterworfen"
+      },
+      "detail": {
+        "de": "Michail Chodorkowski, reichster Russe und Yukos-Eigentümer (größter Ölkonzern), wird Oktober 2003 verhaftet. 2005 zu 9 Jahren Lager verurteilt. Yukos zerschlagen — Vermögenswerte gehen praktisch an Rosneft (Staatskonzern). Lehre an alle Oligarchen: politische Loyalität oder Vernichtung. Beginn der Verstaatlichung des Energiesektors, von dem die russische Staatswirtschaft dauerhaft abhängt. Putin etabliert 'managed democracy' — formal demokratisch, faktisch autoritär."
+      },
+      "tags": [
+        "politik",
+        "wirtschaft",
+        "konzern"
+      ]
+    },
+    {
+      "id": "beslan_2004",
+      "yr": 2004,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Beslan: Geiselnahme mit 334 Toten"
+      },
+      "detail": {
+        "de": "1.-3. September 2004: Tschetschenische Terroristen besetzen Schule Nr. 1 in Beslan, Nordossetien — am ersten Schultag. 334 Tote, davon 186 Kinder. Putin nutzt die Tragödie zur weiteren Machtkonzentration: direkte Gouverneurswahlen werden abgeschafft, Sicherheitsapparat ausgebaut, Medienkontrolle verschärft. 'Sicherheit gegen Freiheit'-Tausch wird zur Doktrin. Strukturell der Moment, an dem die russische Demokratie endgültig zur Fassade wird."
+      },
+      "tags": [
+        "terror",
+        "katastrophe",
+        "politik"
+      ]
+    },
+    {
+      "id": "navalny_tod_2024",
+      "yr": 2024,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Nawalny stirbt im Lager"
+      },
+      "detail": {
+        "de": "Alexej Nawalny stirbt am 16. Februar 2024 in der Strafkolonie 'Polarwolf' am Polarkreis. Westliche Regierungen und seine Familie machen Putin verantwortlich. Reiht sich in eine Serie von Toden an prominenten Kritikern: Politkowskaja (Moskau 2006, Schuss am Geburtstag Putins), Litwinenko (Polonium-Vergiftung London 2006), Nemzow (Erschossen am Kreml 2015), Prigozhin (Flugzeugabsturz 2023). Letzter prominenter Oppositionsführer ausgeschaltet — genau einen Monat vor der Putin-Wiederwahl."
+      },
+      "tags": [
+        "terror",
+        "politik"
+      ]
+    },
+    {
+      "id": "putin_wiederwahl_2024",
+      "yr": 2024,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Putin 'gewinnt' mit 87% — fünfte Amtszeit"
+      },
+      "detail": {
+        "de": "Putin gewinnt am 17. März 2024 die Präsidentschaftswahl mit offiziellen 87,28% — höchster Wert seiner Karriere. Alle ernsthaften Kandidaten waren ausgeschlossen oder tot (Nawalny einen Monat zuvor gestorben, Friedenskandidat Nadeschdin nicht zur Wahl zugelassen). Fünfte Amtszeit, regulär bis 2030 — theoretisch danach noch eine bis 2036 (Verfassungsänderung 2020). Konsolidierung zur faktisch lebenslangen Herrschaft. Russland nun strukturell ein Personenregime."
+      },
+      "tags": [
+        "politik",
+        "wahl",
+        "staat"
+      ]
+    },
+    {
+      "id": "kursk_inkursion_2024",
+      "yr": 2024,
+      "end_yr": 2025,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Ukrainische Inkursion in Kursk"
+      },
+      "detail": {
+        "de": "Am 6. August 2024 stoßen ukrainische Truppen erstmals seit Beginn der Invasion auf russisches Kernterritorium vor — Kursk-Region. Halten zeitweise rund 1.300 km², 28 Ortschaften. Erste fremde Bodeninvasion russischen Territoriums seit dem Zweiten Weltkrieg. Psychologischer Schock: Putin nicht in der Lage, das eigene Heimatland zu schützen. Ende der 'Sonderoperation'-Erzählung — Krieg ist nicht mehr nur in der Ukraine. Russland verdrängt ukrainische Truppen erst März 2025 mit Hilfe nordkoreanischer Soldaten."
+      },
+      "tags": [
+        "krieg",
+        "politik"
+      ]
+    },
+    {
+      "id": "rosneft_sanktionen_2025",
+      "yr": 2025,
+      "end_yr": null,
+      "r": "russland",
+      "imp": 2,
+      "short": {
+        "de": "Trump sanktioniert Rosneft und Lukoil"
+      },
+      "detail": {
+        "de": "Trump-Administration verhängt im Oktober 2025 erstmals direkte Sanktionen gegen Russland — gegen Rosneft und Lukoil, die zwei größten Ölkonzerne (rund 50% der russischen Ölexporte). Bruch mit Trumps eigener Putin-freundlicher Linie der ersten Monate. Russlands Öl- und Gaseinnahmen könnten 2026 um 25% einbrechen, das Budget verliert über 1 Billion Rubel. Trifft direkt das ökonomische Rückgrat: Öl- und Gasexporte machen etwa ein Viertel des russischen Staatshaushalts aus. Russland-Wirtschaft schrumpft Q1/2026 um 0,3% — erste Kontraktion seit 2023."
+      },
+      "tags": [
+        "wirtschaft",
+        "geopolitik"
+      ]
     }
   ],
   "links": [
@@ -7340,6 +7495,141 @@
         "de": "Massaker brach moralische Autorität des ANC — Korruptionsskandale (State Capture) konnten danach das öffentliche Vertrauen vollständig erodieren."
       },
       "certainty": "plausibel"
+    },
+    {
+      "source": "erster_tschetschenien_krieg_1994",
+      "target": "russland_finanzkrise_1998",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Kosten des Tschetschenien-Kriegs verschärften die fiskalische Krise des russischen Staates Mitte der 1990er."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "erster_tschetschenien_krieg_1994",
+      "target": "zweiter_tschetschenien_krieg_1999",
+      "type": "direkt",
+      "why": {
+        "de": "Khasavyurt-Abkommen 1996 hinterließ De-facto-Unabhängigkeit als russisches Trauma — Revanchismus und Sehnsucht nach 'Stärke' bereiteten den zweiten Krieg vor."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "russland_finanzkrise_1998",
+      "target": "zweiter_tschetschenien_krieg_1999",
+      "type": "indirekt",
+      "why": {
+        "de": "Jelzins Schwäche nach dem Default erzwang einen technokratischen Premier — Putin war Auswahl der Oligarchen, suchte schnell sein eigenes Profil über den Krieg."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "russland_finanzkrise_1998",
+      "target": "ltcm_1998",
+      "type": "direkt",
+      "why": {
+        "de": "Russlands Default war der direkte Auslöser des LTCM-Hedgefonds-Kollapses — globale Liquiditätskrise folgte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zweiter_tschetschenien_krieg_1999",
+      "target": "putin_2000",
+      "type": "direkt",
+      "why": {
+        "de": "Kriegsführung machte Putin innerhalb von Monaten von unbekanntem Bürokraten zur populären Führungsfigur — Präsidentschaftswahl folgte sechs Monate später."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "putin_2000",
+      "target": "khodorkovsky_2003",
+      "type": "direkt",
+      "why": {
+        "de": "Konsolidierung der Macht erforderte Disziplinierung der Oligarchen — Chodorkowski war der ungehorsamste und reichste."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "khodorkovsky_2003",
+      "target": "putin_muenchen_2007",
+      "type": "indirekt",
+      "why": {
+        "de": "Erfolgreiche Disziplinierung der Oligarchen und steigende Ölpreise gaben Putin das Selbstbewusstsein, den Westen offen herauszufordern."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zweiter_tschetschenien_krieg_1999",
+      "target": "beslan_2004",
+      "type": "direkt",
+      "why": {
+        "de": "Beslan-Geiselnehmer kamen aus dem fortgesetzten Tschetschenien-Konflikt — Krieg griff von Tschetschenien aus auf Nordkaukasus über."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "beslan_2004",
+      "target": "putin_muenchen_2007",
+      "type": "indirekt",
+      "why": {
+        "de": "Macht-Konzentration nach Beslan (Gouverneurswahlen abgeschafft, Sicherheitsapparat ausgebaut) festigte Putins innenpolitische Basis für außenpolitische Konfrontation."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "navalny_2021",
+      "target": "navalny_tod_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Verhaftung 2021 und Vergiftung 2020 leiteten den langsamen Tod Nawalnys ein — Lagerhaft am Polarkreis war der letzte Schritt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "navalny_tod_2024",
+      "target": "putin_wiederwahl_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Letzter mobilisierungsfähiger Oppositionsführer eliminiert — Nawalny-Initiative 'Mittag gegen Putin' zur Wahl war einzige sichtbare Protestform."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ukraine_2022",
+      "target": "kursk_inkursion_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Krieg gegen die Ukraine konnte sich 2024 erstmals auf russisches Territorium ausdehnen — Ukraine drehte Initiative um."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ukraine_gegenoffensive",
+      "target": "kursk_inkursion_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Nach gescheiterter konventioneller Gegenoffensive 2023 wechselte Ukraine zur asymmetrischen Strategie — überraschende Inkursion statt Frontaldurchbruch."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "kursk_inkursion_2024",
+      "target": "rosneft_sanktionen_2025",
+      "type": "indirekt",
+      "why": {
+        "de": "Putins fortgesetzte Eskalation trotz Trump-Annäherung machte direkten Sanktionsschlag politisch unausweichlich."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "trump_2024",
+      "target": "rosneft_sanktionen_2025",
+      "type": "direkt",
+      "why": {
+        "de": "Erst die Trump-Administration konnte direkte Sanktionen gegen russische Ölgiganten verhängen — Biden hatte das vermieden, um Energiepreise stabil zu halten."
+      },
+      "certainty": "belegt"
     }
   ]
 }
