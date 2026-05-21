@@ -657,11 +657,12 @@ h1 em { color: #4a9eff; font-style: normal; }
     <!-- Importance dropdown -->
     <div class="dropdown" id="imp-dropdown">
       <div class="dd-label">WICHTIGKEIT</div>
-      <button class="fb active" id="imp-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Wichtigkeits-Filter">★★ Wichtig + Historisch ▾</button>
+      <button class="fb active" id="imp-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Wichtigkeits-Filter">★★★ Historisch (≥3) ▾</button>
       <div class="dropdown-menu" id="imp-menu" role="listbox" aria-label="Wichtigkeits-Stufen">
-        <div class="dd-item" data-imp="alle" role="option">★ Alle</div>
-        <div class="dd-item active" data-imp="2" role="option" aria-selected="true">★★ Wichtig + Historisch</div>
-        <div class="dd-item" data-imp="3" role="option">★★★ Nur Historisch</div>
+        <div class="dd-item" data-imp="alle" role="option">★ Alle (≥1)</div>
+        <div class="dd-item" data-imp="2" role="option">★★ Wichtig (≥2)</div>
+        <div class="dd-item active" data-imp="3" role="option" aria-selected="true">★★★ Historisch (≥3)</div>
+        <div class="dd-item" data-imp="4" role="option">★★★★ Nur Epochal</div>
       </div>
     </div>
     <div class="sep-v"></div>
@@ -759,7 +760,8 @@ h1 em { color: #4a9eff; font-style: normal; }
   <div class="leg"><div class="ll" style="background:#f0c040"></div>indirekte Verbindung</div>
   <div class="leg"><div class="ll" style="background:#4a9eff"></div>beschleunigt</div>
   <div class="leg" style="margin-top:0.3rem"><div class="ll" style="background:#22d3ee"></div>Kette (Shift+Klick)</div>
-  <div class="leg" style="margin-top:0.3rem"><div class="lc" style="border-color:#ff4a6e;width:12px;height:12px"></div>historisch</div>
+  <div class="leg" style="margin-top:0.3rem"><div class="lc" style="border-color:#ff4a6e;width:16px;height:16px"></div>epochal</div>
+  <div class="leg"><div class="lc" style="border-color:#ff4a6e;width:12px;height:12px"></div>historisch</div>
   <div class="leg"><div class="lc" style="border-color:#f0c040"></div>wichtig</div>
   <div class="leg"><div class="lc" style="border-color:#3a4a60"></div>relevant</div>
 </div>
@@ -832,7 +834,7 @@ const RNAME = {
   afrika:"Afrika", sudan:"Sudan", aethiopien:"Äthiopien",
   mali:"Mali", nigeria:"Nigeria", suedafrika:"Südafrika"
 };
-const IRAD = {3:22, 2:13, 1:7};
+const IRAD = {4:28, 3:22, 2:13, 1:7};
 
 // ── SPRACHE & MULTILINGUAL-HELPER ──
 let LANG = 'de';
@@ -914,7 +916,7 @@ function reachableFrom(id) {
 
 // ── STATE ──
 let filterRegion = "alle";
-let filterImp = "2";  // Default: Wichtig + Historisch — bei 200+ Knoten ist "alle" zu viel beim Erstkontakt
+let filterImp = "3";  // Default: Historisch + Epochal — bei 270+ Knoten klares Erstbild
 let filterTag = "alle";
 let pathMode = false;
 let pathStart = null;
@@ -1017,7 +1019,7 @@ links.forEach(l => {
 const sim = d3.forceSimulation(nodes)
   .force("link", d3.forceLink(links).id(d => d.id)
     .distance(d => d._dist).strength(0.15))
-  .force("charge", d3.forceManyBody().strength(d => d.imp === 3 ? -250 : d.imp === 2 ? -160 : -100))
+  .force("charge", d3.forceManyBody().strength(d => d.imp === 4 ? -350 : d.imp === 3 ? -250 : d.imp === 2 ? -160 : -100))
   .force("center", d3.forceCenter(W/2, H/2 + HDR_H/2))
   .force("collision", d3.forceCollide(d => IRAD[d.imp] + 22))
   .force("x", d3.forceX(d => yrToX(d.yr, W)).strength(0.6))
@@ -1449,7 +1451,7 @@ function isNodeVisible(n) {
   return true;
 }
 
-// Default-Filter beim Laden anwenden (filterImp ist auf "2" voreingestellt)
+// Default-Filter beim Laden anwenden (filterImp ist auf "3" voreingestellt)
 applyAllFilters();
 
 // ── AUTO ZOOM TO FIT — entfernt, nervte beim Start (kam Sekunden später)
@@ -1638,7 +1640,9 @@ const TAG_ICONS = {
   staat: "🏛️", katastrophe: "⚡", wahl: "🗳️", terror: "💥",
   konzern: "🏢", protest: "✊", umwelt: "🌱", revolution: "🔥",
   gesetz: "⚖️", klima: "🌡️", bewegung: "📢", kultur: "🎭",
-  migration: "🧭", gesundheit: "🏥", entdeckung: "🔬", energie: "⚡"
+  migration: "🧭", gesundheit: "🏥", entdeckung: "🔬", energie: "⚡",
+  bubble: "🫧", bubble_global: "🌪️", bubble_sectoral: "🏭", bubble_asset: "💹",
+  erbe: "🌱"
 };
 const TAG_NAME = {
   politik: "Politik", geopolitik: "Geopolitik", krieg: "Krieg",
@@ -1648,7 +1652,12 @@ const TAG_NAME = {
   konzern: "Konzern", protest: "Protest", umwelt: "Umwelt",
   revolution: "Revolution", gesetz: "Gesetz", klima: "Klima",
   bewegung: "Bewegung", kultur: "Kultur", migration: "Migration",
-  gesundheit: "Gesundheit", entdeckung: "Entdeckung", energie: "Energie"
+  gesundheit: "Gesundheit", entdeckung: "Entdeckung", energie: "Energie",
+  bubble: "Blasen (alle)",
+  bubble_global: "Globale Krisen",
+  bubble_sectoral: "Sektor-Blasen",
+  bubble_asset: "Asset-Blasen",
+  erbe: "Erbe (gut/schlecht)"
 };
 (function buildTagMenu() {
   const menu = document.getElementById("tag-menu");

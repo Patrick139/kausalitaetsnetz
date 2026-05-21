@@ -14,7 +14,9 @@
       },
       "tags": [
         "wirtschaft",
-        "konzern"
+        "konzern",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -39,7 +41,7 @@
       "yr": 2001,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "11. September 2001"
       },
@@ -83,7 +85,7 @@
       "yr": 2001,
       "end_yr": null,
       "r": "china",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "China tritt WTO bei"
       },
@@ -99,7 +101,7 @@
       "yr": 2003,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Irak-Invasion ohne Mandat"
       },
@@ -145,7 +147,7 @@
       "yr": 2007,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "iPhone — Smartphone-Ära"
       },
@@ -178,14 +180,18 @@
       "yr": 2008,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Globale Finanzkrise"
       },
       "detail": {
         "de": "Lehman kollabiert. Schlimmste Krise seit 1929. Banken gerettet, Mittelschicht zahlt. Nährboden für Populismus in ganz Europa und den USA."
       },
-      "tags": []
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "bubble_global"
+      ]
     },
     {
       "id": "georgien_2008",
@@ -209,7 +215,7 @@
       "yr": 2010,
       "end_yr": null,
       "r": "mittelost",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Arabischer Frühling"
       },
@@ -234,7 +240,10 @@
         "de": "Griechenland meldet Haushaltsbetrug. Troika übernimmt faktisch Kontrolle. Austerität zerstört Vertrauen in EU-Institutionen."
       },
       "tags": [
-        "politik"
+        "politik",
+        "bubble",
+        "wirtschaft",
+        "bubble_global"
       ]
     },
     {
@@ -259,7 +268,7 @@
       "yr": 2012,
       "end_yr": null,
       "r": "china",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Xi Jinping übernimmt"
       },
@@ -341,7 +350,7 @@
       "yr": 2015,
       "end_yr": null,
       "r": "global",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Pariser Klimaabkommen"
       },
@@ -358,7 +367,7 @@
       "yr": 2016,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Trump gewinnt Präsidentschaft"
       },
@@ -407,7 +416,7 @@
       "yr": 2022,
       "end_yr": null,
       "r": "russland",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Russland invadiert Ukraine"
       },
@@ -440,7 +449,7 @@
       "yr": 2022,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "ChatGPT / KI-Revolution"
       },
@@ -448,7 +457,10 @@
         "de": "OpenAI verändert in Monaten die Welt. KI-Wettlauf beginnt. Fundamentale Disruption am Arbeitsmarkt — und in der Demokratie."
       },
       "tags": [
-        "technologie"
+        "technologie",
+        "bubble",
+        "wirtschaft",
+        "bubble_sectoral"
       ]
     },
     {
@@ -519,7 +531,7 @@
       "yr": 2020,
       "end_yr": null,
       "r": "global",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "COVID-19 Pandemie"
       },
@@ -1325,7 +1337,9 @@
       },
       "tags": [
         "wirtschaft",
-        "gesellschaft"
+        "gesellschaft",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -1444,7 +1458,9 @@
       },
       "tags": [
         "wirtschaft",
-        "katastrophe"
+        "katastrophe",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -1461,7 +1477,9 @@
       },
       "tags": [
         "wirtschaft",
-        "katastrophe"
+        "katastrophe",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -1591,7 +1609,7 @@
       "yr": 1978,
       "end_yr": null,
       "r": "china",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Deng Xiaoping startet Reform und Öffnung"
       },
@@ -1642,7 +1660,7 @@
       "yr": 1989,
       "end_yr": null,
       "r": "china",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Tiananmen-Massaker"
       },
@@ -2010,7 +2028,9 @@
         "de": "Anders als Thailand oder Indonesien hält Vietnam seine Währung stabil, aber Investitionen brechen ein. Wachstum halbiert sich. Stärkt aber die Reformer-Fraktion in der KP: weitere Öffnung notwendig. Bereitet bilaterales Handelsabkommen mit USA (2001) vor."
       },
       "tags": [
-        "wirtschaft"
+        "wirtschaft",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -2167,7 +2187,9 @@
       },
       "tags": [
         "wirtschaft",
-        "katastrophe"
+        "katastrophe",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -2278,7 +2300,7 @@
       "yr": 1985,
       "end_yr": null,
       "r": "russland",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Gorbatschow wird Generalsekretär"
       },
@@ -2330,7 +2352,7 @@
       "yr": 1989,
       "end_yr": null,
       "r": "eu",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Fall der Berliner Mauer"
       },
@@ -2381,7 +2403,7 @@
       "yr": 1991,
       "end_yr": null,
       "r": "russland",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Auflösung der Sowjetunion"
       },
@@ -2792,7 +2814,7 @@
       "yr": 1981,
       "end_yr": 1989,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Reaganomics: Supply-Side-Wende"
       },
@@ -2921,7 +2943,9 @@
       },
       "tags": [
         "wirtschaft",
-        "katastrophe"
+        "katastrophe",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -2955,7 +2979,9 @@
       },
       "tags": [
         "wirtschaft",
-        "konzern"
+        "konzern",
+        "bubble",
+        "bubble_sectoral"
       ]
     },
     {
@@ -2963,7 +2989,7 @@
       "yr": 1994,
       "end_yr": null,
       "r": "usa",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "NAFTA-Freihandelsabkommen"
       },
@@ -3130,7 +3156,9 @@
       "tags": [
         "technologie",
         "wirtschaft",
-        "konzern"
+        "konzern",
+        "bubble",
+        "bubble_sectoral"
       ]
     },
     {
@@ -3183,7 +3211,9 @@
       "tags": [
         "wirtschaft",
         "technologie",
-        "katastrophe"
+        "katastrophe",
+        "bubble",
+        "bubble_global"
       ]
     },
     {
@@ -3209,7 +3239,7 @@
       "yr": 1979,
       "end_yr": null,
       "r": "mittelost",
-      "imp": 3,
+      "imp": 4,
       "short": {
         "de": "Iranische Revolution"
       },
@@ -4568,6 +4598,857 @@
       "tags": [
         "wirtschaft",
         "geopolitik"
+      ]
+    },
+    {
+      "id": "telekom_boom_1996",
+      "yr": 1996,
+      "end_yr": 2000,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Telekom-Boom: Glasfaser-Wahn"
+      },
+      "detail": {
+        "de": "Nach dem Telecommunications Act 1996 startet ein historischer Investitionsboom in Netzwerk-Infrastruktur. WorldCom, Global Crossing, Qwest, Lucent, Nortel sammeln dreistellige Milliardenbeträge ein. Marketing-Slogan: Internet-Verkehr verdoppelt sich alle 100 Tage (real: alle 12 Monate). 1996-2001 werden weltweit über 130 Mio Kilometer Glasfaser verlegt — 95% davon bleiben jahrelang dunkel ('dark fiber'). WorldCom auf Marktkapitalisierung von 180 Mrd USD (1999). VC und Banken finanzieren Überkapazität von 1000% über realer Nachfrage. Bernie Ebbers (WorldCom) und Gary Winnick (Global Crossing) werden zu Symbolfiguren."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "konzern",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "telekom_bust_2002",
+      "yr": 2002,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Telekom-Bust: WorldCom-Pleite"
+      },
+      "detail": {
+        "de": "WorldCom meldet 21. Juli 2002 Insolvenz an — 107 Mrd USD Bilanzsumme, größter Bankrott der US-Geschichte bis dato (übertroffen 2008 von Lehman). Bernie Ebbers wegen Bilanzfälschung über 11 Mrd USD verurteilt (25 Jahre). Global Crossing pleite Januar 2002. Qwest, Lucent, Nortel überleben verstümmelt. 5 Billionen USD Marktwert vernichtet (mehr als Dotcom-Bust direkt). 500.000 Telekom-Arbeitsplätze verloren. Sarbanes-Oxley-Gesetz Juli 2002 als direkte Antwort. Hinterlassen: massive Überkapazität an Glasfaser-Infrastruktur, die nahezu kostenlos verfügbar wird."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "konzern",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "glasfaser_erbe_2003",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Dark-Fiber-Erbe ermöglicht Web 2.0"
+      },
+      "detail": {
+        "de": "Nach dem Telekom-Bust 2002 wechseln die verlegten Glasfaser-Netze für Cents pro Dollar ihrer Anschaffungskosten den Besitzer. Level 3, Sprint, neue Akteure wie Google (kauft 2005 dark fiber großflächig auf) bauen darauf das Backbone des modernen Internets. Bandbreite, die 1999 hunderte Mio gekostet hätte, ist 2003 quasi gratis. Direkte Folge: YouTube (2005, gegründet wegen plötzlich verfügbarer Streaming-Bandbreite), Skype, Netflix-Streaming-Pivot 2007, Cloud Computing (AWS 2006). Klassisches Beispiel für 'Bubble verlegt Infrastruktur die unter Markt-Bedingungen nie entstanden wäre'."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "housing_boom_2003",
+      "yr": 2003,
+      "end_yr": 2007,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "US-Housing-Boom: Subprime-Welle"
+      },
+      "detail": {
+        "de": "Nach Greenspans Zinssenkung als Reaktion auf Dotcom-Crash (Fed Funds Rate 6,5% → 1,0% von 2001-2003) entsteht der historische US-Immobilienboom. Subprime-Hypotheken explodieren: 35 Mrd USD (2003) → 600 Mrd USD (2006). Hauspreise steigen 2000-2006 um 80% national, über 200% in Florida, Nevada, Kalifornien. 'NINJA loans' (No Income, No Job, No Assets) werden Standard. CDOs und CDS-Märkte wachsen auf 60 Billionen USD nominaler Größe. Countrywide, Washington Mutual, Bear Stearns, Lehman dominieren die Finanzierung. 2006 Höhepunkt — Preise beginnen zu fallen, Subprime-Defaults steigen. Vorbedingung der Finanzkrise 2008."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "konzern",
+        "bubble_global"
+      ]
+    },
+    {
+      "id": "cleantech_boom_2008",
+      "yr": 2008,
+      "end_yr": 2011,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Cleantech 1.0: Solar- und Biotreibstoff-Boom"
+      },
+      "detail": {
+        "de": "2006-2011 fließen rund 25 Mrd USD VC-Kapital in 'Cleantech': Solar (Solyndra, SunPower, First Solar), Biotreibstoffe (KiOR, Range Fuels), Batterien (A123 Systems, Boston-Power), elektrische Autos (Tesla-Frühphase, Fisker, Coda). Kombination aus Klimawandel-Diskurs, hohen Ölpreisen (147 USD/Barrel Juli 2008), Obama-Konjunkturpaket 2009 (90 Mrd USD für grüne Investitionen). DOE-Loan-Guarantees verteilen 16 Mrd USD an riskante Projekte. VC-Logik der Software-Branche prallt auf kapitalintensive, langsame Hardware-Realität — Anfängerfehler in industriellen Maßstäben."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "energie",
+        "klima",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "cleantech_bust_2012",
+      "yr": 2012,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Cleantech-Bust: Solyndra-Pleite"
+      },
+      "detail": {
+        "de": "Solyndra meldet September 2011 Insolvenz an — 535 Mio USD DOE-Loan verbrannt, politischer Skandal für Obama. A123 Systems pleite Oktober 2012 (390 Mio USD DOE-Loan), Fisker pleite 2013, Range Fuels, KiOR, Better Place — Serie von Hochkarät-Insolvenzen. VC-Bilanz Cleantech 1.0: rund die Hälfte der 25 Mrd USD verloren. Tesla überlebt nur knapp (Mai 2013 Quartal entscheidend). Lehre: Solar-Hardware ist eine Commodity, kein Software-Geschäft. China baut parallel Solar-Industrie auf staatlicher Subvention — gewinnt strukturell. Trauma der Cleantech-VCs hält bis ~2018."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "energie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "zirp_aera_2008",
+      "yr": 2008,
+      "end_yr": 2022,
+      "r": "global",
+      "imp": 3,
+      "short": {
+        "de": "ZIRP-Ära: Nullzins als neue Normalität"
+      },
+      "detail": {
+        "de": "Als Reaktion auf die Finanzkrise senkt die Fed Dezember 2008 die Zinsen auf 0-0,25% — bleiben dort bis 2015. EZB folgt 2014 mit Negativzinsen. BoJ noch früher. Plus: Quantitative Easing (QE) — Fed kauft Anleihen für 4,5 Billionen USD (2008-2014). Was als Notmaßnahme begann, wird 13-Jahre-Regime. Folgen: 'Everything Bubble' — Aktien, Immobilien, Anleihen, Sammlerstücke, Krypto, Kunst gleichzeitig auf Rekordhochs. Zombie-Firmen überleben durch Gratis-Kredit (rund 20% S&P 1500 sind 2021 Zombies). Strukturelle Vorbedingung für alle Folge-Blasen: Crypto, EV, SPAC, Cannabis, NFT, Wasserstoff. Vermögensungleichheit verschärft sich global, weil Asset-Besitzer profitieren."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "politik",
+        "bubble_global"
+      ]
+    },
+    {
+      "id": "zinswende_2022",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Zinswende: Powell-Pivot beendet ZIRP-Ära"
+      },
+      "detail": {
+        "de": "Powell-Fed startet März 2022 mit 0,25%-Erhöhung, eskaliert auf 0,75%-Schritte bis 5,5% Sommer 2023 — schnellster Zinsanstieg seit Volcker 1979/80. EZB folgt verspätet. Auslöser: Inflation 9% (US), 11% (EU) nach Stimulus + Energiekrise + Lieferketten-Chaos. Folgen quasi sofort: alle Niedrigzins-Blasen kollabieren — EV (Rivian -90%, Lucid -85%), SPAC (de-listed in Serie), Wasserstoff (Plug -85%), Crypto (BTC -77%, Luna/FTX-Kollaps), Cannabis (Tilray -90% seit Peak). Tech-Mega-Caps verlieren 2-5 Billionen USD Marktwert in 2022. Cooper-Pivot-Hoffnung 2023 wird mehrmals enttäuscht. AI-Boom (ChatGPT November 2022) wirkt antizyklisch und verdeckt sektoralen Schmerz."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "politik",
+        "bubble_global"
+      ]
+    },
+    {
+      "id": "crypto_boom_2017",
+      "yr": 2017,
+      "end_yr": 2018,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Bitcoin auf 20.000 — ICO-Manie"
+      },
+      "detail": {
+        "de": "Bitcoin steigt 2017 von ~1.000 USD auf knapp 20.000 USD (Dezember). Ethereum von 8 auf 1.400. Initial Coin Offerings (ICOs) sammeln 2017 5,6 Mrd USD ein — 80% davon werden später als Scam oder Failure eingestuft (Studie der Wall Street Journal 2018). Token-Projekte ohne funktionierende Produkte verkaufen Whitepapers für Millionen. Beispiele: BitConnect (Ponzi, Kollaps Januar 2018), Tezos, EOS. Frauen-Anteil in Krypto < 5%, junge Männer dominiert. SEC startet Untersuchungen ab Sommer 2017. Vorgeschichte: Bitcoin-Whitepaper Satoshi Nakamoto 2008, Genesis-Block Januar 2009 — Antwort auf Bankenrettungen der Finanzkrise."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "bubble_asset"
+      ]
+    },
+    {
+      "id": "crypto_winter_2018",
+      "yr": 2018,
+      "end_yr": 2019,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "Krypto-Winter: -84% Crash"
+      },
+      "detail": {
+        "de": "Bitcoin fällt 2018 von 19.500 auf 3.200 USD (-84%). Ethereum -94%. Über 1.000 ICO-Token werden wertlos oder de-listed. BitConnect Ponzi-Kollaps Januar 2018 (5 Mrd USD verschwunden). SEC verfolgt zahlreiche ICO-Sponsoren. Erste 'Krypto-Karriere'-Generation kapituliert. Aber: institutionelle Aufnahme beginnt parallel — Fidelity Digital Assets gegründet 2018, CME-Bitcoin-Futures Dezember 2017, später ETF-Anträge. Infrastruktur überlebt, Spekulation pausiert. Lehre wird kaum gezogen — selbe Akteure kehren 2020/21 stärker zurück."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "bubble_asset"
+      ]
+    },
+    {
+      "id": "crypto_mania_2021",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Krypto-Mania 2.0: Bitcoin auf 69.000, NFT-Boom"
+      },
+      "detail": {
+        "de": "Bitcoin erreicht November 2021 67.000 USD (intraday 69.000). Ethereum 4.800. Krypto-Gesamtmarktkapitalisierung 3 Billionen USD. Treiber: ZIRP + COVID-Stimulus + Robinhood-Retail-Welle + Coinbase-IPO April 2021. NFT-Manie: Beeple-Verkauf 69 Mio USD Christie's März 2021, Bored Apes (Floor Price 350.000 USD im April 2022), CryptoPunks. Luna/Terra Algorithmic Stablecoin auf 119 USD (Mai 2022). Crypto.com kauft Staples Center Naming Rights für 700 Mio USD. Sportarena/F1/Fußball-Sponsoring eskaliert. Tom Brady, Larry David, Matt Damon ('Fortune favors the brave') Krypto-Werbung. Sam Bankman-Fried (FTX) Cover Forbes/Fortune als 'nächster Warren Buffett'."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "kultur",
+        "bubble_asset"
+      ]
+    },
+    {
+      "id": "ftx_kollaps_2022",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "FTX-Kollaps: 32 Mrd verschwinden"
+      },
+      "detail": {
+        "de": "Luna/Terra-Algorithmic-Stablecoin kollabiert Mai 2022 von 119 USD auf 0,0001 USD binnen drei Tagen — 60 Mrd USD ausgelöscht. Auslöst Domino: Celsius (Juli 2022), Three Arrows Capital, Voyager pleite. FTX (Sam Bankman-Fried) kollabiert November 2022 — 8 Mrd USD Kundengelder fehlen, an Schwesterfirma Alameda Research transferiert. Bankman-Fried verhaftet Dezember 2022, im November 2023 zu 25 Jahren verurteilt. Bitcoin fällt auf 15.500 USD (-77% vom Hoch). 2022 sind 2 Billionen USD Krypto-Marktkapitalisierung vernichtet. Direkte Folge der Zinswende plus eigene Betrugsdynamik. Unterschied zu 2018: institutionelle Adoption diesmal robuster — Krypto nicht beerdigt, nur entzaubert."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "konzern",
+        "bubble_asset"
+      ]
+    },
+    {
+      "id": "ev_boom_2020",
+      "yr": 2020,
+      "end_yr": 2021,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "EV-Boom: Rivian und Lucid auf Mondpreise"
+      },
+      "detail": {
+        "de": "Tesla-Aktie steigt 2020 von ~85 auf 705 USD (8x in einem Jahr). Im S&P 500 aufgenommen Dezember 2020. Aber: hinter Tesla folgt eine Welle. NIO +1.100% in 2020. Rivian IPO November 2021 — bei 78 Mio USD Umsatz (komplett) Bewertung 153 Mrd USD am ersten Handelstag, mehr als Ford und VW. Lucid via SPAC Bewertung 89 Mrd USD. Lordstown, Nikola (Truck-Skandal 2020), Fisker-Reboot, Canoo, Faraday Future — Dutzende SPAC-EVs mit null Auslieferungen, Mrd-Bewertungen. Chinesische Konkurrenten gefördert: BYD, Xpeng, Li Auto IPOs. Treiber: ZIRP, COVID-Stimulus, 'Klima-Story', Tesla-FOMO."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "energie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "ev_bust_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "EV-Bust: SPAC-EVs sterben"
+      },
+      "detail": {
+        "de": "Lordstown Motors pleite Juni 2023. Nikola-Gründer Trevor Milton im Oktober 2022 wegen Wertpapierbetrug verurteilt. Fisker Bankrott Juni 2024. Canoo verbrennt monatlich 80-100 Mio USD ohne nennenswerte Umsätze. Rivian-Aktie -90% vom IPO-Hoch, Lucid -85%. Tesla -65% vom Peak (Anfang 2023), erholt sich teilweise. Branchen-Realität: EV-Hardware ist kapitalintensiv (4-6 Mrd USD pro Fabrik), Margen-Strukturen wie Auto-Hersteller (nicht wie Software). Tesla startet 2023 Preiskrieg, drückt Margen aller Wettbewerber. China-Hersteller (BYD größter EV-Produzent weltweit) gewinnen strukturell — westliche Mid-Tier wie VW, Stellantis kämpfen. Bewertungsblase als ZIRP-Phänomen entlarvt — Branche bleibt aber substanziell."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "energie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "wasserstoff_hype_2020",
+      "yr": 2020,
+      "end_yr": 2021,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "Wasserstoff-Hype: Plug Power auf 10x"
+      },
+      "detail": {
+        "de": "Plug Power steigt 2020 von 3 auf 75 USD (+2.400%). Nel ASA (Norwegen), Ballard Power (Kanada), ITM Power (UK), McPhy (Frankreich), Bloom Energy ähnliche Verläufe. 'Wasserstoff-Wirtschaft' wird zum Investment-Thema — EU Hydrogen Strategy Juli 2020 verspricht 470 Mrd EUR Investitionen bis 2050. Deutschland nationale Wasserstoff-Strategie 9 Mrd EUR. Trumpf, Linde, Air Liquide profitieren. Realität: Grüner Wasserstoff (aus Wind/Solar-Elektrolyse) kostet 2020 3-7 USD/kg vs. grauer aus Erdgas 1-2 USD/kg. Round-Trip-Efficiency von Strom→H2→Strom unter 30%. Strukturelle Physik wird ignoriert für Story."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "energie",
+        "klima",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "wasserstoff_bust_2022",
+      "yr": 2022,
+      "end_yr": null,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "Wasserstoff-Bust: Plug Power -85%"
+      },
+      "detail": {
+        "de": "Plug Power-Aktie fällt 2021-2023 von 75 USD auf 7 USD (-90%). Nel ASA, Ballard, ITM Power ähnlich. Realität bricht durch: Plug Power produziert 2023 weiterhin Verluste (-1,4 Mrd USD bei 900 Mio Umsatz). Skalierungsprobleme der Elektrolyseure, Wasserstoff-Tankstellen werden zurückgefahren (Shell schließt alle Kalifornien-Stationen 2024). Energie-Verluste der ganzen Kette machen direkte Elektrifizierung in Auto/Heizung billiger. Wasserstoff überlebt für Schwer-Industrie (Stahl, Chemie, Schifffahrt) wo es keine Alternative gibt — keine 'Wasserstoffwirtschaft' für Konsum. Zweite Wasserstoff-Welle bereits in Vorbereitung 2025/26 mit gleichen Akteuren."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "energie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "spac_bubble_2020",
+      "yr": 2020,
+      "end_yr": 2022,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "SPAC-Manie: 613 IPOs in einem Jahr"
+      },
+      "detail": {
+        "de": "Special Purpose Acquisition Companies (Blanko-Scheck-Firmen): IPO einer leeren Hülle, später Fusion mit Zielunternehmen — umgeht reguläre IPO-Prozedur, erlaubt optimistische Prognosen ('forward-looking statements'). 2020: 248 SPAC-IPOs, 83 Mrd USD eingesammelt. 2021: 613 SPAC-IPOs, 162 Mrd USD — mehr als sämtliche reguläre IPOs zusammen. Promotoren: Chamath Palihapitiya (mehrere SPACs, Selbstvermarktung), Bill Ackman, Alex Rodriguez, Shaquille O'Neal, Donald Trump (DWAC für Truth Social). Großteil der Ziele: defizitäre EV-Startups, Crypto, Space, Cannabis. Bilanz Mitte 2023: rund 75% der De-SPACs handeln unter 5 USD (vs. Standard-Start 10 USD), Mehrheit kollabiert. SEC verschärft Regulierung 2022."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "konzern",
+        "bubble_asset"
+      ]
+    },
+    {
+      "id": "cannabis_bubble_2018",
+      "yr": 2018,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Cannabis-Boom: Kanada-Legalisierung-Hype"
+      },
+      "detail": {
+        "de": "Kanada legalisiert Cannabis bundesweit am 17. Oktober 2018 — erstes G7-Land. Tilray-Aktie steigt September 2018 von 23 auf 300 USD binnen zwei Wochen (+1.200%). Aurora, Canopy Growth, Cronos, Aphria ähnliche Bewertungen. Constellation Brands (Corona-Bier) investiert 4 Mrd USD in Canopy Growth (August 2018). Altria (Marlboro) investiert 1,8 Mrd in Cronos. Story: Cannabis-Markt-Schätzungen 50-100 Mrd USD bis 2030, 'Coca-Cola für die nächste Generation'. Realität: kein einziges US-Bundesgesetz, regulatorische Fragmentierung, illegaler Markt unterbietet legale Produzenten massiv. Kapazitätsausbau auf Annahme von Mehrfach-Wachstum."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "konzern",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "cannabis_bust_2019",
+      "yr": 2019,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Cannabis-Crash: Tilray -98%"
+      },
+      "detail": {
+        "de": "Cannabis-Aktien beginnen 2019 anhaltenden Niedergang. Tilray fällt von 300 auf 5 USD (-98% bis 2023). Canopy Growth -95%, Aurora -99% (mehrere Reverse-Splits zur Vermeidung von Penny-Stock-Status), Cronos -90%. Constellation Brands schreibt 4 Mrd USD Canopy-Investment teilweise ab. Markt-Probleme: Überproduktion in Kanada (Lager voll, Preise im freien Fall), illegaler Markt bleibt billiger, US-Legalisierung bundesweit kommt nicht (Senat blockiert), Steuerlast erdrückt legale Hersteller. Erstes prominentes Beispiel der späten 2010er-Boomzyklen wo selbst Constellation-Brands-Klasse-Investoren verlieren. Vorbote der EV-/SPAC-/Crypto-Busts."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "3d_druck_boom_2013",
+      "yr": 2013,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "3D-Druck-Hype: 'Industrielle Revolution'"
+      },
+      "detail": {
+        "de": "3D Systems steigt 2012-2013 von 15 auf 96 USD. Stratasys von 18 auf 137 USD. Story: 'jeder Haushalt bekommt einen 3D-Drucker', 'industrielle Revolution', On-Demand-Manufacturing ersetzt globale Lieferketten. Obama erwähnt 3D-Druck in State of the Union 2013. MakerBot (Consumer-3D-Drucker) wird von Stratasys für 604 Mio USD übernommen Juni 2013. Industrie-Use-Cases (GE Aviation, medizinische Implantate) sind real, aber von Consumer-Story durchdrungen. 'Disruption' der gesamten Fertigungsindustrie wird prognostiziert. Tatsächlich: 3D-Druck bleibt Nischentechnologie für Prototyping, Spezialteile, Medizin — nie der Massenmarkt."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "technologie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "3d_druck_bust_2014",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "3D-Druck-Bust: -75% Crash"
+      },
+      "detail": {
+        "de": "3D Systems fällt 2014 von 96 USD auf 30 USD (-69%), Stratasys von 137 auf 60 (-56%). MakerBot floppt im Consumer-Markt — Stratasys schreibt 2015 fast die gesamte 604-Mio-Akquisition ab. Realität bricht durch: Drucker-Qualität für Endverbraucher mangelhaft, Druckmaterialien zu teuer, Anwendungsfälle limitiert. Industrieller 3D-Druck wächst weiter solide aber nicht exponentiell. Bewertungsblase als Story-Blase entlarvt. Trotz späterer realer Industrie-Anwendungen (GE Leap-Engine-Nozzles, dental, Hörgeräte) erreichen die Aktien nie wieder die 2014er-Stände. Klassisches Beispiel: reale Technologie + überdrehte Story = Bubble + Crash, danach reife Industrie auf niedrigerem Niveau."
+      },
+      "tags": [
+        "bubble",
+        "wirtschaft",
+        "katastrophe",
+        "technologie",
+        "bubble_sectoral"
+      ]
+    },
+    {
+      "id": "junk_bonds_milken_1985",
+      "yr": 1985,
+      "end_yr": 1990,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Milken-Junk-Bond-Manie"
+      },
+      "detail": {
+        "de": "Michael Milken bei Drexel Burnham Lambert revolutioniert ab 1977 Hochzins-Anleihen (Junk Bonds) — Spitze 1985-1988. Finanzierte feindliche Übernahmen, Asset-Stripping, LBOs. 1986 verdient Milken 550 Mio USD persönlich — Rekord. Drexel-Imperium kontrolliert 60% des Junk-Markts. Trickle-Down-Theorie meets Wall-Street-Predation. November 1986: SEC-Untersuchung beginnt (Ivan Boesky-Insider-Trading verrät Milken). März 1989: Milken angeklagt mit 98 Strafpunkten. Februar 1990: Drexel pleite. November 1990: Milken bekennt sich schuldig, 10 Jahre Haft (entlassen 1993). Junk-Bond-Markt kollabiert temporär — fütterte zuvor jahrelange S&L-Spekulation."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "konzern",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "lbo_mania_2006",
+      "yr": 2006,
+      "end_yr": 2007,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "LBO-Mania: KKR, Blackstone, TPG"
+      },
+      "detail": {
+        "de": "2006-2007 erreicht Private Equity historischen Höhepunkt: 1,4 Billionen USD globale Buyout-Volumina. KKR übernimmt TXU für 45 Mrd USD (größter LBO aller Zeiten bis dato), Blackstone Hilton 26 Mrd, Apollo Harrah's Casino 30 Mrd. Cerberus übernimmt Chrysler von Daimler für 7,4 Mrd. PE-Multiplikatoren steigen auf 9-10x EBITDA. Schwarzman (Blackstone) feiert 60. Geburtstag Februar 2007 für 5 Mio USD — Symbolbild der Exzesse. Steuerschlupfloch 'carried interest' wird zum Politikum. CDOs und Cov-Lite-Loans als Finanzierungsvehikel — parallele Struktur zur Subprime-Maschine."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "konzern"
+      ]
+    },
+    {
+      "id": "lbo_bust_2008",
+      "yr": 2008,
+      "end_yr": 2010,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "LBO-Bust: Chrysler, TXU, Harrah's wackeln"
+      },
+      "detail": {
+        "de": "Mit der Finanzkrise verlieren die LBO-Schuldner Refinanzierungs-Möglichkeiten. Chrysler pleite April 2009 — Cerberus verliert komplettes Investment. TXU (umbenannt Energy Future Holdings) pleite April 2014 — 40 Mrd USD Verlust, einer der größten LBO-Crashes aller Zeiten. Harrah's überlebt mit Restrukturierungen. Tribune Company (Sam Zell-LBO 2007) pleite Dezember 2008 — 8,2 Mrd USD verloren. Reader's Digest, Linens 'n Things, Mervyn's, Circuit City alle PE-Pleiten. Cov-Lite-Strukturen verhinderten frühe Gläubiger-Eingriffe. PE-Branche restrukturiert sich langsam zu konservativeren Multiples."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "katastrophe",
+        "konzern"
+      ]
+    },
+    {
+      "id": "china_stocks_2007",
+      "yr": 2007,
+      "end_yr": 2008,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "Chinas erste Aktienmanie: Shanghai +400%"
+      },
+      "detail": {
+        "de": "Shanghai Composite steigt 2005-2007 von 1.000 auf 6.124 Punkte (+500%). Triebkraft: Olympia-2008-Story, Aufstieg-Story Chinas, neue Mittelschicht-Investoren. PetroChina IPO Shanghai November 2007 wird kurzfristig wertvollste Firma der Welt (1 Billion USD Marktkapitalisierung — vor Aufnahme allerdings, real handelbar war wenig). 70% der Anleger sind Privatpersonen ohne Erfahrung. Q4 2007 platzt Blase: Crash bis Oktober 2008 auf 1.728 Punkte (-72%). Synchron mit US-Finanzkrise — verstärkten sich gegenseitig. Erste große Lektion für chinesische Retail-Investoren — wird 2015 wiederholt."
+      },
+      "tags": [
+        "bubble",
+        "bubble_global",
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "china_stocks_2015_boom",
+      "yr": 2014,
+      "end_yr": 2015,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "China Stocks 2015: Margin-finanzierter Boom"
+      },
+      "detail": {
+        "de": "Shanghai Composite verdoppelt sich November 2014 - Juni 2015 (2.300 → 5.166). Margin-Trading explodiert von 400 Mrd auf 2,3 Billionen Yuan — Privatanleger kauften auf Kredit. Staatsmedien (Xinhua, People's Daily) feierten die 'gesunde Bullenphase' und ermutigten Käufe — moralische Verstärkung durch Partei. 30 Mio neue Brokerage-Konten in 6 Monaten. P/E-Multiplikatoren auf 80-100 (vs 15 normal). Staat sah es als Möglichkeit, Unternehmens-Verschuldung über Eigenkapital-Märkte zu refinanzieren."
+      },
+      "tags": [
+        "bubble",
+        "bubble_global",
+        "wirtschaft"
+      ]
+    },
+    {
+      "id": "china_stocks_2015_bust",
+      "yr": 2015,
+      "end_yr": 2016,
+      "r": "china",
+      "imp": 2,
+      "short": {
+        "de": "China-Crash 2015 + Yuan-Abwertung"
+      },
+      "detail": {
+        "de": "Juni-August 2015: Shanghai Composite -45% in 3 Monaten. Margin-Calls kaskadieren, Trading bei 1.500 Aktien ausgesetzt. Regierung verbietet Verkäufe großer Aktionäre, Notfall-Käufe der 'Nationalmannschaft' (staatsnahe Fonds, 200 Mrd USD eingesetzt). 11. August 2015: überraschende Yuan-Abwertung um 3% — globale Schockwelle, EM-Währungen kollabieren, S&P 500 -11% in einer Woche. Black Monday 24. August 2015. Erschütterte Vertrauen in chinesische Marktkontrolle. Strukturelle Folge: Kapitalkontrollen verschärft, Outbound-M&A-Welle 2015-2016."
+      },
+      "tags": [
+        "bubble",
+        "bubble_global",
+        "wirtschaft",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "wework_implosion_2019",
+      "yr": 2019,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "WeWork: 47 Mrd → 0 in 6 Wochen"
+      },
+      "detail": {
+        "de": "August 2019: WeWork-IPO geplant mit 47 Mrd USD Bewertung (zuvor SoftBank-Bewertung). S-1-Filing offenbart: 1,6 Mrd USD Verlust 2018, Adam Neumann (CEO) als Bösewicht (Insider-Deals, Marihuana-Konsum, Tequila-Trinken im Büro, kaufte Gebäude und vermietete sie an die eigene Firma). Sechs Wochen: WSJ-Recherche, Investoren-Revolte, IPO zurückgezogen September 2019. Bewertung kollabiert auf 8 Mrd, später 2,9 Mrd. SoftBank-Vision-Fund (Masayoshi Son) verliert über 10 Mrd USD — entlarvt das gesamte Vision-Fund-Modell als überdehnt. Vorbote der SPAC-/EV-Busts. Verspätet doch IPO Oktober 2021 via SPAC bei 9 Mrd — Mai 2024 erneut Insolvenz."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "konzern",
+        "katastrophe"
+      ]
+    },
+    {
+      "id": "gamestop_meme_2021",
+      "yr": 2021,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "GameStop: Reddit gegen Wall Street"
+      },
+      "detail": {
+        "de": "Januar 2021: WallStreetBets-Reddit-Community organisiert koordinierten Squeeze gegen Hedgefonds-Shortpositionen bei GameStop. Aktie steigt von 17 auf 483 USD binnen Wochen (+2.700%). Melvin Capital Hedgefonds verliert über 50% (rund 6 Mrd USD), muss Notfall-Kapital von Citadel und Point72 annehmen. 28. Januar 2021: Robinhood (zero-commission App) stoppt Kauf-Orders für GameStop — Erlaubt nur noch Verkäufe. Skandal: Hat Citadel (Robinhoods größter Kunde) den Stopp veranlasst? Kongressanhörung Februar 2021. Aktie kollabiert -90%. Symbol: Retail-Investor-Mobilisierung, FinTok/Reddit als Marktkraft, Regulierungs-Asymmetrie. AMC, BlackBerry, Bed Bath & Beyond folgen als Meme-Stocks."
+      },
+      "tags": [
+        "bubble",
+        "bubble_asset",
+        "wirtschaft",
+        "bewegung",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "metaverse_hype_2021",
+      "yr": 2021,
+      "end_yr": 2022,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Metaverse-Hype: Meta-Pivot"
+      },
+      "detail": {
+        "de": "Oktober 2021: Facebook benennt sich in Meta um, Mark Zuckerberg setzt 'Metaverse' als zentrale Strategie. Reality Labs-Division (Quest VR-Headsets, Horizon Worlds) bekommt Investment-Priorität. Roblox, Decentraland, The Sandbox (Crypto-basierte Metaverse) explodieren in Bewertungen. NFT-Land-Verkäufe für hunderte Millionen USD. Microsoft, Nvidia, Disney, Nike alle 'Metaverse-Strategien'. Bain & McKinsey schätzen 800 Mrd USD Markt bis 2024. Apple verspricht 'erste eigene Vision-Pro'-Iteration. Auch hinter 'COVID-Zoom-Müdigkeit'-Argument: Menschen wollen virtuelle Räume. Erste Vibes der Realitätsprüfung Ende 2022."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "technologie"
+      ]
+    },
+    {
+      "id": "metaverse_bust_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 1,
+      "short": {
+        "de": "Metaverse-Bust: Reality Labs verbrennt 46 Mrd"
+      },
+      "detail": {
+        "de": "Meta-Reality-Labs-Verluste: 10,2 Mrd (2021), 13,7 Mrd (2022), 16,1 Mrd (2023), 17,7 Mrd (2024) — kumuliert 57+ Mrd USD verbrannt für unter 2% Nutzungsrate. Horizon Worlds-Nutzer halten sich monatlich unter 500.000 (Ziel: 500 Mio). Quest-Verkäufe stagnieren. März 2023: Zuckerberg verkündet 'Year of Efficiency', 21.000 Mitarbeiter-Entlassungen — implizit Metaverse-Reset. Apple-Vision-Pro-Launch Februar 2024 floppt (geplante 1 Mio Geräte, real 200.000 verkauft). Crypto-Metaverse-Projekte verlieren 90%+. AI-Boom (ChatGPT) absorbiert die Aufmerksamkeit der Investoren — Story verschoben."
+      },
+      "tags": [
+        "bubble",
+        "bubble_sectoral",
+        "wirtschaft",
+        "katastrophe",
+        "technologie"
+      ]
+    },
+    {
+      "id": "svb_banking_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "SVB-Pleite: regional banking-Krise"
+      },
+      "detail": {
+        "de": "10. März 2023: Silicon Valley Bank kollabiert — 2. größte US-Bankpleite der Geschichte (209 Mrd USD Aktiva). Auslöser: SVB hatte 60% der Einlagen in Long-Duration-Treasuries angelegt — Zinswende ließ Anleihen verlieren, panische Tech-Startup-Abzüge (Bank-Run-Run innerhalb von 24h durch Twitter/Slack). Signature Bank fällt am Folgewochenende. Schweiz: Credit Suisse 167-jährige Bank wird unter Zwang von UBS für 3 Mrd USD übernommen (19. März). Mai 2023: First Republic — drittgrößte US-Bankpleite — JPMorgan-Rettung. Fed startet BTFP-Notfall-Liquidität. Zinswende-Folge in Klartext: Niedrigzins-Wetten kommen alle gleichzeitig zur Vorlage. AI-Hype-Liquidität verdeckt das Drama für Markt-Allgemeinheit."
+      },
+      "tags": [
+        "bubble",
+        "bubble_global",
+        "wirtschaft",
+        "katastrophe",
+        "konzern"
+      ]
+    },
+    {
+      "id": "dotcom_erbe_open_source_2003",
+      "yr": 2003,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Dotcom-Erbe: Y Combinator, AWS, Open-Source"
+      },
+      "detail": {
+        "de": "Nach dem Dotcom-Crash entstand das moderne Startup-Ökosystem: Y Combinator (gegründet März 2005 von Paul Graham) als Inkubator-Modell, AWS-Launch 2006 als Cloud-Infrastruktur. Apache-Webserver dominiert (60% Marktanteil), Linux wird Server-Standard, MySQL/PostgreSQL ersetzen Oracle bei kleinen Firmen. Java/PHP/Python als Mainstream-Sprachen. Crash entzauberte 'Aktienoptionen für alle' — Engineering-Talente migrierten zu funktionalen Geschäftsmodellen. Web 2.0 (Tim O'Reilly 2004) emergent. Kostengünstige Startup-Gründung wurde Norm — 100x billiger als 1999."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "technologie"
+      ]
+    },
+    {
+      "id": "cleantech_erbe_2014",
+      "yr": 2014,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Cleantech-Erbe: Tesla + Solar-Lernkurve"
+      },
+      "detail": {
+        "de": "Trotz Cleantech-1.0-Bust ist das Erbe substantiell: Tesla überlebt als einziger massgeblicher Pure-Play-EV-Hersteller weltweit — Model S 2012, Model X 2015, Model 3 2017. Solar-Lernkurve: PV-Modulpreise fallen 2008-2018 um 90% (Swanson's Law in Aktion). China nimmt dominante Position dank staatlicher Subvention (heute 80% der globalen Modul-Produktion). LiFePO4-Batterien werden durch A123-Konkursmasse weiterentwickelt (verkauft an Wanxiang/China). DOE-Loan-Programm hat trotz Solyndra/A123 90% Rückzahlungsquote — politisch übersehen. Strukturell hat Cleantech 1.0 die Vorbedingung für die Energiewende 2020+ geschaffen."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "energie",
+        "technologie",
+        "klima"
+      ]
+    },
+    {
+      "id": "3d_druck_industriereife_2018",
+      "yr": 2018,
+      "end_yr": null,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "3D-Druck-Industriereife jenseits des Hypes"
+      },
+      "detail": {
+        "de": "Nach dem Consumer-Hype-Bust 2014 reift 3D-Druck als seriöse Industrietechnologie: GE Aviation Leap-Engine-Düsen (3D-gedruckt, 25% leichter, 5x langlebiger) in jedem 737-Max/A320neo-Triebwerk. Dental-Industrie: 90% der Aligner (Invisalign) 3D-gedruckt. Hörgeräte: 100% additive Fertigung. Medizinische Implantate (Hüfte, Wirbelsäule) zunehmend personalisiert. SpaceX druckt Raketentriebwerke. Carbon, EOS, Markforged als ernsthafte Industrieanbieter. Stratasys, 3D Systems überleben in Nische ohne ihre 2014er-Wachstumsstory. Klassisches Muster: Hype-Crash → ruhige Industriereife auf niedrigerem Niveau."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "technologie"
+      ]
+    },
+    {
+      "id": "crypto_infrastruktur_2020",
+      "yr": 2020,
+      "end_yr": null,
+      "r": "global",
+      "imp": 2,
+      "short": {
+        "de": "Krypto-Infrastruktur-Erbe trotz Krisen"
+      },
+      "detail": {
+        "de": "Trotz 2018 Krypto-Winter und 2022 FTX-Kollaps reift institutionelle Infrastruktur: Coinbase IPO April 2021 (NASDAQ-gelistet, reguliert), Fidelity Digital Assets, Bitcoin-ETFs zugelassen Januar 2024 (BlackRock, Fidelity), Ethereum-ETFs Juli 2024. Spot-ETFs sammeln 50 Mrd USD AUM binnen Monaten. CBDCs (China Digital Yuan testweise, EU Digital Euro in Vorbereitung) als staatliche Antwort. Stablecoins (USDC, USDT) mit über 200 Mrd USD Marktkapitalisierung — werden zur paralleler Zahlungsschicht in EM. Block-Chain-Anwendungen jenseits Spekulation (Trade-Settlement, Royalty-Tracking) entstehen langsam. Spekulationsblasen kommen und gehen — Infrastruktur bleibt."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "technologie"
+      ]
+    },
+    {
+      "id": "ev_china_dominanz_2024",
+      "yr": 2024,
+      "end_yr": null,
+      "r": "china",
+      "imp": 3,
+      "short": {
+        "de": "China-EV-Dominanz: BYD überholt Tesla"
+      },
+      "detail": {
+        "de": "Q4 2023: BYD verkauft mehr EVs als Tesla (526.000 vs 484.000) — China gewinnt strukturell den EV-Markt. 60% aller weltweit verkauften EVs 2024 chinesisch (BYD, SAIC, Geely, Xpeng, Li Auto, NIO). Tesla bleibt premium-relevant, verliert Volumen-Marktanteil. EU plant 35-45% Strafzölle gegen China-EVs Oktober 2024, USA verhängt 100% Zölle Mai 2024 — strukturelle Antwort auf bereits verlorene Wettbewerbsschlacht. VW, Stellantis kämpfen um Überleben. Ironie: Tesla wurde mit US-Cleantech-Subventionen 2009 gerettet, China nutzte 15 Jahre staatliche Industriepolitik um nun weltweite Führung zu erreichen. Klassisches Beispiel: Bubble-Erbe geht an konsequenten Industrie-Staat."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "energie",
+        "geopolitik",
+        "konzern"
+      ]
+    },
+    {
+      "id": "foreclosure_welle_2009",
+      "yr": 2009,
+      "end_yr": 2014,
+      "r": "usa",
+      "imp": 3,
+      "short": {
+        "de": "Foreclosure-Welle: 10 Mio US-Eigenheime verloren"
+      },
+      "detail": {
+        "de": "2007-2014: Über 10 Mio US-Eigenheime gehen durch Zwangsversteigerung (Foreclosure) verloren. 2010 Höhepunkt: 2,9 Mio Foreclosures in einem Jahr — Detroit, Las Vegas, Phoenix, Florida besonders getroffen. Schwarze und Latino-Familien überproportional (60% Vermögensverlust dieser Communities). 'Robo-Signing'-Skandal: Banken signierten Foreclosure-Papiere ohne juristische Prüfung. Eric Holder (Obama-DOJ) verfolgt keine einzige Wall-Street-Top-Figur — 'too big to jail'. Politische Folge: Verlust des Glaubens an Demokratische Partei bei weißen Arbeiterklasse-Wählern, Wechsel zu Tea Party + später Trump. Direkter Pfad: Subprime-Geschädigte werden Trump-Basis 2016."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "katastrophe",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "vermoegens_ungleichheit_2010",
+      "yr": 2010,
+      "end_yr": null,
+      "r": "global",
+      "imp": 3,
+      "short": {
+        "de": "Vermögens-Ungleichheit explodiert nach ZIRP"
+      },
+      "detail": {
+        "de": "ZIRP-Ära (2008-2022) macht Asset-Besitzer reicher, Lohnabhängige nicht. US Top-1%-Anteil am Gesamtvermögen: 30% (2008) → 35% (2022). Median-Stundenlohn-Reallohn 2009-2020 nahezu stagniert (+5% kumuliert), S&P 500 +250%. Wohneigentum bei jungen US-Erwachsenen (25-34): 40% (1980) → 26% (2020). Generationen-Vermögenstransfer: 30 Bio USD von Boomer auf Erben über Erbschaft 2020-2040 prognostiziert — verstärkt Konzentration weiter. Politische Folge: Bernie Sanders/AOC links, Trump/Le Pen/Salvini rechts — beide Seiten kanalisieren das Trauma. Piketty 'Capital in the 21st Century' (2013) wird Bestseller. Strukturelle Vorbedingung für autoritären Populismus 2016+."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "gesellschaft",
+        "politik"
+      ]
+    },
+    {
+      "id": "austerity_eu_2010",
+      "yr": 2010,
+      "end_yr": 2018,
+      "r": "eu",
+      "imp": 3,
+      "short": {
+        "de": "EU-Austerity-Trauma: Griechenland, Spanien, Portugal"
+      },
+      "detail": {
+        "de": "Eurokrise-Antwort 2010-2015: 'Austeritäts'-Programm der Troika (IWF, EZB, EU-Kommission). Griechenland BIP -25% (2008-2016), Jugendarbeitslosigkeit 60%, Renten halbiert. Spanien Jugendarbeitslosigkeit 56% (2013), Generation Z verliert Vertrauen in europäisches Projekt. Portugal, Irland, Italien ähnlich. Schäuble-Doktrin 'es gibt keine Alternative'. Politische Folge: SYRIZA in Griechenland 2015, Podemos in Spanien, Cinque-Stelle in Italien, Marine Le Pen verstärkt, Brexit-Vote 2016 als britische Antwort. Generationen-Trauma: Eurogeneration unter 35 sieht EU eher als Strafanstalt denn als Friedensprojekt."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "politik",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "crypto_betrugs_erbe_2023",
+      "yr": 2023,
+      "end_yr": null,
+      "r": "global",
+      "imp": 1,
+      "short": {
+        "de": "Krypto-Betrugs-Erbe: 2 Bio in 4 Jahren vernichtet"
+      },
+      "detail": {
+        "de": "Trotz reifender Infrastruktur ist das Krypto-Betrugs-Erbe massiv: BitConnect (2018, 5 Mrd USD), QuadrigaCX (2019, 250 Mio USD CAD, CEO 'gestorben' in Indien), Mt Gox (2014, 850.000 BTC verschwunden), Africrypt (Südafrika 2021, 3,6 Mrd USD), OneCoin (Ruja Ignatova-Ponzi 4 Mrd USD), Three Arrows Capital (2022, 3 Mrd USD), Celsius (2022, 11 Mrd Kundengelder), FTX/Alameda (2022, 8 Mrd USD), Genesis (Januar 2023). Lebensersparnisse von Millionen vernichtet — disproportional in EM (Türkei, Argentinien, Nigeria, Vietnam wo Crypto als Inflations-Hedge gekauft wurde). Vertrauensverlust in Finanzsystem allgemein. Politische Folge: Skepsis gegenüber jeder Tech-Innovation, Verstärkung der 'system is rigged'-Narrative — beidseitig nutzbar."
+      },
+      "tags": [
+        "erbe",
+        "wirtschaft",
+        "katastrophe",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "tea_party_2009",
+      "yr": 2009,
+      "end_yr": 2010,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Tea Party: Bailout-Wut von rechts"
+      },
+      "detail": {
+        "de": "Februar 2009: CNBC-Reporter Rick Santelli wütet on-air gegen Obamas Hausbesitzer-Hilfsplan ('we're thinking of having a Chicago Tea Party in July'). Innerhalb von Wochen entstehen Tea-Party-Gruppen in allen US-Bundesstaaten. Erste Massenkundgebung 15. April 2009 (Steuertag). Finanzielle Unterstützung durch Koch-Brüder (Americans for Prosperity), Dick Armey (FreedomWorks). Inhaltlich: gegen Bankenrettungen, gegen Obamacare, gegen Steuern, gegen 'big government'. Folge: 2010 Midterm-Welle — Republikaner gewinnen 63 Sitze, größter Swing seit 1948. Marco Rubio, Rand Paul, Ted Cruz als Tea-Party-Senatoren. Strukturell der Vorlauf zu Trump 2016 — populistische Wut, gegen 'Eliten', Wendung gegen GOP-Establishment."
+      },
+      "tags": [
+        "bewegung",
+        "politik",
+        "protest",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "occupy_2011",
+      "yr": 2011,
+      "end_yr": null,
+      "r": "usa",
+      "imp": 2,
+      "short": {
+        "de": "Occupy Wall Street: Bailout-Wut von links"
+      },
+      "detail": {
+        "de": "17. September 2011: Adbusters-Magazin ruft Besetzung der Wall Street auf — wenige hundert Demonstranten in Zuccotti Park (südlich der NYSE). Slogan '99% vs 1%' geht viral. Innerhalb Wochen Occupy-Camps in 950 US-Städten und 80 Ländern. Inhaltlich: gegen Banken-Bailouts ohne Strafverfolgung, gegen Vermögensungleichheit, Studienschulden, 'wirtschaftliche Demokratie'. Polizei räumt Zuccotti 15. November 2011. Politische Folge: Diskurs-Shift — 'Inequality' wird mainstream-Thema, Piketty-Bestseller 2013, Sanders-Kampagne 2016 baut darauf auf. Strukturell links-populistische Antwort auf gleiche Bailout-Wut wie Tea Party — beide Bewegungen waren Symptom desselben Schmerzes."
+      },
+      "tags": [
+        "bewegung",
+        "politik",
+        "protest",
+        "gesellschaft"
+      ]
+    },
+    {
+      "id": "yellow_vests_2018",
+      "yr": 2018,
+      "end_yr": 2019,
+      "r": "eu",
+      "imp": 2,
+      "short": {
+        "de": "Gilets Jaunes: Land gegen Eliten"
+      },
+      "detail": {
+        "de": "November 2018: Macrons Diesel-Steuer-Erhöhung löst spontane Protestbewegung aus — Symbol: gelbe Warnwesten (pro Auto verpflichtend). Hunderttausende protestieren ab 17. November 2018 in Frankreich, Kreisverkehre werden besetzt. Forderungen erweitern sich: Senkung der Lebenshaltungskosten, höhere Renten, Wiedereinführung der Vermögenssteuer (von Macron abgeschafft), direktdemokratische Reformen. Bewegung ohne formale Führung — Social-Media-organisiert. Macron verliert Diesel-Steuer (Dezember 2018), erhöht Mindestlohn um 100 EUR. Bewegung verebbt 2019 aber prägt Frankreich-Politik nachhaltig. Parallel-Phänomen zu Trump/Brexit: ländliches/peripheres Frankreich gegen Metropol-Eliten. Strukturell: Reaktion auf 10 Jahre EU-Austerity + ZIRP-Ungleichheit."
+      },
+      "tags": [
+        "bewegung",
+        "protest",
+        "politik",
+        "gesellschaft"
       ]
     }
   ],
@@ -7800,6 +8681,825 @@
       "type": "indirekt",
       "why": {
         "de": "Pariser Klimaabkommen brachte Klimawandel-Diskurs in den Vordergrund — Idai wurde im Rahmen dieses Diskurses als Klimakatastrophe interpretiert (kausal: Klimawandel verstärkt Tropensturm-Intensität)."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "telecommunications_act_1996",
+      "target": "telekom_boom_1996",
+      "type": "direkt",
+      "why": {
+        "de": "Telecommunications Act ermöglichte massive Markteintritte und neue Telekom-Player — strukturelle Vorbedingung des Booms."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "telekom_boom_1996",
+      "target": "telekom_bust_2002",
+      "type": "direkt",
+      "why": {
+        "de": "Überkapazitäten von 1000% über realer Nachfrage waren bereits beim Boom angelegt — Bust war Selbst-Auflösung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "dotcom_blase_2000",
+      "target": "telekom_bust_2002",
+      "type": "direkt",
+      "why": {
+        "de": "Dotcom-Crash zerstörte die Kunden der Telekom-Branche (Internet-Startups, die Bandbreite gemietet hätten) — Telekom-Crash folgte mit 1-2 Jahren Verzögerung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "telekom_bust_2002",
+      "target": "glasfaser_erbe_2003",
+      "type": "direkt",
+      "why": {
+        "de": "Dunkle Glasfaser wurde für Cents pro Dollar weiterverkauft — Infrastruktur-Erbe der Pleite."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "glasfaser_erbe_2003",
+      "target": "facebook_2004",
+      "type": "indirekt",
+      "why": {
+        "de": "Quasi-gratis Bandbreite ermöglichte Social-Media-Scale ohne Infrastruktur-Investitionen — Web 2.0 baute auf dem Telekom-Erbe auf."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "glasfaser_erbe_2003",
+      "target": "iphone_2007",
+      "type": "indirekt",
+      "why": {
+        "de": "Mobile Datenübertragung benötigte massives Backbone — dark fiber war strukturelle Vorbedingung der Smartphone-Ära."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "telekom_boom_1996",
+      "target": "dotcom_blase_2000",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Telekom-Boom und Dotcom-Boom befeuerten sich gegenseitig — Telekom verkaufte Bandbreite an Dotcoms, Dotcoms versprachen Verkehr für Telekoms."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "netscape_ipo_1995",
+      "target": "telekom_boom_1996",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Netscape-IPO setzte die Internet-Verkehrs-Verdopplungs-Story in die Welt — Telekom-Investitions-Logik baute darauf auf."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "dotcom_blase_2000",
+      "target": "housing_boom_2003",
+      "type": "direkt",
+      "why": {
+        "de": "Greenspans Zinssenkungen 2001-2003 (6,5% → 1,0%) als Reaktion auf Dotcom-Crash sind der direkte Treiber des Subprime-Booms."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "housing_boom_2003",
+      "target": "finanzkrise_2008",
+      "type": "direkt",
+      "why": {
+        "de": "Subprime-Hypotheken und ihre Verbriefung als CDOs waren der direkte Treiber des Finanzsystem-Kollapses."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "zirp_aera_2008",
+      "type": "direkt",
+      "why": {
+        "de": "Fed-Reaktion auf Finanzkrise: Zinsen auf 0%, beginnt 13-Jahre-ZIRP-Regime."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "cleantech_boom_2008",
+      "target": "cleantech_bust_2012",
+      "type": "direkt",
+      "why": {
+        "de": "VC-Logik (schnell skalieren) prallte auf Hardware-Realität (kapitalintensiv, langsam) — Bust selbstausgelöst."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "crypto_boom_2017",
+      "type": "indirekt",
+      "why": {
+        "de": "Bitcoin-Whitepaper Oktober 2008 war direkte Antwort auf Bankenrettungen — 'sei deine eigene Bank'-Ideologie wurzelt in der Krise."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "crypto_boom_2017",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Jahre nach Bitcoin-Genesis trieben Niedrigzins-Renditejagd und FOMO-Kultur den ersten massiven Krypto-Boom."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "crypto_boom_2017",
+      "target": "crypto_winter_2018",
+      "type": "direkt",
+      "why": {
+        "de": "ICO-Mania enthielt eigene Bust-Dynamik — wertlose Token mussten kollabieren."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crypto_winter_2018",
+      "target": "crypto_mania_2021",
+      "type": "indirekt",
+      "why": {
+        "de": "Institutionelle Infrastruktur (Coinbase, Fidelity, ETFs in Vorbereitung) überlebte Winter — bessere Plattform für nächste Welle."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "crypto_mania_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "COVID-Stimulus auf bereits etabliertes ZIRP-Regime ergab Liquiditätsflut, die in Krypto und NFTs floss."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "covid_2020",
+      "target": "crypto_mania_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "COVID-Stimulus-Schecks (1.200 + 600 + 1.400 USD pro Person) und Robinhood-Boom mobilisierten Retail-Massen in Krypto."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crypto_mania_2021",
+      "target": "ftx_kollaps_2022",
+      "type": "direkt",
+      "why": {
+        "de": "FTX und SBF waren Hauptprofiteure der Mania — Kollaps war ihre konsequente Auflösung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "ftx_kollaps_2022",
+      "type": "direkt",
+      "why": {
+        "de": "Zinswende entzog Krypto-Märkten die Liquidität, deckte Betrug auf — Tide ging raus, Schwimmer ohne Hose sichtbar."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "ev_boom_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "13 Jahre ZIRP-Renditejagd kulminierten in EV/Tesla-Story — billiges Kapital für kapitalintensive Hardware-Story."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "cleantech_bust_2012",
+      "target": "ev_boom_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Tesla überlebte Cleantech 1.0 als einziger Gewinner — wurde 8 Jahre später Story-Anker für gesamten EV-Hype."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "paris_klima",
+      "target": "ev_boom_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Klima-Story machte EV zur 'moralischen' Investment-These — Kapital-Allokation folgte ESG-Logik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "ev_boom_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "COVID-Stimulus und Lockdown-Aktien-FOMO trafen EV-Story zur richtigen Zeit."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "ev_boom_2020",
+      "target": "ev_bust_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Bewertungs-Überdehnung enthielt Bust-Dynamik — Cash-Burn der SPAC-EVs musste enden."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "ev_bust_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Zinswende entzog kapitalintensiven EV-Startups die Finanzierungsgrundlage."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "spac_bubble_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "ZIRP machte Anleger renditehungrig für alternative Konstrukte — SPACs lieferten exotische Wettmöglichkeiten."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "spac_bubble_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Robinhood-Retail-Welle nach COVID-Stimulus fand in SPACs die zugänglichste Form der Pre-IPO-Spekulation."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "paris_klima",
+      "target": "wasserstoff_hype_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "Klima-Politik (Green Deal) machte Wasserstoff zur 'Lösung' für schwer-elektrifizierbare Sektoren — Investment-Story."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "wasserstoff_hype_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Niedrigzins-Umfeld plus EU-Hydrogen-Strategie 2020 fütterten Spekulation auf Wasserstoff-Story."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "wasserstoff_hype_2020",
+      "target": "wasserstoff_bust_2022",
+      "type": "direkt",
+      "why": {
+        "de": "Physik der Round-Trip-Efficiency setzte sich gegen Story durch — Realität kam mit Verzögerung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "wasserstoff_bust_2022",
+      "type": "direkt",
+      "why": {
+        "de": "Wasserstoff-Aktien als Long-Duration-Growth-Plays besonders zinssensitiv — Zinswende-Schock direkt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "energiekrise_2022",
+      "target": "wasserstoff_bust_2022",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Hohe Energiepreise machten grünen Wasserstoff teurer (Strompreis = größte Komponente) — Wirtschaftlichkeit weiter verschoben."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "cannabis_bubble_2018",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Renditejagd in Niedrigzins-Umfeld trieb Kapital in exotische Themen — Cannabis als 'next big thing'."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "cannabis_bubble_2018",
+      "target": "cannabis_bust_2019",
+      "type": "direkt",
+      "why": {
+        "de": "Überkapazitäten in Kanada plus US-Bundes-Stillstand bei Legalisierung enttäuschten die Story."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "3d_druck_boom_2013",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Niedrigzinsen plus Story-Bedürfnis ('industrielle Revolution') trafen reale Industrie-Anwendungen mit Aktienmarkt-Übersetzung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "3d_druck_boom_2013",
+      "target": "3d_druck_bust_2014",
+      "type": "direkt",
+      "why": {
+        "de": "Consumer-Anwendung floppte schnell — Bewertungs-Story fehlte Substanz."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "inflation_2022",
+      "target": "zinswende_2022",
+      "type": "direkt",
+      "why": {
+        "de": "9% US-Inflation zwang Fed zum schnellsten Zinsanstieg seit Volcker — Zinswende war Antwort auf Inflations-Anker."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "chatgpt_2022",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Zinswende-Schmerz in Tech-Sektor lenkte Kapital in die einzige verbliebene Wachstums-Story — AI als Flucht aus EV/Crypto/SPAC-Trümmern."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "obama_2008",
+      "target": "cleantech_boom_2008",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Obama-Konjunkturpaket Februar 2009 enthielt 90 Mrd USD für grüne Investitionen, DOE-Loan-Guarantees verteilten 16 Mrd USD."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "spac_bubble_2020",
+      "target": "ev_boom_2020",
+      "type": "beschleunigt",
+      "why": {
+        "de": "SPACs waren der Vehikel der Wahl für defizitäre EV-Startups — Rivian, Lucid, Nikola, Lordstown, Fisker."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "cleantech_boom_2008",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Fed-Nullzins-Politik ab Dezember 2008 verstärkte den bereits laufenden Cleantech-Boom — VC suchte Rendite in riskanten Sektoren."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "junk_bonds_milken_1985",
+      "target": "savings_loan_krise_1989",
+      "type": "direkt",
+      "why": {
+        "de": "Junk Bonds waren Hauptanlageklasse vieler S&Ls — Milken-Crash zog die ohnehin spekulierenden Spar- und Darlehenskassen mit in die Tiefe."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "reaganomics_1981",
+      "target": "junk_bonds_milken_1985",
+      "type": "direkt",
+      "why": {
+        "de": "Reagans Steuersenkungen und Deregulierung schufen das Umfeld in dem Junk-Bond-finanzierte feindliche Übernahmen mainstream wurden."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "greenspan_fed_1987",
+      "target": "ltcm_1998",
+      "type": "indirekt",
+      "why": {
+        "de": "Greenspan-Put-Doktrin schuf Moral Hazard — Hedgefonds wie LTCM nahmen extreme Hebel an, weil sie erwarteten, im Krisenfall gerettet zu werden."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "japan_blase_platzt_1990",
+      "target": "asienkrise_thailand_1997",
+      "type": "indirekt",
+      "why": {
+        "de": "Japans Niedrigzins-Reaktion auf Bubble-Crash machte Yen-Carry-Trade möglich — japanische Banken finanzierten asiatische Immobilien-Booms, die 1997 ihrerseits platzten."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ltcm_1998",
+      "target": "dotcom_blase_2000",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Greenspans Notfall-Zinssenkungen September-November 1998 (zur LTCM-Rettung) fütterten die finale Dotcom-Manie 1999-2000 — überschüssige Liquidität suchte Renditen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "housing_boom_2003",
+      "target": "lbo_mania_2006",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Subprime-Boom und LBO-Boom teilten dieselbe Wurzel: billiges Kapital, lockere Kreditstandards, Cov-Lite-Strukturen. Parallel-Phänomen derselben Liquiditätsflut."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "lbo_mania_2006",
+      "target": "lbo_bust_2008",
+      "type": "direkt",
+      "why": {
+        "de": "Übernahme-Multiplikatoren auf 10x EBITDA bei steigenden Zinsen unhaltbar — Refinanzierung der Cov-Lite-Schulden 2008/09 unmöglich."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "lbo_bust_2008",
+      "type": "direkt",
+      "why": {
+        "de": "Kollaps der Verbriefungs-Märkte entzog LBO-Schuldnern die Refinanzierungs-Möglichkeit — Chrysler/TXU/Tribune Folgen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "china_stocks_2007",
+      "target": "finanzkrise_2008",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Synchron-Crash China + USA 2008 verstärkte sich gegenseitig — globaler Liquiditätsabzug machte einzelne Krisen zur Systemkrise."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "china_stocks_2015_boom",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Globale ZIRP-Ära plus chinesischer Stimulus 2008-2009 (4 Bio Yuan-Paket) schufen Liquiditäts-Überhang, der 2014-2015 in Aktien floss."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "china_stocks_2015_boom",
+      "target": "china_stocks_2015_bust",
+      "type": "direkt",
+      "why": {
+        "de": "Margin-finanzierter Boom hatte Auto-Bust-Dynamik — sobald Liquidität endete, kaskadierten Margin Calls."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "china_stocks_2015_bust",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Yuan-Abwertung August 2015 traf US-Industriearbeitsplätze (chinesischer Export-Vorteil) — Wahlkampf-Thema Trump 'China Currency Manipulator'."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "wework_implosion_2019",
+      "target": "spac_bubble_2020",
+      "type": "indirekt",
+      "why": {
+        "de": "WeWork-IPO-Implosion machte traditionellen IPO-Weg für defizitäre Wachstumsfirmen schwerer — SPAC-Vehikel wurden zur Alternative ohne S-1-Prüfung."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "wework_implosion_2019",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Vision-Fund-Kapital von 100 Mrd USD war direktes Produkt globaler ZIRP-Renditejagd — SoftBank-Investoren akzeptierten extreme Bewertungen wegen Mangel an Alternativen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crypto_mania_2021",
+      "target": "gamestop_meme_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Selbe Retail-Investoren-Welle nach COVID-Stimulus mobilisierte sich in beiden Phänomenen — Robinhood/Reddit-Generation übersetzte Krypto-Energie in Aktien-Squeeze."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "covid_2020",
+      "target": "gamestop_meme_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Lockdown-Langeweile + Stimulus-Schecks + zero-commission-Apps + Reddit/Discord = perfekte Bedingungen für koordinierte Retail-Aktion."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "metaverse_hype_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Story-getriebenes Investment-Umfeld der späten ZIRP-Phase machte 'Metaverse' als nächste Tech-Narrative möglich."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "covid_2020",
+      "target": "metaverse_hype_2021",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Lockdown-Erfahrung mit Zoom/virtual-meetings machte 'virtuelle Räume' als Story plausibel — Meta nutzte das Momentum für Pivot."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "metaverse_hype_2021",
+      "target": "metaverse_bust_2023",
+      "type": "direkt",
+      "why": {
+        "de": "Nutzungs-Realität (Horizon Worlds-DAU unter 500.000) vs Story (500 Mio) musste eingeholt werden — selbstauflösend."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "chatgpt_2022",
+      "target": "metaverse_bust_2023",
+      "type": "beschleunigt",
+      "why": {
+        "de": "AI-Boom absorbierte Investoren-Aufmerksamkeit komplett — Metaverse-Story verlor parallel an Resonanz, Meta selbst pivoteriert teilweise zu AI."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "metaverse_bust_2023",
+      "type": "beschleunigt",
+      "why": {
+        "de": "Zinswende entzog Long-Duration-Story-Investments die Finanzierungs-Logik — Reality Labs-Verbrennung wird Kritik-Hauptpunkt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zinswende_2022",
+      "target": "svb_banking_2023",
+      "type": "direkt",
+      "why": {
+        "de": "SVB hatte 60% Einlagen in Long-Duration-Treasuries — Zinswende ließ Bond-Werte fallen, Mark-to-Market-Verluste zwangen zur Notveräußerung, panischer Bank Run folgte."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "svb_banking_2023",
+      "type": "beschleunigt",
+      "why": {
+        "de": "13 Jahre Niedrigzins-Risikomanagement schuf Asymmetrie — viele Regional-Banken nicht auf schnellen Zinsanstieg vorbereitet."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "dotcom_blase_2000",
+      "target": "dotcom_erbe_open_source_2003",
+      "type": "direkt",
+      "why": {
+        "de": "Crash entzauberte 'Aktienoptions-Lottery' — Engineering-Talente wandten sich Open-Source und nachhaltigen Geschäftsmodellen zu."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "dotcom_erbe_open_source_2003",
+      "target": "facebook_2004",
+      "type": "direkt",
+      "why": {
+        "de": "AWS, Y-Combinator-Modell und Open-Source-Stack machten Facebook-Gründung 100x billiger als 1999er-Startups — direkte Erbe-Nutzung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "cleantech_bust_2012",
+      "target": "cleantech_erbe_2014",
+      "type": "direkt",
+      "why": {
+        "de": "Tesla überlebte als einziger Pure-Play — Cleantech-Erbe konzentrierte sich strukturell auf das eine Survivor-Unternehmen."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "cleantech_erbe_2014",
+      "target": "ev_boom_2020",
+      "type": "direkt",
+      "why": {
+        "de": "Tesla-Survival-Story plus Solar-Lernkurve plus chinesische Industrie-Reife schufen die Vorbedingungen für den EV-Massenmarkt."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ev_boom_2020",
+      "target": "ev_china_dominanz_2024",
+      "type": "direkt",
+      "why": {
+        "de": "Westliche Bewertungsblase ließ chinesische Hersteller (BYD, SAIC) parallel ohne Spekulations-Verzerrung skalieren — strukturelle Erbschaft."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "cleantech_erbe_2014",
+      "target": "ev_china_dominanz_2024",
+      "type": "indirekt",
+      "why": {
+        "de": "Solar-Lernkurve-Modell (90% Kostensenkung in 10 Jahren) wurde auch auf EV-Batterien angewandt — China nutzte gleiche Industriepolitik."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "3d_druck_bust_2014",
+      "target": "3d_druck_industriereife_2018",
+      "type": "direkt",
+      "why": {
+        "de": "Nach Hype-Reset konnte Branche ohne Bewertungs-Druck auf reale Industrie-Anwendungen fokussieren."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crypto_winter_2018",
+      "target": "crypto_infrastruktur_2020",
+      "type": "direkt",
+      "why": {
+        "de": "Spekulations-Pause 2018-2019 erlaubte institutionellen Akteuren (Coinbase, Fidelity) Infrastruktur-Aufbau ohne Manie-Druck."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "foreclosure_welle_2009",
+      "type": "direkt",
+      "why": {
+        "de": "Subprime-Hypotheken kollabierten massenhaft, Banken übernahmen Häuser — 10 Mio Eigenheim-Verluste über 7 Jahre."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "foreclosure_welle_2009",
+      "target": "tea_party_2009",
+      "type": "direkt",
+      "why": {
+        "de": "Obamas Hausbesitzer-Hilfsplan (HAMP) ausgelöst durch Foreclosure-Welle war direkter Auslöser von Santellis CNBC-Tea-Party-Wutrede."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "foreclosure_welle_2009",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Rust-Belt-Bundesstaaten (Pennsylvania, Michigan, Wisconsin) hatten höchste Foreclosure-Raten — direkte Korrelation mit Trump-Swing 2016."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "vermoegens_ungleichheit_2010",
+      "type": "direkt",
+      "why": {
+        "de": "Bailouts retteten Asset-Besitzer, ZIRP fütterte Asset-Inflation, Lohnabhängige profitierten nicht — Ungleichheit explodierte als direkte Folge der Krisen-Antwort."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "zirp_aera_2008",
+      "target": "vermoegens_ungleichheit_2010",
+      "type": "direkt",
+      "why": {
+        "de": "Niedrigzins-Regime macht Aktien/Immobilien-Besitzer reicher (Asset-Inflation), während Sparer und Lohnabhängige reale Verluste erleiden."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "eurokrise_2010",
+      "target": "austerity_eu_2010",
+      "type": "direkt",
+      "why": {
+        "de": "Troika-Antwort auf Eurokrise war Austeritäts-Programm — direkte politische Folge der Krisenlogik."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "ftx_kollaps_2022",
+      "target": "crypto_betrugs_erbe_2023",
+      "type": "direkt",
+      "why": {
+        "de": "FTX kulminiert eine Serie von Krypto-Betrügereien — Vertrauensverlust greift jenseits FTX selbst."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "crypto_winter_2018",
+      "target": "crypto_betrugs_erbe_2023",
+      "type": "direkt",
+      "why": {
+        "de": "BitConnect-Ponzi und ICO-Scams 2018 waren Beginn der Erbe-Bildung — FTX 2022 nur die größte Eskalation."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "tea_party_2009",
+      "type": "direkt",
+      "why": {
+        "de": "TARP-Bankenrettung 700 Mrd USD ohne Strafverfolgung erzeugte breite Wut — Tea Party kanalisierte sie nach rechts."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "finanzkrise_2008",
+      "target": "occupy_2011",
+      "type": "direkt",
+      "why": {
+        "de": "Selbe Bailout-Wut, drei Jahre später — Occupy artikulierte sie von links: 'Wir sind die 99%'."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "vermoegens_ungleichheit_2010",
+      "target": "occupy_2011",
+      "type": "direkt",
+      "why": {
+        "de": "Piketty-Diagnose der explodierenden Ungleichheit gab Occupy den intellektuellen Rahmen — '99% vs 1%' wird globaler Slogan."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "tea_party_2009",
+      "target": "trump_2016",
+      "type": "direkt",
+      "why": {
+        "de": "Tea-Party-Welle 2010 schuf die populistische Republikaner-Basis, die Trump 2016 mobilisierte — Establishment-Skepsis war strukturell vorbereitet."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "occupy_2011",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Diskurs-Shift zu 'Ungleichheit/Elite' (von Occupy normalisiert) konnte sowohl Sanders-Linke als auch Trump-Rechte ansprechen."
+      },
+      "certainty": "plausibel"
+    },
+    {
+      "source": "austerity_eu_2010",
+      "target": "brexit_2016",
+      "type": "direkt",
+      "why": {
+        "de": "EU-Austerity-Trauma und Migration aus südeuropäischen Krisenländern machten EU-Skepsis in UK mainstream-fähig."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "austerity_eu_2010",
+      "target": "yellow_vests_2018",
+      "type": "direkt",
+      "why": {
+        "de": "10 Jahre Austerity in Frankreich (besonders Sozialleistungs-Kürzungen) + Macrons Vermögenssteuer-Abschaffung 2018 = gilet-jaune-Funke."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "vermoegens_ungleichheit_2010",
+      "target": "yellow_vests_2018",
+      "type": "direkt",
+      "why": {
+        "de": "Periphere Bevölkerung trug die Lasten der Klima-/Energie-Politik, während Metropol-Eliten Subventionen abschöpften — strukturelles Ungleichheits-Trauma."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "vermoegens_ungleichheit_2010",
+      "target": "trump_2016",
+      "type": "indirekt",
+      "why": {
+        "de": "Strukturelle Vermögensungleichheit erodierte Vertrauen in Demokratisch-liberale Erzählung — Trump-Populismus profitierte von dieser Aushöhlung."
+      },
+      "certainty": "belegt"
+    },
+    {
+      "source": "austerity_eu_2010",
+      "target": "fpoe_2024",
+      "type": "indirekt",
+      "why": {
+        "de": "EU-skeptische Stimmung in Österreich (nicht von Austerity direkt betroffen, aber Diskurs-mitbetroffen) trug zur FPÖ-Erstplatzierung bei."
       },
       "certainty": "plausibel"
     }
