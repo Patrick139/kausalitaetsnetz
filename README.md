@@ -84,7 +84,7 @@ Knoten und Links in `kausalitaetsnetz.json`:
 
 ## Beitragen
 
-Pull Requests willkommen, aber: alle Beiträge fallen unter die hier verwendeten Lizenzen (AGPL-3.0 für Code, CC BY-SA 4.0 für Daten). Mit dem Einreichen eines PR bestätigst du, dass du die Rechte an deinem Beitrag hast und diese unter den Projektlizenzen freigibst.
+Pull Requests willkommen. Alle Beiträge fallen unter die hier verwendeten Lizenzen (AGPL-3.0 für Code, CC BY-SA 4.0 für Daten). Mit dem Einreichen eines PR bestätigst du, dass du die Rechte an deinem Beitrag hast und ihn unter den Projektlizenzen freigibst.
 
 ---
 
