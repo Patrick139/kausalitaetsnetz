@@ -338,14 +338,31 @@ h1 em { color: #4a9eff; font-style: normal; }
 .p-region { font-family: monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.12rem 0.35rem; border-radius: 2px; display: inline-block; margin-bottom: 0.75rem; }
 .p-title { font-size: 1rem; font-weight: 700; color: #e8f0fc; line-height: 1.3; margin-bottom: 0.6rem; }
 .p-detail { font-size: 0.8rem; line-height: 1.6; color: #8a9ab0; margin-bottom: 0.8rem; }
-.p-src {
-  display: inline-block; margin-bottom: 1.2rem;
-  font-family: monospace; font-size: 0.58rem; letter-spacing: 0.05em;
-  color: #4a9eff; border: 1px solid rgba(74,158,255,0.3);
-  padding: 0.18rem 0.5rem; border-radius: 2px;
-  text-decoration: none; transition: color 0.1s, background 0.1s, border-color 0.1s;
+/* Quellen-Block: standardmäßig zugeklappt, expandiert beim Klick.
+   Nimmt im UI kaum Platz weg; nur wer Quellen sehen will, klickt. */
+.src-block { margin-bottom: 1.0rem; }
+.src-toggle {
+  background: none; border: none; cursor: pointer; padding: 0.2rem 0;
+  font-family: monospace; font-size: 0.55rem; letter-spacing: 0.08em;
+  color: #4a6080; text-transform: uppercase; text-align: left;
+  display: flex; align-items: center; gap: 0.3rem;
+  transition: color 0.1s;
 }
-.p-src:hover { background: rgba(74,158,255,0.08); border-color: #4a9eff; }
+.src-toggle:hover { color: #4a9eff; }
+.src-toggle-icon { display: inline-block; transition: transform 0.15s; font-size: 0.7em; }
+.src-block.open .src-toggle-icon { transform: rotate(90deg); }
+.src-list {
+  display: none; margin-top: 0.35rem; padding-left: 0.6rem;
+  border-left: 1px solid rgba(74,158,255,0.2);
+}
+.src-block.open .src-list { display: block; }
+.src-link {
+  display: block; padding: 0.18rem 0; font-family: monospace;
+  font-size: 0.6rem; color: #4a9eff; text-decoration: none;
+  letter-spacing: 0.02em; word-break: break-all;
+}
+.src-link:hover { color: #6ab0ff; text-decoration: underline; }
+
 .conn-src {
   font-family: monospace; font-size: 0.5rem; color: #3a5a80;
   text-decoration: none; margin-top: 0.15rem; display: inline-block;
@@ -1309,6 +1326,30 @@ function resetVisuals() {
 }
 
 // ── PANEL ──
+
+// Quellen-Anzeige im Panel: versteckt bis Klick auf Button, dann ausklappbar.
+// Akzeptiert sowohl Array (neues Schema) als auch String (alt) für Rückwärts-Kompatibilität.
+function renderSources(d) {
+  if(!d.src) return '';
+  const urls = Array.isArray(d.src) ? d.src : [d.src];
+  if(!urls.length) return '';
+  // Domain aus URL extrahieren für Anzeige-Label
+  const urlLabel = url => {
+    try { return new URL(url).hostname.replace(/^www\./,''); }
+    catch(e) { return url; }
+  };
+  const links = urls.map(u =>
+    `<a href="${u}" target="_blank" rel="noopener" class="src-link">↗ ${urlLabel(u)}</a>`
+  ).join('');
+  return `<div class="src-block">
+    <button class="src-toggle" onclick="this.parentElement.classList.toggle('open')">
+      <span class="src-toggle-icon">▸</span>
+      Quellen (${urls.length})
+    </button>
+    <div class="src-list">${links}</div>
+  </div>`;
+}
+
 function renderPanel(d, causes, effects) {
   const col = RCOL[d.r]||"#4a6080";
 
@@ -1332,7 +1373,7 @@ function renderPanel(d, causes, effects) {
     <div class="p-region" style="background:${col}22;color:${col}">${(RNAME[d.r]||d.r).toUpperCase()}</div>
     <div class="p-title">${tx(d.short)}</div>
     <div class="p-detail">${tx(d.detail)}</div>
-    ${d.src ? `<a class="p-src" href="${d.src}" target="_blank" rel="noopener">↗ Quelle</a>` : ''}
+    ${renderSources(d)}
   `;
 
   // ── URSACHEN ──

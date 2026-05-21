@@ -48,7 +48,12 @@
       "detail": {
         "de": "Al-Qaeda tötet fast 3.000 Menschen. Fundamentale Wende in Weltpolitik, Sicherheit und Bürgerrechten. Nichts ist danach wie vorher."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.britannica.com/event/September-11-attacks",
+        "https://www.history.com/articles/9-11-attacks",
+        "https://www.911memorial.org/911-faqs"
+      ]
     },
     {
       "id": "patriot_act",
@@ -94,6 +99,11 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.wto.org/english/news_e/news21_e/acc_10dec21_e.htm",
+        "https://ustr.gov/archive/Document_Library/Fact_Sheets/2001/Background_Information_on_China's_Accession_to_the_World_Trade_Organization.html",
+        "https://www.britannica.com/topic/World-Trade-Organization"
       ]
     },
     {
@@ -108,7 +118,12 @@
       "detail": {
         "de": "USA und UK ohne UN-Mandat. Keine Massenvernichtungswaffen. Folge: IS, Millionen Tote, Destabilisierung einer ganzen Region für Jahrzehnte."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.bbc.com/news/world-64980565",
+        "https://www.cfr.org/articles/remembering-operation-iraqi-freedom",
+        "https://www.cfr.org/articles/iraq-war-2"
+      ]
     },
     {
       "id": "eu_osterweiterung",
@@ -156,6 +171,11 @@
       },
       "tags": [
         "technologie"
+      ],
+      "src": [
+        "https://time.com/4628515/steve-jobs-iphone-launch-keynote-2007/",
+        "https://time.com/4837176/iphone-10th-anniversary/",
+        "https://www.cnbc.com/2024/01/27/how-the-apple-iphone-changed-the-world.html"
       ]
     },
     {
@@ -191,6 +211,11 @@
         "bubble",
         "wirtschaft",
         "bubble_global"
+      ],
+      "src": [
+        "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath",
+        "https://www.federalreservehistory.org/essays/support-for-specific-institutions",
+        "https://www.britannica.com/event/financial-crisis-of-2007-2008"
       ]
     },
     {
@@ -225,6 +250,11 @@
       "tags": [
         "krieg",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Arab-Spring",
+        "https://www.bbc.com/news/world-middle-east-55351698",
+        "https://www.history.com/articles/arab-spring"
       ]
     },
     {
@@ -277,6 +307,11 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Xi-Jinping",
+        "https://www.scmp.com/topics/xi-jinping",
+        "https://en.wikipedia.org/wiki/General_secretaryship_of_Xi_Jinping"
       ]
     },
     {
@@ -360,6 +395,11 @@
       "tags": [
         "umwelt",
         "klima"
+      ],
+      "src": [
+        "https://www.un.org/en/climatechange/paris-agreement",
+        "https://www.bbc.com/news/world-europe-35087821",
+        "https://www.un.org/en/academic-impact/nations-reach-historic-agreement-climate-change"
       ]
     },
     {
@@ -376,6 +416,11 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.bbc.com/news/election-us-2016-37916967",
+        "https://www.britannica.com/biography/Donald-Trump",
+        "https://www.nbcnews.com/storyline/2016-election-day/2016-election-results-polls-more-battle-white-house-n679936"
       ]
     },
     {
@@ -426,6 +471,11 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.bbc.com/news/av/world-europe-64750155",
+        "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine",
+        "https://www.bbc.com/newsround/av/68130904"
       ]
     },
     {
@@ -461,6 +511,11 @@
         "bubble",
         "wirtschaft",
         "bubble_sectoral"
+      ],
+      "src": [
+        "https://www.history.com/this-day-in-history/november-30/chatgpt-released-openai",
+        "https://www.cnbc.com/2023/11/30/chatgpts-one-year-anniversary-how-the-viral-ai-chatbot-has-changed.html",
+        "https://www.euronews.com/2023/11/30/chatgpt-a-year-on-3-ways-the-ai-chatbot-has-completely-changed-the-world-in-12-months"
       ]
     },
     {
@@ -538,7 +593,12 @@
       "detail": {
         "de": "SARS-CoV-2 tötet offiziell 7 Millionen, real weit mehr. Globaler Lockdown, Wirtschaftseinbruch, Staatsverschuldung auf Rekordhoch. Größte gesellschaftliche Zäsur seit dem Zweiten Weltkrieg."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.cdc.gov/museum/timeline/covid19.html",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
+        "https://www.who.int/director-general/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"
+      ]
     },
     {
       "id": "covid_schulden",
@@ -1619,6 +1679,11 @@
       "tags": [
         "politik",
         "wirtschaft"
+      ],
+      "src": [
+        "https://www.bbc.com/news/world-asia-china-24846812",
+        "https://www.bbc.com/news/world-asia-china-24770802",
+        "https://www.britannica.com/biography/Deng-Xiaoping"
       ]
     },
     {
@@ -1671,6 +1736,11 @@
         "politik",
         "protest",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Tiananmen-Square-incident",
+        "https://www.bbc.com/news/av/world-asia-27679364",
+        "https://www.bbc.com/news/av/world-asia-27692340"
       ]
     },
     {
@@ -2310,6 +2380,11 @@
       "tags": [
         "politik",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Mikhail-Gorbachev",
+        "https://www.rferl.org/a/gorbachev-obituary-dead-91-soviet-union/32011310.html",
+        "https://blog.nationalarchives.gov.uk/man-one-business"
       ]
     },
     {
@@ -2362,6 +2437,11 @@
       "tags": [
         "politik",
         "revolution"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/Berlin-Wall",
+        "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/194561/als-die-mauer-fiel-der-9-november-1989/",
+        "https://www.bpb.de/themen/deutsche-einheit/mauerfall/"
       ]
     },
     {
@@ -2414,6 +2494,11 @@
         "politik",
         "katastrophe",
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/event/the-collapse-of-the-Soviet-Union",
+        "https://www.bbc.com/news/world-europe-38289333",
+        "https://www.bbc.com/news/av/world-europe-38294498"
       ]
     },
     {
@@ -2824,6 +2909,11 @@
       "tags": [
         "wirtschaft",
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/Economic-Recovery-Tax-Act",
+        "https://www.history.com/this-day-in-history/reagan-signs-economic-recovery-tax-act-erta",
+        "https://taxfoundation.org/research/all/federal/retrospective-1981-reagan-tax-cut/"
       ]
     },
     {
@@ -2999,6 +3089,11 @@
       "tags": [
         "wirtschaft",
         "vertrag"
+      ],
+      "src": [
+        "https://www.britannica.com/event/North-American-Free-Trade-Agreement",
+        "https://www.cfr.org/backgrounders/naftas-economic-impact",
+        "https://www.history.com/this-day-in-history/january-1/nafta-comes-into-effect-us-mexico-canada-trade"
       ]
     },
     {
@@ -3250,6 +3345,11 @@
         "politik",
         "revolution",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Iranian-Revolution",
+        "https://www.history.com/articles/1979-iranian-revolution-causes",
+        "https://www.npr.org/sections/pictureshow/2009/06/the_iranian_revolution_of_1979.html"
       ]
     },
     {
