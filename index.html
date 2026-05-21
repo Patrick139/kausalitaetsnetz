@@ -1168,6 +1168,11 @@ function selectNode(d, resetDepth = true) {
     return highlightIds.has(s) && highlightIds.has(t);
   });
 
+  // Selektion-Override: ausgewählter Knoten + alle BFS-Nachbarn werden zusätzlich sichtbar
+  // gemacht, auch wenn sie durch den aktuellen Filter ausgeblendet wären.
+  selectionOverride = highlightIds;
+  applyAllFilters();
+
   // Visualisierung
   applyVisualFilter(highlightIds, highlightLinks, null);
   nodeEls.classed("selected", n => n.id === d.id).classed("path-node", false);
@@ -1290,9 +1295,12 @@ function applyVisualFilter(connIds, connLinks, pathLinkSet) {
 
 function resetVisuals() {
   selectedNode = null;
+  // Selektion-Override leeren: Filter alleine bestimmt jetzt Sichtbarkeit
+  selectionOverride = new Set();
   nodeEls.classed("selected", false).classed("faded", false).classed("path-node", false).classed("path-faded", false);
   linkEls.classed("highlighted", false).classed("faded", false).classed("path-link", false).classed("path-faded", false)
     .style("stroke-opacity", 0.3);
+  applyAllFilters();
 }
 
 // ── PANEL ──
@@ -1417,22 +1425,34 @@ function nodeVisible(n) {
   }
   return true;
 }
+// Selektion-Override: Knoten die durch aktive Selektion zusätzlich sichtbar gemacht werden,
+// auch wenn sie aktuell durch Filter ausgeblendet wären (selber Mechanismus für Links).
+let selectionOverride = new Set();
+
 function nodeFaded(n) {
   // Region-Filter: blendet aus (faded), entfernt aber nicht
   return filterRegion !== "alle" && n.r !== filterRegion;
 }
 
+// Effektive Sichtbarkeit: Filter ODER Override
+function nodeEffectivelyVisible(n) {
+  if(selectionOverride.has(n.id)) return true;
+  return nodeVisible(n);
+}
+
 function applyAllFilters() {
-  nodeEls.style("display", d => nodeVisible(d) ? null : "none");
-  nodeEls.classed("faded", d => nodeFaded(d));
+  nodeEls.style("display", d => nodeEffectivelyVisible(d) ? null : "none");
+  nodeEls.classed("faded", d => nodeFaded(d) && !selectionOverride.has(d.id));
   linkEls.style("display", l => {
     const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
     if(!sn || !tn) return "none";
-    return (nodeVisible(sn) && nodeVisible(tn)) ? null : "none";
+    return (nodeEffectivelyVisible(sn) && nodeEffectivelyVisible(tn)) ? null : "none";
   });
   linkEls.classed("faded", l => {
     if(filterRegion === "alle") return false;
     const sn = byId[l.source.id||l.source], tn = byId[l.target.id||l.target];
+    // Override-Links nicht faden
+    if(selectionOverride.has(sn?.id) && selectionOverride.has(tn?.id)) return false;
     return !(sn && sn.r === filterRegion) && !(tn && tn.r === filterRegion);
   });
 }
@@ -1551,9 +1571,12 @@ document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
 const REGION_ICONS = {
   usa:"🇺🇸", eu:"🇪🇺", russland:"🇷🇺", china:"🇨🇳",
   oesterreich:"🇦🇹", uk:"🇬🇧", japan:"🇯🇵", taiwan:"🇹🇼",
+  südkorea:"🇰🇷",
   iran:"🇮🇷", israel:"🇮🇱", saudi:"🇸🇦", afghanistan:"🇦🇫",
   brasilien:"🇧🇷", australien:"🇦🇺", syrien:"🇸🇾",
   mittelost:"🌍", global:"🌐", südostasien:"🌏",
+  indien:"🇮🇳", indonesien:"🇮🇩", vietnam:"🇻🇳", philippinen:"🇵🇭",
+  thailand:"🇹🇭", pakistan:"🇵🇰", malaysia:"🇲🇾",
   argentinien:"🇦🇷", venezuela:"🇻🇪", chile:"🇨🇱",
   kolumbien:"🇨🇴", mexiko:"🇲🇽",
   afrika:"🌍", sudan:"🇸🇩", aethiopien:"🇪🇹",
@@ -1861,35 +1884,10 @@ const searchIn = document.getElementById("search-in");
 const searchRes = document.getElementById("search-res");
 let searchSelectedIdx = -1;  // aktuell hervorgehobener Eintrag (Pfeiltasten)
 
-// Knoten auswählen + ggf. Filter zurücksetzen
+// Knoten auswählen (Filter-Reset nicht mehr nötig: selectionOverride macht den Knoten sichtbar)
 function selectSearchResult(n) {
   searchRes.innerHTML = ""; searchIn.value = "";
   searchSelectedIdx = -1;
-  // Wenn der Knoten durch IRGENDEINEN aktiven Filter ausgeblendet ist, entsprechende zurücksetzen
-  if(!isNodeVisible(n)) {
-    const minImp = filterImp === "alle" ? 1 : parseInt(filterImp);
-    if(n.imp < minImp) {
-      document.querySelectorAll("#imp-menu .dd-item").forEach(b => b.classList.remove("active"));
-      document.querySelector("#imp-menu .dd-item[data-imp='alle']").classList.add("active");
-      filterImp = "alle";
-      impBtn.textContent = "Alle Stufen ▾";
-    }
-    if(filterRegion !== "alle" && n.r !== filterRegion) {
-      document.querySelectorAll("#region-menu .dd-item").forEach(b => b.classList.remove("active"));
-      document.querySelector("#region-menu .dd-item[data-r='alle']").classList.add("active");
-      filterRegion = "alle";
-      regionBtn.textContent = "Alle Bereiche ▾";
-      regionBtn.style.background = "";
-      regionBtn.style.borderColor = "";
-    }
-    if(filterTag !== "alle" && !(n.tags||[]).includes(filterTag)) {
-      document.querySelectorAll("#tag-menu .dd-item").forEach(b => b.classList.remove("active"));
-      document.querySelector("#tag-menu .dd-item[data-tag='alle']").classList.add("active");
-      filterTag = "alle";
-      tagBtn.textContent = "Alle Themen ▾";
-    }
-    applyAllFilters();
-  }
   selectNode(n);
   zoomToNode(n);
 }
@@ -1969,9 +1967,13 @@ function zoomToNode(n) {
 
 // Globale API für externe Verlinkung (z.B. Bookmarks oder URL-Parameter):
 // Aus Browser-Konsole oder externem Code aufrufen: selectById("trump_2016")
+// Wird auch von Panel-Klicks aufgerufen — selectionOverride macht den Knoten sichtbar.
 window.selectById = id => {
   const n = nodes.find(d => d.id === id);
-  if(n) { selectNode(n, true); zoomToNode(n); }
+  if(n) {
+    selectNode(n, true);
+    zoomToNode(n);
+  }
 };
 
 // ── RESIZE HANDLER ──
