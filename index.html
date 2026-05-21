@@ -1767,7 +1767,10 @@ document.getElementById("panel-content").addEventListener("click", e => {
     if(dir === "effect") effectDepth += (act === "inc" ? 1 : -1);
     causeDepth  = Math.max(0, Math.min(MAX_DEPTH, causeDepth));
     effectDepth = Math.max(0, Math.min(MAX_DEPTH, effectDepth));
-    if(selectedNode) selectNode(selectedNode, false);  // re-render mit gleicher Tiefe-Auswahl
+    if(selectedNode) {
+      selectNode(selectedNode, false);  // re-render mit gleicher Tiefe-Auswahl
+      zoomToFitSelection();              // Sichtbereich an gesamte Kausalkette anpassen
+    }
     return;
   }
 });
@@ -1862,7 +1865,24 @@ svg.on("click", () => {
 function zoomToFitVisible() {
   const visible = nodes.filter(isNodeVisible);
   if(!visible.length) return;
-  const xs = visible.map(n=>n.x), ys = visible.map(n=>n.y);
+  zoomToFitNodes(visible, 1.5);
+}
+
+// Zoomt auf alle Knoten in der aktuellen Selektion (Override-Set)
+// — sicherstellen, dass User die ganze Kausalkette sieht, nicht nur einen Punkt.
+function zoomToFitSelection() {
+  if(!selectionOverride.size) return;
+  const sel = nodes.filter(n => selectionOverride.has(n.id));
+  // Nur 1 Knoten? Dann normaler zoomToNode (gleicher Zoom-Level behalten)
+  if(sel.length === 1) { zoomToNode(sel[0]); return; }
+  zoomToFitNodes(sel, 1.8);  // max-scale etwas höher als bei "all visible"
+}
+
+// Gemeinsame Logik für fit-to-bounds
+function zoomToFitNodes(arr, maxScale) {
+  const xs = arr.map(n=>n.x).filter(v => Number.isFinite(v));
+  const ys = arr.map(n=>n.y).filter(v => Number.isFinite(v));
+  if(!xs.length) return;
   const x0=Math.min(...xs), x1=Math.max(...xs);
   const y0=Math.min(...ys), y1=Math.max(...ys);
   const pad = 80;
@@ -1871,7 +1891,7 @@ function zoomToFitVisible() {
   const availH = window.innerHeight - HDR_H;
   const scaleX = (availW-pad*2)/(x1-x0||1);
   const scaleY = (availH-pad*2)/(y1-y0||1);
-  const k = Math.min(scaleX, scaleY, 1.5);
+  const k = Math.min(scaleX, scaleY, maxScale);
   const tx = availW/2 - k*(x0+x1)/2;
   const ty = availH/2 - k*(y0+y1)/2 + HDR_H;
   svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
@@ -1889,7 +1909,7 @@ function selectSearchResult(n) {
   searchRes.innerHTML = ""; searchIn.value = "";
   searchSelectedIdx = -1;
   selectNode(n);
-  zoomToNode(n);
+  zoomToFitSelection();  // zeigt Knoten + direkte Verbindungen
 }
 
 // Visuelles Highlight für aktuell selektiertes Such-Item (per Tastatur)
@@ -1972,7 +1992,7 @@ window.selectById = id => {
   const n = nodes.find(d => d.id === id);
   if(n) {
     selectNode(n, true);
-    zoomToNode(n);
+    zoomToFitSelection();  // zeigt Knoten + direkte Verbindungen (Kausalkette)
   }
 };
 
