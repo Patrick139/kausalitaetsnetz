@@ -8,7 +8,7 @@ Interaktive Visualisierung historischer Kausalzusammenhänge — politisch, wirt
 
 ## Copyright & Lizenzen
 
-Copyright © 2024–2026 Patrick Valda
+Copyright © 2026 Patrick Valda
 
 Dieses Projekt ist unter zwei Lizenzen veröffentlicht:
 
@@ -97,6 +97,6 @@ Bei der Entwicklung wurden gängige Werkzeuge eingesetzt: Editor, Versionskontro
 ## Zitieren
 
 ```
-Valda, Patrick (2024–2026). Kausalnetz – Interaktive Visualisierung
+Valda, Patrick (2026). Kausalnetz – Interaktive Visualisierung
 historischer Kausalzusammenhänge. https://github.com/Patrick139/kausalitaetsnetz
 ```
