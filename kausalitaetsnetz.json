@@ -55,7 +55,7 @@
       "tags": [],
       "src": [
         "https://www.britannica.com/event/September-11-attacks",
-        "https://www.history.com/articles/9-11-attacks",
+        "https://orf.at/stories/3441457/",
         "https://www.911memorial.org/911-faqs"
       ]
     },
@@ -251,8 +251,8 @@
         "krieg"
       ],
       "src": [
-        "https://www.britannica.com/event/Russo-Georgian-War",
-        "https://www.bbc.com/news/world-europe-23142281"
+        "https://www.britannica.com/place/Georgia/Independent-Georgia",
+        "https://www.aljazeera.com/news/2008/8/8/russian-tanks-enter-south-ossetia"
       ]
     },
     {
@@ -274,7 +274,7 @@
       "src": [
         "https://www.britannica.com/event/Arab-Spring",
         "https://www.bbc.com/news/world-middle-east-55351698",
-        "https://www.history.com/articles/arab-spring"
+        "https://www.aljazeera.com/news/2021/1/14/arab-spring-ten-years-on"
       ]
     },
     {
@@ -318,7 +318,7 @@
       ],
       "src": [
         "https://www.britannica.com/event/Syrian-Civil-War",
-        "https://www.cfr.org/global-conflict-tracker/conflict/civil-war-syria"
+        "https://www.cfr.org/articles/syrias-civil-war"
       ]
     },
     {
@@ -420,8 +420,8 @@
         "politik"
       ],
       "src": [
-        "https://www.britannica.com/topic/European-refugee-crisis",
-        "https://www.unhcr.org/europe-emergency.html"
+        "https://www.britannica.com/biography/Angela-Merkel/Chancellorship",
+        "https://www.unhcr.org/news/stories/over-one-million-sea-arrivals-reach-europe-2015"
       ]
     },
     {
@@ -504,7 +504,7 @@
         "krieg"
       ],
       "src": [
-        "https://www.britannica.com/topic/Russian-interference-in-US-elections",
+        "https://www.britannica.com/biography/Donald-Trump/Russia-investigation",
         "https://www.intelligence.senate.gov/sites/default/files/documents/Report_Volume5.pdf"
       ]
     },
@@ -547,7 +547,7 @@
       ],
       "src": [
         "https://www.brookings.edu/articles/europes-messy-russian-gas-divorce/",
-        "https://www.iea.org/reports/europes-energy-crisis"
+        "https://www.iea.org/reports/gas-market-lessons-from-the-2022-2023-energy-crisis/anatomy-of-a-natural-gas-crisis"
       ]
     },
     {
@@ -592,7 +592,7 @@
       ],
       "src": [
         "https://www.britannica.com/event/Israel-Hamas-War",
-        "https://www.cfr.org/article/what-know-about-hamas-attack-israel"
+        "https://orf.at/stories/3406875/"
       ]
     },
     {
@@ -645,8 +645,8 @@
         "politik"
       ],
       "src": [
-        "https://www.bbc.com/news/articles/orban-hungary-2026-election",
-        "https://www.reuters.com/world/europe/orbans-fidesz-loses-hungary-election-2026/"
+        "https://www.aljazeera.com/news/2026/4/12/hungary-election-early-results-show-magyars-tisza-ahead-of-orbans-fidesz",
+        "https://orf.at/stories/3426707/"
       ]
     },
     {
@@ -665,7 +665,7 @@
       "src": [
         "https://www.cdc.gov/museum/timeline/covid19.html",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
-        "https://www.who.int/director-general/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"
+        "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"
       ]
     },
     {
@@ -879,8 +879,8 @@
         "politik"
       ],
       "src": [
-        "https://www.bbc.com/news/articles/cqq8e3l4xeko",
-        "https://www.theguardian.com/world/2024/sep/29/far-right-fpo-set-to-win-austrian-election-projections"
+        "https://orf.at/stories/3371377/",
+        "https://www.aljazeera.com/news/2024/9/29/austrias-far-right-freedom-party-projected-to-win-election"
       ]
     },
     {
@@ -932,8 +932,8 @@
         "religion"
       ],
       "src": [
-        "https://www.cfr.org/global-conflict-tracker/conflict/conflict-between-iran-and-united-states",
-        "https://www.bbc.com/news/topics/cnq687v827qt/iran"
+        "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran",
+        "https://www.aljazeera.com/economy/2026/3/3/shutdown-of-hormuz-strait-raises-fears-of-soaring-oil-prices"
       ]
     },
     {
@@ -969,8 +969,8 @@
         "geopolitik"
       ],
       "src": [
-        "https://www.cfr.org/in-brief/what-trumps-liberation-day-tariffs-mean-economy-and-trade-war",
-        "https://www.bbc.com/news/articles/cm253z85vp9o"
+        "https://www.aljazeera.com/economy/2025/4/3/five-key-takeaways-from-trumps-liberation-day-reciprocal-tariffs",
+        "https://www.euronews.com/2025/04/11/white-house-clarifies-tariff-rate-on-most-chinese-imports-is-actually-145"
       ]
     },
     {
@@ -1003,8 +1003,8 @@
       },
       "tags": [],
       "src": [
-        "https://www.reuters.com/world/asia-pacific/russia-china-issue-joint-statement-no-limits-friendship-2022-02-04/",
-        "https://www.cfr.org/in-brief/russia-china-relations-getting-stronger-no-limits-partnership"
+        "https://www.aljazeera.com/news/2022/2/4/chinas-xi-to-meet-russias-putin-ahead-of-olympics-opening-rites",
+        "https://www.rferl.org/a/ukraine-russia-eu-sanctions-leyen/31686228.html"
       ]
     },
     {
@@ -1070,7 +1070,7 @@
       "tags": [],
       "src": [
         "https://www.imf.org/en/Publications/WEO/Issues/2022/10/11/world-economic-outlook-october-2022",
-        "https://www.federalreserve.gov/monetarypolicy/files/20220615_mprfullreport.pdf"
+        "https://www.aljazeera.com/economy/2022/7/13/bbus-inflation-jumps-9-1-in-june-higher-than-forecast"
       ]
     },
     {
@@ -1107,7 +1107,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Barack-Obama",
-        "https://www.bbc.com/news/world-us-canada-37855644"
+        "https://www.npr.org/2008/11/05/96640324/barack-obama-wins-historic-election"
       ]
     },
     {
@@ -1184,7 +1184,7 @@
         "geopolitik"
       ],
       "src": [
-        "https://www.britannica.com/event/Hong-Kong-protests-of-2019-2020",
+        "https://www.britannica.com/place/Hong-Kong/Contemporary-Hong-Kong",
         "https://www.bbc.com/news/world-asia-china-49317695"
       ]
     },
@@ -1204,8 +1204,8 @@
         "politik"
       ],
       "src": [
-        "https://www.bbc.com/news/world-europe-48319957",
-        "https://www.theguardian.com/world/2019/may/18/austria-vice-chancellor-heinz-christian-strache-quits-over-secret-video-recording"
+        "https://orf.at/stories/3122849/",
+        "https://www.aljazeera.com/news/2019/5/18/austrias-kurz-calls-for-snap-elections-amid-video-scandal"
       ]
     },
     {
@@ -1245,7 +1245,7 @@
       ],
       "src": [
         "https://www.britannica.com/event/January-6-U-S-Capitol-attack",
-        "https://www.bbc.com/news/world-us-canada-55582168"
+        "https://www.aljazeera.com/news/2021/1/6/pro-donald-trump-protesters-storm-us-capitol"
       ]
     },
     {
@@ -1263,7 +1263,7 @@
       "tags": [],
       "src": [
         "https://www.cfr.org/timeline/us-war-afghanistan",
-        "https://www.bbc.com/news/world-asia-58253819"
+        "https://www.aljazeera.com/news/2021/8/30/us-completes-afghanistan-withdrawal-as-final-flight-leaves-kabul"
       ]
     },
     {
@@ -1283,8 +1283,8 @@
         "krieg"
       ],
       "src": [
-        "https://www.britannica.com/biography/Alexey-Navalny",
-        "https://www.bbc.com/news/world-europe-55615418"
+        "https://www.aljazeera.com/news/2024/2/16/hold-alexei-navalny-timeline-from-poisoning-to-prison",
+        "https://www.aljazeera.com/news/2021/1/17/police-detain-kremlin-critic-navalny-on-return-to-russia"
       ]
     },
     {
@@ -1304,7 +1304,7 @@
       ],
       "src": [
         "https://www.bundesregierung.de/breg-en/news/policy-statement-by-olaf-scholz-chancellor-of-the-federal-republic-of-germany-and-member-of-the-german-bundestag-27-february-2022-in-berlin-2008378",
-        "https://www.bpb.de/themen/europa/zeitenwende-2022/"
+        "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/505942/sondervermoegen-bundeswehr/"
       ]
     },
     {
@@ -1656,7 +1656,7 @@
         "geopolitik"
       ],
       "src": [
-        "https://www.britannica.com/topic/Plaza-Accord",
+        "https://www.bakerinstitute.org/sites/default/files/2015-09/import/WorkingPaper-Plaza-Ito-092815.pdf",
         "https://en.wikipedia.org/wiki/Plaza_Accord"
       ]
     },
@@ -1971,7 +1971,7 @@
         "vertrag"
       ],
       "src": [
-        "https://www.britannica.com/place/Hong-Kong/Transfer-to-China",
+        "https://www.britannica.com/story/a-look-at-hong-kong-and-china-20-years-after-reunification",
         "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
       ]
     },
@@ -2444,7 +2444,7 @@
         "revolution"
       ],
       "src": [
-        "https://www.britannica.com/event/People-Power-revolution",
+        "https://www.britannica.com/biography/Ferdinand-E-Marcos",
         "https://en.wikipedia.org/wiki/People_Power_Revolution"
       ]
     },
@@ -3132,7 +3132,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Ronald-Reagan",
-        "https://www.history.com/this-day-in-history/november-4/ronald-reagan-elected-president"
+        "https://millercenter.org/president/reagan/campaigns-and-elections"
       ]
     },
     {
@@ -3589,7 +3589,7 @@
       ],
       "src": [
         "https://www.britannica.com/event/Iranian-Revolution",
-        "https://www.history.com/articles/1979-iranian-revolution-causes",
+        "https://www.brookings.edu/articles/the-iranian-revolution-a-timeline-of-events",
         "https://www.npr.org/sections/pictureshow/2009/06/the_iranian_revolution_of_1979.html"
       ]
     },
@@ -4051,7 +4051,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Andres-Manuel-Lopez-Obrador",
-        "https://www.bbc.com/news/world-latin-america-44694446"
+        "https://www.aljazeera.com/news/2018/7/2/mexico-election-andres-manuel-lopez-obrador-claims-victory"
       ]
     },
     {
@@ -4072,7 +4072,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Jair-Bolsonaro",
-        "https://www.bbc.com/news/world-latin-america-45972907"
+        "https://www.aljazeera.com/news/2018/10/29/brazil-elections-far-right-leader-jair-bolsonaro-wins-presidency"
       ]
     },
     {
@@ -4145,7 +4145,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Luiz-Inacio-Lula-da-Silva",
-        "https://www.bbc.com/news/world-latin-america-63475319"
+        "https://www.npr.org/2022/10/30/1132561987/brazil-election-lula-da-silva"
       ]
     },
     {
@@ -4167,7 +4167,7 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Javier-Milei",
-        "https://www.bbc.com/news/world-latin-america-67459214"
+        "https://www.aljazeera.com/news/2023/11/20/argentina-election-whats-next-after-javier-mileis-victory"
       ]
     },
     {
@@ -4574,7 +4574,7 @@
       ],
       "src": [
         "https://www.cfr.org/global-conflict-tracker/conflict/power-struggle-sudan",
-        "https://www.britannica.com/topic/Sudan-conflict-of-2023"
+        "https://www.britannica.com/question/How-has-the-Sudanese-Civil-War-2023-impacted-the-countrys-population"
       ]
     },
     {
@@ -4896,8 +4896,8 @@
         "politik"
       ],
       "src": [
-        "https://www.britannica.com/event/Chechen-conflict",
-        "https://www.bbc.com/news/world-europe-18189843"
+        "https://www.britannica.com/place/Russia/The-Putin-presidency",
+        "https://www.rferl.org/a/the-second-chechen-war-in-photos/30185257.html"
       ]
     },
     {
@@ -5046,7 +5046,7 @@
       ],
       "src": [
         "https://www.britannica.com/topic/dot-com-bubble",
-        "https://www.federalreservehistory.org/essays/dot-com-and-housing-bubbles"
+        "https://www.cnn.com/2002/BUSINESS/asia/07/21/us.newworldcom.biz/index.html"
       ]
     },
     {
@@ -5088,7 +5088,7 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
-        "https://www.britannica.com/topic/subprime-mortgage-crisis"
+        "https://www.britannica.com/money/subprime-lending"
       ]
     },
     {
@@ -5151,7 +5151,7 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath",
-        "https://www.brookings.edu/articles/economic-stagnation-and-monetary-policy/"
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081216b.htm"
       ]
     },
     {
@@ -5740,7 +5740,7 @@
       ],
       "src": [
         "https://www.iea.org/reports/global-ev-outlook-2024",
-        "https://www.reuters.com/business/autos-transportation/byd-overtakes-tesla-quarterly-ev-sales-2023-q4-2024-01-02/"
+        "https://www.cnbc.com/2024/01/05/how-byd-grew-from-a-phone-battery-maker-to-ev-giant-taking-on-tesla.html"
       ]
     },
     {
@@ -5763,7 +5763,7 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
-        "https://www.britannica.com/topic/subprime-mortgage-crisis"
+        "https://www.britannica.com/money/financial-crisis-of-2007-2008"
       ]
     },
     {
@@ -5786,7 +5786,7 @@
       ],
       "src": [
         "https://www.imf.org/en/Topics/Inequality",
-        "https://www.brookings.edu/articles/the-rise-of-economic-inequality/"
+        "https://fred.stlouisfed.org/series/WFRBST01134"
       ]
     },
     {
@@ -5809,7 +5809,7 @@
       ],
       "src": [
         "https://www.cfr.org/backgrounders/eurozone-crisis",
-        "https://www.bruegel.org/policy-brief/eurozones-second-decade-recovery-fragmented"
+        "https://www.aljazeera.com/economy/2018/9/2/greece-is-done-with-the-bailout-young-people-say-crisis-not-over"
       ]
     },
     {
