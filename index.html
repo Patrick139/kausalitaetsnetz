@@ -362,13 +362,37 @@ h1 em { color: #4a9eff; font-style: normal; }
   letter-spacing: 0.02em; word-break: break-all;
 }
 .src-link:hover { color: #6ab0ff; text-decoration: underline; }
+/* Eine Zeile pro Quelle: Originallink + Archivkopie (archive.org) als Rückfall bei toten Links */
+.src-row { display: flex; align-items: baseline; gap: 0.5rem; }
+.src-row .src-link { flex: 1; min-width: 0; }
+.src-arch {
+  font-family: monospace; font-size: 0.5rem; color: #3a5a80;
+  text-decoration: none; letter-spacing: 0.04em; white-space: nowrap;
+}
+.src-arch:hover { color: #4a9eff; text-decoration: underline; }
 
 .conn-src {
   font-family: monospace; font-size: 0.5rem; color: #3a5a80;
-  text-decoration: none; margin-top: 0.15rem; display: inline-block;
+  text-decoration: none; margin-top: 0.15rem; margin-right: 0.5rem; display: inline-block;
   letter-spacing: 0.04em;
 }
 .conn-src:hover { color: #4a9eff; }
+/* Gegenposition zu einer Kausalbehauptung */
+.conn-gegen {
+  font-size: 0.66rem; line-height: 1.45; color: #b08a5a;
+  margin-top: 0.25rem; padding-left: 0.4rem; border-left: 1px solid rgba(240,192,64,0.35);
+}
+.conn-gegen b { font-weight: 600; color: #c8a060; }
+
+/* Teilen-Knopf im Panel */
+#share-btn {
+  font-family: monospace; font-size: 0.55rem; letter-spacing: 0.06em; text-transform: uppercase;
+  background: none; border: 1px solid #1c2535; color: #4a6080; cursor: pointer;
+  padding: 0.2rem 0.5rem; border-radius: 2px; margin: 0 0 0.9rem 0;
+  transition: color 0.1s, border-color 0.1s;
+}
+#share-btn:hover { color: #4a9eff; border-color: #2a3a55; }
+#share-btn.copied { color: #3dd68c; border-color: #3dd68c; }
 
 .p-sec { font-family: monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: #4a6080; margin-bottom: 0.4rem; }
 
@@ -946,6 +970,47 @@ let selectedNode = null;
 let causeDepth = 1;   // Tiefe der angezeigten Ursachen (1 = nur direkt)
 let effectDepth = 1;  // Tiefe der angezeigten Folgen (1 = nur direkt)
 const MAX_DEPTH = 5;
+let currentPath = null;  // {von, nach} wenn gerade eine Kausalkette angezeigt wird
+
+// ── TEILBARE ADRESSE ──
+// Die Adresszeile spiegelt die aktuelle Ansicht, damit jeder Zustand per Link teilbar ist:
+//   ?node=ID&ursachen=N&folgen=N   ausgewählter Knoten mit Tiefen
+//   ?von=ID&nach=ID                Kausalkette zwischen zwei Knoten
+//   &imp=1..4|alle &region=… &thema=…   Filter (nur wenn vom Standard abweichend)
+const urlParams = new URLSearchParams(location.search);
+const hasDeepLink = urlParams.has('node') || (urlParams.has('von') && urlParams.has('nach'));
+function buildViewUrl() {
+  const p = new URLSearchParams();
+  if(currentPath) {
+    p.set('von', currentPath.von); p.set('nach', currentPath.nach);
+  } else if(selectedNode) {
+    p.set('node', selectedNode.id);
+    if(causeDepth !== 1)  p.set('ursachen', causeDepth);
+    if(effectDepth !== 1) p.set('folgen', effectDepth);
+  }
+  if(filterImp !== "3")        p.set('imp', filterImp);
+  if(filterRegion !== "alle")  p.set('region', filterRegion);
+  if(filterTag !== "alle")     p.set('thema', filterTag);
+  const q = p.toString();
+  return location.origin + location.pathname + (q ? '?' + q : '');
+}
+function updateUrl() {
+  try { history.replaceState(null, '', buildViewUrl()); } catch(e) { /* z. B. file:// */ }
+}
+function copyViewLink(btn) {
+  const url = buildViewUrl();
+  const done = () => {
+    if(!btn) return;
+    btn.textContent = '✓ Link kopiert';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Link kopieren'; btn.classList.remove('copied'); }, 1800);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(done, () => window.prompt('Link kopieren:', url));
+  } else {
+    window.prompt('Link kopieren:', url);
+  }
+}
 
 // BFS bis Tiefe maxDepth, Richtung wird durch adjMap bestimmt.
 // Liefert Map<id, depth> wobei depth=0 der Start-Knoten ist.
@@ -1175,6 +1240,7 @@ function handleNodeClick(e, d) {
 // ── SELECT NODE ──
 function selectNode(d, resetDepth = true) {
   selectedNode = d;
+  currentPath = null;
   if(resetDepth) { causeDepth = 1; effectDepth = 1; }
 
   // Tiefen-begrenzte Vorfahren und Nachkommen
@@ -1201,6 +1267,7 @@ function selectNode(d, resetDepth = true) {
   linkEls.classed("path-link", false);
 
   renderPanel(d, causes, effects);
+  updateUrl();
 }
 
 // ── PATH FINDING (BFS) ──
@@ -1289,8 +1356,14 @@ function showPath(startNode, endNode) {
     </div>`;
   }
 
+  html += `<button id="share-btn" type="button" style="margin-top:0.8rem" title="Link zu dieser Kausalkette in die Zwischenablage kopieren">🔗 Link kopieren</button>`;
+
   document.getElementById("panel-content").innerHTML = html;
   document.getElementById("panel").classList.add("open");
+  selectedNode = null;
+  currentPath = {von: path[0], nach: path[path.length-1]};
+  updateUrl();
+  return path;
 }
 
 // ── VISUAL FILTER ──
@@ -1317,29 +1390,43 @@ function applyVisualFilter(connIds, connLinks, pathLinkSet) {
 
 function resetVisuals() {
   selectedNode = null;
+  currentPath = null;
   // Selektion-Override leeren: Filter alleine bestimmt jetzt Sichtbarkeit
   selectionOverride = new Set();
   nodeEls.classed("selected", false).classed("faded", false).classed("path-node", false).classed("path-faded", false);
   linkEls.classed("highlighted", false).classed("faded", false).classed("path-link", false).classed("path-faded", false)
     .style("stroke-opacity", 0.3);
   applyAllFilters();
+  updateUrl();
 }
 
 // ── PANEL ──
 
 // Quellen-Anzeige im Panel: versteckt bis Klick auf Button, dann ausklappbar.
 // Akzeptiert sowohl Array (neues Schema) als auch String (alt) für Rückwärts-Kompatibilität.
+// Domain aus URL extrahieren für Anzeige-Label
+function urlLabel(url) {
+  try { return new URL(url).hostname.replace(/^www\./,''); }
+  catch(e) { return url; }
+}
+// Nur http(s)-Adressen zulassen und für HTML-Attribute maskieren
+function safeUrl(u) {
+  if(typeof u !== 'string' || !/^https?:\/\//i.test(u)) return null;
+  return u.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+// Archivkopie bei archive.org: ohne Zeitstempel leitet die Wayback Machine auf die jüngste Kopie weiter
+function archiveUrl(u) { return 'https://web.archive.org/web/' + u; }
+function srcList(src) {
+  if(!src) return [];
+  return (Array.isArray(src) ? src : [src]).filter(u => safeUrl(u));
+}
+
 function renderSources(d) {
-  if(!d.src) return '';
-  const urls = Array.isArray(d.src) ? d.src : [d.src];
+  const urls = srcList(d.src);
   if(!urls.length) return '';
-  // Domain aus URL extrahieren für Anzeige-Label
-  const urlLabel = url => {
-    try { return new URL(url).hostname.replace(/^www\./,''); }
-    catch(e) { return url; }
-  };
   const links = urls.map(u =>
-    `<a href="${u}" target="_blank" rel="noopener" class="src-link">↗ ${urlLabel(u)}</a>`
+    `<div class="src-row"><a href="${safeUrl(u)}" target="_blank" rel="noopener" class="src-link">↗ ${urlLabel(u)}</a>` +
+    `<a href="${safeUrl(archiveUrl(u))}" target="_blank" rel="noopener" class="src-arch" title="Archivkopie bei archive.org — falls der Link nicht mehr funktioniert">Archiv</a></div>`
   ).join('');
   return `<div class="src-block">
     <button class="src-toggle" onclick="this.parentElement.classList.toggle('open')">
@@ -1374,6 +1461,7 @@ function renderPanel(d, causes, effects) {
     <div class="p-title">${tx(d.short)}</div>
     <div class="p-detail">${tx(d.detail)}</div>
     ${renderSources(d)}
+    <button id="share-btn" type="button" title="Link zu dieser Ansicht in die Zwischenablage kopieren">🔗 Link kopieren</button>
   `;
 
   // ── URSACHEN ──
@@ -1440,7 +1528,14 @@ function renderPanel(d, causes, effects) {
 
 function connCard(n, l, arr, depth = 1) {
   const typeLabel = {direkt:"direkte Verbindung", indirekt:"indirekte Verbindung", beschleunigt:"beschleunigt"}[l.type]||l.type;
-  const srcLink = l.src ? `<a class="conn-src" href="${l.src}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗ Quelle</a>` : '';
+  const certLabel = {belegt:"belegt", plausibel:"plausibel", umstritten:"umstritten"}[l.certainty];
+  // Kantenquellen: String (alt) oder Array (neu)
+  const srcs = srcList(l.src);
+  const srcLink = srcs.map((u, i) =>
+    `<a class="conn-src" href="${safeUrl(u)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="${urlLabel(u)}">↗ ${srcs.length > 1 ? 'Quelle ' + (i+1) : 'Quelle'}</a>`
+  ).join('');
+  const gegen = tx(l.gegen);
+  const gegenHtml = gegen ? `<div class="conn-gegen"><b>Gegenposition:</b> ${gegen}</div>` : '';
   const indirect = depth > 1 ? ' conn-indirect' : '';
   return `<div class="conn ${l.type}${indirect}" onclick="selectById('${n.id}')">
     <span class="conn-arr">${arr}</span>
@@ -1448,7 +1543,8 @@ function connCard(n, l, arr, depth = 1) {
       <div class="conn-yr">${n.yr}</div>
       <div class="conn-short">${tx(n.short)}</div>
       ${depth === 1 ? `<div class="conn-why">${tx(l.why)||""}</div>
-      <div class="conn-type type-${l.type}">${typeLabel}</div>
+      ${gegenHtml}
+      <div class="conn-type type-${l.type}">${typeLabel}${certLabel ? ' · ' + certLabel : ''}</div>
       ${srcLink}` : ''}
     </div>
   </div>`;
@@ -1534,14 +1630,18 @@ sim.on("end", () => {
 
 // ── CONTROLS ──
 // ── HILFE: Bei ersten Besuch automatisch zeigen ──
-try {
-  if(!localStorage.getItem("kausalnetz_seen_help")) {
+// Bei geteilten Direktlinks nicht automatisch zeigen — sonst verdeckt die Hilfe genau die
+// Ansicht, die jemand teilen wollte. Über "? Hilfe" bleibt sie jederzeit erreichbar.
+if(!hasDeepLink) {
+  try {
+    if(!localStorage.getItem("kausalnetz_seen_help")) {
+      document.getElementById("help-overlay").style.display = "flex";
+      localStorage.setItem("kausalnetz_seen_help", "1");
+    }
+  } catch(e) {
+    // localStorage nicht verfügbar (privater Modus etc.) → trotzdem zeigen
     document.getElementById("help-overlay").style.display = "flex";
-    localStorage.setItem("kausalnetz_seen_help", "1");
   }
-} catch(e) {
-  // localStorage nicht verfügbar (privater Modus etc.) → trotzdem zeigen
-  document.getElementById("help-overlay").style.display = "flex";
 }
 
 document.getElementById("btn-help").addEventListener("click", () => {
@@ -1608,6 +1708,7 @@ document.querySelectorAll("#imp-menu .dd-item").forEach(item => {
     impBtn.textContent = item.dataset.imp === "alle" ? "Alle Stufen ▾" : item.textContent + " ▾";
     impBtn.classList.toggle("active", item.dataset.imp === "alle");
     applyImpFilter();
+    updateUrl();
     impDropdown.classList.remove("open");
   });
 });
@@ -1804,6 +1905,12 @@ document.querySelectorAll("#tag-menu .dd-item").forEach(item => {
 
 // ── PANEL LINK-TYPE FILTER + DEPTH CONTROLS (event delegation) ──
 document.getElementById("panel-content").addEventListener("click", e => {
+  const shareBtn = e.target.closest("#share-btn");
+  if(shareBtn) {
+    e.stopPropagation();
+    copyViewLink(shareBtn);
+    return;
+  }
   const depthBtn = e.target.closest(".depth-btn");
   if(depthBtn && !depthBtn.disabled) {
     e.stopPropagation();
@@ -1860,6 +1967,7 @@ document.getElementById("btn-reset").addEventListener("click", () => {
   filterTag = "alle";
   tagBtn.textContent = "Alle Themen ▾";
   applyAllFilters();
+  updateUrl();
 });
 
 document.getElementById("close-btn").addEventListener("click", () => {
@@ -2058,6 +2166,47 @@ window.addEventListener("resize", () => {
     sim.alpha(0.3).restart();
   }, 200);
 });
+
+// ── DIREKTLINK AUSWERTEN ──
+// Filter über die vorhandenen Menüeinträge setzen (gleiche Logik wie ein Klick),
+// unbekannte Werte werden ignoriert.
+(function applyUrlState() {
+  const clickItem = (menuSel, attr, val) => {
+    if(val == null) return;
+    const item = Array.from(document.querySelectorAll(`${menuSel} .dd-item`)).find(i => i.dataset[attr] === val);
+    if(item) item.click();
+  };
+  clickItem("#imp-menu", "imp", urlParams.get("imp"));
+  clickItem("#region-menu", "r", urlParams.get("region"));
+  clickItem("#tag-menu", "tag", urlParams.get("thema"));
+
+  const clampDepth = v => {
+    const n = parseInt(v, 10);
+    return Number.isFinite(n) ? Math.max(0, Math.min(MAX_DEPTH, n)) : 1;
+  };
+  let zoomTargets = null;
+  const von = urlParams.get("von"), nach = urlParams.get("nach");
+  const nodeId = urlParams.get("node");
+  if(von && nach && byId[von] && byId[nach]) {
+    const path = showPath(byId[von], byId[nach]);
+    if(path) zoomTargets = path.map(id => byId[id]);
+  } else if(nodeId && byId[nodeId]) {
+    causeDepth  = urlParams.has("ursachen") ? clampDepth(urlParams.get("ursachen")) : 1;
+    effectDepth = urlParams.has("folgen")   ? clampDepth(urlParams.get("folgen"))   : 1;
+    selectNode(byId[nodeId], false);
+    zoomTargets = "selection";
+  } else {
+    updateUrl();  // ungültige Parameter aus der Adresszeile entfernen
+  }
+  // Positionen stehen erst fest, wenn die Simulation zur Ruhe kommt — dann einmal hinzoomen
+  if(zoomTargets) {
+    sim.on("end.direktlink", () => {
+      sim.on("end.direktlink", null);
+      if(zoomTargets === "selection") zoomToFitSelection();
+      else zoomToFitNodes(zoomTargets, 1.8);
+    });
+  }
+})();
 // ═══ ENGINE END ═══
 
 } // end init()
