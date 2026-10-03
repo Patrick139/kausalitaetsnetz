@@ -85,12 +85,14 @@
         "de": "Afghanistan-Invasion"
       },
       "detail": {
-        "de": "NATO marschiert nach 9/11 ein. Dauert 20 Jahre — eine Billion Dollar — für nichts. Taliban übernehmen 2021 in Tagen."
+        "de": "Die USA greifen nach 9/11 im Oktober 2001 mit Verbündeten an, die NATO übernimmt 2003 die Führung der ISAF-Truppe. Dauert 20 Jahre — rund 2,3 Billionen Dollar — für nichts. Taliban übernehmen 2021 in Tagen."
       },
       "tags": [],
       "src": [
         "https://www.britannica.com/event/Afghanistan-War",
-        "https://www.cfr.org/timeline/us-war-afghanistan"
+        "https://www.cfr.org/timeline/us-war-afghanistan",
+        "https://www.nato.int/cps/en/natohq/topics_8189.htm",
+        "https://www.aljazeera.com/economy/2021/8/16/the-us-spent-2-trillion-in-afghanistan-and-for-what"
       ]
     },
     {
@@ -124,13 +126,14 @@
         "de": "Irak-Invasion ohne Mandat"
       },
       "detail": {
-        "de": "USA und UK ohne UN-Mandat. Keine Massenvernichtungswaffen. Folge: IS, Millionen Tote, Destabilisierung einer ganzen Region für Jahrzehnte."
+        "de": "USA und UK ohne UN-Mandat. Keine Massenvernichtungswaffen. Folge: IS, Hunderttausende Tote (eine Studie von 2013 schätzt rund 461.000 bis 2011), Destabilisierung einer ganzen Region für Jahrzehnte."
       },
       "tags": [],
       "src": [
         "https://www.bbc.com/news/world-64980565",
         "https://www.cfr.org/articles/remembering-operation-iraqi-freedom",
-        "https://www.cfr.org/articles/iraq-war-2"
+        "https://www.cfr.org/articles/iraq-war-2",
+        "https://www.washington.edu/news/2013/10/15/study-nearly-500000-perished-in-iraq-war/"
       ]
     },
     {
@@ -434,7 +437,7 @@
         "de": "Pariser Klimaabkommen"
       },
       "detail": {
-        "de": "196 Länder einigen sich auf 1,5°C-Ziel. Historisch — ohne Durchsetzungsmechanismus. Trump kündigt 2017 aus."
+        "de": "196 Vertragsparteien einigen sich darauf, die Erwärmung deutlich unter 2 °C zu halten und 1,5 °C anzustreben. Historisch — ohne Durchsetzungsmechanismus. Trump kündigt 2017 aus."
       },
       "tags": [
         "umwelt",
@@ -443,7 +446,8 @@
       "src": [
         "https://www.un.org/en/climatechange/paris-agreement",
         "https://www.bbc.com/news/world-europe-35087821",
-        "https://www.un.org/en/academic-impact/nations-reach-historic-agreement-climate-change"
+        "https://www.un.org/en/academic-impact/nations-reach-historic-agreement-climate-change",
+        "https://www.umweltbundesamt.de/en/topics/climate-energy/the-15degc-goal-of-the-paris-agreement"
       ]
     },
     {
@@ -584,7 +588,7 @@
         "de": "Hamas-Angriff 7. Oktober"
       },
       "detail": {
-        "de": "1.200 Tote, 250 Geiseln. Israel antwortet mit Gaza-Offensive. Über 40.000 Tote. Westliche Unterstützung für Israel erodiert."
+        "de": "1.200 Tote, 250 Geiseln. Israel antwortet mit Gaza-Offensive. Laut Gesundheitsbehörde in Gaza über 70.000 Tote bis Ende November 2025, seit 10. Oktober 2025 gilt eine Waffenruhe. Westliche Unterstützung für Israel erodiert."
       },
       "tags": [
         "krieg",
@@ -592,7 +596,8 @@
       ],
       "src": [
         "https://www.britannica.com/event/Israel-Hamas-War",
-        "https://orf.at/stories/3406875/"
+        "https://orf.at/stories/3406875/",
+        "https://gulfnews.com/world/mena/death-toll-from-gaza-war-surpasses-70000-health-ministry-1.500364057"
       ]
     },
     {
@@ -722,14 +727,15 @@
         "de": "Cambridge Analytica Skandal"
       },
       "detail": {
-        "de": "87 Millionen Facebook-Profile ohne Wissen der Nutzer für politische Manipulation geerntet. Trump, Brexit, Bolsonaro — alle Spuren führen zu diesem Datenmissbrauch. Facebook-Chef Zuckerberg vor US-Kongress."
+        "de": "87 Millionen Facebook-Profile ohne Wissen der Nutzer für politische Manipulation geerntet. Cambridge Analytica arbeitete 2016 für Trumps Wahlkampf; an der Brexit-Kampagne war die Firma laut britischer Datenschutzbehörde (2020) nicht beteiligt. Facebook-Chef Zuckerberg vor US-Kongress."
       },
       "tags": [
         "technologie"
       ],
       "src": [
         "https://www.bbc.com/news/topics/c81zyn0888lt",
-        "https://www.theguardian.com/news/series/cambridge-analytica-files"
+        "https://www.theguardian.com/news/series/cambridge-analytica-files",
+        "https://www.research-live.com/article/news/cambridge-analytica-not-involved-in-eu-referendum-finds-ico/id/5075052"
       ]
     },
     {
@@ -873,14 +879,15 @@
         "de": "FPÖ stärkste Partei Österreichs"
       },
       "detail": {
-        "de": "Kickls FPÖ gewinnt Nationalratswahl mit 29% — stärkstes Ergebnis einer rechten Partei in Österreich je. Koalition ohne FPÖ erzwungen. Europäisches Signal: Rechtspopulismus ist neue Normalität."
+        "de": "Kickls FPÖ gewinnt die Nationalratswahl mit 29% — bestes Ergebnis ihrer Geschichte, erstmals stärkste Partei. Koalitionsverhandlungen von FPÖ und ÖVP unter Kickl scheitern, seit März 2025 regieren ÖVP, SPÖ und NEOS. Europäisches Signal: Rechtspopulismus ist neue Normalität."
       },
       "tags": [
         "politik"
       ],
       "src": [
         "https://orf.at/stories/3371377/",
-        "https://www.aljazeera.com/news/2024/9/29/austrias-far-right-freedom-party-projected-to-win-election"
+        "https://www.aljazeera.com/news/2024/9/29/austrias-far-right-freedom-party-projected-to-win-election",
+        "https://www.vorwaerts.de/international/dreier-koalition-oesterreich-was-die-regierung-aus-oevp-spoe-und-neos-vorhat"
       ]
     },
     {
@@ -1158,14 +1165,15 @@
         "de": "Xi: Neue Seidenstraße"
       },
       "detail": {
-        "de": "China investiert Billionen in Infrastruktur in 150 Ländern. Häfen, Eisenbahnen, Schulden. Geopolitische Abhängigkeiten als Strategie. Direkter Gegenentwurf zur westlichen Weltordnung."
+        "de": "China vergibt bis 2023 Investitionen und Bauaufträge von über einer Billion US-Dollar, rund 150 Länder unterzeichnen Abkommen. Häfen, Eisenbahnen, Schulden. Geopolitische Abhängigkeiten als Strategie. Direkter Gegenentwurf zur westlichen Weltordnung."
       },
       "tags": [
         "geopolitik"
       ],
       "src": [
         "https://en.wikipedia.org/wiki/Belt_and_Road_Initiative",
-        "https://www.cfr.org/backgrounders/chinas-massive-belt-and-road-initiative"
+        "https://www.cfr.org/backgrounders/chinas-massive-belt-and-road-initiative",
+        "https://www.business-humanrights.org/en/latest-news/report-says-chinas-belt-road-surpasses-1-trillion-in-2023-with-a-significant-shift-towards-green-energy-investment/"
       ]
     },
     {
@@ -1218,14 +1226,15 @@
         "de": "George Floyd & BLM-Bewegung"
       },
       "detail": {
-        "de": "Polizist tötet unbewaffneten Schwarzen auf Video. Größte Protestwelle in US-Geschichte — 26 Millionen auf der Straße. Globale Auseinandersetzung mit Rassismus und Polizeigewalt. Trump nutzt Unruhen politisch."
+        "de": "Polizist tötet unbewaffneten Schwarzen auf Video. Möglicherweise die größte Protestbewegung der US-Geschichte — laut Umfragen 15 bis 26 Millionen Teilnehmende. Globale Auseinandersetzung mit Rassismus und Polizeigewalt. Trump nutzt Unruhen politisch."
       },
       "tags": [
         "geopolitik"
       ],
       "src": [
         "https://www.britannica.com/biography/George-Floyd",
-        "https://www.britannica.com/topic/Black-Lives-Matter/Subsequent-protests-George-Floyd-Ahmaud-Arbery-and-Breonna-Taylor"
+        "https://www.britannica.com/topic/Black-Lives-Matter/Subsequent-protests-George-Floyd-Ahmaud-Arbery-and-Breonna-Taylor",
+        "https://en.wikipedia.org/wiki/Black_Lives_Matter"
       ]
     },
     {
@@ -1238,14 +1247,15 @@
         "de": "Kapitol-Sturm 6. Jänner"
       },
       "detail": {
-        "de": "Trump-Anhänger stürmen auf Trumps Betreiben das US-Kapitol. Erste gewaltsame Unterbrechung der Machtübergabe in US-Geschichte. 140 Verletzte. Trump wird impeacht — aber freigesprochen. Normalisierung von Gewalt gegen Institutionen."
+        "de": "Trump-Anhänger stürmen auf Trumps Betreiben das US-Kapitol. Erste gewaltsame Unterbrechung der Machtübergabe in US-Geschichte. Rund 140 verletzte Polizisten. Trump wird impeacht — aber freigesprochen. Normalisierung von Gewalt gegen Institutionen."
       },
       "tags": [
         "geopolitik"
       ],
       "src": [
         "https://www.britannica.com/event/January-6-U-S-Capitol-attack",
-        "https://www.aljazeera.com/news/2021/1/6/pro-donald-trump-protesters-storm-us-capitol"
+        "https://www.aljazeera.com/news/2021/1/6/pro-donald-trump-protesters-storm-us-capitol",
+        "https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html"
       ]
     },
     {
@@ -1277,7 +1287,7 @@
         "de": "Navalny verhaftet und vergiftet"
       },
       "detail": {
-        "de": "Überlebt Novichok-Vergiftung in Deutschland — fliegt freiwillig zurück nach Russland, wird sofort verhaftet. Organisationen verboten. 2024 stirbt er in Haft. Putin eliminiert letzten glaubwürdigen Oppositionsführer."
+        "de": "Erkrankt im August 2020 auf einem Inlandsflug in Russland an einer Nowitschok-Vergiftung, überlebt nach Behandlung in Berlin — fliegt freiwillig zurück nach Russland, wird sofort verhaftet. Organisationen verboten. 2024 stirbt er in Haft. Putin eliminiert letzten glaubwürdigen Oppositionsführer."
       },
       "tags": [
         "geopolitik",
@@ -1477,7 +1487,7 @@
         "de": "Gwangju-Aufstand und Massaker"
       },
       "detail": {
-        "de": "Studenten und Bürger in Gwangju protestieren gegen die Militärdiktatur Chun Doo-hwans. Das Militär eröffnet das Feuer auf Demonstranten. Mindestens 200 Tote, viele tausend Verletzte. Das Massaker wird zur traumatischen Geburtsstunde der südkoreanischen Demokratiebewegung und prägt den politischen Diskurs bis heute."
+        "de": "Studenten und Bürger in Gwangju protestieren gegen die Militärdiktatur Chun Doo-hwans. Das Militär eröffnet das Feuer auf Demonstranten. Offiziell mindestens 165 Tote und 76 Vermisste, Forscher schätzen 600 bis 2.300 Tote; tausende Verletzte. Das Massaker wird zur traumatischen Geburtsstunde der südkoreanischen Demokratiebewegung und prägt den politischen Diskurs bis heute."
       },
       "tags": [
         "politik",
@@ -1486,7 +1496,8 @@
       ],
       "src": [
         "https://www.britannica.com/event/Gwangju-Uprising",
-        "https://guides.loc.gov/south-korean-democratization-movement/kwangju-uprising"
+        "https://guides.loc.gov/south-korean-democratization-movement/kwangju-uprising",
+        "https://en.wikipedia.org/wiki/Gwangju_Uprising"
       ]
     },
     {
@@ -1538,7 +1549,7 @@
         "de": "Asienkrise zwingt Korea unter IMF"
       },
       "detail": {
-        "de": "Im November 1997 ist Südkorea zahlungsunfähig. Der Won verliert binnen Wochen die Hälfte seines Werts. IMF gewährt 58 Milliarden US-Dollar Rettungspaket — das größte der IMF-Geschichte zu dem Zeitpunkt. Bedingungen: Auflösung der engen Staat-Chaebol-Verflechtung, Öffnung für ausländisches Kapital, flexibler Arbeitsmarkt. Wirtschaftliches Trauma das das Selbstverständnis Südkoreas bis heute prägt."
+        "de": "Im November 1997 ist Südkorea zahlungsunfähig. Der Won verliert binnen Wochen die Hälfte seines Werts. Ein vom IMF angeführtes Rettungspaket über 58 Milliarden US-Dollar (davon 21 Milliarden vom IMF) — das größte der IMF-Geschichte zu dem Zeitpunkt. Bedingungen: Auflösung der engen Staat-Chaebol-Verflechtung, Öffnung für ausländisches Kapital, flexibler Arbeitsmarkt. Wirtschaftliches Trauma das das Selbstverständnis Südkoreas bis heute prägt."
       },
       "tags": [
         "wirtschaft",
@@ -1548,7 +1559,8 @@
       ],
       "src": [
         "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
-        "https://sgp.fas.org/crs/row/crs-asia2.htm"
+        "https://sgp.fas.org/crs/row/crs-asia2.htm",
+        "https://www.imf.org/en/News/Articles/2015/09/14/01/49/pr9755"
       ]
     },
     {
@@ -1717,7 +1729,7 @@
         "de": "Das verlorene Jahrzehnt"
       },
       "detail": {
-        "de": "Japans Wachstum fällt von über 5% (1980er) auf unter 2% pro Jahr. Banken halten Zombie-Firmen am Leben statt Verluste zu realisieren. Deflation greift um sich. Bevölkerung beginnt zu altern und schrumpfen. Aus dem 'verlorenen Jahrzehnt' werden später drei. Japans Aufstieg zur Nummer 1 wird politisch und psychologisch beerdigt."
+        "de": "Japans Wachstum fällt von rund 4% pro Jahr (1972–1991) auf gut 1% (1991–2003). Banken halten Zombie-Firmen am Leben statt Verluste zu realisieren. Deflation greift um sich. Bevölkerung beginnt zu altern und schrumpfen. Aus dem 'verlorenen Jahrzehnt' werden später drei. Japans Aufstieg zur Nummer 1 wird politisch und psychologisch beerdigt."
       },
       "tags": [
         "wirtschaft",
@@ -1725,7 +1737,8 @@
       ],
       "src": [
         "https://en.wikipedia.org/wiki/Lost_Decades",
-        "https://japansociety.org/news/the-bubble-economy-and-the-lost-decade/"
+        "https://japansociety.org/news/the-bubble-economy-and-the-lost-decade/",
+        "https://www.econlib.org/library/Enc/Japan.html"
       ]
     },
     {
@@ -1927,7 +1940,7 @@
         "de": "Dengs Südreise rettet die Marktreformen"
       },
       "detail": {
-        "de": "Nach Tiananmen und dem Zusammenbruch der Sowjetunion drohen Konservative in der KPCh, die Wirtschaftsreformen rückgängig zu machen. Im Januar/Februar 1992 reist der offiziell zurückgetretene Deng Xiaoping nach Shenzhen, Zhuhai, Shanghai. Sagt: 'Reich zu werden ist ehrenvoll.' Mit Militärrückendeckung zwingt er die Parteiführung um Jiang Zemin auf den Reformkurs zurück. Beginn des chinesischen Wirtschaftswunders im großen Stil."
+        "de": "Nach Tiananmen und dem Zusammenbruch der Sowjetunion drohen Konservative in der KPCh, die Wirtschaftsreformen rückgängig zu machen. Im Januar/Februar 1992 reist der offiziell zurückgetretene Deng Xiaoping nach Shenzhen, Zhuhai, Shanghai. Der ihm oft zugeschriebene Satz 'Reich zu werden ist ehrenvoll' ist nicht belegt — eine Quelle dafür wurde nie gefunden. Mit Militärrückendeckung zwingt er die Parteiführung um Jiang Zemin auf den Reformkurs zurück. Beginn des chinesischen Wirtschaftswunders im großen Stil."
       },
       "tags": [
         "politik",
@@ -1935,7 +1948,8 @@
       ],
       "src": [
         "https://en.wikipedia.org/wiki/Deng_Xiaoping's_southern_tour",
-        "https://www.britannica.com/biography/Deng-Xiaoping"
+        "https://www.britannica.com/biography/Deng-Xiaoping",
+        "https://www.csmonitor.com/USA/Politics/2011/0603/Political-misquotes-The-10-most-famous-things-never-actually-said/To-get-rich-is-glorious.-Deng-Xiaoping"
       ]
     },
     {
@@ -2346,7 +2360,7 @@
         "de": "Suharto-Sturz und Reformasi"
       },
       "detail": {
-        "de": "Asienkrise ruiniert Indonesien: Rupiah verliert 85% Wert. Studenten- und Massenproteste eskalieren. Anti-chinesische Pogrome in Jakarta (rund 1.000 Tote, hunderte Vergewaltigungen). Suharto tritt am 21. Mai 1998 nach 32 Jahren zurück. Beginn von 'Reformasi' — Indonesiens Übergang zur Demokratie."
+        "de": "Asienkrise ruiniert Indonesien: Rupiah verliert 85% Wert. Studenten- und Massenproteste eskalieren. Anti-chinesische Pogrome in Jakarta (über 1.000 Tote; eine staatliche Untersuchungskommission bestätigt 66 Vergewaltigungen, Helfergruppen dokumentieren 168 Fälle sexueller Gewalt). Suharto tritt am 21. Mai 1998 nach 32 Jahren zurück. Beginn von 'Reformasi' — Indonesiens Übergang zur Demokratie."
       },
       "tags": [
         "politik",
@@ -2355,7 +2369,8 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Suharto",
-        "https://internationalbanker.com/history-of-financial-crises/asian-financial-crisis-of-1997/"
+        "https://internationalbanker.com/history-of-financial-crises/asian-financial-crisis-of-1997/",
+        "https://en.wikipedia.org/wiki/May_1998_riots_of_Indonesia"
       ]
     },
     {
@@ -2437,7 +2452,7 @@
         "de": "People Power: Marcos gestürzt"
       },
       "detail": {
-        "de": "Februar 1986: Marcos manipuliert Wahl gegen Corazon Aquino. Militärs meutern. Millionen Filipinos versammeln sich auf EDSA-Boulevard in Manila zwischen den Truppen — drei Tage friedlicher Massenprotest. Marcos flieht ins US-Exil. Erste 'farbige Revolution' der Moderne — Vorbild für Osteuropa 1989, Korea 1987, später Arabischer Frühling."
+        "de": "Februar 1986: Marcos manipuliert Wahl gegen Corazon Aquino. Militärs meutern. Millionen Filipinos versammeln sich auf EDSA-Boulevard in Manila zwischen den Truppen — vier Tage friedlicher Massenprotest (22.–25. Februar). Marcos flieht ins US-Exil. Erste 'farbige Revolution' der Moderne — Vorbild für Osteuropa 1989, Korea 1987, später Arabischer Frühling."
       },
       "tags": [
         "politik",
@@ -2585,7 +2600,7 @@
         "de": "Gorbatschow wird Generalsekretär"
       },
       "detail": {
-        "de": "Michail Gorbatschow wird mit 54 Jahren jüngster Generalsekretär der KPdSU. Leitet Perestroika (Umbau der Wirtschaft) und Glasnost (Offenheit) ein. Sucht Verständigung mit dem Westen, beendet faktisch das Wettrüsten. Unterschätzt aber die zentrifugalen Kräfte, die seine Reformen freisetzen — am Ende verliert er Land und Amt."
+        "de": "Michail Gorbatschow wird im März 1985 mit 54 Jahren Generalsekretär der KPdSU — als erster Parteichef, der nach der Revolution geboren wurde; 1980 war er jüngstes Vollmitglied des Politbüros geworden. Leitet Perestroika (Umbau der Wirtschaft) und Glasnost (Offenheit) ein. Sucht Verständigung mit dem Westen, beendet faktisch das Wettrüsten. Unterschätzt aber die zentrifugalen Kräfte, die seine Reformen freisetzen — am Ende verliert er Land und Amt."
       },
       "tags": [
         "politik",
@@ -2594,7 +2609,8 @@
       "src": [
         "https://www.britannica.com/biography/Mikhail-Gorbachev",
         "https://www.rferl.org/a/gorbachev-obituary-dead-91-soviet-union/32011310.html",
-        "https://blog.nationalarchives.gov.uk/man-one-business"
+        "https://blog.nationalarchives.gov.uk/man-one-business",
+        "https://www.nobelprize.org/prizes/peace/1990/gorbachev/biographical/"
       ]
     },
     {
@@ -2607,7 +2623,7 @@
         "de": "Tschernobyl-Reaktorkatastrophe"
       },
       "detail": {
-        "de": "Am 26. April 1986 explodiert Reaktorblock 4 in Tschernobyl (Ukrainische SSR). Sowjetregierung verschweigt das Ausmaß tagelang — erst westliche Messstationen in Schweden schlagen Alarm. Radioaktive Wolke über halb Europa. Zerstört das Vertrauen in das Sowjetsystem von innen, beschleunigt Glasnost. Gorbatschow nannte es später den eigentlichen Auslöser der Sowjet-Auflösung."
+        "de": "Am 26. April 1986 explodiert Reaktorblock 4 in Tschernobyl (Ukrainische SSR). Sowjetregierung verschweigt das Ausmaß tagelang — erst westliche Messstationen in Schweden schlagen Alarm. Radioaktive Wolke über halb Europa. Zerstört das Vertrauen in das Sowjetsystem von innen, beschleunigt Glasnost. Gorbatschow nannte es 2006 „vielleicht die wahre Ursache“ für den Zusammenbruch der Sowjetunion fünf Jahre später."
       },
       "tags": [
         "katastrophe",
@@ -2616,7 +2632,8 @@
       ],
       "src": [
         "https://www.britannica.com/event/Chernobyl-disaster",
-        "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx"
+        "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx",
+        "https://www.gorby.ru/en/presscenter/2006/04/view-turning-point-at-chernobyl-mikhail-s-gorbachev-kopiya"
       ]
     },
     {
@@ -2706,7 +2723,7 @@
         "de": "Auflösung der Sowjetunion"
       },
       "detail": {
-        "de": "August 1991: Putschversuch konservativer KPdSU-Hardliner gegen Gorbatschow scheitert nach drei Tagen — Jelzin auf dem Panzer wird Held. Baltische Staaten erklären Unabhängigkeit. Im Dezember vereinbaren Jelzin, Krawtschuk und Schuschkewitsch in Beloweschskaja Puschtscha die Auflösung der UdSSR. Am 25. Dezember tritt Gorbatschow zurück. Ende einer Weltmacht — 70 Jahre nach ihrer Gründung."
+        "de": "August 1991: Putschversuch konservativer KPdSU-Hardliner gegen Gorbatschow scheitert nach drei Tagen — Jelzin auf dem Panzer wird Held. Baltische Staaten erklären Unabhängigkeit. Im Dezember vereinbaren Jelzin, Krawtschuk und Schuschkewitsch in Beloweschskaja Puschtscha die Auflösung der UdSSR. Am 25. Dezember tritt Gorbatschow zurück. Ende einer Weltmacht — 69 Jahre nach ihrer Gründung 1922."
       },
       "tags": [
         "politik",
@@ -4159,7 +4176,7 @@
         "de": "Milei: Anarcho-Kapitalist gewinnt Argentinien"
       },
       "detail": {
-        "de": "Javier Milei gewinnt am 19. November 2023 die argentinische Stichwahl mit 56% — Ökonom und Selbstbeschreibung 'Anarcho-Kapitalist'. Wahlkampf mit Kettensäge als Symbol für radikalen Staatsabbau. Programm: Dollarisierung, Zentralbank abschaffen, Ministerien halbieren, alle Subventionen streichen. Erste Resultate: Inflation halbiert sich 2024-25 von 211% auf ~80%, Armut steigt erst stark, fällt dann. Ideologische Allianz mit Trump. Bricht mit lateinamerikanischer politischer Tradition."
+        "de": "Javier Milei gewinnt am 19. November 2023 die argentinische Stichwahl mit 56% — Ökonom und Selbstbeschreibung 'Anarcho-Kapitalist'. Wahlkampf mit Kettensäge als Symbol für radikalen Staatsabbau. Programm: Dollarisierung, Zentralbank abschaffen, Ministerien halbieren, alle Subventionen streichen. Erste Resultate: Jahresinflation fällt von 211% (2023) auf 118% (2024) und 31,5% (2025), Armut steigt erst stark, fällt dann. Ideologische Allianz mit Trump. Bricht mit lateinamerikanischer politischer Tradition."
       },
       "tags": [
         "politik",
@@ -4168,7 +4185,8 @@
       ],
       "src": [
         "https://www.britannica.com/biography/Javier-Milei",
-        "https://www.aljazeera.com/news/2023/11/20/argentina-election-whats-next-after-javier-mileis-victory"
+        "https://www.aljazeera.com/news/2023/11/20/argentina-election-whats-next-after-javier-mileis-victory",
+        "https://buenosairesherald.com/economics/argentinas-inflation-in-2025-fell-to-31-5-the-lowest-in-8-years"
       ]
     },
     {
@@ -4291,7 +4309,7 @@
         "de": "Videla-Junta: Schmutziger Krieg in Argentinien"
       },
       "detail": {
-        "de": "Am 24. März 1976 stürzt eine Militärjunta unter Jorge Rafael Videla Präsidentin Isabel Perón. Beginn des 'Schmutzigen Krieges' (1976-1983): systematische Verfolgung mutmaßlicher Linker. 10.000 bis 30.000 'Verschwundene' (desaparecidos), 340 geheime Folter- und Vernichtungslager. Mütter der Plaza de Mayo formieren sich ab 1977 — Frauen mit Fotos ihrer Kinder im Schweigemarsch vor dem Präsidentenpalast. Ikone des Widerstands."
+        "de": "Am 24. März 1976 stürzt eine Militärjunta unter Jorge Rafael Videla Präsidentin Isabel Perón. Beginn des 'Schmutzigen Krieges' (1976-1983): systematische Verfolgung mutmaßlicher Linker. 8.961 von der Wahrheitskommission CONADEP dokumentierte 'Verschwundene' (desaparecidos), Menschenrechtsorganisationen gehen von 30.000 aus, 340 geheime Folter- und Vernichtungslager. Mütter der Plaza de Mayo formieren sich ab 1977 — Frauen mit Fotos ihrer Kinder im Schweigemarsch vor dem Präsidentenpalast. Ikone des Widerstands."
       },
       "tags": [
         "politik",
@@ -4300,7 +4318,8 @@
       ],
       "src": [
         "https://www.britannica.com/event/Dirty-War-Argentina",
-        "https://www.britannica.com/biography/Jorge-Rafael-Videla"
+        "https://www.britannica.com/biography/Jorge-Rafael-Videla",
+        "https://en.wikipedia.org/wiki/National_Commission_on_the_Disappearance_of_Persons"
       ]
     },
     {
@@ -4588,7 +4607,7 @@
         "de": "Tigray-Krieg in Äthiopien"
       },
       "detail": {
-        "de": "Premier Abiy Ahmed — Friedensnobelpreis 2019 für Eritrea-Versöhnung — startet am 4. November 2020 Krieg gegen die TPLF-regierte Region Tigray. Eritrea kämpft auf äthiopischer Seite (der frühere Erzfeind wird Verbündeter). UAE liefert Drohnen, die TPLF-Vormarsch auf Addis Ababa 2021 stoppen. Hungersnot wird als Waffe eingesetzt. Belgisches Forschungsinstitut schätzt 600.000+ Tote — eine der tödlichsten Konflikte des 21. Jahrhunderts, weitgehend ignoriert von Weltöffentlichkeit. Pretoria-Abkommen November 2022, aber Spannungen 2026 wieder akut."
+        "de": "Premier Abiy Ahmed — Friedensnobelpreis 2019 für Eritrea-Versöhnung — startet am 4. November 2020 Krieg gegen die TPLF-regierte Region Tigray. Eritrea kämpft auf äthiopischer Seite (der frühere Erzfeind wird Verbündeter). UAE liefert Drohnen, die TPLF-Vormarsch auf Addis Ababa 2021 stoppen. Hungersnot wird als Waffe eingesetzt. Forscher der Universität Gent schätzen 162.000 bis 378.000 Tote, AU-Vermittler Obasanjo spricht von rund 600.000 — eine der tödlichsten Konflikte des 21. Jahrhunderts, weitgehend ignoriert von Weltöffentlichkeit. Pretoria-Abkommen November 2022, aber Spannungen 2026 wieder akut."
       },
       "tags": [
         "krieg",
@@ -4597,7 +4616,8 @@
       ],
       "src": [
         "https://en.wikipedia.org/wiki/Tigray_war",
-        "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ethiopia"
+        "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ethiopia",
+        "https://en.wikipedia.org/wiki/Casualties_of_the_Tigray_war"
       ]
     },
     {
@@ -5036,7 +5056,7 @@
         "de": "Telekom-Bust: WorldCom-Pleite"
       },
       "detail": {
-        "de": "WorldCom meldet 21. Juli 2002 Insolvenz an — 107 Mrd USD Bilanzsumme, größter Bankrott der US-Geschichte bis dato (übertroffen 2008 von Lehman). Bernie Ebbers wegen Bilanzfälschung über 11 Mrd USD verurteilt (25 Jahre). Global Crossing pleite Januar 2002. Qwest, Lucent, Nortel überleben verstümmelt. 5 Billionen USD Marktwert vernichtet (mehr als Dotcom-Bust direkt). 500.000 Telekom-Arbeitsplätze verloren. Sarbanes-Oxley-Gesetz Juli 2002 als direkte Antwort. Hinterlassen: massive Überkapazität an Glasfaser-Infrastruktur, die nahezu kostenlos verfügbar wird."
+        "de": "WorldCom meldet 21. Juli 2002 Insolvenz an — 107 Mrd USD Bilanzsumme, größter Bankrott der US-Geschichte bis dato (übertroffen 2008 von Lehman). Bernie Ebbers wegen Bilanzfälschung über 11 Mrd USD verurteilt (25 Jahre). Global Crossing pleite Januar 2002. Qwest, Lucent, Nortel überleben verstümmelt. Rund 2 Billionen USD Börsenwert der Telekombranche vernichtet (von 7 Billionen Gesamtverlust der Börse). Angekündigt werden über 500.000 Stellenstreichungen, tatsächlich sinkt die Branchenbeschäftigung 2001–2003 um 22%. Sarbanes-Oxley-Gesetz Juli 2002 als direkte Antwort. Hinterlassen: massive Überkapazität an Glasfaser-Infrastruktur, die nahezu kostenlos verfügbar wird."
       },
       "tags": [
         "bubble",
@@ -5047,7 +5067,9 @@
       ],
       "src": [
         "https://www.britannica.com/topic/dot-com-bubble",
-        "https://www.cnn.com/2002/BUSINESS/asia/07/21/us.newworldcom.biz/index.html"
+        "https://www.cnn.com/2002/BUSINESS/asia/07/21/us.newworldcom.biz/index.html",
+        "https://www.princeton.edu/~starr/articles/articles02/Starr-TelecomImplosion-9-02.htm",
+        "https://www.richmondfed.org/~/media/richmondfedorg/publications/research/economic_quarterly/2003/fall/pdf/wolman.pdf"
       ]
     },
     {
@@ -5079,7 +5101,7 @@
         "de": "US-Housing-Boom: Subprime-Welle"
       },
       "detail": {
-        "de": "Nach Greenspans Zinssenkung als Reaktion auf Dotcom-Crash (Fed Funds Rate 6,5% → 1,0% von 2001-2003) entsteht der historische US-Immobilienboom. Subprime-Hypotheken explodieren: 35 Mrd USD (2003) → 600 Mrd USD (2006). Hauspreise steigen 2000-2006 um 80% national, über 200% in Florida, Nevada, Kalifornien. 'NINJA loans' (No Income, No Job, No Assets) werden Standard. CDOs und CDS-Märkte wachsen auf 60 Billionen USD nominaler Größe. Countrywide, Washington Mutual, Bear Stearns, Lehman dominieren die Finanzierung. 2006 Höhepunkt — Preise beginnen zu fallen, Subprime-Defaults steigen. Vorbedingung der Finanzkrise 2008."
+        "de": "Nach Greenspans Zinssenkung als Reaktion auf Dotcom-Crash (Fed Funds Rate 6,5% → 1,0% von 2001-2003) entsteht der historische US-Immobilienboom. Subprime-Hypotheken explodieren: 332 Mrd USD Neukredite (2003) → 600 Mrd USD (2006). Hauspreise steigen 2000-2006 national um fast 90%, im unteren Preissegment von Miami, Los Angeles, Las Vegas und San Diego um 200–250%. 'NINJA loans' (No Income, No Job, No Assets) werden Standard. CDOs und CDS-Märkte wachsen auf 60 Billionen USD nominaler Größe. Countrywide, Washington Mutual, Bear Stearns, Lehman dominieren die Finanzierung. 2006 Höhepunkt — Preise beginnen zu fallen, Subprime-Defaults steigen. Vorbedingung der Finanzkrise 2008."
       },
       "tags": [
         "bubble",
@@ -5089,7 +5111,10 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
-        "https://www.britannica.com/money/subprime-lending"
+        "https://www.britannica.com/money/subprime-lending",
+        "https://www.fhfa.gov/media/32646",
+        "https://fcic-static.law.stanford.edu/cdn_media/fcic-reports/fcic_final_report_chapter5.pdf",
+        "https://www.lincolninst.edu/publications/articles/housing-land-economic-crisis/"
       ]
     },
     {
@@ -5142,7 +5167,7 @@
         "de": "ZIRP-Ära: Nullzins als neue Normalität"
       },
       "detail": {
-        "de": "Als Reaktion auf die Finanzkrise senkt die Fed Dezember 2008 die Zinsen auf 0-0,25% — bleiben dort bis 2015. EZB folgt 2014 mit Negativzinsen. BoJ noch früher. Plus: Quantitative Easing (QE) — Fed kauft Anleihen für 4,5 Billionen USD (2008-2014). Was als Notmaßnahme begann, wird 13-Jahre-Regime. Folgen: 'Everything Bubble' — Aktien, Immobilien, Anleihen, Sammlerstücke, Krypto, Kunst gleichzeitig auf Rekordhochs. Zombie-Firmen überleben durch Gratis-Kredit (rund 20% S&P 1500 sind 2021 Zombies). Strukturelle Vorbedingung für alle Folge-Blasen: Crypto, EV, SPAC, Cannabis, NFT, Wasserstoff. Vermögensungleichheit verschärft sich global, weil Asset-Besitzer profitieren."
+        "de": "Als Reaktion auf die Finanzkrise senkt die Fed Dezember 2008 die Zinsen auf 0-0,25% — bleiben dort bis 2015. EZB folgt 2014 mit Negativzinsen. Die Bank of Japan war schon im Februar 1999 bei Nullzins, Negativzinsen folgen dort 2016. Plus: Quantitative Easing (QE) — durch Anleihekäufe wächst die Fed-Bilanz von 891 Mrd USD (2007) auf 4,5 Billionen USD (2015). Was als Notmaßnahme begann, wird 13-Jahre-Regime. Folgen: 'Everything Bubble' — Aktien, Immobilien, Anleihen, Sammlerstücke, Krypto, Kunst gleichzeitig auf Rekordhochs. Zombie-Firmen überleben durch Gratis-Kredit (rund 20% S&P 1500 sind 2021 Zombies). Strukturelle Vorbedingung für alle Folge-Blasen: Crypto, EV, SPAC, Cannabis, NFT, Wasserstoff. Vermögensungleichheit verschärft sich global, weil Asset-Besitzer profitieren."
       },
       "tags": [
         "bubble",
@@ -5152,7 +5177,9 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath",
-        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081216b.htm"
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081216b.htm",
+        "https://www.cbo.gov/publication/58457",
+        "https://www.boj.or.jp/en/mopo/outline/bpreview/ref.htm"
       ]
     },
     {
@@ -5165,7 +5192,7 @@
         "de": "Zinswende: Powell-Pivot beendet ZIRP-Ära"
       },
       "detail": {
-        "de": "Powell-Fed startet März 2022 mit 0,25%-Erhöhung, eskaliert auf 0,75%-Schritte bis 5,5% Sommer 2023 — schnellster Zinsanstieg seit Volcker 1979/80. EZB folgt verspätet. Auslöser: Inflation 9% (US), 11% (EU) nach Stimulus + Energiekrise + Lieferketten-Chaos. Folgen quasi sofort: alle Niedrigzins-Blasen kollabieren — EV (Rivian -90%, Lucid -85%), SPAC (de-listed in Serie), Wasserstoff (Plug -85%), Crypto (BTC -77%, Luna/FTX-Kollaps), Cannabis (Tilray -90% seit Peak). Tech-Mega-Caps verlieren 2-5 Billionen USD Marktwert in 2022. Cooper-Pivot-Hoffnung 2023 wird mehrmals enttäuscht. AI-Boom (ChatGPT November 2022) wirkt antizyklisch und verdeckt sektoralen Schmerz."
+        "de": "Powell-Fed startet März 2022 mit 0,25%-Erhöhung, eskaliert auf 0,75%-Schritte bis 5,5% Sommer 2023 — schnellster Zinsanstieg seit Volcker 1979/80. EZB folgt verspätet. Auslöser: Inflation 9% (US), 11% (EU) nach Stimulus + Energiekrise + Lieferketten-Chaos. Folgen quasi sofort: alle Niedrigzins-Blasen kollabieren — EV (Rivian -90%, Lucid -85%), SPAC (de-listed in Serie), Wasserstoff (Plug -85%), Crypto (BTC -77%, Luna/FTX-Kollaps), Cannabis (Tilray -90% seit Peak). Tech-Mega-Caps verlieren 2-5 Billionen USD Marktwert in 2022. Die Hoffnung auf eine baldige Zinssenkung ('Pivot') wird 2023 mehrmals enttäuscht. AI-Boom (ChatGPT November 2022) wirkt antizyklisch und verdeckt sektoralen Schmerz."
       },
       "tags": [
         "bubble",
@@ -5730,7 +5757,7 @@
         "de": "China-EV-Dominanz: BYD überholt Tesla"
       },
       "detail": {
-        "de": "Q4 2023: BYD verkauft mehr EVs als Tesla (526.000 vs 484.000) — China gewinnt strukturell den EV-Markt. 60% aller weltweit verkauften EVs 2024 chinesisch (BYD, SAIC, Geely, Xpeng, Li Auto, NIO). Tesla bleibt premium-relevant, verliert Volumen-Marktanteil. EU plant 35-45% Strafzölle gegen China-EVs Oktober 2024, USA verhängt 100% Zölle Mai 2024 — strukturelle Antwort auf bereits verlorene Wettbewerbsschlacht. VW, Stellantis kämpfen um Überleben. Ironie: Tesla wurde mit US-Cleantech-Subventionen 2009 gerettet, China nutzte 15 Jahre staatliche Industriepolitik um nun weltweite Führung zu erreichen. Klassisches Beispiel: Bubble-Erbe geht an konsequenten Industrie-Staat."
+        "de": "Q4 2023: BYD verkauft mehr EVs als Tesla (526.000 vs 484.000) — China gewinnt strukturell den EV-Markt. 60% aller weltweit verkauften EVs 2024 chinesisch (BYD, SAIC, Geely, Xpeng, Li Auto, NIO). Tesla bleibt premium-relevant, verliert Volumen-Marktanteil. EU verhängt ab 30. Oktober 2024 Ausgleichszölle von bis zu 35,3% zusätzlich zum regulären Autozoll von 10%, USA verhängt 100% Zölle Mai 2024 — strukturelle Antwort auf bereits verlorene Wettbewerbsschlacht. VW, Stellantis kämpfen um Überleben. Ironie: Tesla wurde mit US-Cleantech-Subventionen 2009 gerettet, China nutzte 15 Jahre staatliche Industriepolitik um nun weltweite Führung zu erreichen. Klassisches Beispiel: Bubble-Erbe geht an konsequenten Industrie-Staat."
       },
       "tags": [
         "erbe",
@@ -5741,7 +5768,8 @@
       ],
       "src": [
         "https://www.iea.org/reports/global-ev-outlook-2024",
-        "https://www.cnbc.com/2024/01/05/how-byd-grew-from-a-phone-battery-maker-to-ev-giant-taking-on-tesla.html"
+        "https://www.cnbc.com/2024/01/05/how-byd-grew-from-a-phone-battery-maker-to-ev-giant-taking-on-tesla.html",
+        "https://www.clearygottlieb.com/news-and-insights/publication-listing/definitive-duties-adopted-by-the-eu-on-chinese-battery-electric-vehicles-to-counteract-subsidies-to-apply-by-october-30"
       ]
     },
     {
@@ -5754,7 +5782,7 @@
         "de": "Foreclosure-Welle: 10 Mio US-Eigenheime verloren"
       },
       "detail": {
-        "de": "2007-2014: Über 10 Mio US-Eigenheime gehen durch Zwangsversteigerung (Foreclosure) verloren. 2010 Höhepunkt: 2,9 Mio Foreclosures in einem Jahr — Detroit, Las Vegas, Phoenix, Florida besonders getroffen. Schwarze und Latino-Familien überproportional (60% Vermögensverlust dieser Communities). 'Robo-Signing'-Skandal: Banken signierten Foreclosure-Papiere ohne juristische Prüfung. Eric Holder (Obama-DOJ) verfolgt keine einzige Wall-Street-Top-Figur — 'too big to jail'. Politische Folge: Verlust des Glaubens an Demokratische Partei bei weißen Arbeiterklasse-Wählern, Wechsel zu Tea Party + später Trump. Direkter Pfad: Subprime-Geschädigte werden Trump-Basis 2016."
+        "de": "2007-2014: Über 10 Mio US-Eigenheime gehen durch Zwangsversteigerung (Foreclosure) verloren. 2010 Höhepunkt: Zwangsvollstreckungsverfahren gegen fast 2,9 Mio Häuser, über 1 Mio Familien verlieren in diesem Jahr ihr Haus — Detroit, Las Vegas, Phoenix, Florida besonders getroffen. Schwarze und Latino-Familien überproportional: Ihr Medianvermögen sinkt 2005–2009 um 53% bzw. 66% (Weiße: −16%). 'Robo-Signing'-Skandal: Banken signierten Foreclosure-Papiere ohne juristische Prüfung. Eric Holder (Obama-DOJ) verfolgt keine einzige Wall-Street-Top-Figur — 'too big to jail'. Politische Folge: Verlust des Glaubens an Demokratische Partei bei weißen Arbeiterklasse-Wählern, Wechsel zu Tea Party + später Trump. Direkter Pfad: Subprime-Geschädigte werden Trump-Basis 2016."
       },
       "tags": [
         "erbe",
@@ -5764,7 +5792,9 @@
       ],
       "src": [
         "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
-        "https://www.britannica.com/money/financial-crisis-of-2007-2008"
+        "https://www.britannica.com/money/financial-crisis-of-2007-2008",
+        "https://money.cnn.com/2011/01/13/real_estate/foreclosures_2010/",
+        "https://www.pewresearch.org/social-trends/2011/07/26/wealth-gaps-rise-to-record-highs-between-whites-blacks-hispanics/"
       ]
     },
     {
@@ -5777,7 +5807,7 @@
         "de": "Vermögens-Ungleichheit explodiert nach ZIRP"
       },
       "detail": {
-        "de": "ZIRP-Ära (2008-2022) macht Asset-Besitzer reicher, Lohnabhängige nicht. US-Top-1%-Anteil am Nettovermögen: rund 28% (2008) → rund 30% (2022), 32,5% im 2. Quartal 2026. Median-Stundenlohn-Reallohn 2009-2020 nahezu stagniert (+5% kumuliert), S&P 500 +250%. Wohneigentum bei jungen US-Erwachsenen (25-34): 40% (1980) → 26% (2020). Generationen-Vermögenstransfer: 30 Bio USD von Boomer auf Erben über Erbschaft 2020-2040 prognostiziert — verstärkt Konzentration weiter. Politische Folge: Bernie Sanders/AOC links, Trump/Le Pen/Salvini rechts — beide Seiten kanalisieren das Trauma. Piketty 'Capital in the 21st Century' (2013) wird Bestseller. Strukturelle Vorbedingung für autoritären Populismus 2016+."
+        "de": "ZIRP-Ära (2008-2022) macht Asset-Besitzer reicher, Lohnabhängige nicht. US-Top-1%-Anteil am Nettovermögen: rund 28% (2008) → rund 30% (2022), 32,5% im 2. Quartal 2026. Realer Median-Stundenlohn 2009–2019 +11,7%, über 40 Jahre (1979–2019) nur +15%; S&P 500 +250%. Wohneigentum der 25- bis 34-jährigen Haushalte: 47% (2005) → 37% (2015), 40% (2024). Generationen-Vermögenstransfer: 84 Bio USD bis 2045 prognostiziert — verstärkt Konzentration weiter. Politische Folge: Bernie Sanders/AOC links, Trump/Le Pen/Salvini rechts — beide Seiten kanalisieren das Trauma. Piketty 'Capital in the 21st Century' (2013) wird Bestseller. Strukturelle Vorbedingung für autoritären Populismus 2016+."
       },
       "tags": [
         "erbe",
@@ -5787,7 +5817,10 @@
       ],
       "src": [
         "https://www.imf.org/en/Topics/Inequality",
-        "https://fred.stlouisfed.org/series/WFRBST01134"
+        "https://fred.stlouisfed.org/series/WFRBST01134",
+        "https://www.epi.org/publication/swa-wages-2019/",
+        "https://www.urban.org/urban-wire/homeownership-among-young-adults-has-fallen-and-its-worse-you-think",
+        "https://en.wikipedia.org/wiki/Great_Wealth_Transfer"
       ]
     },
     {
@@ -5800,7 +5833,7 @@
         "de": "EU-Austerity-Trauma: Griechenland, Spanien, Portugal"
       },
       "detail": {
-        "de": "Eurokrise-Antwort 2010-2015: 'Austeritäts'-Programm der Troika (IWF, EZB, EU-Kommission). Griechenland BIP -25% (2008-2016), Jugendarbeitslosigkeit 60%, Renten halbiert. Spanien Jugendarbeitslosigkeit 56% (2013), Generation Z verliert Vertrauen in europäisches Projekt. Portugal, Irland, Italien ähnlich. Schäuble-Doktrin 'es gibt keine Alternative'. Politische Folge: SYRIZA in Griechenland 2015, Podemos in Spanien, Cinque-Stelle in Italien, Marine Le Pen verstärkt, Brexit-Vote 2016 als britische Antwort. Generationen-Trauma: Eurogeneration unter 35 sieht EU eher als Strafanstalt denn als Friedensprojekt."
+        "de": "Eurokrise-Antwort 2010-2015: 'Austeritäts'-Programm der Troika (IWF, EZB, EU-Kommission). Griechenland BIP -25% (2008-2016), Jugendarbeitslosigkeit 60%, Renten halbiert. Spanien Jugendarbeitslosigkeit 56% (2013), eine ganze Generation junger Menschen verliert Vertrauen ins europäische Projekt. Portugal, Irland, Italien ähnlich. Schäuble-Doktrin 'es gibt keine Alternative'. Politische Folge: SYRIZA in Griechenland 2015, Podemos in Spanien, Cinque-Stelle in Italien, Marine Le Pen verstärkt, Brexit-Vote 2016 als britische Antwort. Generationen-Trauma: Eurogeneration unter 35 sieht EU eher als Strafanstalt denn als Friedensprojekt."
       },
       "tags": [
         "erbe",
