@@ -34,6 +34,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Vladimir-Putin",
+        "https://www.bbc.com/news/world-europe-15047823"
       ]
     },
     {
@@ -51,7 +55,7 @@
       "tags": [],
       "src": [
         "https://www.britannica.com/event/September-11-attacks",
-        "https://www.history.com/articles/9-11-attacks",
+        "https://orf.at/stories/3441457/",
         "https://www.911memorial.org/911-faqs"
       ]
     },
@@ -83,7 +87,11 @@
       "detail": {
         "de": "NATO marschiert nach 9/11 ein. Dauert 20 Jahre — eine Billion Dollar — für nichts. Taliban übernehmen 2021 in Tagen."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.britannica.com/event/Afghanistan-War",
+        "https://www.cfr.org/timeline/us-war-afghanistan"
+      ]
     },
     {
       "id": "china_wto",
@@ -139,6 +147,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/European-Union",
+        "https://european-union.europa.eu/principles-countries-history/eu-enlargement_en"
       ]
     },
     {
@@ -193,6 +205,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://securityconference.org/en/publications/books/selected-key-speeches-volume-i/2000-2009/speech-vladimir-putin-2007/",
+        "https://en.wikipedia.org/wiki/2007_Munich_speech_of_Vladimir_Putin"
       ]
     },
     {
@@ -233,6 +249,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.britannica.com/place/Georgia/Independent-Georgia",
+        "https://www.aljazeera.com/news/2008/8/8/russian-tanks-enter-south-ossetia"
       ]
     },
     {
@@ -254,7 +274,7 @@
       "src": [
         "https://www.britannica.com/event/Arab-Spring",
         "https://www.bbc.com/news/world-middle-east-55351698",
-        "https://www.history.com/articles/arab-spring"
+        "https://www.aljazeera.com/news/2021/1/14/arab-spring-ten-years-on"
       ]
     },
     {
@@ -274,6 +294,10 @@
         "bubble",
         "wirtschaft",
         "bubble_global"
+      ],
+      "src": [
+        "https://www.cfr.org/backgrounders/eurozone-crisis",
+        "https://www.cfr.org/timelines/greeces-debt-crisis-timeline"
       ]
     },
     {
@@ -291,6 +315,10 @@
       "tags": [
         "krieg",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Syrian-Civil-War",
+        "https://www.cfr.org/articles/syrias-civil-war"
       ]
     },
     {
@@ -328,6 +356,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+        "https://www.bbc.com/news/world-us-canada-23123964"
       ]
     },
     {
@@ -345,6 +377,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/Ukraine-crisis",
+        "https://en.wikipedia.org/wiki/2014_Russian_annexation_of_Crimea"
       ]
     },
     {
@@ -362,6 +398,10 @@
       "tags": [
         "krieg",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/Islamic-State-in-Iraq-and-the-Levant",
+        "https://www.cfr.org/backgrounders/islamic-state"
       ]
     },
     {
@@ -378,6 +418,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Angela-Merkel/Chancellorship",
+        "https://www.unhcr.org/news/stories/over-one-million-sea-arrivals-reach-europe-2015"
       ]
     },
     {
@@ -437,6 +481,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/Brexit",
+        "https://www.bbc.com/news/uk-politics-32810887"
       ]
     },
     {
@@ -454,6 +502,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Donald-Trump/Russia-investigation",
+        "https://www.intelligence.senate.gov/sites/default/files/documents/Report_Volume5.pdf"
       ]
     },
     {
@@ -492,6 +544,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.brookings.edu/articles/europes-messy-russian-gas-divorce/",
+        "https://www.iea.org/reports/gas-market-lessons-from-the-2022-2023-energy-crisis/anatomy-of-a-natural-gas-crisis"
       ]
     },
     {
@@ -533,6 +589,10 @@
       "tags": [
         "krieg",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Israel-Hamas-War",
+        "https://orf.at/stories/3406875/"
       ]
     },
     {
@@ -549,6 +609,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Donald-Trump",
+        "https://www.bbc.com/news/election/2024/us/results"
       ]
     },
     {
@@ -575,10 +639,14 @@
         "de": "Orbán nach 16 Jahren weg"
       },
       "detail": {
-        "de": "Magyar/Tisza gewinnt mit Zweidrittelmehrheit bei 78% Wahlbeteiligung. Beweis: autoritäre Systeme können demokratisch gebrochen werden."
+        "de": "Magyar/Tisza gewinnt mit Zweidrittelmehrheit bei rund 79% Wahlbeteiligung. Beweis: autoritäre Systeme können demokratisch gebrochen werden."
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.aljazeera.com/news/2026/4/12/hungary-election-early-results-show-magyars-tisza-ahead-of-orbans-fidesz",
+        "https://orf.at/stories/3426707/"
       ]
     },
     {
@@ -597,7 +665,7 @@
       "src": [
         "https://www.cdc.gov/museum/timeline/covid19.html",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7569573/",
-        "https://www.who.int/director-general/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"
+        "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"
       ]
     },
     {
@@ -658,6 +726,10 @@
       },
       "tags": [
         "technologie"
+      ],
+      "src": [
+        "https://www.bbc.com/news/topics/c81zyn0888lt",
+        "https://www.theguardian.com/news/series/cambridge-analytica-files"
       ]
     },
     {
@@ -805,6 +877,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://orf.at/stories/3371377/",
+        "https://www.aljazeera.com/news/2024/9/29/austrias-far-right-freedom-party-projected-to-win-election"
       ]
     },
     {
@@ -846,14 +922,18 @@
       "r": "iran",
       "imp": 3,
       "short": {
-        "de": "Iran–USA: Hormuz-Konflikt"
+        "de": "Iran-Krieg: USA/Israel, Hormuz-Blockade"
       },
       "detail": {
-        "de": "USA bombardieren iranische Atomanlagen (Februar 2026). Iran blockiert die Straße von Hormuz — 20% der globalen Ölversorgung. Ölpreisschock, China unter Druck. Sechswöchige Krise mit globaler Reichweite."
+        "de": "USA und Israel greifen am 28. Februar 2026 Irans Nuklear- und Militärinfrastruktur an, Revolutionsführer Ali Khamenei wird getötet. Iran schließt die Straße von Hormuz — rund ein Fünftel des weltweiten Ölverbrauchs. Ölpreisschock. Waffenruhe ab 7. April, US-Seeblockade iranischer Häfen, im Juni ein von Pakistan vermitteltes Interimsabkommen mit Wiederöffnung der Meerenge. Beendet ist der Konflikt nicht: Stand September 2026 werfen sich beide Seiten Verstöße vor, Atomprogramm, Hormuz und Sanktionen sind ungelöst."
       },
       "tags": [
         "krieg",
         "religion"
+      ],
+      "src": [
+        "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran",
+        "https://www.aljazeera.com/economy/2026/3/3/shutdown-of-hormuz-strait-raises-fears-of-soaring-oil-prices"
       ]
     },
     {
@@ -883,10 +963,14 @@
         "de": "Trump-Zölle: Liberation Day"
       },
       "detail": {
-        "de": "145% Zölle auf China, 20% auf EU — 'Liberation Day' April 2025. Globale Lieferketten werden neu geordnet. Inflationsdruck kehrt zurück. WTO-Weltordnung strukturell beschädigt."
+        "de": "'Liberation Day' am 2. April 2025: 10% Basiszoll auf Importe aus fast allen Ländern, dazu Ländersätze, u. a. 20% auf die EU und 34% zusätzlich auf China. Eine Woche später werden die Ländersätze für 90 Tage auf 10% ausgesetzt — außer für China, dort steigen die Zölle auf 145%. Globale Lieferketten werden neu geordnet. Inflationsdruck kehrt zurück. WTO-Weltordnung strukturell beschädigt."
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.aljazeera.com/economy/2025/4/3/five-key-takeaways-from-trumps-liberation-day-reciprocal-tariffs",
+        "https://www.euronews.com/2025/04/11/white-house-clarifies-tariff-rate-on-most-chinese-imports-is-actually-145"
       ]
     },
     {
@@ -917,7 +1001,11 @@
       "detail": {
         "de": "Drei Wochen vor der Ukraine-Invasion erklären Xi und Putin eine Partnerschaft 'ohne Grenzen'. China liefert keine Waffen — gibt aber wirtschaftlichen Rückhalt der westliche Sanktionen abpuffert."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.aljazeera.com/news/2022/2/4/chinas-xi-to-meet-russias-putin-ahead-of-olympics-opening-rites",
+        "https://www.rferl.org/a/ukraine-russia-eu-sanctions-leyen/31686228.html"
+      ]
     },
     {
       "id": "trump_xi_2026",
@@ -979,7 +1067,11 @@
       "detail": {
         "de": "Energiekrise plus COVID-Geldflut plus Lieferkettenchaos: Inflation auf 40-Jahres-Hoch. EZB und Fed erhöhen Zinsen aggressiv. Mittelschicht-Kaufkraft erodiert. Immobilienmärkte global eingefroren."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.imf.org/en/Publications/WEO/Issues/2022/10/11/world-economic-outlook-october-2022",
+        "https://www.aljazeera.com/economy/2022/7/13/bbus-inflation-jumps-9-1-in-june-higher-than-forecast"
+      ]
     },
     {
       "id": "ukraine_gegenoffensive",
@@ -1012,6 +1104,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Barack-Obama",
+        "https://www.npr.org/2008/11/05/96640324/barack-obama-wins-historic-election"
       ]
     },
     {
@@ -1026,7 +1122,11 @@
       "detail": {
         "de": "Erdbeben und Tsunami zerstören japanisches AKW. Drei Kernschmelzen. Deutschland beschließt Atomausstieg in Wochen. Energiepolitik global neu verhandelt — mit direkter Linie zur Abhängigkeit von russischem Gas."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.britannica.com/event/Fukushima-accident",
+        "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-daiichi-accident.aspx"
+      ]
     },
     {
       "id": "draghi_2012",
@@ -1042,6 +1142,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.ecb.europa.eu/press/key/date/2012/html/sp120726.en.html",
+        "https://cepr.org/voxeu/columns/eurozone-crisis-consensus-view-causes-and-few-possible-solutions"
       ]
     },
     {
@@ -1058,6 +1162,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Belt_and_Road_Initiative",
+        "https://www.cfr.org/backgrounders/chinas-massive-belt-and-road-initiative"
       ]
     },
     {
@@ -1074,6 +1182,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/place/Hong-Kong/Contemporary-Hong-Kong",
+        "https://www.bbc.com/news/world-asia-china-49317695"
       ]
     },
     {
@@ -1090,6 +1202,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://orf.at/stories/3122849/",
+        "https://www.aljazeera.com/news/2019/5/18/austrias-kurz-calls-for-snap-elections-amid-video-scandal"
       ]
     },
     {
@@ -1106,6 +1222,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/George-Floyd",
+        "https://www.britannica.com/topic/Black-Lives-Matter/Subsequent-protests-George-Floyd-Ahmaud-Arbery-and-Breonna-Taylor"
       ]
     },
     {
@@ -1122,6 +1242,10 @@
       },
       "tags": [
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/event/January-6-U-S-Capitol-attack",
+        "https://www.aljazeera.com/news/2021/1/6/pro-donald-trump-protesters-storm-us-capitol"
       ]
     },
     {
@@ -1134,9 +1258,14 @@
         "de": "Afghanistan: Westliches Desaster"
       },
       "detail": {
-        "de": "US-Abzug nach 20 Jahren endet in chaotischer Flucht vom Kabul-Flughafen. Taliban übernehmen in Tagen. 2.400 US-Soldaten, eine Billion Dollar, 20 Jahre — für nichts. Westen verliert Glaubwürdigkeit als Ordnungsmacht."
+        "de": "US-Abzug nach 20 Jahren endet in chaotischer Flucht vom Kabul-Flughafen. Taliban übernehmen in Tagen. 2.400 US-Soldaten, rund 2,3 Billionen Dollar, 20 Jahre — für nichts. Westen verliert Glaubwürdigkeit als Ordnungsmacht."
       },
-      "tags": []
+      "tags": [],
+      "src": [
+        "https://www.cfr.org/timeline/us-war-afghanistan",
+        "https://www.aljazeera.com/news/2021/8/30/us-completes-afghanistan-withdrawal-as-final-flight-leaves-kabul",
+        "https://www.aljazeera.com/economy/2021/8/16/the-us-spent-2-trillion-in-afghanistan-and-for-what"
+      ]
     },
     {
       "id": "navalny_2021",
@@ -1153,6 +1282,10 @@
       "tags": [
         "geopolitik",
         "krieg"
+      ],
+      "src": [
+        "https://www.aljazeera.com/news/2024/2/16/hold-alexei-navalny-timeline-from-poisoning-to-prison",
+        "https://www.aljazeera.com/news/2021/1/17/police-detain-kremlin-critic-navalny-on-return-to-russia"
       ]
     },
     {
@@ -1169,6 +1302,10 @@
       },
       "tags": [
         "politik"
+      ],
+      "src": [
+        "https://www.bundesregierung.de/breg-en/news/policy-statement-by-olaf-scholz-chancellor-of-the-federal-republic-of-germany-and-member-of-the-german-bundestag-27-february-2022-in-berlin-2008378",
+        "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/505942/sondervermoegen-bundeswehr/"
       ]
     },
     {
@@ -1346,6 +1483,10 @@
         "politik",
         "protest",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Gwangju-Uprising",
+        "https://guides.loc.gov/south-korean-democratization-movement/kwangju-uprising"
       ]
     },
     {
@@ -1364,6 +1505,10 @@
         "politik",
         "protest",
         "revolution"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/June_Democratic_Struggle",
+        "https://guides.loc.gov/south-korean-democratization-movement/june-uprising"
       ]
     },
     {
@@ -1400,6 +1545,10 @@
         "gesellschaft",
         "bubble",
         "bubble_global"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
+        "https://sgp.fas.org/crs/row/crs-asia2.htm"
       ]
     },
     {
@@ -1434,6 +1583,10 @@
       "tags": [
         "politik",
         "wahl"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Kim-Dae-Jung",
+        "https://www.nobelprize.org/prizes/peace/2000/dae-jung/biographical/"
       ]
     },
     {
@@ -1502,6 +1655,10 @@
         "wirtschaft",
         "vertrag",
         "geopolitik"
+      ],
+      "src": [
+        "https://www.bakerinstitute.org/sites/default/files/2015-09/import/WorkingPaper-Plaza-Ito-092815.pdf",
+        "https://en.wikipedia.org/wiki/Plaza_Accord"
       ]
     },
     {
@@ -1521,6 +1678,10 @@
         "katastrophe",
         "bubble",
         "bubble_global"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Japanese_asset_price_bubble",
+        "https://japansociety.org/news/the-bubble-economy-and-the-lost-decade/"
       ]
     },
     {
@@ -1540,6 +1701,10 @@
         "katastrophe",
         "bubble",
         "bubble_global"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Japanese_asset_price_bubble",
+        "https://internationalbanker.com/history-of-financial-crises/japans-lost-decade-1992/"
       ]
     },
     {
@@ -1557,6 +1722,10 @@
       "tags": [
         "wirtschaft",
         "gesellschaft"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Lost_Decades",
+        "https://japansociety.org/news/the-bubble-economy-and-the-lost-decade/"
       ]
     },
     {
@@ -1662,6 +1831,11 @@
       "tags": [
         "politik",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Mao-Zedong",
+        "https://www.britannica.com/event/Cultural-Revolution",
+        "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Mao_Zedong"
       ]
     },
     {
@@ -1758,6 +1932,10 @@
       "tags": [
         "politik",
         "wirtschaft"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Deng_Xiaoping's_southern_tour",
+        "https://www.britannica.com/biography/Deng-Xiaoping"
       ]
     },
     {
@@ -1792,6 +1970,10 @@
       "tags": [
         "geopolitik",
         "vertrag"
+      ],
+      "src": [
+        "https://www.britannica.com/story/a-look-at-hong-kong-and-china-20-years-after-reunification",
+        "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
       ]
     },
     {
@@ -1877,6 +2059,10 @@
       "tags": [
         "politik",
         "gesellschaft"
+      ],
+      "src": [
+        "https://www.lowyinstitute.org/the-interpreter/end-martial-law-important-anniversary-taiwan",
+        "https://www.washingtonpost.com/archive/politics/1987/07/15/after-38-years-taiwan-lifts-martial-law/6ba420e6-f061-467a-9647-63858e4956b3/"
       ]
     },
     {
@@ -1912,6 +2098,10 @@
         "politik",
         "wahl",
         "revolution"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/1996_Taiwanese_presidential_election",
+        "https://www.britannica.com/place/Taiwan"
       ]
     },
     {
@@ -1980,6 +2170,10 @@
       "tags": [
         "wirtschaft",
         "politik"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Economic_liberalisation_in_India",
+        "https://www.cato.org/policy-analysis/twenty-five-years-indian-economic-reform"
       ]
     },
     {
@@ -2066,6 +2260,10 @@
       "tags": [
         "wirtschaft",
         "politik"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/%C4%90%E1%BB%95i_M%E1%BB%9Bi",
+        "https://www.newmandala.org/starting-points-vietnam-in-1986/"
       ]
     },
     {
@@ -2154,6 +2352,10 @@
         "politik",
         "protest",
         "revolution"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Suharto",
+        "https://internationalbanker.com/history-of-financial-crises/asian-financial-crisis-of-1997/"
       ]
     },
     {
@@ -2241,6 +2443,10 @@
         "politik",
         "protest",
         "revolution"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Ferdinand-E-Marcos",
+        "https://en.wikipedia.org/wiki/People_Power_Revolution"
       ]
     },
     {
@@ -2260,6 +2466,10 @@
         "katastrophe",
         "bubble",
         "bubble_global"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
+        "https://www.federalreservehistory.org/essays/asian-financial-crisis"
       ]
     },
     {
@@ -2403,6 +2613,10 @@
         "katastrophe",
         "technologie",
         "umwelt"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Chernobyl-disaster",
+        "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx"
       ]
     },
     {
@@ -2476,6 +2690,10 @@
       "tags": [
         "politik",
         "vertrag"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/German-reunification",
+        "https://en.wikipedia.org/wiki/German_reunification"
       ]
     },
     {
@@ -2551,6 +2769,10 @@
         "krieg",
         "katastrophe",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Bosnian-War",
+        "https://srebrenica.org.uk/what-happened/history/bosnian-war-a-brief-overview"
       ]
     },
     {
@@ -2586,6 +2808,10 @@
         "vertrag",
         "wirtschaft",
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Maastricht-Treaty",
+        "https://www.consilium.europa.eu/en/maastricht-treaty/"
       ]
     },
     {
@@ -2654,6 +2880,10 @@
       "tags": [
         "wirtschaft",
         "vertrag"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/euro",
+        "https://www.ecb.europa.eu/ecb/history/emu/html/index.en.html"
       ]
     },
     {
@@ -2671,6 +2901,10 @@
       "tags": [
         "politik",
         "wirtschaft"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Margaret-Thatcher",
+        "https://www.britannica.com/topic/Thatcherism"
       ]
     },
     {
@@ -2875,6 +3109,10 @@
       "tags": [
         "wirtschaft",
         "politik"
+      ],
+      "src": [
+        "https://www.federalreservehistory.org/essays/anti-inflation-measures",
+        "https://www.federalreservehistory.org/people/paul-a-volcker"
       ]
     },
     {
@@ -2892,6 +3130,10 @@
       "tags": [
         "politik",
         "wahl"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Ronald-Reagan",
+        "https://millercenter.org/president/reagan/campaigns-and-elections"
       ]
     },
     {
@@ -3339,7 +3581,7 @@
         "de": "Iranische Revolution"
       },
       "detail": {
-        "de": "Schah Reza Pahlavi wird im Januar 1979 nach Monaten von Massenprotesten gestürzt. Ayatollah Ruhollah Khomeini kehrt aus Pariser Exil zurück und proklamiert am 1. April die Islamische Republik. Ende des wichtigsten US-Verbündeten in der Region. Erste schiitisch-theokratische Republik der Geschichte. Vorbild und Schreckgespenst für die ganze Region — sunnitische Monarchien fühlen sich existentiell bedroht."
+        "de": "Schah Mohammad Reza Pahlavi verlässt Iran am 16. Januar 1979 nach Monaten von Massenprotesten, am 11. Februar bricht sein Regime zusammen. Ayatollah Ruhollah Khomeini kehrt am 1. Februar aus dem Pariser Exil zurück und proklamiert nach einem Referendum am 1. April die Islamische Republik. Ende des wichtigsten US-Verbündeten in der Region. Erste schiitisch-theokratische Republik der Geschichte. Vorbild und Schreckgespenst für die ganze Region — sunnitische Monarchien fühlen sich existentiell bedroht."
       },
       "tags": [
         "politik",
@@ -3348,7 +3590,7 @@
       ],
       "src": [
         "https://www.britannica.com/event/Iranian-Revolution",
-        "https://www.history.com/articles/1979-iranian-revolution-causes",
+        "https://www.brookings.edu/articles/the-iranian-revolution-a-timeline-of-events",
         "https://www.npr.org/sections/pictureshow/2009/06/the_iranian_revolution_of_1979.html"
       ]
     },
@@ -3401,6 +3643,10 @@
       "tags": [
         "krieg",
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Iran-Iraq-War",
+        "https://www.britannica.com/place/Iraq/The-Iran-Iraq-War"
       ]
     },
     {
@@ -3436,6 +3682,10 @@
       "tags": [
         "krieg",
         "geopolitik"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Soviet-invasion-of-Afghanistan",
+        "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan"
       ]
     },
     {
@@ -3471,6 +3721,10 @@
         "terror",
         "bewegung",
         "religion"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/al-Qaeda",
+        "https://en.wikipedia.org/wiki/Osama_bin_Laden"
       ]
     },
     {
@@ -3664,6 +3918,10 @@
         "politik",
         "wirtschaft",
         "gesellschaft"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Luiz-Inacio-Lula-da-Silva",
+        "https://en.wikipedia.org/wiki/First_presidency_of_Lula_da_Silva"
       ]
     },
     {
@@ -3734,6 +3992,10 @@
         "politik",
         "wirtschaft",
         "konzern"
+      ],
+      "src": [
+        "https://www.cfr.org/articles/lava-jato-see-how-far-brazils-corruption-probe-reached",
+        "https://www.britannica.com/event/Petrobras-scandal"
       ]
     },
     {
@@ -3781,12 +4043,16 @@
         "de": "AMLO gewinnt Mexikos Wahl"
       },
       "detail": {
-        "de": "Andrés Manuel López Obrador gewinnt am 1. Juli 2018 die mexikanische Präsidentschaftswahl mit 53% — historische Niederlage der PRI, die Mexiko 70 der vergangenen 90 Jahre regiert hatte. AMLO gründete MORENA als Anti-System-Bewegung. Startet die zweite Pink-Tide-Welle in Lateinamerika. Regiert sechs Jahre bis 2024, übergibt an Sheinbaum mit MORENA-Supermehrheit."
+        "de": "Andrés Manuel López Obrador gewinnt am 1. Juli 2018 die mexikanische Präsidentschaftswahl mit 53% — historische Niederlage der PRI, die Mexiko 77 der vergangenen 89 Jahre regiert hatte. AMLO gründete MORENA als Anti-System-Bewegung. Startet die zweite Pink-Tide-Welle in Lateinamerika. Regiert sechs Jahre bis 2024, übergibt an Sheinbaum mit MORENA-Supermehrheit."
       },
       "tags": [
         "politik",
         "wahl",
         "bewegung"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Andres-Manuel-Lopez-Obrador",
+        "https://www.aljazeera.com/news/2018/7/2/mexico-election-andres-manuel-lopez-obrador-claims-victory"
       ]
     },
     {
@@ -3804,6 +4070,10 @@
       "tags": [
         "politik",
         "wahl"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Jair-Bolsonaro",
+        "https://www.aljazeera.com/news/2018/10/29/brazil-elections-far-right-leader-jair-bolsonaro-wins-presidency"
       ]
     },
     {
@@ -3873,6 +4143,10 @@
       "tags": [
         "politik",
         "wahl"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Luiz-Inacio-Lula-da-Silva",
+        "https://www.npr.org/2022/10/30/1132561987/brazil-election-lula-da-silva"
       ]
     },
     {
@@ -3891,6 +4165,10 @@
         "politik",
         "wirtschaft",
         "wahl"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Javier-Milei",
+        "https://www.aljazeera.com/news/2023/11/20/argentina-election-whats-next-after-javier-mileis-victory"
       ]
     },
     {
@@ -3979,6 +4257,10 @@
         "politik",
         "krieg",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/event/1973-Chilean-coup-d-etat",
+        "https://history.state.gov/milestones/1969-1976/allende"
       ]
     },
     {
@@ -4015,6 +4297,10 @@
         "politik",
         "terror",
         "staat"
+      ],
+      "src": [
+        "https://www.britannica.com/event/Dirty-War-Argentina",
+        "https://www.britannica.com/biography/Jorge-Rafael-Videla"
       ]
     },
     {
@@ -4100,6 +4386,10 @@
       "tags": [
         "politik",
         "wahl"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/1988_Chilean_presidential_referendum",
+        "https://www.britannica.com/biography/Augusto-Pinochet"
       ]
     },
     {
@@ -4206,6 +4496,10 @@
         "politik",
         "wahl",
         "bewegung"
+      ],
+      "src": [
+        "https://www.britannica.com/biography/Hugo-Chavez",
+        "https://www.britannica.com/place/Venezuela/The-Hugo-Chavez-presidency"
       ]
     },
     {
@@ -4278,6 +4572,10 @@
         "krieg",
         "geopolitik",
         "katastrophe"
+      ],
+      "src": [
+        "https://www.cfr.org/global-conflict-tracker/conflict/power-struggle-sudan",
+        "https://www.britannica.com/question/How-has-the-Sudanese-Civil-War-2023-impacted-the-countrys-population"
       ]
     },
     {
@@ -4296,6 +4594,10 @@
         "krieg",
         "katastrophe",
         "politik"
+      ],
+      "src": [
+        "https://en.wikipedia.org/wiki/Tigray_war",
+        "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ethiopia"
       ]
     },
     {
@@ -4593,6 +4895,10 @@
       "tags": [
         "krieg",
         "politik"
+      ],
+      "src": [
+        "https://www.britannica.com/place/Russia/The-Putin-presidency",
+        "https://www.rferl.org/a/the-second-chechen-war-in-photos/30185257.html"
       ]
     },
     {
@@ -4738,6 +5044,10 @@
         "katastrophe",
         "konzern",
         "bubble_sectoral"
+      ],
+      "src": [
+        "https://www.britannica.com/topic/dot-com-bubble",
+        "https://www.cnn.com/2002/BUSINESS/asia/07/21/us.newworldcom.biz/index.html"
       ]
     },
     {
@@ -4776,6 +5086,10 @@
         "wirtschaft",
         "konzern",
         "bubble_global"
+      ],
+      "src": [
+        "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
+        "https://www.britannica.com/money/subprime-lending"
       ]
     },
     {
@@ -4835,6 +5149,10 @@
         "wirtschaft",
         "politik",
         "bubble_global"
+      ],
+      "src": [
+        "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath",
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081216b.htm"
       ]
     },
     {
@@ -4854,6 +5172,10 @@
         "wirtschaft",
         "politik",
         "bubble_global"
+      ],
+      "src": [
+        "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20220316.htm",
+        "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
       ]
     },
     {
@@ -5416,6 +5738,10 @@
         "energie",
         "geopolitik",
         "konzern"
+      ],
+      "src": [
+        "https://www.iea.org/reports/global-ev-outlook-2024",
+        "https://www.cnbc.com/2024/01/05/how-byd-grew-from-a-phone-battery-maker-to-ev-giant-taking-on-tesla.html"
       ]
     },
     {
@@ -5435,6 +5761,10 @@
         "wirtschaft",
         "katastrophe",
         "gesellschaft"
+      ],
+      "src": [
+        "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
+        "https://www.britannica.com/money/financial-crisis-of-2007-2008"
       ]
     },
     {
@@ -5447,13 +5777,17 @@
         "de": "Vermögens-Ungleichheit explodiert nach ZIRP"
       },
       "detail": {
-        "de": "ZIRP-Ära (2008-2022) macht Asset-Besitzer reicher, Lohnabhängige nicht. US Top-1%-Anteil am Gesamtvermögen: 30% (2008) → 35% (2022). Median-Stundenlohn-Reallohn 2009-2020 nahezu stagniert (+5% kumuliert), S&P 500 +250%. Wohneigentum bei jungen US-Erwachsenen (25-34): 40% (1980) → 26% (2020). Generationen-Vermögenstransfer: 30 Bio USD von Boomer auf Erben über Erbschaft 2020-2040 prognostiziert — verstärkt Konzentration weiter. Politische Folge: Bernie Sanders/AOC links, Trump/Le Pen/Salvini rechts — beide Seiten kanalisieren das Trauma. Piketty 'Capital in the 21st Century' (2013) wird Bestseller. Strukturelle Vorbedingung für autoritären Populismus 2016+."
+        "de": "ZIRP-Ära (2008-2022) macht Asset-Besitzer reicher, Lohnabhängige nicht. US-Top-1%-Anteil am Nettovermögen: rund 28% (2008) → rund 30% (2022), 32,5% im 2. Quartal 2026. Median-Stundenlohn-Reallohn 2009-2020 nahezu stagniert (+5% kumuliert), S&P 500 +250%. Wohneigentum bei jungen US-Erwachsenen (25-34): 40% (1980) → 26% (2020). Generationen-Vermögenstransfer: 30 Bio USD von Boomer auf Erben über Erbschaft 2020-2040 prognostiziert — verstärkt Konzentration weiter. Politische Folge: Bernie Sanders/AOC links, Trump/Le Pen/Salvini rechts — beide Seiten kanalisieren das Trauma. Piketty 'Capital in the 21st Century' (2013) wird Bestseller. Strukturelle Vorbedingung für autoritären Populismus 2016+."
       },
       "tags": [
         "erbe",
         "wirtschaft",
         "gesellschaft",
         "politik"
+      ],
+      "src": [
+        "https://www.imf.org/en/Topics/Inequality",
+        "https://fred.stlouisfed.org/series/WFRBST01134"
       ]
     },
     {
@@ -5473,6 +5807,10 @@
         "wirtschaft",
         "politik",
         "gesellschaft"
+      ],
+      "src": [
+        "https://www.cfr.org/backgrounders/eurozone-crisis",
+        "https://www.aljazeera.com/economy/2018/9/2/greece-is-done-with-the-bailout-young-people-say-crisis-not-over"
       ]
     },
     {
