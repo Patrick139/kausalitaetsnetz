@@ -5949,7 +5949,10 @@
       "why": {
         "de": "9/11 schuf die politische Atmosphäre ('War on Terror') die Bush/Cheney für den Irak-Krieg nutzten — obwohl kein Zusammenhang belegt war."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://sgadaria.expressions.syr.edu/wp-content/uploads/2012/03/Iraq-article_Gershkoff_Kushner.pdf"
+      ]
     },
     {
       "source": "irak_2003",
@@ -6030,7 +6033,10 @@
       "why": {
         "de": "Finanzkrise zerstörte Vertrauen in Eliten und Institutionen — frustrierte Mittelklasse wurde Trumps Kernwählerschaft."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://ideas.repec.org/a/eee/eecrev/v88y2016icp227-260.html"
+      ]
     },
     {
       "source": "finanzkrise_2008",
@@ -6138,7 +6144,10 @@
       "why": {
         "de": "Smartphones ermöglichten Echtzeit-Koordination und Verbreitung von Protesten — Twitter und Facebook wurden Organisationstools."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://philhoward.org/research/opening-closed-regimes-what-was-the-role-of-social-media-during-the-arab-spring/"
+      ]
     },
     {
       "source": "iphone_2007",
@@ -6174,7 +6183,10 @@
       "why": {
         "de": "Chinas Exportboom flutete globale Finanzmärkte mit Kapital, das in US-Immobilienpapiere floss — Mitursache der Subprime-Krise."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://www.federalreserve.gov/boarddocs/speeches/2005/200503102/"
+      ]
     },
     {
       "source": "xi_2012",
@@ -6183,7 +6195,10 @@
       "why": {
         "de": "Chinas autoritäre Wende unter Xi gab Putin Rückhalt — Xi-Putin 'Freundschaft ohne Grenzen' Februar 2022, drei Wochen vor der Invasion."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://www.aljazeera.com/news/2022/2/4/chinas-xi-to-meet-russias-putin-ahead-of-olympics-opening-rites"
+      ]
     },
     {
       "source": "syrien_krieg",
@@ -7011,7 +7026,10 @@
       "why": {
         "de": "Wirtschaftliche Öffnung ohne politische Reform erzeugte Inflation, Korruption und neue Bildungseliten — Spannung entlud sich 1989."
       },
-      "certainty": "belegt"
+      "certainty": "belegt",
+      "src": [
+        "https://www.britannica.com/event/What-events-led-to-the-1989-Tiananmen-Square-protests-in-Beijing"
+      ]
     },
     {
       "source": "tiananmen_1989",
@@ -7443,7 +7461,10 @@
       "why": {
         "de": "Perestroika setzte Kräfte frei, die das System nicht reformierten sondern zerbrachen — Gorbatschow unterschätzte die ökonomische und nationale Dynamik."
       },
-      "certainty": "belegt"
+      "certainty": "belegt",
+      "src": [
+        "https://www.britannica.com/story/why-did-the-soviet-union-collapse"
+      ]
     },
     {
       "source": "sowjetunion_zerfall_1991",
@@ -7587,7 +7608,14 @@
       "why": {
         "de": "Mündliche Zusicherungen 1990 (NATO ohne Osterweiterung) wurden 1999 gebrochen — Vertrauensbruch aus russischer Sicht."
       },
-      "certainty": "umstritten"
+      "certainty": "umstritten",
+      "src": [
+        "https://nsarchive.gwu.edu/briefing-book/russia-programs/2017-12-12/nato-expansion-what-gorbachev-heard-western-leaders-early",
+        "https://www.brookings.edu/blogs/up-front/posts/2014/11/06-nato-no-promise-enlarge-gorbachev-pifer"
+      ],
+      "gegen": {
+        "de": "Schriftlich wurde nichts vereinbart. Gorbatschow selbst sagte 2014, eine NATO-Osterweiterung sei 1990 'überhaupt nicht diskutiert' worden; nach dieser Lesart bezogen sich die Zusagen nur auf das Gebiet der DDR."
+      }
     },
     {
       "source": "sowjetunion_zerfall_1991",
@@ -7713,7 +7741,14 @@
       "why": {
         "de": "Massives US-Rüstungsbudget zwang Sowjetunion in Rüstungswettlauf, den sie nicht durchhalten konnte — verstärkte den Reformdruck unter Gorbatschow."
       },
-      "certainty": "umstritten"
+      "certainty": "umstritten",
+      "src": [
+        "https://tnsr.org/2018/05/ronald-reagan-and-the-cold-war-what-mattered-most/",
+        "https://www.britannica.com/story/why-did-the-soviet-union-collapse"
+      ],
+      "gegen": {
+        "de": "Viele Historiker sehen die inneren Ursachen als entscheidend: wirtschaftliche Stagnation, Ölpreisverfall und Gorbatschows eigene Reformentscheidungen. Die sowjetischen Militärausgaben stiegen schon seit den frühen 1970er-Jahren, nicht erst als Reaktion auf Reagan."
+      }
     },
     {
       "source": "inf_vertrag_1987",
@@ -7812,7 +7847,10 @@
       "why": {
         "de": "Industriearbeitsplatz-Verluste durch NAFTA über zwei Jahrzehnte schufen das Rust-Belt-Misstrauen, das Trump 2016 in Michigan, Pennsylvania, Wisconsin gewann."
       },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": [
+        "https://www.nber.org/papers/w29525"
+      ]
     },
     {
       "source": "netscape_ipo_1995",
