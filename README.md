@@ -48,7 +48,8 @@ Knoten und Links in `kausalitaetsnetz.json`:
       "imp": 4,
       "short": { "de": "Trump gewinnt Präsidentschaft" },
       "detail": { "de": "..." },
-      "tags": ["politik", "wahl"]
+      "tags": ["politik", "wahl"],
+      "src": ["https://…", "https://…"]
     }
   ],
   "links": [
@@ -57,11 +58,17 @@ Knoten und Links in `kausalitaetsnetz.json`:
       "target": "trump_2016",
       "type": "indirekt",
       "why": { "de": "..." },
-      "certainty": "plausibel"
+      "certainty": "plausibel",
+      "src": ["https://…"],
+      "gegen": { "de": "..." }
     }
   ]
 }
 ```
+
+- `src` (Knoten): Quellen für das **Ereignis** selbst.
+- `src` (Kante, optional): Quellen für die **Kausalbehauptung** — also dafür, dass A zu B beigetragen hat, nicht nur dafür, dass A und B stattfanden.
+- `gegen` (Kante, optional): die wichtigste belegte Gegenposition zur Kausalbehauptung. Wird im Panel unter der Begründung angezeigt.
 
 **Wichtigkeit (imp):**
 - `4` = Epochal (strukturell weltverändernd)
@@ -70,7 +77,30 @@ Knoten und Links in `kausalitaetsnetz.json`:
 - `1` = Relevant (Kontext-Knoten)
 
 **Verbindungstypen:** `direkt`, `indirekt`, `beschleunigt`
-**Gewissheit:** `belegt`, `plausibel`, `umstritten`
+
+**Gewissheit (certainty)** — wird im Panel bei jeder Verbindung angezeigt:
+- `belegt` = Mindestens eine Quelle beschreibt den Zusammenhang ausdrücklich als Ursache und Wirkung (Fachliteratur, Untersuchungsbericht, Qualitätsmedium), und es gibt keine ernsthafte Gegenposition.
+- `plausibel` = Zeitliche Abfolge und ein nachvollziehbarer Mechanismus, aber kein direkter Beleg für den Kausalzusammenhang.
+- `umstritten` = Es gibt eine ernsthafte, belegte Gegenposition. Dann ist `gegen` auszufüllen.
+
+**Fakt und Deutung:** `detail` beschreibt zuerst, was geschah (prüfbare Zahlen, Daten, Namen). Wertungen sind erlaubt, sollen aber als Deutung erkennbar sein.
+
+---
+
+## Direktlinks
+
+Jede Ansicht hat eine eigene Adresse; der Knopf „Link kopieren“ im Panel kopiert sie.
+
+- `?node=finanzkrise_2008` — Knoten auswählen
+- `&ursachen=2&folgen=3` — Tiefe der angezeigten Ursachen/Folgen (0–5)
+- `?von=finanzkrise_2008&nach=trump_2016` — Kausalkette zwischen zwei Knoten
+- `&imp=alle` (oder `1`–`4`), `&region=usa`, `&thema=krieg` — Filter
+
+---
+
+## Linkprüfung
+
+`werkzeuge/linkcheck.py` prüft alle Quellen-Links (Knoten und Kanten). Ein GitHub-Ablauf führt die Prüfung am 1. jedes Monats und bei jeder Datenänderung auf `main` aus und legt bei toten Links ein Issue an. Zu jeder Quelle zeigt die Seite außerdem einen Archiv-Link (archive.org) als Rückfall.
 
 ---
 
