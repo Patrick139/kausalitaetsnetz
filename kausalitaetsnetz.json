@@ -727,7 +727,7 @@
         "de": "Cambridge Analytica Skandal"
       },
       "detail": {
-        "de": "87 Millionen Facebook-Profile ohne Wissen der Nutzer für politische Manipulation geerntet. Cambridge Analytica arbeitete 2016 für Trumps Wahlkampf; an der Brexit-Kampagne war die Firma laut britischer Datenschutzbehörde (2020) nicht beteiligt. Facebook-Chef Zuckerberg vor US-Kongress."
+        "de": "87 Millionen Facebook-Profile ohne Wissen der Nutzer für politische Manipulation geerntet. Kein Hack: Facebooks eigene Regeln ließen eine Quiz-App mit rund 300.000 Nutzern auch die Daten ihrer Freunde abgreifen. Cambridge Analytica arbeitete 2016 für Trumps Wahlkampf. Facebook wusste spätestens im Dezember 2015 Bescheid, eigene Mitarbeiter hatten schon im September gewarnt. Trotzdem informierte der Konzern weder Nutzer noch Behörden und sperrte CA erst im März 2018. Undercover gefilmt, prahlte CA-Chef Nix mit Bestechungsfallen und Sexarbeiterinnen gegen Politiker. Folgen: Zuckerberg vor dem US-Kongress, 5 Mrd Dollar Strafe der FTC (2019), britische Höchststrafe nach altem Recht, 725 Mio Dollar Vergleich mit Nutzern (2022). Schuld eingeräumt hat Meta nie."
       },
       "tags": [
         "technologie"
@@ -735,7 +735,12 @@
       "src": [
         "https://www.bbc.com/news/topics/c81zyn0888lt",
         "https://www.theguardian.com/news/series/cambridge-analytica-files",
-        "https://www.research-live.com/article/news/cambridge-analytica-not-involved-in-eu-referendum-finds-ico/id/5075052"
+        "https://techcrunch.com/2019/07/25/facebook-ignored-staff-warnings-about-sketchy-cambridge-analytica-in-september-2015",
+        "https://fortune.com/2018/04/10/facebook-cambridge-analytica-what-happened",
+        "https://www.cnbc.com/2018/03/19/cambridge-analytica-sting-execs-suggested-sex-workers-bribes.html",
+        "https://www.ftc.gov/news-events/news/press-releases/2020/04/ftc-gives-final-approval-modify-ftcs-2012-privacy-order-facebook-provisions-2019-settlement",
+        "https://www.npr.org/2019/10/30/774749376/facebook-pays-643-000-fine-for-role-in-cambridge-analytica-scandal",
+        "https://www.npr.org/2022/12/23/1145303268/facebook-meta-cambridge-analytica-privacy-settlement"
       ]
     },
     {
@@ -6286,9 +6291,12 @@
       "target": "cambridge_analytica",
       "type": "direkt",
       "why": {
-        "de": "Facebooks Geschäftsmodell — Daten verkaufen — ermöglichte Cambridge Analytica erst: die Plattform war das Werkzeug."
+        "de": "Kein Hack, sondern Plattform-Design: Facebook ließ App-Entwickler auch die Daten der Freunde ihrer Nutzer abgreifen. So wurden aus rund 300.000 Quiz-Teilnehmern 87 Millionen Profile."
       },
-      "certainty": "plausibel"
+      "certainty": "belegt",
+      "src": [
+        "https://fortune.com/2018/04/10/facebook-cambridge-analytica-what-happened"
+      ]
     },
     {
       "source": "cambridge_analytica",
@@ -6313,9 +6321,17 @@
       "target": "brexit_2016",
       "type": "beschleunigt",
       "why": {
-        "de": "CA war auch für die Leave-Kampagne tätig: dieselben Methoden, dieselben Daten, anderer Zielmarkt."
+        "de": "Nicht CA selbst, aber AggregateIQ aus dem Umfeld der CA-Mutterfirma SCL machte die Datenarbeit für Vote Leave: 40 % des Budgets, dazu 675.000 £ verdeckt über BeLeave. Laut Wahlkommission illegal."
       },
-      "certainty": "plausibel"
+      "certainty": "umstritten",
+      "src": [
+        "https://www.cbsnews.com/amp/news/aggregateiq-facebook-suspended-brexit-vote-leave-cambridge-analytica",
+        "https://www.aljazeera.com/amp/news/2018/7/17/uk-official-brexit-campaign-fined-for-breaching-spending-rules",
+        "https://www.research-live.com/article/news/cambridge-analytica-not-involved-in-eu-referendum-finds-ico/id/5075052"
+      ],
+      "gegen": {
+        "de": "Die britische Datenschutzbehörde fand 2020 keine Beteiligung von CA selbst am Referendum."
+      }
     },
     {
       "source": "tiktok_2019",
