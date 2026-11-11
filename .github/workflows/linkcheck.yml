@@ -1,0 +1,47 @@
+name: Monatliche Linkprüfung
+
+# Prüft am 1. jedes Monats alle Quellen-Links in kausalitaetsnetz.json.
+# Findet sie tote Links, legt sie ein Issue an (oder ergänzt das offene).
+# Läuft auch bei jeder Änderung der Daten auf main und lässt sich unter
+# "Actions" von Hand starten.
+
+on:
+  schedule:
+    - cron: "17 5 1 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [kausalitaetsnetz.json]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Links prüfen
+        id: check
+        run: |
+          set +e
+          python3 werkzeuge/linkcheck.py --md bericht.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Bericht in der Zusammenfassung zeigen
+        run: cat bericht.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Issue anlegen oder ergänzen
+        if: steps.check.outputs.status == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITEL="Tote Quellen-Links"
+          NR=$(gh issue list --state open --search "\"$TITEL\" in:title" --json number --jq '.[0].number')
+          if [ -n "$NR" ]; then
+            gh issue comment "$NR" --body-file bericht.md
+          else
+            gh issue create --title "$TITEL" --body-file bericht.md
+          fi
